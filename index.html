@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
     <meta name="viewport" content="width=device-width, initial-scale=1" viewport-fit="cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Kate Bartak</title>
@@ -10,11 +9,33 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="site-header"></header>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__logo">
+                <p class="site-header__logo__name">Екатерина Бартак</p>
+                <p class="site-header__logo__position">Front-End Developer</p>
+            </div>
+
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a href="#portfolio" class="header-nav__link">Портфолио</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#summary" class="header-nav__link">Резюме</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#contacts" class="header-nav__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main class="site-main">
-        <section class="portfolio">
+        <a name="portfolio"></a>
+        <section class="portfolio general-section">
             <div class="container">
-                <h1 class="portfolio-title">Примеры работ</h1>
+                <h1 class="general-title">Примеры работ</h1>
                 <div class="portfolio-group">
                     <a href="/rostelekom-new-site" class="portfolio-group__item">
                         <div class="portfolio-group__item__image">
@@ -22,10 +43,160 @@
                         </div>
                         <p class="portfolio-group__item__name">Ростелеком</p>
                     </a>
+                    <a href="/dom.ru-site" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="dom.ru-site/preview.png" alt="Dom.ru" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">Dom.ru</p>
+                    </a>
+                    <a href="/apple-site" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="apple-site/preview.png" alt="iRoom" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">iRoom</p>
+                    </a>
+                    <a href="/Palisandr.site" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="Palisandr.site/preview.png" alt="Палисандр" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">Палисандр</p>
+                    </a>
+                    <a href="/transmonolit" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="transmonolit/preview.png" alt="Трансмонолит" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">Трансмонолит</p>
+                    </a>
+                    <a href="/voxel-site" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="voxel-site/preview.png" alt="Voxel" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">Voxel</p>
+                    </a>
+                    <a href="/tanker-site" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="tanker-site/preview.png" alt="Танкерстрой" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">Танкерстрой</p>
+                    </a>
+                    <a href="/stk-modern" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="stk-modern/preview.png" alt="АБЗ" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">АБЗ</p>
+                    </a>
+                    <a href="/ar-site" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="ar-site/preview.png" alt="AR" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">AR</p>
+                    </a>
+                    <a href="/era-treid-site" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="era-treid-site/preview.png" alt="ЭРА TRADE" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">ЭРА TRADE</p>
+                    </a>
+                    <a href="/oilpost-site" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="oilpost-site/preview.png" alt="Ойлпост" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">Ойлпост</p>
+                    </a>
+                    <a href="/mvt-site" class="portfolio-group__item">
+                        <div class="portfolio-group__item__image">
+                            <img src="mvt-site/preview.png" alt="МотоВело техника" class="portfolio-group__item__img">
+                        </div>
+                        <p class="portfolio-group__item__name">МотоВело техника</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <a name="summary"></a>
+        <section class="summary general-section">
+            <div class="container">
+                <h2 class="general-title">Резюме</h2>
+                <div class="table__item">
+                    <p class="table__type">Проф. навыки:</p>
+                    <div class="table__value">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3 (animation, flex-box, transform etc.)</li>
+                            <li>Scss</li>
+                            <li>Pug</li>
+                            <li>Gulp</li>
+                            <li>Adobe Photoshop, Figma</li>
+                            <li>базовый js, jQuery</li>
+                            <li>WordPress, Magento (контент)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="table__item">
+                    <p class="table__type">Опыт работы:</p>
+                    <div class="table__value">
+                        <br>
+                        <br>
+                        <noindex><a href="http://kryuchkin-web.ru/" target="_blank"><b>Крючкин Web</b></a></noindex><br>
+                        Верстальщик<br><br>
+                        Обязанности:
+                        <ul>
+                            <li>Верстка и поддержка проектов студии</li>
+                        </ul>
+                        <br>
+                        <br>
+                        <noindex><a href="https://yeella.com/" target="_blank"><b>Yeella</b></a></noindex> (SEO продвижение)<br>
+                        Верстальщик<br><br>
+                        Обязанности:
+                        <ul>
+                            <li>Верстка проектов компании</li>
+                        </ul>
+                        <br>
+                        <br>
+                        <noindex><a href="http://eva.ua/" target="_blank"><b>Eva</b></a></noindex> (Интернет магазин)<br>
+                        Верстальщик, Контент-менеджер<br><br>
+                        Обязанности:
+                        <ul>
+                            <li>Создание и обновление лендингов</li>
+                            <li>HTML-разметка описаний товаров</li>
+                            <li>Публикация информации и товаров на сайте</li>
+                            <li>Программирование сложных механик акций в админ. панели</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a name="contacts"></a>
+        <section class="contacts general-section">
+            <div class="container">
+                <h2 class="general-title">Контакты</h2>
+                <div class="table__item">
+                    <p class="table__type">Город</p>
+                    <p class="table__value">Днепр</p>
+                </div>
+                <div class="table__item">
+                    <p class="table__type">Телефон</p>
+                    <p class="table__value">
+                        <a href="tel:+380500381249">(050) 038 12 49</a>
+                    </p>
+                </div>
+                <div class="table__item">
+                    <p class="table__type">Email</p>
+                    <p class="table__value">
+                        <a href="mailto:liber.scientia107@gmail.com">liber.scientia107@gmail.com</a>
+                    </p>
+                </div>
+                <div class="table__item">
+                    <p class="table__type">Telegram</p>
+                    <p class="table__value">
+                        <a href="http://t.me/de_libertate" target="_blank">@de_libertate</a>
+                    </p>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="site-footer"></footer>
+    <footer class="site-footer">
+        <p>Front-End Developer</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Voxel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=375, initial-scale=1" viewport-fit="cover" id="viewport_standart">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#76004b">
+    <meta name="application-name" content="The site name">
+    <meta name="msapplication-TileColor" content="#76004b">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700|Open+Sans:300,400,600,600i,700,700i,800&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="front">
+    <header class="site-header" id="header">
+      <div class="container">
+        <div class="header-wrap">
+          <div class="header-logo"><a href="/"><img src="/img/header-logo.png" alt="logo"></a></div><a class="open-main-menu icon-menu-inside" href="#"><i class="icon-menu"><span></span><span></span><span></span></i></a>
+          <nav class="menu">
+            <!--ul.menu-group
+            li
+            	a(href="/").menu-item Преимущества        
+            li.sub-menu
+            	a(href="#production" data-anchor='production').menu-item  О нас ▼
+            	ul
+            		li
+            			a(href='#') текст-текст
+            		li текст-текст
+            		li текст-текст
+            li
+            	a(href="#results" data-anchor='results').menu-item Применение
+            li
+            	a(href="#services" data-anchor='services').menu-item Примеры работ
+            li
+            	a(href="#services" data-anchor='services').menu-item ...
+            -->
+            <ul class="menu-group">
+              <li><a class="menu-item" href="#second-screen" data-anchor="second-screen">Пациентам</a>
+              </li>
+              <li><a class="menu-item" href="#services" data-anchor="services">Услуги и цены</a>
+              </li>
+              <li><a class="menu-item" href="#stocks" data-anchor="stocks">Акции</a>
+              </li>
+              <li><a class="menu-item" href="#advantages" data-anchor="advantages">Преимущества</a>
+              </li>
+              <li><a class="menu-item" href="#reviews" data-anchor="reviews">Отзывы</a>
+              </li>
+              <li><a class="menu-item" href="#questions" data-anchor="questions">FAQ</a>
+              </li>
+              <li><a class="menu-item" href="#contacts" data-anchor="contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page-container">
+      <section class="section-first-screen" style="background-image: url(img/firstscreen-bg.jpg);">
+        <div class="container">
+          <div class="first-screen-left">
+            <h1 class="first-screen-title">Рентген-диагностика</h1>
+            <div class="first-screen-text">челюстно-лицевой зоны</div>
+          </div>
+        </div>
+      </section>
+      <section class="section-second-screen" style="background-image: url('img/second-screen-bg.jpg')">
+        <div class="container">
+          <div class="voxel-form-wrapper" id="second-screen">
+            <div class="voxel-form-top">
+              <div class="voxel-form-title">Записаться на исследование</div>
+              <div class="voxel-form-text">Наш менеджер свяжется с вами для уточнения деталей</div>
+            </div>
+            <form class="voxel-form js-form-submit">
+              <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+              <input class="input-text input-name" type="text" placeholder="Ваше имя">
+              <input class="input-text input-date" type="text" placeholder="Дата записи" onfocus="(this.type='date')">
+              <input class="input-text input-phone" type="text" placeholder="Номер телефона">
+              <input class="request yandex-metrika-event" type="submit" value="записаться на приём" data-goal="otpravit-verh">
+              <div class="form-errors-cont"></div>
+            </form>
+            <div class="voxel-form-text-ps">Нажимая кнопку “Записаться на прием”, вы принимаете условия<a href="#"> обработки данных.</a></div>
+          </div>
+          <h2 class="title second-screen-title">Пациентам</h2>
+          <div class="second-screen-text">3D-диагностика сохранит ваше здоровье, деньги и время. <br>Это - наиболее современный метод, точность которого достигает 98%. От качества диагностики зависит успех всего лечения и здоровья пациентов. Используйте 3D‑диагностику как стандарт при первичном осмотре!</div>
+        </div>
+      </section>
+      <section class="section-services" id="services">
+        <div class="container">
+          <div class="services-top">
+            <h2 class="title">Услуги и цены</h2>
+            <div class="section-cost-subclasses"><a class="section-cost-subclass active">2D - Исследования
+                <div class="cost-triangle"></div></a><a class="section-cost-subclass section-cost-subclass-right">3D - Исследования</a></div>
+          </div>
+          <div class="cost-work-group active">
+            <div class="cost-work-left-group">
+              <div class="cost-work-item" data-hover="js-cost-right-top-01">
+                <div class="cost-work-item-number">1</div>
+                <div class="cost-work-item-info">
+                  <div class="cost-work-item-title">3Д КЛКТ 5х5</div>
+                  <div class="cost-work-item-text">Трехмерное рентгенологическое исследование области размером 5х5 см Kavo (область одного сегмента от 3 до 8 зубов) / Луч. нагрузка 0,011</div>
+                </div>
+                <div class="cost-work-item-price">900 ₽</div>
+              </div>
+              <div class="cost-work-item" data-hover="js-cost-right-top-02">
+                <div class="cost-work-item-number">2</div>
+                <div class="cost-work-item-info">
+                  <div class="cost-work-item-title">3Д КЛКТ 6х8</div>
+                  <div class="cost-work-item-text">Трехмерное рентгенологическое исследование области размером 6х8 см Kavo (Область зубных дуг) / Луч. нагрузка 0,021</div>
+                </div>
+                <div class="cost-work-item-price">1 500 ₽</div>
+              </div>
+              <div class="cost-work-item" data-hover="js-cost-right-top-03">
+                <div class="cost-work-item-number">3</div>
+                <div class="cost-work-item-info">
+                  <div class="cost-work-item-title">3Д КЛКТ 8х8</div>
+                  <div class="cost-work-item-text">Трехмерное рентгенологическое исследование области размером 8х8 см Kavo (область зубных дуг, нижечелюстной канал) / Луч. нагрузка 0,025</div>
+                </div>
+                <div class="cost-work-item-price">1 900 ₽</div>
+              </div>
+              <div class="cost-work-item" data-hover="js-cost-right-top-04">
+                <div class="cost-work-item-number">4</div>
+                <div class="cost-work-item-info">
+                  <div class="cost-work-item-title">3Д КЛКТ 8х15</div>
+                  <div class="cost-work-item-text">Трехмерное рентгенологическое исследование 8х15 см Kavo ( Область околоносовых пазух, орбит,височная кость) / Луч. нагрузка 0,048</div>
+                </div>
+                <div class="cost-work-item-price">2 100 ₽</div>
+              </div>
+              <div class="cost-work-item" data-hover="js-cost-right-top-05">
+                <div class="cost-work-item-number">5</div>
+                <div class="cost-work-item-info">
+                  <div class="cost-work-item-title">3Д КЛКТ 13х15</div>
+                  <div class="cost-work-item-text">Трехмерное рентгенологическое исследование области размером 13х15 см Kavo (Полная челюстно-лицевая область, включая ВНЧС) / Луч. нагрузка 0,055</div>
+                </div>
+                <div class="cost-work-item-price">2 700 ₽</div>
+              </div>
+            </div>
+            <div class="cost-work-right-group">
+              <div class="cost-work-right-top">
+                <div class="cost-right-top cost-right-top-01 js-cost-right-top-01">1</div>
+                <div class="cost-right-top cost-right-top-02 js-cost-right-top-02">2</div>
+                <div class="cost-right-top cost-right-top-03 js-cost-right-top-03">3</div>
+                <div class="cost-right-top cost-right-top-04 js-cost-right-top-04">4</div>
+                <div class="cost-right-top cost-right-top-05 js-cost-right-top-05">5</div>
+              </div>
+              <div class="cost-work-right-bottom">
+                <div class="cost-right-bottom cost-right-bottom-01 js-cost-right-top-01"></div>
+                <div class="cost-right-bottom cost-right-bottom-02 js-cost-right-top-02"></div>
+                <div class="cost-right-bottom cost-right-bottom-03 js-cost-right-top-03"></div>
+                <div class="cost-right-bottom cost-right-bottom-04 js-cost-right-top-04"></div>
+                <div class="cost-right-bottom cost-right-bottom-05 js-cost-right-top-05"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cost-work-group">
+            <div class="cost-work-left-group">
+              <div class="cost-work-item" data-hover="js-cost-right-top-01">
+                <div class="cost-work-item-number">1</div>
+                <div class="cost-work-item-info">
+                  <div class="cost-work-item-title">3Д КЛКТ 5х5</div>
+                  <div class="cost-work-item-text">Трехмерное рентгенологическое исследование области размером 5х5 см Kavo (область одного сегмента от 3 до 8 зубов) / Луч. нагрузка 0,011</div>
+                </div>
+                <div class="cost-work-item-price">900 ₽</div>
+              </div>
+              <div class="cost-work-item" data-hover="js-cost-right-top-02">
+                <div class="cost-work-item-number">2</div>
+                <div class="cost-work-item-info">
+                  <div class="cost-work-item-title">3Д КЛКТ 6х8</div>
+                  <div class="cost-work-item-text">Трехмерное рентгенологическое исследование области размером 6х8 см Kavo (Область зубных дуг) / Луч. нагрузка 0,021</div>
+                </div>
+                <div class="cost-work-item-price">1 500 ₽</div>
+              </div>
+              <div class="cost-work-item" data-hover="js-cost-right-top-03">
+                <div class="cost-work-item-number">3</div>
+                <div class="cost-work-item-info">
+                  <div class="cost-work-item-title">3Д КЛКТ 8х8</div>
+                  <div class="cost-work-item-text">Трехмерное рентгенологическое исследование области размером 8х8 см Kavo (область зубных дуг, нижечелюстной канал) / Луч. нагрузка 0,025</div>
+                </div>
+                <div class="cost-work-item-price">1 900 ₽</div>
+              </div>
+              <div class="cost-work-item" data-hover="js-cost-right-top-04">
+                <div class="cost-work-item-number">4</div>
+                <div class="cost-work-item-info">
+                  <div class="cost-work-item-title">3Д КЛКТ 8х15</div>
+                  <div class="cost-work-item-text">Трехмерное рентгенологическое исследование 8х15 см Kavo ( Область околоносовых пазух, орбит,височная кость) / Луч. нагрузка 0,048</div>
+                </div>
+                <div class="cost-work-item-price">2 100 ₽</div>
+              </div>
+              <div class="cost-work-item" data-hover="js-cost-right-top-05">
+                <div class="cost-work-item-number">5</div>
+                <div class="cost-work-item-info">
+                  <div class="cost-work-item-title">3Д КЛКТ 13х15</div>
+                  <div class="cost-work-item-text">Трехмерное рентгенологическое исследование области размером 13х15 см Kavo (Полная челюстно-лицевая область, включая ВНЧС) / Луч. нагрузка 0,055</div>
+                </div>
+                <div class="cost-work-item-price">2 700 ₽</div>
+              </div>
+            </div>
+            <div class="cost-work-right-group">
+              <div class="cost-work-right-top">
+                <div class="cost-right-top cost-right-top-01 js-cost-right-top-01">1</div>
+                <div class="cost-right-top cost-right-top-02 js-cost-right-top-02">2</div>
+                <div class="cost-right-top cost-right-top-03 js-cost-right-top-03">3</div>
+                <div class="cost-right-top cost-right-top-04 js-cost-right-top-04">4</div>
+                <div class="cost-right-top cost-right-top-05 js-cost-right-top-05">5</div>
+              </div>
+              <div class="cost-work-right-bottom">
+                <div class="cost-right-bottom cost-right-bottom-01 js-cost-right-top-01"></div>
+                <div class="cost-right-bottom cost-right-bottom-02 js-cost-right-top-02"></div>
+                <div class="cost-right-bottom cost-right-bottom-03 js-cost-right-top-03"></div>
+                <div class="cost-right-bottom cost-right-bottom-04 js-cost-right-top-04"></div>
+                <div class="cost-right-bottom cost-right-bottom-05 js-cost-right-top-05"></div>
+              </div>
+            </div>
+          </div>
+          <div class="questions-item">
+            <div class="questions-item-title">
+              <div class="questions-item-qestion">Дополнительные услуги</div><img class="question-icon" src="/img/question-arrow.png" alt="стрелка вправо">
+            </div>
+            <div class="questions-item-answer">
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Дублирование исследования</div>
+                  <div class="answer-text">Дублирование исследования в случае его утраты / дополнительная копия исследования / Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">200 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Описание 3Д КЛКТ 5х5 (обычное)</div>
+                  <div class="answer-text">Описание трехмерного рентгенологического исследования размером 5х5 см, срок - 3 рабочих дня. / Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">1 000 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Описание 3Д КЛКТ 5х5 (обычное)</div>
+                  <div class="answer-text">Описание трехмерного рентгенологического исследования размером 5х5 см, срок - 3 рабочих дня. / Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">1 200 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Описание 3Д КЛКТ 5х5 (обычное)</div>
+                  <div class="answer-text">Описание трехмерного рентгенологического исследования размером 5х5 см, срок - 3 рабочих дня. / Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">1 500 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Описание 3Д КЛКТ 5х5 (обычное)</div>
+                  <div class="answer-text">Описание трехмерного рентгенологического исследования размером 5х5 см, срок - 3 рабочих дня. / Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">1 800 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Описание 3Д КЛКТ 5х5 (обычное)</div>
+                  <div class="answer-text">Описание трехмерного рентгенологического исследования размером 13х15 см (в т.ч. ВНЧС), срок - 3 рабочих дня. / 
+Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">2 000 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Описание двухмерного рентгенологического исследования (обычное)</div>
+                  <div class="answer-text">Описание двухмерного рентгенологического исследования (ОПТГ, ТРГ, Зонография), срок - 3 рабочих дня. / Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">700 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Описание области одного зуба</div>
+                  <div class="answer-text">Результат в течение 3 рабочих дней / Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">700 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Разметка для планирования операции имплантации в области 1 отсутствующего зуба (обычное) </div>
+                  <div class="answer-text">Разметка для планирования операции имплантации в области 1 отсутствующего зуба, срок - 3 рабочих дня. / Луч. нагрузка 0,000</div>
+                </div>
+                <div class="answer-price">700 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Разметка для планирования операции имплантации в области 1 сегмента (обычное) </div>
+                  <div class="answer-text">Разметка для планирования операции имплантации в области 1 сегмента, срок - 3 рабочих дня. / Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">1 200 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">Распечатка зоны интереса (обычное) </div>
+                  <div class="answer-text">Распечатка зоны интереса (скриншоты) трехмерного рентгенологического исследования Kavo, срок - 3 рабочих дня. / Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">700 ₽</div>
+              </div>
+              <div class="answer-item">
+                <div class="answer-group">
+                  <div class="answer-title">ТРГ расчет</div>
+                  <div class="answer-text">Расчет телерентгенограммы / Луч. нагрузка 0,0001</div>
+                </div>
+                <div class="answer-price">1 900 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-center-form">
+        <div class="container">
+          <div class="center-form-wrapper">
+            <div class="voxel-form-wrapper">
+              <div class="voxel-form-top">
+                <div class="voxel-form-title">Записаться на исследование</div>
+                <div class="voxel-form-text">Наш менеджер свяжется с вами для уточнения деталей</div>
+              </div>
+              <form class="voxel-form js-form-submit">
+                <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                <input class="input-text input-name" type="text" placeholder="Ваше имя">
+                <input class="input-text input-date" type="text" placeholder="Дата записи" onfocus="(this.type='date')">
+                <input class="input-text input-phone" type="text" placeholder="Номер телефона">
+                <input class="request yandex-metrika-event" type="submit" value="записаться на приём" data-goal="otpravit-sred">
+                <div class="form-errors-cont"></div>
+              </form>
+              <div class="voxel-form-text-ps">Нажимая кнопку “Записаться на прием”, вы принимаете условия<a href="#"> обработки данных.</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-stocks" id="stocks">
+        <div class="container">
+          <h2 class="title">Акции</h2>
+          <div class="stocks-group">
+            <div class="stocks-item">
+              <div class="stocks-item-info">
+                <div class="stocks-item-title">ОПТГ</div>
+                <div class="stocks-item-text"></div>
+              </div>
+              <div class="stocks-item-group-price">
+                <div class="stocks-item-new-price">600 ₽</div>
+                <div class="stocks-item-old-price">900 ₽</div>
+              </div>
+            </div>
+            <div class="stocks-item">
+              <div class="stocks-item-info">
+                <div class="stocks-item-title">ТРГ</div>
+                <div class="stocks-item-text"></div>
+              </div>
+              <div class="stocks-item-group-price">
+                <div class="stocks-item-new-price">600 ₽</div>
+                <div class="stocks-item-old-price">1000 ₽</div>
+              </div>
+            </div>
+            <div class="stocks-item">
+              <div class="stocks-item-info">
+                <div class="stocks-item-title">5х5 см Kavo</div>
+                <div class="stocks-item-text">Область 2-3 рядом стоящих зубов</div>
+              </div>
+              <div class="stocks-item-group-price">
+                <div class="stocks-item-new-price">800 ₽</div>
+                <div class="stocks-item-old-price">1 500 ₽</div>
+              </div>
+            </div>
+            <div class="stocks-item">
+              <div class="stocks-item-info">
+                <div class="stocks-item-title">6х8 см Kavo</div>
+                <div class="stocks-item-text">Область одной челюсти или одного сегмента</div>
+              </div>
+              <div class="stocks-item-group-price">
+                <div class="stocks-item-new-price">900 ₽</div>
+                <div class="stocks-item-old-price">1 800 ₽</div>
+              </div>
+            </div>
+            <div class="stocks-item">
+              <div class="stocks-item-info">
+                <div class="stocks-item-title">8х8 см Kavo</div>
+                <div class="stocks-item-text">Область 2-ух сегментов- антагонисты</div>
+              </div>
+              <div class="stocks-item-group-price">
+                <div class="stocks-item-new-price">1 400 ₽</div>
+                <div class="stocks-item-old-price">2 600 ₽</div>
+              </div>
+            </div>
+            <div class="stocks-item">
+              <div class="stocks-item-info">
+                <div class="stocks-item-title">8х15 см Kavo</div>
+                <div class="stocks-item-text">Область обеих челюстей, дно гайморовых пазух</div>
+              </div>
+              <div class="stocks-item-group-price">
+                <div class="stocks-item-new-price">2 000 ₽</div>
+                <div class="stocks-item-old-price">3 100 ₽</div>
+              </div>
+            </div>
+            <div class="stocks-item stocks-item-last">
+              <div class="stocks-item-info">
+                <div class="stocks-item-title">13х15 см Kavo</div>
+                <div class="stocks-item-text">Область обеих челюстей,  гайморовых пазух, ВНЧС</div>
+              </div>
+              <div class="stocks-item-group-price">
+                <div class="stocks-item-new-price">2 500 ₽</div>
+                <div class="stocks-item-old-price">3 500 ₽</div>
+              </div>
+            </div>
+          </div>
+          <h2 class="title subtitle">ЛОР-исследования:</h2>
+          <div class="stocks-group">
+            <div class="stocks-item">
+              <div class="stocks-item-info">
+                <div class="stocks-item-title">8х15 см Kavo</div>
+                <div class="stocks-item-text">Область верхней челюсти игайморовых пазух</div>
+              </div>
+              <div class="stocks-item-group-price">
+                <div class="stocks-item-new-price">1 500 ₽</div>
+                <div class="stocks-item-old-price">3 100 ₽</div>
+              </div>
+            </div>
+            <div class="stocks-item">
+              <div class="stocks-item-info">
+                <div class="stocks-item-title">3х15 см Kavo</div>
+                <div class="stocks-item-text">Область верхней челюсти и всех пазух</div>
+              </div>
+              <div class="stocks-item-group-price">
+                <div class="stocks-item-new-price">1 800 ₽</div>
+                <div class="stocks-item-old-price">3 500 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-advantages" id="advantages">
+        <div class="container">
+          <h2 class="title">Преимущества</h2>
+          <div class="advantages-group">
+            <div class="advantages-item"><img class="advantages-item-img" src="img/advantages-01.png" alt="Точный диагноз
+и правильный план лечения">
+              <div class="advantages-item-title">Точный диагноз
+и правильный план лечения</div>
+              <div class="advantages-item-text">Благодаря высокой точности рентген-исследования ваш врач составит правильный план лечения и учтёт детали, которые невозможно увидеть при обычном осмотре.</div>
+            </div>
+            <div class="advantages-item"><img class="advantages-item-img" src="img/advantages-02.png" alt="Экономия времени и денег">
+              <div class="advantages-item-title">Экономия времени и денег</div>
+              <div class="advantages-item-text">Рентген-диагностика позволяют выявить бессимптомные заболевания на ранних стадиях. Лечение небольшого кариеса займёт намного меньше времени и обойдётся вам в меньшую сумму, чем установка имплантата.</div>
+            </div>
+            <div class="advantages-item"><img class="advantages-item-img" src="img/advantages-03.png" alt="Без вреда
+для здоровья">
+              <div class="advantages-item-title">Без вреда
+для здоровья</div>
+              <div class="advantages-item-text">Low Dose Technology сокращает дозу облучения до минимума, но это не влияет на качество. Лучевая нагрузка при исследовании сопоставима с 3-часовым полетом на самолете.</div>
+            </div>
+            <div class="advantages-item"><img class="advantages-item-img" src="img/advantages-04.png" alt="Диагностика
+без очередей">
+              <div class="advantages-item-title">Диагностика
+без очередей</div>
+              <div class="advantages-item-text">Запишитесь на сайте и приходите в рентген-центр Voxel в назначенное время. Исследование займёт всего 17 секунд, а уже через 10 минут вы получите результаты.</div>
+            </div>
+            <div class="advantages-item"><img class="advantages-item-img" src="img/advantages-05.png" alt="Удобное
+расположение">
+              <div class="advantages-item-title">Удобное
+расположение</div>
+              <div class="advantages-item-text">Как добраться до рентген-центра Voxel, смотрите в разделе Контакты.</div>
+            </div>
+            <div class="advantages-item"><img class="advantages-item-img" src="img/advantages-06.png" alt="Комфортный
+график работы">
+              <div class="advantages-item-title">Комфортный
+график работы</div>
+              <div class="advantages-item-text">Вы сможете подъехать в обед, после работы или в выходные. Режим работы в праздничные дни может меняться. Актуальная информация всегда размещена на сайте.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-reviews" id="reviews">
+        <div class="container">
+          <h2 class="title">Отзывы клиентов</h2>
+          <div class="reviews-slider">
+            <div class="reviews-slider-cont">
+              <div class="reviews-slider-cont-text">"У меня никогда не было проблем с зубами. Всегда их чистила и ухаживала за ними. Но однажды, у меня появилась сильнейшая боль в челюсти. Я пошла к своему зубному, который, провозившись со мной около часа, ничего не нашел и посоветовал обратиться в диагностический центр Voxel. В этом центре сделали рентгеновский снимок челюсти всего за 15 минут и уже по этому снимку у меня нашли дополнительный канал в зубе, где было воспаление. Очень советую этот диагностический центр. Быстро! Качественно! Дешево!"</div>
+              <div class="reviews-slider-bottom-text"><span>Ольга Петрова</span> / 26 июля 2018</div>
+            </div>
+            <div class="reviews-slider-cont">
+              <div class="reviews-slider-cont-text">"У меня никогда не было проблем с зубами. Всегда их чистила и ухаживала за ними. Но однажды, у меня появилась сильнейшая боль в челюсти. Я пошла к своему зубному, который, провозившись со мной около часа, ничего не нашел и посоветовал обратиться в диагностический центр Voxel. В этом центре сделали рентгеновский снимок челюсти всего за 15 минут и уже по этому снимку у меня нашли дополнительный канал в зубе, где было воспаление. Очень советую этот диагностический центр. Быстро! Качественно! Дешево!"</div>
+              <div class="reviews-slider-bottom-text"><span>Ольга Петрова</span> / 26 июля 2018</div>
+            </div>
+            <div class="reviews-slider-cont">
+              <div class="reviews-slider-cont-text">"У меня никогда не было проблем с зубами. Всегда их чистила и ухаживала за ними. Но однажды, у меня появилась сильнейшая боль в челюсти. Я пошла к своему зубному, который, провозившись со мной около часа, ничего не нашел и посоветовал обратиться в диагностический центр Voxel. В этом центре сделали рентгеновский снимок челюсти всего за 15 минут и уже по этому снимку у меня нашли дополнительный канал в зубе, где было воспаление. Очень советую этот диагностический центр. Быстро! Качественно! Дешево!"</div>
+              <div class="reviews-slider-bottom-text"><span>Ольга Петрова</span> / 26 июля 2018</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-questions" id="questions">
+        <div class="container">
+          <h2 class="title">Частые вопросы</h2>
+          <div class="accordion-group">
+            <div class="accordion-item">
+              <div class="accordion-item-title">
+                <div class="accordion-item-qestion">Безопасна ли дентальная компьютерная томография?</div>
+                <div class="accordion-icon-wrap"><img class="accordion-icon" src="/img/accordion-arrow-right.png" alt="стрелка вправо"></div>
+              </div>
+              <div class="accordion-item-answer">
+                <div class="accordion-item-answer-p"></div><br> - при симптомах зубной боли;
+<br> - перед лечением зубных каналов;
+<br> - при лечении ретинированных зубов;
+<br> - перед процедурами имплантации и протезирования;
+<br> - при травме скрытых частей зубов и корней, а также челюсти;
+<br> - при изменении тканей, имеющих патологический характер;
+<br> - при аномалии прикуса и прочих аномалиях зубов.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-title">
+                <div class="accordion-item-qestion">В каких случаях нужно проводить диагностику?</div>
+                <div class="accordion-icon-wrap"><img class="accordion-icon" src="/img/accordion-arrow-right.png" alt="стрелка вправо"></div>
+              </div>
+              <div class="accordion-item-answer">
+                <div class="accordion-item-answer-p"></div><br> - при симптомах зубной боли;
+<br> - перед лечением зубных каналов;
+<br> - при лечении ретинированных зубов;
+<br> - перед процедурами имплантации и протезирования;
+<br> - при травме скрытых частей зубов и корней, а также челюсти;
+<br> - при изменении тканей, имеющих патологический характер;
+<br> - при аномалии прикуса и прочих аномалиях зубов.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-title">
+                <div class="accordion-item-qestion">Можно ли проводить компьютерную томографию во время беременности и кормления грудью?</div>
+                <div class="accordion-icon-wrap"><img class="accordion-icon" src="/img/accordion-arrow-right.png" alt="стрелка вправо"></div>
+              </div>
+              <div class="accordion-item-answer">
+                <div class="accordion-item-answer-p"></div><br> - при симптомах зубной боли;
+<br> - перед лечением зубных каналов;
+<br> - при лечении ретинированных зубов;
+<br> - перед процедурами имплантации и протезирования;
+<br> - при травме скрытых частей зубов и корней, а также челюсти;
+<br> - при изменении тканей, имеющих патологический характер;
+<br> - при аномалии прикуса и прочих аномалиях зубов.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-title">
+                <div class="accordion-item-qestion">Возможны ли какие-либо неприятные ощущения во время процедуры?</div>
+                <div class="accordion-icon-wrap"><img class="accordion-icon" src="/img/accordion-arrow-right.png" alt="стрелка вправо"></div>
+              </div>
+              <div class="accordion-item-answer">
+                <div class="accordion-item-answer-p"></div><br> - при симптомах зубной боли;
+<br> - перед лечением зубных каналов;
+<br> - при лечении ретинированных зубов;
+<br> - перед процедурами имплантации и протезирования;
+<br> - при травме скрытых частей зубов и корней, а также челюсти;
+<br> - при изменении тканей, имеющих патологический характер;
+<br> - при аномалии прикуса и прочих аномалиях зубов.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-title">
+                <div class="accordion-item-qestion">Сколько времени длится компьютерная томография?</div>
+                <div class="accordion-icon-wrap"><img class="accordion-icon" src="/img/accordion-arrow-right.png" alt="стрелка вправо"></div>
+              </div>
+              <div class="accordion-item-answer">
+                <div class="accordion-item-answer-p"></div><br> - при симптомах зубной боли;
+<br> - перед лечением зубных каналов;
+<br> - при лечении ретинированных зубов;
+<br> - перед процедурами имплантации и протезирования;
+<br> - при травме скрытых частей зубов и корней, а также челюсти;
+<br> - при изменении тканей, имеющих патологический характер;
+<br> - при аномалии прикуса и прочих аномалиях зубов.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-title">
+                <div class="accordion-item-qestion">Существуют ли противопоказания при проведении компьютерной томографии?</div>
+                <div class="accordion-icon-wrap"><img class="accordion-icon" src="/img/accordion-arrow-right.png" alt="стрелка вправо"></div>
+              </div>
+              <div class="accordion-item-answer">
+                <div class="accordion-item-answer-p"></div><br> - при симптомах зубной боли;
+<br> - перед лечением зубных каналов;
+<br> - при лечении ретинированных зубов;
+<br> - перед процедурами имплантации и протезирования;
+<br> - при травме скрытых частей зубов и корней, а также челюсти;
+<br> - при изменении тканей, имеющих патологический характер;
+<br> - при аномалии прикуса и прочих аномалиях зубов.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-center-form section-bottom-form">
+        <div class="container">
+          <div class="center-form-wrapper">
+            <div class="voxel-form-wrapper">
+              <div class="voxel-form-top">
+                <div class="voxel-form-title">Записаться на исследование</div>
+                <div class="voxel-form-text">Наш менеджер свяжется с вами для уточнения деталей</div>
+              </div>
+              <form class="voxel-form js-form-submit">
+                <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                <input class="input-text input-name" type="text" placeholder="Ваше имя">
+                <input class="input-text input-date" type="text" placeholder="Дата записи" onfocus="(this.type='date')">
+                <input class="input-text input-phone" type="text" placeholder="Номер телефона">
+                <input class="request yandex-metrika-event" type="submit" value="записаться на приём" data-goal="otpravit-niz">
+                <div class="form-errors-cont"></div>
+              </form>
+              <div class="voxel-form-text-ps">Нажимая кнопку “Записаться на прием”, вы принимаете условия<a href="#"> обработки данных.</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-contacts" id="contacts">
+        <div class="container">
+          <h2 class="title">Контакты</h2>
+          <div class="contacts-group">
+            <div class="contacts-info">
+              <div class="header-logo"><a href="/"><img src="/img/header-logo.png" alt="logo"></a></div>
+              <div class="contacts-info-item contacts-info-item-01">
+                <div class="contacts-info-text">Телефон</div><a class="contacts-info-text-bold" href="tel:+7 (912) 390-13-93">+7 (912) 390-13-93</a>
+              </div>
+              <div class="contacts-info-item contacts-info-item-02">
+                <div class="contacts-info-text">Адрес центра</div>
+                <div class="contacts-info-text-bold">Тюмень, ул. Республики, д 53</div>
+              </div>
+            </div>
+            <div class="contacts-map-wrap">
+              <div class="contacts-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6fe858ce9302aa0b83f143dd97c50de1f5b8848736d23fe52964ded0812962e2&amp;width=100%25&amp;height=419&amp;lang=ru_RU&amp;scroll=true"></script></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-popup-thanks">
+        <div class="popup-wrap">
+          <div class="container">
+            <div class="popup-overlaw"></div>
+            <div class="popup-content">
+              <button class="popup-close-icon"></button>
+              <div class="popup-form-title">спасибо за заявку!</div>
+              <div class="popup-form-text">Мы свяжемся с Вами в течении 5 минут</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-text">2019 © Voxel - независимый рентген-диагностический центр</div>
+      </div>
+    </footer>
+    <!-- External-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Custom scripts-->
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick-lightbox.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/es2015/main.js"></script>
+  </body>
+</html>
