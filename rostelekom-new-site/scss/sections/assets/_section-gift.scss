@@ -1,0 +1,70 @@
+.section-gift {
+	background: url("../img/gift-bg.png") no-repeat bottom right;
+	background-size: 85%;
+	padding-top: 68px;
+	padding-bottom: 50px;
+}
+
+.gift-title {
+	font-size: 28px;
+	font-weight: $f_black;
+	font-family: $sans-gotham;
+	line-height: 1.4;
+	margin-bottom: 40px;
+
+	@include media-q(min, 768) {
+		font-size: 36px;
+		margin-bottom: 90px;
+	}
+
+		span {
+		text-transform: uppercase;
+		color: $c_violet;
+	}
+}
+
+.form-gift-wrap {
+	background-color: #f6f6f8;
+	max-width: 350px;
+	text-align: center;
+	padding: 30px 40px 40px 40px;
+	box-shadow: 10px 10px 0 0 rgba(119, 0, 255, .2);
+
+
+	.input-text {
+		width: 270px;
+		border-radius: 5px;
+		border-top: none;
+		border-right: none;
+		border-left: none;
+		border-bottom: 2px solid #dddddf;
+	}
+
+	.request {
+		width: 270px;
+		border-radius: 5px;
+		background-color: $c_green;
+		border: none;
+		padding: 15px;
+		margin-top: 25px;
+		color: $white;
+		font-size: 15px;
+		text-transform: uppercase;
+		font-weight: $f_bold;
+	}
+}
+
+.form-gift-title {
+	font-family: $sans-gotham;
+	font-weight: $f_black;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: $c_violet;
+	margin-bottom: 18px;
+}
+
+.form-gift-text {
+	font-size: 14px;
+	color: #454545;
+	margin-bottom: 30px;
+}

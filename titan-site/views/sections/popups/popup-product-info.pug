@@ -1,0 +1,125 @@
+-
+	var productinfo_table_items = [
+		{
+			title: 'Грузоподъемность:',
+			value: '250 кг',
+		},
+		{
+			title: 'Высота подъема:',
+			value: '2000* мм',
+		},
+		{
+			title: 'Расположение:',
+			value: 'Снаружи здания / внутри здания',
+		},
+		{
+			title: 'Окраска:',
+			value: 'Серый цвет',
+		},
+		{
+			title: 'Габаритные размеры  MIN:  ',
+			value: '1400*х1400* мм  (+ пандус)',
+		},
+		{
+			title: 'Размер платформы: ',
+			value: '900*х1250* мм',
+		},
+		{
+			title: 'Тип привода:',
+			value: 'Винтовой с электроприводом',
+		},
+		{
+			title: 'Питание:',
+			value: '380В, 50Гц ',
+		},
+		{
+			title: 'Мощность привода, не более: ',
+			value: '1,5 кВт',
+		},
+		{
+			title: 'Управление:',
+			value: 'Кнопочное',
+		},
+		{
+			title: 'Условия эксплуатации: ',
+			value: 'От -20С до +40С',
+		},
+		{
+			title: 'Высота пандуса: ',
+			value: '150* мм',
+		},
+		{
+			title: 'Проходной:',
+			value: '180 градусов ',
+		},
+		{
+			title: 'Калитка на второй остановке:  ',
+			value: 'Наличие',
+		},
+		{
+			title: 'Открывание калитки: ',
+			value: 'Левая / правая',
+		},
+		{
+			title: 'Дверь платформы:  ',
+			value: 'Шлагбаум, ручной',
+		},
+		{
+			title: 'Устройство безопасности, отключающее подъемник при попадании под него посторонних предметов:',
+			value: 'Наличие',
+		},
+		{
+			title: 'Ручной спуск при отключении электроэнергии:  ',
+			value: 'Наличие',
+		},
+		{
+			title: 'Переговорное устройство:',
+			value: 'Наличие',
+		},
+		{
+			title: 'Диспетчеризация:',
+			value: 'Платформа имеет возможность подключения к основным диспетчерским комплексам (Нейрон, ЛКДС)',
+		},
+		{
+			title: 'Выключатели безопасности:',
+			value: 'Да, положения площадки, выключатели шлагбаума, плоскости безопасности',
+		},
+		{
+			title: 'КОсновные нормативно-технические документы, в соответствии с которыми изготовлено оборудование:',
+			value: 'ГОСТ Р 55555-2013, ТР ТС 010/2011, ТУ 29.22.16 002-21197121-2017',
+		}
+	];
+
+section.popup-product-info(data-product='0')
+	.productinfo-popup-overlay
+	.productinfo-popup-content
+		button.productinfo-popup-close
+		p.productinfo-popup-title Вертикальный подъемник до 2 метров
+		.productinfo-popup-group
+			.productinfo-popup-left
+				.productinfo-popup-image-wrap
+					img.productinfo-popup-image(src='img/product-slider-03.png' alt='Вертикальный подъемник до 2 метров')
+				p.productinfo-popup-cost Цена:
+					span 199 000 руб
+			.productinfo-popup-table
+				p.productinfo-popup-table-title Технические характеристики:
+				each item in productinfo_table_items
+					.productinfo-popup-table-row
+						.productinfo-popup-table-data.data-heading=item.title
+						.productinfo-popup-table-data.data-info=item.value
+				hr.productinfo-popup-table-line
+				p.productinfo-popup-table-note * - уточняется при проектировании
+				.productinfo-popup-table-dopinfo
+					p.productinfo-popup-table-title Дополнительно:
+					.dopinfo-body
+						p Изготовление мачты и платформы из нержавеющей стали
+						p Остекление калитки и боковой стенки платформы
+						p Наличие козырька из поликарбоната
+						p Изготовление платформы с поворотом под 90 градусов
+						p Перевод на питание 220В
+						p Увеличение размера платформы
+						p Окраска металлоконструкции в любой цвет
+						p Использование алюкобонда для отделки мачты
+						p Диспетчеризация
+
+

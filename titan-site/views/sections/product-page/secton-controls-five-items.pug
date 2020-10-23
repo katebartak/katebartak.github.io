@@ -1,0 +1,36 @@
+-
+	var control_items = [
+		{
+			image: 'icon-product-control-call.png',
+			title: 'Заявка'
+		},
+		{
+			image: 'icon-product-control-car.png',
+			title: 'Выезд специалиста'
+		},
+		{
+			image: 'icon-product-control-list.png',
+			title: 'Договор'
+		},
+		{
+			image: 'icon-product-control-gear.png',
+			title: 'Производство'
+		},
+		{
+			image: 'icon-product-control-repear.png',
+			title: 'Доставка и монтаж'
+		}
+	];
+
+section.home-section-control.product-section-control
+	.container
+		p.default-section-heading Как мы работаем
+
+		.home-control-group
+			each item in control_items
+				.home-control-item
+					.home-control-item-white-arrow
+					.home-control-content
+						.home-control-image-wrap
+							img.home-control-image(src='img/' + item.image alt='Иконка')
+						p.home-control-text !{item.title}

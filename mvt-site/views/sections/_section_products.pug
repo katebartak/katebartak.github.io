@@ -1,0 +1,11 @@
+section.section-products#products
+	.container
+		h2.title Популярные товары
+		.products-group
+			each item in products_group
+				.products-item.draw.inview.fade-in-up
+					img.products-item-img(src='img/' + item.img alt=item.title)
+					.products-item-title=item.title
+					.products-item-text-01 !{item.text01}
+					.products-item-text-02 !{item.text02}
+					a(href="#").js-show-popup-form.products-item-button=item.button

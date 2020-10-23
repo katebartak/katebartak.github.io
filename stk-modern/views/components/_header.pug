@@ -1,0 +1,30 @@
+header#header.site-header
+	.header-top
+		.container
+			.h-top__item.h-top__item-left
+				.h-top-left__item
+					p.h-item-title Режим работы:
+					p.h-item-text ПН.-ПТ.: 09.00-18.00 (+6 МСК)
+				.h-top-left__item
+					p.h-item-title Почта:
+					p.h-item-text info@lider-stk.com
+			.h-top__item.h-top__item-right
+				.h-phone-wrap
+					i.font-icon.icon-header-phone
+					a(href="tel:8 800 250 70 96").h-phone 8 800 250 70 96
+				button.h-button.js-show-popup-form.yandex-metrika-event(data-open="js-popup-form-call" data-goal='zakazat-zvonok') Заказать звонок
+	.menu-wrap
+		.container
+			a(href="/").header-logo
+				img(src="img/logo.png", alt="logo")
+			a.open-main-menu.icon-menu-inside(href='#')
+				i.icon-menu
+					span
+					span
+					span
+			nav.menu
+				ul.menu-group
+					+main_menu(main_menu_left)
+				ul.menu-group
+					+main_menu(main_menu_right)
+

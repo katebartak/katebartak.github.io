@@ -1,0 +1,114 @@
+.section-range {
+	background: #fff;
+	overflow: hidden;
+
+	.apple-form-wrapper {
+		position: relative;
+		padding-top: 0;
+		background: transparent;
+		margin-bottom: 40px;
+	}
+
+	.apple-form-text {
+		margin-bottom: 37px;
+	}
+
+	.apple-form {
+		padding: 0 22px;
+
+		@include media-q(min, 768) {
+			padding: 0 72px;
+		}
+	}
+
+	input.input-text {
+		width: 318px;
+
+		@include media-q(min, 768) {
+			width: 238px;
+		}
+	}
+
+	input.request {
+		width: 100%;
+	}
+
+	input.input-problem {
+		margin-bottom: 33px;
+	}
+
+	.apple-form-text-ps {
+		text-align: center;
+	}
+}
+
+.range-wrap {
+	display: flex;
+	flex-direction: column;
+
+	@include media-q(min, 768) {
+		flex-direction: row;
+	}
+}
+
+.range-item {
+	flex-basis: 55%;
+	position: relative;
+	padding-top: 55px;
+}
+
+.range-left-title {
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: -4px;
+	margin-bottom: 9px;
+}
+
+.range-left-text {
+	font-size: 15px;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: -22px;
+		left: 0;
+		width: 70px;
+		height: 1px;
+		background: #298fda;
+	}
+}
+
+.range-left {
+	background: url("../img/range-left-bg.jpg") no-repeat center;
+	background-size: contain;
+	flex-basis: 45%;
+	background-position-y: 80%;
+	padding-bottom: 212px;
+
+	@include media-q(min, 768) {
+		padding-bottom: 0;
+	}
+}
+
+.range-right {
+	margin-left: -18px;
+	@include media-q(min, 768) {
+		margin-left: 0;
+	}
+
+}
+
+.range-right-bg {
+	position: absolute;
+	width: 100vw;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background: url("../img/range-right-bg.jpg") no-repeat center;
+	background-size: cover;
+
+	@include media-q(min, 768) {
+		width: 60vw;
+	}
+}

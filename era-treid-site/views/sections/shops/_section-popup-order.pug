@@ -1,0 +1,20 @@
+section.section-popup-order
+	.popup-wrap
+		.container
+			.popup-overlaw
+			.popup-content
+				.popup-form-wrapper
+					button.popup-close-icon
+					.popup-form-top
+						.popup-form-title оформление заказа
+					.popup-form-text  Заполните поля ниже и наш специалист свяжется с Вами для уточнения всех деталей
+
+					form.popup-form.js-form-submit
+						|<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+						input.input-text.input-name(type="text" placeholder='Ваше имя:')
+						input.input-text.input-phone(type="text" placeholder='Ваш телефон:')
+						input.input-text.input-email(type="text" placeholder='Ваш e-mail:')
+						input.request(type="submit" value='отправить')
+						.form-errors-cont
+					.popup-form-text-ps Нажимая на кнопку отправить, вы даете согласие на обработку своих 
+						a(href="#") персональных данных.

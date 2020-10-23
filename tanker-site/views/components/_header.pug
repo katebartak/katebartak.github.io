@@ -1,0 +1,30 @@
+header#header.site-header
+	.header-top
+		.container
+			.header-logo-wrap
+				img.header-logo-img(src="img/header-logo.png", alt="logo")
+			.header-group
+				.header-item
+					.header-item__left.header-item__left-first
+						i.font-icon.icon-header-location
+						p г.Тольятти, ул. Юбилейная 31-И офис 2
+					.header-item__left
+						i.font-icon.icon-header-mail
+						a(href="mailto: info@tankerst.ru") info@tankerst.ru
+				.header-item
+					.header-item__right.header-item__right-first
+						i.font-icon.icon-header-phone
+						a(href="tel:8 (800) 201-07-65") 8 (800) 201-07-65
+					.header-item__right
+						button.header-item__button.js-show-popup-form.yandex-metrika-event(data-open="js-popup-request" data-goal="zakazat-zvonok") заказать звонок
+
+	.menu-wrap
+		.container
+			a.open-main-menu.icon-menu-inside(href='#')
+				i.icon-menu
+					span
+					span
+					span
+			nav.menu
+				ul.menu-group
+					+main_menu(main_menu)

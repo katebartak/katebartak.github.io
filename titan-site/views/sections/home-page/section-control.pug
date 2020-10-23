@@ -1,0 +1,32 @@
+-
+	var control_items = [
+		{
+			image: 'icon-home-control-one.png',
+			title: 'Входной контроль, проверка комплектующих'
+		},
+		{
+			image: 'icon-home-control-two.png',
+			title: 'Контроль на всех этапах производства инженером ОТК'
+		},
+		{
+			image: 'icon-home-control-three.png',
+			title: 'Отгрузка (проверка комплектации)'
+		},
+		{
+			image: 'icon-home-control-four.png',
+			title: 'Монтаж <br> и приемка'
+		}
+	];
+
+section.home-section-control
+	.container
+		p.default-section-heading Процедура контроля
+		.home-control-group
+			each item in control_items
+				.home-control-item
+					.home-control-content
+						.home-control-image-wrap
+							img.home-control-image(src='img/' + item.image alt='Иконка')
+						p.home-control-text !{item.title}
+		.home-control-note-wrap
+			p.home-control-note Продукция соответствует требованиям технического регламента таможенного союза тртс 010/2011 «о безопасности машин и оборудования»

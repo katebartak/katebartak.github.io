@@ -1,0 +1,28 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='ru')
+	include ../common_meta/head
+	body.front
+		include ../components/_header-shop
+
+		main.page-container
+			include ../sections/shops/_section_first-shop
+			include ../sections/shops/_section_advantages
+			include ../sections/shops/_section_equipment
+			include ../sections/shops/_section_results
+			include ../sections/shops/_section_partners
+			include ../sections/shops/_section_portfolio
+			include ../sections/shops/_section_types
+			include ../sections/shops/_section_contacts
+			include ../sections/shops/_section_map
+			include ../sections/_section-popup-order
+			include ../sections/_section-popup-thanks
+
+
+
+
+
+		include ../components/_footer
+		include ../common_meta/footer_scripts

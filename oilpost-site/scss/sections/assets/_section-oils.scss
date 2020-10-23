@@ -1,0 +1,89 @@
+.section-oils {
+	background-color: $white;
+	padding-top: 63px;
+	padding-bottom: 18px;
+
+	@include media-q(min, 768) {
+		background: url(../img/oils-bg.png) no-repeat top -75% right -31% $white;
+		padding-bottom: 88px;
+	}
+
+	h2.title {
+		letter-spacing: -0.1px;
+	}
+}
+
+.oils-group {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 51px;
+	flex-direction: column;
+
+	@include media-q(min, 768) {
+		flex-direction: row;
+	}
+}
+
+.oils-item {
+	flex-basis: 32%;
+	background-color: $white;
+	border: 1px solid $c_gray_dark;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	max-height: 420px;
+	padding: 42px 32px 0;
+	margin-bottom: 30px;
+
+	@include media-q(min, 768) {
+		margin-bottom: 0;
+	}
+
+	&__img {
+		max-width: 230px;
+		max-height: 146px;
+		margin-bottom: 43px;
+	}
+
+	&__title {
+		font-size: 16px;
+		font-family: $sans-roboto;
+		letter-spacing: 0.1px;
+		line-height: 1.4;
+		margin-bottom: 7px;
+	}
+
+	&__text {
+		color: $c_brown_light;
+		font-family: $sans-roboto;
+		font-size: 15px;
+		line-height: 1.4;
+		letter-spacing: 0;
+		margin-bottom: 17px;
+	}
+
+	&__button {
+		border: none;
+		outline: none;
+		background-image: linear-gradient(to bottom, #ffd83b, #ffa226);
+		font-size: 17px;
+		font-weight: $f_bold;
+		text-transform: uppercase;
+		color: $black;
+		border-radius: 5px;
+		border-bottom: 3px solid #e2831e;
+		padding: 9px 67px;
+		margin-top: 5px;
+		margin-bottom: 32px;
+		max-width: 230px;
+
+		&:hover {
+			background: linear-gradient(180deg,  #ff9207, rgba(255, 0, 0, 0)),  #fdd549;
+			transition: background 2s;
+		}
+	}
+}

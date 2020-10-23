@@ -1,0 +1,162 @@
+.section-equipment {
+	padding-top: 50px;
+	position: relative;
+	background-color: #f0f0f0;
+	padding-bottom: 102px;
+
+	@include media-q(min, 768) {
+		padding-bottom: 0;
+	}
+
+		.container {
+		position: relative;
+	}
+
+	h2 {
+		margin-bottom: 25px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			left: 2px;
+			width: 8px;
+			height: 90%;
+			background-color: $white;
+		}
+
+		&::after {
+			left: 8px;
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		right: 0;
+		width: 100%;
+		left: 0;
+		top: calc(100% - 1px);
+		border: 50vw solid transparent;
+		border-top: 38px solid #f0f0f0;
+		border-bottom-width: 0;
+
+		@include media-q(min, 768) {
+			border-top: 138px solid #f0f0f0;
+			top: 100%;
+		}
+	}
+}
+
+.equipment-group {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.equipment-group__item {
+	flex-basis: 100%;
+	text-align: center;
+	margin-bottom: 21.5px;
+	margin-top: 21.5px;
+	padding-bottom: 22px;
+	background-color: $white;
+
+	@include media-q(min, 768) {
+		flex-basis: calc(33% - 20px);
+		max-width: 33%;
+	}
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 9px 8px rgba(0,0,0,0.1);
+	}
+}
+
+.equipment-img-wrap {
+	margin-bottom: 19px;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.equipment-title {
+	font-size: 17px;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 1.5;
+	position: relative;
+	margin-bottom: 40px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -20px;
+		left: calc(50% - 32px);
+		height: 1px;
+		width: 64px;
+		background-color: #c3c3c7;
+	}
+}
+
+.equipment-title,
+.equipment-text,
+.equipment-cost {
+	padding: 0 52px;
+}
+
+.equipment-text,
+.equipment-cost {
+	font-size: 14px;
+	color: #5a5a5f;
+	padding: 0 30px;
+	line-height: 1.5;
+	margin-bottom: 6px;
+}
+
+.equipment-text {
+	span {
+		font-size: 15px;
+		font-weight: $f_bold;
+	}
+}
+
+.equipment-cost {
+	span {
+		font-size: 18px;
+		font-weight: $f_bold;
+		color: #77a537;
+	}
+}
+
+.equipment-button {
+	border: none;
+	outline: none;
+	width: 330px;
+	color: $white;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: $f_bold;
+	text-align: center;
+	background: linear-gradient(to top, #bddd4a, #7ba838, #bddd4a);
+	background-position-y: 0;
+	background-size: 100% 200%;
+	padding: 12px 0;
+	transition: background .2s ease;
+	display: block;
+	margin: 8px auto;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%);
+
+	@include media-q(min, 768) {
+		top: 102%;
+	}
+
+		&:hover {
+		background-position-y: 100%;
+	}
+}

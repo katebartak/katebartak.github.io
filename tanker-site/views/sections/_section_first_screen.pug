@@ -1,0 +1,27 @@
+section.section-first-screen(style="background-image: url(img/fr-screen-bg.jpg);")
+	.first-screen-left
+		h1.first-screen-title Производство и монтаж <br> #[span мягких резервуаров]
+		.first-screen-text-wrap
+			p.first-screen-text Под ключ по всей России и СНГ с гарантией качества!
+	.first-screen-right
+		.first-screen-form-wrapper
+			.first-screen-form-top
+				.first-screen-form-title Получите расчет
+				.first-screen-form-text  #[span на 10% ниже] <br> от рыночной стоимости
+
+			form.first-screen-form.js-form-submit
+				input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+				input.input-text.input-name(type="text" placeholder='ФИО:')
+				input.input-text.input-phone(type="text" placeholder='Телефон:')
+				input.input-text.input-email(type="text" placeholder='Электронная почта:')
+				input.input-text.input-size(type="text" placeholder='Размер:')
+				select.input-text.input-use
+					option(value='') Сфера применения:
+					option(value='сфера1') сфера1
+					option(value='сфера2') сфера2
+				input.request.yandex-metrika-event(type="submit" value='расчитать стоимость' data-goal='otpravit-verh')
+				.form-errors-cont
+			.first-screen-form-text-ps Нажимая на кнопку отправить, вы даете согласие на обработку своих
+				a(href="#")  персональных данных.
+
+

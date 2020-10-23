@@ -1,0 +1,10 @@
+section.section-address#address
+	.container
+		.address-wrap
+			h2.title Проверьте ваш адрес на возможность <br>подключения к ростелеком
+			.site-form-wrapper
+				form.site-form.js-show-popup-submit(data-open="js-popup-address")
+					input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+					input.input-text.input-address(type="text" placeholder='Введите Ваш адрес:' required)
+					input.request.yandex-metrika-event(type="submit" value='проверить' data-goal='proverka-adresa')
+					.form-errors-cont

@@ -1,0 +1,128 @@
+@keyframes cityPopupFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.popup-choose-city {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: auto;
+  z-index: 15;
+  padding: 50px 15px;
+
+  .popup-choose-city-active & {
+    display: flex;
+  }
+}
+
+.choose-popup-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.choose-popup-content {
+  width: 722px;
+  max-width: 90%;
+  padding: 38px 34px;
+  background-color: $white;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  animation: cityPopupFadeIn .3s ease;
+  animation-fill-mode: both;
+  box-shadow: 2px 2px 10px $c_grey_heading;
+
+  @include media-q(min, 992) {
+    left: 4%;
+  }
+}
+
+.choose-popup-close {
+  appearance: none;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 13px;
+  top: 14px;
+  outline: none;
+
+  &::before {
+    @include font-size(29);
+    @extend %font-family-icon;
+    @extend %icon-close-button;
+    opacity: .2;
+    transition: opacity .3s ease;
+  }
+
+  &:hover {
+    &::before {
+      opacity: .3;
+    }
+  }
+}
+
+.choose-popup-title {
+  @include font-size(18);
+  color: $c_grey_heading;
+  font-weight: $f_medium;
+  margin-bottom: 1.3em;
+
+  @include media-q(min, 768) {
+    @include font-size(24);
+  }
+}
+
+.choose-popup-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  overflow: auto;
+  max-height: 50vh;
+}
+
+.choose-popup-item {
+  width: 100%;
+
+  @include media-q(min, 768) {
+    width: 33.33333%;
+  }
+
+  @include media-q(min, 992) {
+    width: 25%;
+  }
+}
+
+.choose-popup-link {
+  @include font-size(15);
+  display: inline-block;
+  color: $c_blue;
+  padding: 6px 16px;
+  border-radius: 5px;
+  transition: background-color .3s, color .3s ease;
+  margin-bottom: 4px;
+
+  &:hover {
+    background-color: $c_orange_button;
+    color: $black;
+  }
+
+  &.actual {
+    background-color: $c_yellow_text;
+    color: $black;
+  }
+}

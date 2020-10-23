@@ -1,0 +1,200 @@
+.section-request {
+  padding-top: 26px;
+  padding-bottom: 141px;
+  background: url(../img/request-bg.jpg) no-repeat center;
+  background-size: cover;
+
+  @include media-q(min, 1024) {
+    padding-bottom: 188px;
+  }
+}
+
+.request-group-text {
+  flex-basis: calc(100% - 363px);
+  margin-top: 15px;
+}
+
+.request-title {
+  font-size: 24px;
+  color: #fff;
+  line-height: 1.6;
+  letter-spacing: 1.1px;
+  margin-bottom: 12px;
+  font-weight: 700;
+
+  @include media-q(min, 375) {
+    font-size: 26px;
+  }
+
+  @include media-q(min, 768) {
+    font-size: 32px;
+  }
+
+  span {
+    color: #f7d89c;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    @include media-q(min, 768) {
+      white-space: normal;
+    }
+  }
+}
+
+.request-text {
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.5;
+  padding-bottom: 24px;
+  width: 300px;
+
+  @include media-q(min, 768) {
+    width: 690px;
+  }
+
+  @include media-q(min, 1200) {
+    padding-bottom: 32px;
+    width: 840px;
+  }
+}
+
+.section-request-form {
+  display: inline-block; 
+  flex-basis: 382px;
+  padding: 33px 5px 20px;
+  margin-bottom: -78px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 6px solid rgba(255, 253, 253, 0.2);
+
+  @include media-q(min, 375) {
+    padding: 33px 15px 20px;
+  }
+
+  @include media-q(min, 768) {
+    padding: 33px 33px 20px;
+  }
+
+  form {
+    display: inline-flex;
+    flex-direction: column;
+    width: 275px;
+
+    @include media-q(min, 375) {
+      width: 291px;
+    }
+
+    input {
+      font-size: 16px;
+      color: #6c6c6c;
+      border-bottom: 2px solid #e0e0e0;
+      padding: 14px 21px;
+      margin-bottom: 24px;
+      width: 275px;
+      border-radius: 7px;
+
+      @include media-q(min, 375) {
+        width: 295px;
+      }
+
+      &:focus {
+        border-bottom: 2px solid #f7d89c;
+      }
+    }
+
+    .request {
+      border-bottom: none;
+      font-size: 15px;
+      color: #000;
+      text-transform: uppercase;
+      transition: opacity .3s ease;
+      width: 275px;
+      padding: 15px;
+      background: #f7d89c;
+      font-weight: 500;
+
+      @include media-q(min, 375) {
+        width: 300px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: .9;
+      }
+    }
+  }
+
+  .section-request-form-ps-text {
+    font-size: 13px;
+    color: #535353;
+    line-height: 1;
+    text-align: left;
+    display: flex;
+
+    .form-castle {
+      width: 10px;
+      height: 13px;
+      margin-right: 5px;
+    }
+
+    @include media-q(min, 768) {
+      text-align: center;
+    }
+
+    @include media-q(min, 1024) {
+      text-align: left;
+    }
+  }
+}
+
+.section-request-form-title {
+  font-family: 'Avenir Next Cyr';
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 11px;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 92%;
+    background: #f3b3cb;
+    bottom: 19%;
+    z-index: -1;
+    left: 4%;
+  }
+
+  @include media-q(min, 375) {
+    &::after {
+      width: 74%;
+      left: 13%;
+    }
+  }
+
+  @include media-q(min, 768) {
+    &::after {
+      width: 54%;
+      bottom: 32%;
+      left: 23%;
+    }
+  }
+
+  @include media-q(min, 1024) {
+    &::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+.section-request-form-text {
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  line-height: 1.1;
+  padding-bottom: 19px;
+}

@@ -1,0 +1,39 @@
+.section-payment {
+	background: url("../img/payment-bg.jpg") no-repeat center;
+	padding-top: 52px;
+	padding-bottom: 50px;
+
+	h2.title {
+		color: $white;
+	}
+}
+
+.payment-group {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 71px;
+}
+
+.payment-item {
+	flex-basis: 32%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.payment-img {
+		max-width: 79px;
+		max-height: 73px;
+		margin-bottom: 28px;
+	}
+}
+
+.payment-title {
+	font-size: 16px;
+	font-family: $sans-roboto;
+	color: $white;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0px;
+}

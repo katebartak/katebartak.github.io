@@ -1,0 +1,32 @@
+-
+	var home_slider = [
+		{
+			title: 'подъемники для инвалидов',
+			text: '“Под ключ” за 25 дней с гарантией 5 лет',
+			image: 'home-slider-00.png',
+		},
+		{
+			title: 'грузовые Подъемники',
+			text: '“Под ключ” за 25 дней с гарантией 5 лет',
+			image: 'home-slider-02.png',
+		},
+		{
+			title: 'пассажирские и коттеджные лифты',
+			text: '“Под ключ” с гарантией от производителя',
+			image: 'home-slider-01.png',
+		},
+	]
+
+section.section-firstscreen(style='background-image: url(img/home-firstscreen-bg.jpg')
+	.container
+		.home-top-slick-slider
+			each item in home_slider
+				article.home-top-slider-item
+					.home-top-slide-info
+						h1.home-top-slide-heading=item.title
+						p.home-top-slide-text=item.text
+						hr.home-top-slide-line
+						a.home-top-slide-link(href='#') подробнее
+					.home-top-slide-image-wrap
+						img.home-top-slide-image(src='img/' + item.image alt=item.title)
+

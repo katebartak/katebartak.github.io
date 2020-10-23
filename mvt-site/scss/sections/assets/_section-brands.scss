@@ -1,0 +1,102 @@
+.section-brands {
+	background: url("../img/brands-bg.jpg") no-repeat center;
+	background-size: cover;
+	padding-top: 46px;
+	position: relative;
+	padding-bottom: 1px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+
+		@include media-q(min, 768) {
+			flex-direction: row;
+		}
+	}
+
+	.mvt-form-wrapper {
+
+		@include media-q(min, 768) {
+			margin-left: 33px;
+		}
+	}
+}
+
+.brands-title {
+	font-size: 28px;
+	font-family: "Roboto Condensed";
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 52px;
+
+	span {
+		color: #4c9ef1;
+	}
+
+	@include media-q(min, 768) {
+		font-size: 34px;
+	}
+}
+
+.brands-left {
+	max-width: 770px;
+	padding-top: 12px;
+}
+
+.brands-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 570px;
+}
+
+.brands-item {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 48px;
+	transition: transform .2s ease;
+
+	&:hover {
+		transform: scale(.9);
+	}
+}
+
+.brands-text {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 600;
+	margin-top: -10px;
+	margin-bottom: 29px;
+
+	@include media-q(min, 768) {
+		margin-left: -161px;
+		margin-bottom: 0;
+	}
+}
+
+.brands-moto {
+	position: absolute;
+	left: calc(61% - 114px);
+	right: 0;
+	bottom: -8%;
+	content: '';
+	width: 228px;
+	height: 281px;
+	background: url("../img/brands-moto.png") no-repeat center;
+	background-size: 228px 281px;
+	display: none;
+
+	&:hover {
+		-webkit-animation: swing 0.6s ease;
+		animation: swing 0.7s ease;
+		-webkit-animation-iteration-count: 1;
+		animation-iteration-count: 1;
+	}
+
+	@include media-q(min, 768) {
+		display: block;
+	}
+}

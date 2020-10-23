@@ -1,0 +1,23 @@
+// Helpers: Variables / Mixins
+@import'util/module';
+
+// Base and global styles
+@import'base/module';
+
+// Components
+@import 'components/module';
+
+// Sections
+@import 'sections/module';
+@import 'sections/module';
+@import 'sections/assets/_section-first-screen';
+@import 'sections/assets/_section-advantages';
+@import 'sections/assets/_section-cost';
+@import 'sections/assets/_section-doctors';
+@import 'sections/assets/_section-video';
+@import 'sections/assets/_section-reviews';
+@import 'sections/assets/_section-form';
+@import 'sections/assets/_section-about';
+@import 'sections/assets/_section-contacts';
+@import 'sections/assets/_section-map';
+@import 'sections/assets/_section-popup-thanks';

@@ -1,0 +1,13 @@
+.footer {
+	background: #0bb366;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	height: 63px;
+	padding-top: 16px;
+	padding-bottom: 22px;
+
+	@include media-q(min, 768) {
+		padding-top: 22px;
+	}
+}

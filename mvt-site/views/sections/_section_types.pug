@@ -1,0 +1,11 @@
+section.section-types#types
+	.container
+		h2.title Все виды запчастей для Вашей техники
+		.types-text Кроме поршневых мы можем подобрать практически <br> любые запчасти для Вашей техники
+		.types-group
+			each item in types_group
+				.types-item.inview.fade-in-up
+					.types-item-img-wrap
+						img.types-item-img(src='img/' + item.img alt=item.title)
+					.types-item-title=item.title
+					a(href="#").js-show-popup-form.types-item-button=item.button

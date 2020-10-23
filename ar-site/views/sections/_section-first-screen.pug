@@ -1,0 +1,14 @@
+section.section-first-screen#home
+	.container
+		.form-wrapper.form-fr-screen
+			.form-top
+				h2.form-fr-screen__title Записаться на обследование
+				p.form-top__text Заполните форму и наш менеджер свяжется с вами для уточнения деталей
+			form.form.js-form-submit
+				input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+				input.input-text.input-name(type="text" placeholder='Ваше имя')
+				input.input-text.input-date.init-datepicker(type="text" placeholder='Дата записи')
+				input.input-text.input-phone(type="text" placeholder='Номер телефона' required)
+				input.request.yandex-metrika-event(type="submit" value='записаться на приём' data-goal='otpravit-verh')
+				.form-errors-cont
+		.form-text-ps Нажимая кнопку, вы принимаете условия обработки данных

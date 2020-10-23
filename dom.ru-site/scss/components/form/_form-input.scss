@@ -1,0 +1,25 @@
+.form-text,
+.form-email {
+  background: $white;
+  border-bottom: 1px solid $black;
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px 12px 9px;
+
+  // Safari and iOS fix of text field
+  -webkit-appearance: none;
+  transition: border-color .3s ease-out;
+
+  &:focus {
+    outline: none;
+    border-color: $black;
+    color: $black;
+  }
+
+  &.error {
+    border-color: red;
+    background-color: rgba(red, .05);
+  }
+}

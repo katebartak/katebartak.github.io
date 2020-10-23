@@ -1,0 +1,65 @@
+.section-price {
+	padding-top: 66px;
+	padding-bottom: 86px;
+	background: url(../img/price-bg.png) no-repeat bottom 15% left 140% #f5f7f9;
+	background-size: 80%;
+
+	@include media-q(min, 768) {
+		background: url("../img/price-bg.png") no-repeat bottom 85% left 10% #f5f7f9;
+	}
+
+		h2.title {
+		text-align: left;
+		margin-bottom: 85px;
+		letter-spacing: -1.1px;
+		line-height: 1.2;
+		&::after {
+			left: 0;
+		}
+	}
+
+	.container {
+		display: flex;
+	}
+}
+
+.price-item1 {
+	display: none;
+	@include media-q(min, 768) {
+		flex-basis: 51.5%;
+		display: block;
+	}
+}
+
+.price-item2 {
+	flex-basis: 100%;
+
+	@include media-q(min, 768) {
+		flex-basis: 49%;
+	}
+}
+
+.price-button {
+	width: 270px;
+	background-color: #ff161e;
+	outline: none;
+	color: #fff;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 3px;
+	padding: 12px 0;
+	border: 1px solid #ff161e;
+	display: block;
+	margin: 0 auto;
+
+	@include media-q(min, 768) {
+		margin: 0;
+	}
+
+		&:hover {
+		background-color: #000;
+		border: 1px solid #000;
+	}
+}

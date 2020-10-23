@@ -1,0 +1,162 @@
+.section-fr-screen {
+	background-color: #4f4f58;
+	min-height: 500px;
+	padding-top: 499px;
+	padding-bottom: 132px;
+	margin-top: -469px;
+
+	@include media-q(min, 768) {
+		padding-top: 169px;
+		margin-top: -129px;
+		padding-bottom: 12px;
+		background: url("../img/fr-screen-bg.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+	.container {
+		position: relative;
+	}
+
+	&__question {
+		color: $c_orange;
+		font-size: 17px;
+		letter-spacing: 0.5px;
+		margin-bottom: 12px;
+	}
+
+	&__title {
+		font-size: 26px;
+		font-weight: $f_bold;
+		text-transform: uppercase;
+		color: $white;
+		letter-spacing: 1.9px;
+		line-height: 1.3;
+		margin-bottom: 30px;
+
+		@include media-q(min, 768) {
+			font-size: 52px;
+		}
+
+		span {
+		font-size: 16px;
+		font-weight: 600;
+		color: $c_orange;
+		line-height: 1.6;
+		letter-spacing: 0.7px;
+		display: block;
+
+			@include media-q(min, 768) {
+				font-size: 24px;
+				line-height: 1.9;
+			}
+		}
+	}
+
+	&__group {
+		display: flex;
+		justify-content: space-between;
+		max-width: 582px;
+		margin-bottom: 38px;
+
+		@include media-q(min, 768) {
+			margin-left: -28px;
+		}
+
+			&--item {
+			flex-basis: 32%;
+		}
+	}
+
+	&__img {
+		max-width: 67px;
+		display: block;
+		margin-bottom: 18px;
+
+		@include media-q(min, 768) {
+			margin: 0 auto 18px;
+		}
+	}
+	&__text {
+		font-size: 15px;
+		color: $white;
+		text-align: left;
+		line-height: 1.3;
+
+		@include media-q(min, 768) {
+			text-align: center;
+		}
+	}
+	&__btn {
+		background-image: linear-gradient(to bottom, #f4b00d, #dc8501);
+		border: none;
+		border-radius: 7px;
+		font-size: 17px;
+		color: $white;
+		position: relative;
+		text-transform: uppercase;
+		box-shadow: inset 0 -4px 0 #b56d03;
+		transition: all .4s ease;
+		font-weight: 800;
+		line-height: 1.1;
+		margin: 0 auto 30px;
+		outline: none;
+		font-family: $sans-brand;
+		padding: 19px 41px;
+		letter-spacing: 0.6px;
+		transition: all .4s ease;
+
+		&:hover {
+			box-shadow: 0 0.2rem 1.5rem rgba(209, 136, 13, 0.45), inset 0 -4px 0 #dc8501;
+		}
+	}
+
+	@keyframes blick {
+		60%,to {
+			left: 110%
+		}
+	}
+
+	.section-fr-screen__btn.is-blicked {
+		overflow-x: hidden
+	}
+
+	.section-fr-screen__btn.is-blicked:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		background: -webkit-gradient(linear,left top,right top,color-stop(10%,hsla(0,0%,100%,.1)),color-stop(20%,hsla(0,0%,100%,.2)),to(hsla(0,0%,100%,.6)));
+		background: linear-gradient(90deg,hsla(0,0%,100%,.1) 10%,hsla(0,0%,100%,.2) 20%,hsla(0,0%,100%,.6));
+		width: 20px;
+		transform: skewX(-45deg);
+		left: -20%;
+		transition: all .6s ease;
+		animation-name: blick;
+		animation-duration: 3s;
+		animation-iteration-count: infinite
+	}
+
+	&__car-wrap {
+		height: auto;
+	}
+
+	.fr-screen__car {
+		width: 70%;
+
+		@include media-q(min, 768) {
+			width: 50%;
+		}
+	}
+
+	.fr-screen__car {
+		position: absolute;
+		right: 15%;
+		bottom: -31%;
+
+		@include media-q(min, 768) {
+			right: 3%;
+			bottom: -21%;
+		}
+	}
+}

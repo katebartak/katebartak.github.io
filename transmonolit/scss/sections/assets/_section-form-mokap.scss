@@ -1,0 +1,170 @@
+.section-form-mokap {
+	background: url("../img/form-bg.jpg") no-repeat center;
+	background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 30px;
+
+	@include media-q(min, 768) {
+		padding-bottom: 0;
+	}
+
+		h2.title {
+		color: $white;
+		margin-bottom: 30px;
+		text-align: left;
+
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.form-mokap-wrap {
+	max-width: 1175px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+
+	@include media-q(min, 768) {
+		flex-direction: row;
+	}
+}
+
+.form-mokap-text {
+	position: relative;
+	font-size: 18px;
+	color: $white;
+	letter-spacing: 0.6px;
+	margin-bottom: 73px;
+
+	@include media-q(min, 768) {
+		margin-bottom: 133px;
+	}
+
+		&::after {
+		content: '';
+		position: absolute;
+		bottom: -23px;
+		left: 0;
+		width: 102px;
+		height: 2px;background-color: $c_orange;
+	}
+
+	span {
+		color: $c_yellow;
+	}
+}
+
+.form-mokap-btn {
+	width: 100%;
+	display: block;
+	border: none;
+	outline: none;
+	background-image: linear-gradient(to bottom, #f4b00d, #dc8501);
+	border-radius: 7px;
+	font-size: 17px;
+	color: $white;
+	position: relative;
+	text-transform: uppercase;
+	box-shadow: inset 0 -4px 0 #b56d03;
+	transition: all .4s ease;
+	font-weight: 800;
+	line-height: 1.1;
+	font-family: $sans-brand;
+	padding: 19px 41px;
+	letter-spacing: 0.6px;
+	transition: all .4s ease;
+
+
+	@include media-q(min, 768) {
+		width: 385px;
+	}
+
+		&:hover {
+		box-shadow: 0 0.2rem 1.5rem rgba(209, 136, 13, 0.45), inset 0 -4px 0 #dc8501;
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		background: url("../img/mokap-arrow.png") no-repeat center;
+		background-size: 126px 31px;
+		width: 126px;
+		height: 31px;
+		left: 121%;
+		top: 35%;
+		bottom: 0;
+	}
+}
+
+@keyframes blick {
+	60%,to {
+		left: 110%
+	}
+}
+
+.form-mokap-btn.is-blicked {
+	overflow-x: hidden
+}
+
+.form-mokap-btn:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	background: -webkit-gradient(linear,left top,right top,color-stop(10%,hsla(0,0%,100%,.1)),color-stop(20%,hsla(0,0%,100%,.2)),to(hsla(0,0%,100%,.6)));
+	background: linear-gradient(90deg,hsla(0,0%,100%,.1) 10%,hsla(0,0%,100%,.2) 20%,hsla(0,0%,100%,.6));
+	width: 20px;
+	transform: skewX(-45deg);
+	left: -20%;
+	transition: all .6s ease;
+	animation-name: blick;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes jampTrf {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	15% {
+		-webkit-transform: translateY(-7%);
+		transform: translateY(-7%);
+	}
+
+	25% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	35% {
+		-webkit-transform: translateY(-3%);
+		transform: translateY(-3%);
+	}
+
+	45% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+.form-mokap-img {
+	max-width: 320px;
+	margin-top: 27px;
+	animation: jampTrf 4.5s infinite linear;
+
+	@include media-q(min, 768) {
+		max-width: 425px;
+		margin-top: 97px;
+		margin-left: -68px;
+	}
+
+}

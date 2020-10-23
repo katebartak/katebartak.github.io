@@ -1,0 +1,31 @@
+//-
+	-
+		var advantage_heading = '',
+				advantage_class = 'three-in-row',
+				advantage_folder = 'adventage-icons',
+				advantages_items = [
+					{
+						title: '',
+					},
+				],
+				advantage_note = '',
+				advantage_text = '';
+
+mixin products_advantages(advantage_heading, advantage_class, advantage_folder, advantages_items, advantage_note, advantage_text)
+	section.section-products-advantages
+		.container
+			p.default-section-heading !{advantage_heading}
+			.products-advantages-group(class=advantage_class)
+				each item, index in advantages_items
+					.products-advantage-item
+						if index < 10
+							.products-advantage-item-image(style='background-image: url("img/' + advantage_folder + '/freight-0' + index + '.png");')
+						else
+							.products-advantage-item-image(style='background-image: url("img/' + advantage_folder + '/freight-' + index + '.png");')
+						.products-advantage-item-text !{item.title}
+			if advantage_note
+				.home-control-note-wrap
+					.home-control-note !{advantage_note}
+			if advantage_text
+				.home-control-note-wrap.note-text
+					.home-control-note !{advantage_text}

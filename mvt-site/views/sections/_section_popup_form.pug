@@ -1,0 +1,17 @@
+section.section-popup-form
+	.popup-wrap
+		.container
+			.popup-overlaw
+			.popup-form-content
+				button.popup-close-icon
+				.popup-form-title заявка на подбор детали
+				.popup-form-text Заполните поля ниже и мы подберем нужную Вам деталь
+				.mvt-form-wrapper
+					form.mvt-form.js-form-submit
+						input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+						input.input-text.input-detals(type="text" placeholder='Название детали:')(style="background-image: url(img/popup-form-icon-01.png)")
+						input.input-text.input-scooter(type="text" placeholder='Название вашего скутера:')(style="background-image: url(img/popup-form-icon-02.png)")
+						input.input-text.input-phone(type="text" placeholder='Ваш телефон:')(style="background-image: url(img/popup-form-icon-03.png)")
+						input.request.yandex-metrika-event(type="submit" value='ОТПРАВИТЬ' data-goal='otpravit-verh')
+						.form-errors-cont
+					.mvt-form-text-ps Нажимая на кнопку отправить, вы даете согласие на обработку своих #[a(href="#") персональных данных.]

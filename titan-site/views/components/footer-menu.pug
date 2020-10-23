@@ -1,0 +1,19 @@
+nav.footer-nav.footer-nav(role='menubar' aria-label='Дополнительное меню сайта')
+	ul.nav-list
+		each item in footer_menu_left
+			li.menu-item
+				a(href=item.url role='menuitem' aria-haspopup=item.lvl_2 != undefined ? 'true' : 'false')=item.title
+				if(item.lvl_2 != undefined)
+					ul.footer-nav-submenu
+						each m2 in item.lvl_2
+							li.menu-item
+								a(href=m2.url class=m2.lvl_3 != undefined ? 'active' : '')=m2.title
+	ul.nav-list
+		each item in footer_menu_right
+			li.menu-item
+				a(href=item.url role='menuitem' aria-haspopup=item.lvl_2 != undefined ? 'true' : 'false')=item.title
+				if(item.lvl_2 != undefined)
+					ul.footer-nav-submenu
+						each m2 in item.lvl_2
+							li.menu-item
+								a(href=m2.url class=m2.lvl_3 != undefined ? 'active' : '')=m2.title

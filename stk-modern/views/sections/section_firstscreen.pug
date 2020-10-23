@@ -1,0 +1,47 @@
+section.section-firstscreen
+	.container
+		.firstscreen-left
+			h1.firstscreen__title Мобильные <br>асфальтные заводы #[span (АБЗ)]
+			p.firstscreen__text На сегодняшний день мы - надежный поставщик асфальтных заводов и комплектующих к ним
+			.firstscreen-list-wrap
+				ul.firstscreen-list
+					li.firstscreen-list__item
+						i.font-icon.icon-check
+						p.list-item__text 1 год гарантии
+					li.firstscreen-list__item
+						i.font-icon.icon-check
+						p.list-item__text Штат инженеров, <br> написание ПО
+					li.firstscreen-list__item
+						i.font-icon.icon-check
+						p.list-item__text Поставка комплектующих и запчастей
+				ul.firstscreen-list
+					li.firstscreen-list__item
+						i.font-icon.icon-check
+						p.list-item__text 6 лет на рынке
+					li.firstscreen-list__item
+						i.font-icon.icon-check
+						p.list-item__text готовый продукт соответствует всем ГОСТам
+					li.firstscreen-list__item
+						i.font-icon.icon-check
+						p.list-item__text сотрудничаем с лизинговыми компаниями
+
+		.firstscreen-right
+			.form-wrapper
+				h3.form-title Подберем необходимое оборудование для Вашей организации
+				p.form-text Оставьте заявку и наш менеджер свяжется с Вами в течении 5 минут
+				form.form.js-form-submit
+					input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+					.form-item.form-type-text
+						input.input-text.input-name(type="text" placeholder='Ваше имя')
+						i.font-icon.icon-form-user
+					.form-item.form-type-text
+						input.input-text.input-phone(type="text" placeholder='Номер телефона' required)
+						i.font-icon.icon-form-phone
+					input.request.yandex-metrika-event(type="submit" value='Оставить заявку' data-goal='otpravit-verh')
+					.form-errors-cont
+				.form-text-ps
+					i.font-icon.icon-form-castle
+					p Ваши персональные данные надежно защищены и никогда не будут переданы третьим лицам
+
+		a(href="#equipment" data-anchor='equipment').firstscreen-arrow
+			i.font-icon.icon-arrow-down

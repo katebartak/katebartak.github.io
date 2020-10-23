@@ -1,0 +1,15 @@
+//- ----------------------------------------------------------------------------
+//- Put mixin's here
+
+mixin main_menu(menu)
+	each item in menu
+		li(class=item.items ? 'sub-menu' : '')
+			if (item.href == '#' || item.href == '/')
+				a.menu-item(href=item.href class=item.class)=item.title
+			else
+				a.menu-item(href='#' + item.href  data-anchor=item.href class=item.class)=item.title
+			if (item.items)
+				ul
+					each item_2 in item.items
+						li
+							a(href=item_2.href)=item_2.title

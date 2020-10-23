@@ -1,0 +1,23 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='en')
+  include ../common_meta/head
+  body.front
+    include ../components/_header
+    main.page-container
+      include ../sections/section_firstscreen
+      include ../sections/section_products
+      include ../sections/section_brands
+      include ../sections/section_delivery
+      include ../sections/section_payment
+      include ../sections/section_oils
+      include ../sections/section_bottom_form
+      include ../sections/section_contacts
+      include ../sections/section_map
+      include ../sections/section_popup
+      include ../sections/section_popup_thanks
+
+    include ../components/_footer
+    include ../common_meta/footer_scripts

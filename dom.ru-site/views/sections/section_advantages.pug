@@ -1,0 +1,10 @@
+section.section-advantages
+	.container
+		h2.title преимущества
+		.advantages-group
+			each item in advantages_group
+				.advantages-item
+					.advantages-item__group
+						.advantages-item__icon.font-icon(class='icon-' + item.icon)
+						.advantages-item__title=item.title
+					.advantages-item__text=item.text

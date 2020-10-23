@@ -1,0 +1,19 @@
+%entry-space-dots {
+  @include media-q(min, 768) {
+    display: flex;
+  }
+
+  .dots {
+    background: url("../img/infotabs-list-dots.png") repeat-x 0 80%;
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin-right: 10px;
+    min-width: 50px;
+    display: none;
+
+    @include media-q(min, 768) {
+      display: block;
+    }
+  }
+}

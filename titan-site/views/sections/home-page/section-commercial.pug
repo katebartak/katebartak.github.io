@@ -1,0 +1,50 @@
+section.home-section-form(style='background-image: url("img/home-commercial-bg.jpg")')
+	.container
+		.home-form-heading-wrap
+			p.home-form-heading Мы уверены в качестве
+				span наших услуг и ценах
+		form.home-form-form.form-bg
+			.form-title.form-item Запросить коммерческое предложение
+			fieldset.form-fieldset.form-radio-group-diff.form-item
+				.form-radio-group-item.bigger-item
+					p.form-item-name Тип подъемника:
+					.form-radio
+						input.input-type-radio(type='radio' id='commercial_radio_0' name='lift_type')
+						label.label-for-radio(for='commercial_radio_0') Наклонный подъемник
+					.form-radio
+						input.input-type-radio(type='radio' id='commercial_radio_1' name='lift_type')
+						label.label-for-radio(for='commercial_radio_1') Вертикальный подъемник до 2 м
+					.form-radio
+						input.input-type-radio(type='radio' id='commercial_radio_2' name='lift_type')
+						label.label-for-radio(for='commercial_radio_2') Вертикальный подъемник до 9 м
+					.form-radio
+						input.input-type-radio(type='radio' id='commercial_radio_3' name='lift_type')
+						label.label-for-radio(for='commercial_radio_3') Затрудняюсь с выбором
+
+				.form-radio-group-item.smaller-item
+					p.form-item-name Клиент:
+					.form-radio
+						input.input-type-radio(type='radio' id='client_radio_0' name='client')
+						label.label-for-radio(for='client_radio_0') Частное лицо
+					.form-radio
+						input.input-type-radio(type='radio' id='client_radio_1' name='client')
+						label.label-for-radio(for='client_radio_1') Организация
+
+			fieldset.form-fieldset.form-text-group.form-item
+				.form-text-group-item.form-type-text
+					label
+						p.form-item-name Имя:
+						input.input-type-text(type='text')
+				.form-text-group-item.form-type-text
+					label
+						p.form-item-name Телефон:
+						input.input-type-text.init-mask(type='text' placeholder='+7 (___) ___-____')
+
+			.form-actions
+				input.input-type-submit(type='submit' value='отправить запрос')
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+section.section-products#products
+	.container
+		.title-wrap
+			h2.title Наиболее востребованные <br> #[span ВИДЫ МАСЕЛ]
+			.title-group
+				.title-item.title-item1
+				.title-item.title-item2
+				.title-item.title-item3
+		.products-group
+			each item in products_group
+				.products-item
+					.products-item-img-wrap
+						img.products-item-img(src='img/' + item.img alt=item.title)
+					.products-item-title=item.title
+					a(href="#" data-open="js-popup-form-price" data-goal="otpravit-cent").yandex-metrika-event.js-show-popup-form.products-item-button=item.button

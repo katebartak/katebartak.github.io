@@ -1,0 +1,9 @@
+section.section-advantages#advantages
+	.container
+		h2.advantages-title Продажа техники
+		.advantages-text У нас вы так же можете преобрести следующие товары
+		.advantages-group
+			each item in advantages_item
+				.advantages-item(style="background-image: url('img/" + item.img + "');")
+					.advantages-item-title=item.title
+					button.advantages-item-button.js-show-popup-form(data-open="js-popup-form-call")=item.button

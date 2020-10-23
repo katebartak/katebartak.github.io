@@ -1,0 +1,36 @@
+-
+	var items_conntect = [
+		{
+			text: 'Оставьте заявку на подключение на сайте или по номеру телефона',
+			phone: true,
+			image: 'step_1.svg'
+		},
+		{
+			text: 'Проверим возможность подключения по вашему адресу',
+			image: 'step_2.svg'
+		},
+		{
+			text: 'Проконсультируем по тарифам и услугам',
+			image: 'step_3.svg'
+		},
+		{
+			text: 'Подберем оптимальный тарифный план',
+			image: 'step_4.svg'
+		},
+		{
+			text: 'Выберем удобное время для подключения',
+			image: 'step_5.svg'
+		}
+	]
+
+section.section-connection#connection
+	.container
+		h2.title как подключить <br>интернет
+		.connection-wrapper
+			.connection-group
+				each item in items_conntect
+					.connection-group__item
+						img.connection-group__item__image(src='img/' + item.image alt='Иконка')
+						p.connection-group__item__text !{item.text}
+							if item.phone
+								a(href="tel:88003024086") 8 800 302 40 86

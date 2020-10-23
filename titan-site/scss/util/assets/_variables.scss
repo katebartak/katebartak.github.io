@@ -1,0 +1,78 @@
+//-----------------------------------------------------------------------------
+// Fonts variable(s).
+$sans: Helvetica, Arial, sans-serif;
+$sans-roboto: 'Roboto', $sans;
+$sans-room: 'Room', $sans;
+
+// Font weight variants
+$f_thin: 100;
+$f_light: 300;
+$f_normal: 400;
+$f_medium: 600;
+$f_bold: 700;
+
+//-----------------------------------------------------------------------------
+// Image paths
+$images: '../img/';
+
+//-----------------------------------------------------------------------------
+// Main theme colors
+
+// Default colors
+$white: #fff;
+$black: #000;
+
+// Main site color palette
+$c_base: #545456;
+$c_primary: #9b3038;
+$primary-hover: #721a21;
+
+$c_brown: #988681;
+$c_brown_medium: #e5dddb;
+$c_brown_light: #f0efee;
+
+$c_grey: #6c6c6e;
+$c_grey_light: #f5f5f5;
+
+
+//
+
+$c_yellow_text: #ffc14d;
+$c_yellow_text_hover: #dd9610;
+$c_white_text: #eceef3;
+$c_orange_button: #ffa600;
+$c_grey_heading: #333333;
+$c_grey_text: #696969;
+$c_footer_bg: #dbe0f4;
+$c_blue: #29479a;
+
+
+// ----------------------------------------------------------------------------
+// Mockup default colors
+// Not for the production
+$m_base: #2f2f2f;
+$m_medium: #d6d4d4;
+$m_light: #f7f7f7;
+
+
+$m_ffw_base: #0D28ff;
+$m_ffw_oposite: #ff2869;
+
+
+// These colors for the Drupal messages style
+// but also could be used for the other purposes
+$red: #f4371e;
+$green: #56c02b;
+$orange: #f87c00;
+
+//-----------------------------------------------------------------------------
+// Other settings
+
+// Font sizes
+// Site base font size and line height
+$fs-base: 16px;
+$line-height-base: 1.14;
+
+// Headings line-height
+$line_height_normal: 1;
+$headings-line-height: 1.1;

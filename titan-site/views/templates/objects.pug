@@ -1,0 +1,36 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='no')
+	include ../common_meta/head
+	body.front
+		include ../components/_header
+		main.page-container
+			// ===================================================
+			-
+				var firstscreen_background = 'objects-firstscreen-bg.jpg',
+						firstscreen_title = 'Сданные объекты',
+						firstscreen_subtitle = false,
+						firstscreen_class = 'page-firstscreen',
+						disable_icons = true;
+			include ../sections/product-page/section-firstscreen
+			+product_section_firstscreen(firstscreen_background, firstscreen_title, firstscreen_subtitle, firstscreen_class, disable_icons)
+
+
+			// ===================================================
+			include ../sections/objects/section-objects-main
+
+			-
+				var reviews_bg = 'home-reviews-bg.jpg';
+			include ../sections/home-page/section-reviews
+			+section_reviews(reviews_bg)
+			include ../sections/home-page/section-partners
+			include ../sections/home-page/section-certificate
+			include ../sections/home-page/section-wysiwyg
+			include ../sections/home-page/section-payment
+			include ../sections/home-page/section-services
+			include ../sections/home-page/section-contacts
+
+		include ../components/_footer
+		include ../common_meta/footer_scripts

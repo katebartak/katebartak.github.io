@@ -1,0 +1,124 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='no')
+	include ../common_meta/head
+	body.front
+		include ../components/_header
+		main.page-container
+
+
+			// ===================================================
+			-
+				var firstscreen_background = 'freight-elevators-firstscreen-bg.jpg',
+						firstscreen_title = 'Коттеджный лифт',
+						firstscreen_subtitle = 'Напрямую от производителя';
+			include ../sections/product-page/section-firstscreen
+			+product_section_firstscreen(firstscreen_background, firstscreen_title, firstscreen_subtitle)
+
+			// ===================================================
+
+			include ../sections/product-page/section-infotabs-full-image
+
+			// ===================================================
+			-
+				var product_title = 'Подъемники применяемые в <br> коттеджах',
+						product_items = [
+							{
+								image: 'product-slider-lift-00.jpg',
+								name: 'коттеджный лифт\n',
+								costs: 'от 150 000 руб',
+								capacity: 'до 250 кг',
+								height: 'до 30 м',
+								speed: '0,13 м/с',
+							},
+							{
+								image: 'product-slider-lift-00.jpg',
+								name: 'коттеджный лифт\n',
+								costs: 'от 150 000 руб',
+								capacity: 'до 250 кг',
+								height: 'до 30 м',
+								speed: '0,13 м/с',
+							},
+							{
+								image: 'product-slider-lift-00.jpg',
+								name: 'коттеджный лифт\n',
+								costs: 'от 150 000 руб',
+								capacity: 'до 250 кг',
+								height: 'до 30 м',
+								speed: '0,13 м/с',
+							}
+						],
+						product_items_count = [1,2],
+						product_section_class = 'grey-products';
+			include ../sections/product-page/section-products-full-image
+			+products_slider_fullimage(product_title, product_items, product_items_count, product_section_class)
+
+
+			// ===================================================
+			-
+				var advantage_heading = 'Преимущества лифтов от <br> производственного центр «Титан»',
+								advantage_class = 'four-in-row',
+								advantage_folder = 'adventage-disabled-icons',
+								advantages_items = [
+									{
+										title: 'Быстрый и удобный монтаж',
+									},
+									{
+										title: 'Бюджетная стоимость',
+									},
+									{
+										title: 'Безопасность использования по всем нормам',
+									},
+									{
+										title: 'Надежность механизмов',
+									},
+									{
+										title: 'Цвет окраски и отделки подбирается индивидуально под интерьер или под фасад здания',
+									},
+									{
+										title: 'Механизм подъема с направляющими в защищенном исполнении',
+									},
+									{
+										title: 'Антивандальные кнопки вызова расположены на верхних и нижних площадках',
+									},
+									{
+										title: 'Пол площадки и пандус выполнены из нескользящего рифленого алюминиевого листа',
+									},
+									{
+										title: 'В комплекте все необходимые элементы для крепления, паспорт и руководство по эксплуатации',
+									},
+									{
+										title: 'Организационно-техническая поддержка при монтаже',
+									},
+									{
+										title: 'Подходит для установки снаружи здания (на улице) и внутри помещения',
+									},
+									{
+										title: 'Каждый подъемник после изготовления проходит испытания',
+									},
+						],
+						advantage_note = false,
+						advantage_text = 'ПРОДУКЦИЯ СООТВЕТСТВУЕТ ТРЕБОВАНИЯМ ТЕХНИЧЕСКОГО РЕГЛАМЕНТА ТАМОЖЕННОГО СОЮЗА <br> ТРТС 010/2011 «О БЕЗОПАСНОСТИ МАШИН И ОБОРУДОВАНИЯ» <br> СЕРТИФИКАТ СООТВЕТСТВИЯ № TC RU C-RU.AБ53.B.00010';
+
+			include ../sections/product-page/section-freight-advantages
+			+products_advantages(advantage_heading, advantage_class, advantage_folder, advantages_items, advantage_note, advantage_text)
+
+			include ../sections/product-page/section-application
+
+			include ../sections/home-page/section-objects
+			include ../sections/product-page/secton-controls-five-items
+			-
+				var reviews_bg = 'home-reviews-bg.jpg';
+			include ../sections/home-page/section-reviews
+			+section_reviews(reviews_bg)
+			include ../sections/home-page/section-partners
+			include ../sections/home-page/section-certificate
+			include ../sections/product-page/section-wysiwyg
+			include ../sections/home-page/section-commercial
+			include ../sections/home-page/section-services
+			include ../sections/home-page/section-contacts
+
+		include ../components/_footer
+		include ../common_meta/footer_scripts

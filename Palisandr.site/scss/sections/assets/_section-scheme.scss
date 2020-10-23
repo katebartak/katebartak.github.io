@@ -1,0 +1,248 @@
+.section-scheme {
+  padding-top: 18px;
+  padding-bottom: 45px;
+
+  .slick-dots {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    // padding: 0 10px;
+    align-items: center;
+    margin-bottom: 38px;
+
+    @include media-q(min, 768) {
+      // padding: 0 80px;
+      margin-bottom: 18px;
+    }
+
+    @include media-q(min, 1024) {
+      // padding: 0 250px;
+      // margin-bottom: -61px;
+    }
+
+    @include media-q(min, 1200) {
+      // padding: 0 363px;
+      // margin-bottom: -121px;
+    }
+
+    li {
+      list-style: none;
+      position: relative;
+      margin: 0 18px;
+
+      @include media-q(min, 375) {
+        margin: 0 22px;
+      }
+
+      @include media-q(min, 768) {
+        margin: 0 42px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        background: url(../img/scheme-arrow.png) no-repeat center;
+        background-size: contain;
+        top: calc(50% - 10px);
+        left: 109%;
+        width: 22px;
+        height: 19px;
+
+        @include media-q(min, 375) {
+          left: 116%;
+        }
+
+        @include media-q(min, 768) {
+          left: 133%;
+        }
+      }
+
+      &.slick-active {
+        button {
+          background: #f7d89c;
+          color: #000;
+        }
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    button {
+      appearance: none;
+      width: 70px;
+      height: 70px;
+      background: #f6f6f6;
+      border-radius: 50%;
+      font-size: 18px;
+      color: #cbcbcb;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      cursor: pointer;
+      border: none;
+
+      @include media-q(min, 375) {
+        font-size: 20px;
+      }
+
+      @include media-q(min, 768) {
+        width: 90px;
+        height: 90px;
+        font-size: 24px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+
+      &::after {
+        content: 'этап';
+        display: block;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.section-scheme-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  line-height: 1.2;
+
+  @include media-q(min, 375) {
+    font-size: 26px;
+  }
+
+  @include media-q(min, 768) {
+    font-size: 32px;
+  }
+}
+
+.section-scheme-text {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-scheme-content {
+  display: block;
+  text-align: center;
+}
+
+.section-scheme-img {
+  display: inline-block;
+  background:  no-repeat center;
+  width: 80%;
+  margin-bottom: 9px;
+
+  @include media-q(min, 768) {
+    // margin-bottom: -11px;
+  }
+
+  @include media-q(min, 1024) {
+    width: 100%;
+    // margin-bottom: -71px;
+  }
+
+  @include media-q(min, 1200) {
+    // margin-bottom: -148px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
+    @include media-q(min, 1024) {
+      width: auto;
+    }
+  }
+}
+
+.section-scheme-content-text {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+
+  span {
+    color: #d19e6b;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.section-scheme-slider {
+  position: relative;
+
+  .slick-arrow {
+    appearance: none;
+    border:none;
+    outline: none;
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    width: 16%;
+    height: 70%;
+    background: center no-repeat transparent;
+    background-image: url(../img/scheme-slick-arrow.png);
+    background-size: 25px;
+    z-index: 2;
+    top: 0;
+
+    @include media-q(min, 768) {
+      background-size: 16px;
+      width: 6%;
+      height: 100%;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:active {
+      transform: scale(.9);
+    }
+  }
+
+  .slick-prev {
+    right: 90%;
+
+    @include media-q(min, 1200) {
+      right: 80%;
+    }
+  }
+
+  .slick-next {
+    left: 90%;
+    transform: scale(-1);
+
+    @include media-q(min, 1200) {
+      left: 80%;
+    }
+
+    &:active {
+      transform: scale(-.9);
+    }
+  }
+}
+
+
+
+
+
+
+
+

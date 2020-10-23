@@ -1,0 +1,275 @@
+// -----------------------------------------------------------------------------
+// All icons font set
+@font-face {
+  font-family: 'font-icon';
+  src: url('../f-icons/general-icons.eot');
+  src: url('../f-icons/general-icons.eot?#iefix') format('embedded-opentype'),
+  url('../f-icons/general-icons.woff') format('woff'),
+  url('../f-icons/general-icons.ttf') format('truetype'),
+  url('../f-icons/general-icons#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*='font-icon']::before,
+[class*='font-icon']::after {
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
+}
+
+%font-icon {
+  @include font-size(30);
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%font-family-icon {
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Icons set
+%icon-mail {
+  content: '\e901';
+}
+
+%icon-location {
+  content: '\e902'
+}
+
+%icon-arrow-left-long {
+  content: '\e903';
+}
+
+%icon-arrow-bg {
+  content: '\e904';
+}
+
+%icon-list-check {
+  content: '\e905'
+}
+
+%icon-map-marker {
+  content: '\e906';
+}
+
+%icon-arrows-right {
+  content: '\e910';
+}
+
+%icon-close-button {
+  content: '\e911';
+}
+
+%icon-arrow-down {
+  content: '\e912';
+}
+
+// Custom arrow icon which created with pure styles
+%icon-arrow-cutted-down {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: solid $c_yellow_text;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  display: inline-block;
+  transform-origin: center;
+}
+
+%icon-arrow-right {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: solid $c_grey_heading;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+  display: inline-block;
+  transform-origin: center;
+}
+
+%icon-arrow-left {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: solid $c_grey_heading;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-225deg);
+  display: inline-block;
+  transform-origin: center;
+}
+
+// products application icons
+%icon-application-warehouse {
+  content: '\e90f';
+}
+
+%icon-application-shopping {
+  content: '\e90e';
+}
+
+%icon-application-restaurant {
+  content: '\e90d';
+}
+
+%icon-application-production {
+  content: '\e90c';
+}
+
+%icon-application-lift {
+  content: '\e90b';
+}
+
+%icon-application-hospital {
+  content: '\e90a';
+}
+
+%icon-application-home {
+  content: '\e909';
+}
+
+%icon-application-cellar {
+  content: '\e908';
+}
+
+%icon-application-cart {
+  content: '\e907';
+}
+
+// contacts icon
+%icon-contacts-phone {
+  content: '\e915';
+}
+
+%icon-contacts-mark {
+  content: '\e914';
+}
+
+%icon-contacts-mail {
+  content: '\e913';
+}
+
+// ----------------------------------------------------------------------------
+// Icons class names
+
+// 10. Search
+// No custom class because we use this icon for <input type="submit">
+// which doesn't have a pseudo elements
+
+.icon-mail::before {
+  @extend %icon-mail;
+}
+
+.icon-location::before {
+  @extend %icon-location;
+}
+
+.icon-arrow-cutted-down::before {
+  @extend %icon-arrow-cutted-down;
+}
+
+.icon-arrow-left-long::before {
+  @extend %icon-arrow-left-long;
+}
+
+.icon-arrow-bg::before {
+  @extend %icon-arrow-bg;
+}
+
+.icon-arrow-down::before {
+  @extend %icon-arrow-down;
+}
+
+.icon-list-check::before {
+  @extend %icon-list-check;
+}
+
+.icon-map-marker::before {
+  @extend %icon-map-marker;
+}
+
+.icon-arrows-right::before {
+  @extend %icon-arrows-right;
+}
+
+.icon-close-button::before {
+  @extend %icon-close-button;
+}
+
+// products application icons
+.icon-application-warehouse::before {
+  @include font-size(26);
+  @extend %icon-application-warehouse;
+}
+
+.icon-application-shopping::before {
+  @include font-size(26);
+  @extend %icon-application-shopping;
+}
+
+.icon-application-restaurant::before {
+  @include font-size(26);
+  @extend %icon-application-restaurant;
+}
+
+.icon-application-production::before {
+  @include font-size(26);
+  @extend %icon-application-production;
+}
+
+.icon-application-lift::before {
+  @include font-size(26);
+  @extend %icon-application-lift;
+}
+
+.icon-application-hospital::before {
+  @include font-size(23);
+  @extend %icon-application-hospital;
+}
+
+.icon-application-home::before {
+  @include font-size(26);
+  @extend %icon-application-home;
+}
+
+.icon-application-cellar::before {
+  @include font-size(26);
+  @extend %icon-application-cellar;
+}
+
+.icon-application-cart::before {
+  @include font-size(23);
+  @extend %icon-application-cart
+}
+
+// contacts icon
+.icon-contacts-phone::before {
+  @include font-size(31);
+  @extend %icon-contacts-phone;
+}
+
+.icon-contacts-mail::before {
+  @include font-size(24);
+  @extend %icon-contacts-mail;
+}
+
+.icon-contacts-mark::before {
+  @include font-size(32);
+  @extend %icon-contacts-mark;
+}

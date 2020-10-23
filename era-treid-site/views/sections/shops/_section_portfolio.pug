@@ -1,0 +1,45 @@
+section.section-portfolio.portfolio-shop#portfolio
+	.container
+		h2.equipment-title #[span готовые решения]
+		.portfolio-group
+			each item, index in portfolio_items_shop
+				.portfolio-item
+					.portfolio-item-top(style='background-image: url(img/portfolio-shop-0' + index + '.jpg)')
+					p.portfolio-item-title=item.title
+						.portfolio-item-content
+							p=item.area
+							if item.text_2
+								p=item.text_2
+							p Стоимость проекта: #[span=item.cost]
+					a.portfolio-item-request.show-popup-order(href="#") узнать подробнее		
+			//- .portfolio-item
+			//- 	.portfolio-item-top(style='background-image: url(img/portfolio-01.jpg)')
+			//- 	.portfolio-item-title Фаст-фуд: уличная торговля
+			//- 	.portfolio-item-area Площадь: 10 кв.м
+			//- 	.portfolio-item-cost Стоимость проекта: #[span от 192 875 руб.]
+			//- 	a.portfolio-item-request(href="#") узнать подробнее
+			//- .portfolio-item
+			//- 	.portfolio-item-top(style='background-image: url(img/portfolio-01.jpg)')
+			//- 	.portfolio-item-title Фаст-фуд: уличная торговля
+			//- 	.portfolio-item-area Площадь: 10 кв.м
+			//- 	.portfolio-item-cost Стоимость проекта: #[span от 192 875 руб.]
+			//- 	a.portfolio-item-request(href="#") узнать подробнее
+			//- .portfolio-item
+			//- 	.portfolio-item-top(style='background-image: url(img/portfolio-01.jpg)')
+			//- 	.portfolio-item-title Фаст-фуд: уличная торговля
+			//- 	.portfolio-item-area Площадь: 10 кв.м
+			//- 	.portfolio-item-cost Стоимость проекта: #[span от 192 875 руб.]
+			//- 	a.portfolio-item-request(href="#") узнать подробнее
+			//- .portfolio-item
+			//- 	.portfolio-item-top(style='background-image: url(img/portfolio-01.jpg)')
+			//- 	.portfolio-item-title Фаст-фуд: уличная торговля
+			//- 	.portfolio-item-area Площадь: 10 кв.м
+			//- 	.portfolio-item-cost Стоимость проекта: #[span от 192 875 руб.]
+			//- 	a.portfolio-item-request(href="#") узнать подробнее
+			//- .portfolio-item
+			//- 	.portfolio-item-top(style='background-image: url(img/portfolio-01.jpg)')
+			//- 	.portfolio-item-title Фаст-фуд: уличная торговля
+			//- 	.portfolio-item-area Площадь: 10 кв.м
+			//- 	.portfolio-item-cost Стоимость проекта: #[span от 192 875 руб.]
+			//- 	a.portfolio-item-request(href="#") узнать подробнее
+

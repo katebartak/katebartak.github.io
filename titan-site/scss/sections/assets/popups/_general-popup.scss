@@ -1,0 +1,90 @@
+@keyframes generalPopupFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+%popup-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparentize($black, .6);
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: transparentize($black, .7);
+  }
+}
+
+%popup-button-close {
+  appearance: none;
+  border: none;
+  background: transparent;
+  outline: none;
+  position: absolute;
+  top: -42px;
+  right: calc(50% - 16px);
+
+  @include media-q(min, 768) {
+    right: -36px;
+  }
+
+  &::after {
+    @include font-size(32);
+    @extend %font-family-icon;
+    @extend %icon-close-button;
+    color: $white;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.general-popup-styles {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: auto;
+  padding: 100px 15px;
+  display: none;
+}
+
+.general-popup-overlay {
+  @extend %popup-overlay;
+}
+
+.general-popup-content {
+  width: 750px;
+  max-width: 90%;
+  position: relative;
+  z-index: 1;
+  background-color: $white;
+  padding: 20px;
+  animation: generalPopupFadeIn .3s ease;
+  animation-fill-mode: both;
+  margin: 0 auto;
+
+  @include media-q(min, 768) {
+    left: -12px;
+    max-width: 90%;
+    border-radius: 15px;
+    padding: 36px 32px 32px 40px;
+  }
+}
+
+.general-popup-close {
+  @extend %popup-button-close;
+}

@@ -1,0 +1,24 @@
+
+.page-container {
+  flex: 1 1 auto;
+}
+
+// Page inner container
+
+.front {
+	.container {
+		width: 360px;
+		padding: 0 15px;
+		margin: 0 auto;
+
+		@include media-q(min, 768) {
+			width: 1200px;
+		}
+	}
+}
+
+.scroll-prevented {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

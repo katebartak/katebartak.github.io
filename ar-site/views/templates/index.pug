@@ -1,0 +1,26 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='ru')
+	include ../common_meta/head
+	body.front
+		include ../components/_header
+
+		main.page-container
+			include ../sections/_section-first-screen
+			include ../sections/_section-advantages
+			include ../sections/_section-cost
+			include ../sections/_section-doctors
+			include ../sections/_section-video
+			include ../sections/_section-reviews
+			include ../sections/_section-form
+			include ../sections/_section-about
+			include ../sections/_section-contacts
+			include ../sections/_section-map
+			include ../sections/_section-popup-thanks
+
+		include ../components/_footer
+		include ../common_meta/footer_scripts
+
+

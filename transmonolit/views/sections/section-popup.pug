@@ -1,0 +1,26 @@
+section.section-popup-form.section-popup-request
+	.popup-wrap
+		.popup-overlay
+		.popup-form-content
+			button.popup-close-icon
+			.site-form-wrapper
+				h3.popup-title Расчет стоимости перевозки
+				p.popup-text Оставьте свои данные и мы свяжемся с Вами <br>в течении 5 минут
+				form.site-form.js-form-submit
+					input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+					.input-wrap
+						input.input-text.input-name(type="text" placeholder='Ваше Имя')
+					.input-wrap
+						input.input-text.input-phone(type="text" placeholder='Ваше Телефон')
+					input.request.yandex-metrika-event(type="submit" value='Рассчитать стоимость' data-goal='raschet-std-2')
+					.form-errors-cont
+
+section.section-popup-thanks
+	.popup-wrap
+		.container
+			.popup-overlay
+			.popup-form-content
+				button.popup-close-icon
+				i.font-icon.icon-speed
+				h2.popup-form-title спасибо за заявку!
+				p.popup-form-text В течении 5 минут с Вами свяжется наш менеджер

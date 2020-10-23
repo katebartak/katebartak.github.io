@@ -1,0 +1,29 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='no')
+	include ../common_meta/head
+	body.front
+		include ../components/_header
+		main.page-container
+			// ===================================================
+			-
+				var firstscreen_background = 'reviews-firstscreen-bg.jpg',
+						firstscreen_title = 'отзывы',
+						firstscreen_subtitle = false,
+						firstscreen_class = 'page-firstscreen',
+						disable_icons = true;
+			include ../sections/product-page/section-firstscreen
+			+product_section_firstscreen(firstscreen_background, firstscreen_title, firstscreen_subtitle, firstscreen_class, disable_icons)
+
+
+			// ===================================================
+			include ../sections/reviews/section-reviews-main
+			// ===================================================
+			include ../sections/home-page/section-payment
+			include ../sections/home-page/section-services
+			include ../sections/home-page/section-contacts
+
+		include ../components/_footer
+		include ../common_meta/footer_scripts

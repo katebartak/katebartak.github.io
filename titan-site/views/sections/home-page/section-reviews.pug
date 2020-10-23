@@ -1,0 +1,32 @@
+-
+	var reviews_item = [
+		{
+			image: 'home-reviews-00.jpg',
+			title: 'Глобал сити'
+		},
+		{
+			image: 'home-reviews-01.jpg',
+			title: 'РКЦ Прогресс'
+		},
+		{
+			image: 'home-reviews-02.jpg',
+			title: 'Бизнес Гарант'
+		},
+		{
+			image: 'home-reviews-03.jpg',
+			title: 'Стройтрест'
+		},
+	]
+
+mixin section_reviews(reviews_bg)
+	section.home-section-reviews(style='background-image: url("img/' + reviews_bg + '");')
+		.container
+			p.default-section-heading Отзывы компаний
+			.home-reviews-slider.slick-slider-styles.slick-arrows-styles
+				each item in [1,2]
+					each item in reviews_item
+						article.slick-slide-wrap
+							a.slick-slide-content(href='img/' + item.image data-caption=item.title)
+								img.slick-slide-image(src='img/' + item.image alt='Отзыв ' + item.title)
+							p.slick-slide-caption=item.title
+

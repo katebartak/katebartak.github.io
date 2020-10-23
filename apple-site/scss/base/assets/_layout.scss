@@ -1,0 +1,41 @@
+
+.page-container {
+  flex: 1 1 auto;
+}
+
+// Page inner container
+.container {
+  max-width: 1192px;
+  padding: 0 11px;
+  margin: auto;
+}
+
+.front {
+	.container {
+		width: 320px;
+		padding: 0 10px;
+		margin: 0 auto;
+
+		@include media-q(min, 375) {
+			width: 360px;
+		}
+
+		@include media-q(min, 768) {
+			width: 740px;
+		}
+
+		@include media-q(min, 1024) {
+			width: 1000px;
+		}
+
+		@include media-q(min, 1200) {
+			width: 1200px;
+		}
+	}
+}
+
+.scroll-prevented {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

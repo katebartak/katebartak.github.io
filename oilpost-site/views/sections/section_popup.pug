@@ -1,0 +1,38 @@
+section.section-popup-form.js-popup-form-price
+	.popup-wrap
+		.container
+			.popup-overlay
+			.popup-form-content
+				button.popup-close-icon
+				.site-form-wrapper
+					.site-form-top
+					h3.site-form-title Узнать стоимость
+					form.site-form.js-form-submit
+						input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+						input.input-text.input-name(type="text" placeholder='Ваше имя:')
+						input.input-text.input-phone(type="text" placeholder='Ваш телефон:')
+						input.input-text.input-volume(type="text" placeholder='Примерный объем:')
+						input.request(type="submit" value='ОТПРАВИТЬ')
+						.form-errors-cont
+					p.site-form-text-ps Нажимая на кнопку отправить, вы даете согласие <br>на обработку своих #[a(href="#") персональных данных.]
+
+
+
+section.section-popup-form.js-popup-form-call
+	.popup-wrap
+		.container
+			.popup-overlay
+			.popup-form-content
+				button.popup-close-icon
+				.site-form-wrapper
+					.site-form-top
+						h3.site-form-title Заказать звонок
+					form.site-form.js-form-submit
+						input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+						input.input-text.input-name(type="text" placeholder='Ваше имя:')
+						input.input-text.input-phone(type="text" placeholder='Ваш телефон:')
+						input.input-text.input-volume(type="text" placeholder='Примерный объем:')
+						input.request.yandex-metrika-event(type="submit" value='ОТПРАВИТЬ' data-goal='otpravit-podrobnee')
+						.form-errors-cont
+					p.site-form-text-ps Нажимая на кнопку отправить, вы даете согласие <br>на обработку своих #[a(href="#") персональных данных.]
+

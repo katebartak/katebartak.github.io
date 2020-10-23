@@ -1,0 +1,32 @@
+.section-reviews-main {
+  padding-top: 13px;
+  padding-bottom: 30px;
+}
+
+.reviews-main-wrap {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .slick-slide-wrap {
+    padding: 0 15px;
+    margin-bottom: 45px;
+    width: 50%;
+
+    @include media-q(min, 768) {
+      width: 25%;
+    }
+  }
+
+  .slick-slide-content {
+    border-color: $white;
+  }
+
+  .slick-slide-caption {
+    @include font-size(16);
+    font-weight: $f_medium;
+    color: $c_grey_heading;
+  }
+}

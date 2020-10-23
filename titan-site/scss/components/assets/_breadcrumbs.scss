@@ -1,0 +1,23 @@
+.bs-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bs-item {
+  color: $m_light;
+  margin-bottom: 3px;
+
+  &::after {
+    content: '\203A';
+    margin: 0 10px;
+    color: $m_ffw_oposite;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+
+  a {
+    @include links($m_ffw_base, $m_ffw_oposite);
+  }
+}

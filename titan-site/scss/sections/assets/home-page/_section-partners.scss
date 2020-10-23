@@ -1,0 +1,32 @@
+.home-section-partners {
+  padding-top: 43px;
+  padding-bottom: 34px;
+}
+
+.home-partners-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.home-partners-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+  height: 59px;
+  margin-bottom: 34px;
+
+  @include media-q(min, 768) {
+    flex-basis: 25%;
+  }
+
+  @include media-q(min, 1200) {
+    flex-basis: 170px;
+  }
+}
+
+.home-partners-image {
+  max-width: 100%;
+  max-height: 100%;
+}

@@ -1,0 +1,135 @@
+.section-portfolio {
+  padding-top: 39px;
+  padding-bottom: 49px;
+}
+
+.section-portfolio-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  letter-spacing: -0.6px;
+
+  @include media-q(min, 375) {
+    font-size: 26px;
+  }
+
+  @include media-q(min, 768) {
+    font-size: 32px;
+  }
+}
+
+.section-portfolio-text {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 33px;
+}
+
+.porfolio-group {
+  margin-left: -8px;
+  margin-right: -8px;
+  overflow: hidden;
+  margin-bottom: 5px;
+
+  @include media-q(min, 768) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.portfolio-item {
+  display: block;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 36px;
+  position: relative;
+
+  @include media-q(min, 768) {
+    width: calc(33.3333% - 16px);
+    margin-bottom: 30px;
+  }
+}
+
+.portfolio-art-cont {
+  position: relative;
+  display: block;
+  background: no-repeat center;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-bottom: 71.24%;
+    width: 100%;
+  }
+
+  &::before,
+  .portfolio-item-art {
+    transition: opacity .3s ease;
+    margin-bottom: 14px;
+  }
+
+  &:hover {
+    &::before,
+    .portfolio-item-art {
+    }
+  }
+}
+
+.portfolio-item-art {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-show-more-wrap {
+  text-align: center;
+}
+
+.portfolio-show-more {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #dab086;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 2px dashed #dab086;
+  font-weight: 500;
+  transition: color .2s ease, border-color .2s ease;
+
+  &:hover {
+    color: #000;
+    border-color: #000;
+  }
+}
+
+#portfolioHidden {
+  display: none;
+
+  &.active {
+    display: block;
+
+    @include media-q(min, 768) {
+      display: flex;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

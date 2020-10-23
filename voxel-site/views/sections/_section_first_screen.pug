@@ -1,0 +1,10 @@
+section.section-first-screen(style="background-image: url(img/firstscreen-bg.jpg);")
+	.container
+		// Please typing your favorite word!
+		- var $text = "ocean"
+
+
+
+		#ui
+		  - for (i = 0; i < 26; i++)
+		    .text #{$text}

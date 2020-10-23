@@ -1,0 +1,107 @@
+// -----------------------------------------------------------------------------
+// All icons font set
+@font-face {
+  font-family: 'font-icon';
+  src: url('../f-icons/f-icons.eot');
+  src: url('../f-icons/f-icons.eot?#iefix') format('embedded-opentype'),
+  url('../f-icons/f-icons.woff') format('woff'),
+  url('../f-icons/f-icons.ttf') format('truetype'),
+  url('../f-icons/f-icons#font-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*='font-icon']::before,
+[class*='font-icon']::after {
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
+}
+
+%font-icon {
+  @include font-size(30);
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%icon-header-clock,
+.icon-header-clock::before {
+  content: "\e900";
+}
+%icon-advantages-approach,
+.icon-advantages-approach::before {
+  content: "\e901";
+}
+%icon-advantages-equipment,
+.icon-advantages-equipment::before {
+  content: "\e902";
+}
+%icon-advantages-material,
+.icon-advantages-material::before {
+  content: "\e903";
+}
+%icon-advantages-qualification,
+.icon-advantages-qualification::before {
+  content: "\e904";
+}
+%icon-advantages-staff,
+.icon-advantages-staff::before {
+  content: "\e905";
+}
+%icon-advantages-treatment,
+.icon-advantages-treatment::before {
+  content: "\e906";
+}
+
+%icon-contact-address,
+.icon-contact-address::before {
+  content: "\e907";
+}
+%icon-contact-envelope,
+.icon-contact-envelope::before {
+  content: "\e908";
+}
+%icon-contact-clock,
+.icon-contact-clock::before {
+  content: "\e909";
+}
+%icon-contact-phone,
+.icon-contact-phone::before {
+  content: "\e90a";
+}
+%icon-header-envelope,
+.icon-header-envelope::before {
+  content: "\e90b";
+}
+%icon-header-phone,
+.icon-header-phone::before {
+  content: "\e90c";
+}
+%icon-slider-arrow,
+.icon-slider-arrow::before {
+  content: "\e90d";
+}
+%icon-instagram,
+.icon-instagram::before {
+  content: "\e90e";
+}
+%icon-vk,
+.icon-vk::before {
+  content: "\e90f";
+}
+%icon-facebook,
+.icon-facebook::before {
+  content: "\e910";
+}
+
+

@@ -1,0 +1,48 @@
+-
+	var application_items = [
+		{
+			title: 'Для замены грузового лифта',
+			image: 'lift',
+		},
+		{
+			title: 'Для торговых центров',
+			image: 'shopping',
+		},
+		{
+			title: 'Для погреба или подвала',
+			image: 'cellar',
+		},
+		{
+			title: 'Для больниц',
+			image: 'hospital',
+		},
+		{
+			title: 'Для производства',
+			image: 'production',
+		},
+		{
+			title: 'Для дома или коттеджа',
+			image: 'home',
+		},
+		{
+			title: 'Для склада',
+			image: 'warehouse',
+		},
+		{
+			title: 'Для магазина',
+			image: 'cart',
+		},
+		{
+			title: 'Для ресторана',
+			image: 'restaurant',
+		}
+	];
+
+section.section-products-application
+	.container
+		p.default-section-heading Выбрать по области применения:
+		.products-application-group
+			each item in application_items
+				a.product-application-item(href='#')
+					i.font-icon(class='icon-application-' + item.image)
+					p.product-application-item-text=item.title

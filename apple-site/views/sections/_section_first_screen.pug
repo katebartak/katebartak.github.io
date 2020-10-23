@@ -1,0 +1,38 @@
+section.section-first-screen(style="background-image: url(img/first-screen-bg.jpg);")
+	.container
+		.first-screen-left
+			h1.first-screen-title Сервис по ремонту техники Apple
+			.first-screen-text Качественный ремонт iPhone и iPad с гарантией
+			.apple-form-wrapper
+				.apple-form-top
+					.apple-form-title Оставьте заявку на ремонт
+					.apple-form-text И наш менеджер свяжется с вами в течении 5 минут
+
+					form.apple-form.js-form-submit
+						input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+						input.input-text.input-name(type="text" placeholder='Ваше имя')
+						input.input-text.input-phone(type="text" placeholder='Номер телефона')
+						input.input-text.input-model(type="text" placeholder='Модель устройства:')
+						input.input-text.input-problem(type="text" placeholder='Описание проблемы:')
+						.form-bottom-group
+							input.request.yandex-metrika-event(type="submit" value='отправить' data-goal='otpravit-verh')
+							.apple-form-text-ps Нажимая кнопку “Отправить”, вы принимаете <br> условия обработки данных
+						.form-errors-cont
+
+			.first-screen-group
+				.first-screen-item
+					.first-screen-img-wrap
+						img.first-screen-img(src="img/first-screen-img.png")
+					.first-screen-item-text Бесплатная <br>диагностика
+				.first-screen-item
+					.first-screen-img-wrap
+						img.first-screen-img(src="img/first-screen-img-02.png")
+					.first-screen-item-text Оригинальные <br>запчасти
+				.first-screen-item
+					.first-screen-img-wrap
+						img.first-screen-img(src="img/first-screen-img-03.png")
+					.first-screen-item-text Гарантия <br>на ремонт
+				.first-screen-item
+					.first-screen-img-wrap
+						img.first-screen-img(src="img/first-screen-img-04.png")
+					.first-screen-item-text Ремонт <br>от 15 минут

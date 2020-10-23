@@ -1,0 +1,108 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='no')
+	include ../common_meta/head
+	body.front
+		include ../components/_header
+		main.page-container
+
+
+			// ===================================================
+			-
+				var firstscreen_background = 'freight-elevators-firstscreen-bg.jpg',
+						firstscreen_title = 'грузовые Подъемники и лифты',
+						firstscreen_subtitle = 'Напрямую от производителя';
+			include ../sections/product-page/section-firstscreen
+			+product_section_firstscreen(firstscreen_background, firstscreen_title, firstscreen_subtitle)
+
+			// ===================================================
+			-
+				var product_title = 'Наша продукция',
+						product_items = [
+							{
+								image: 'product-slider-02.png',
+								name: 'КОНСОЛЬНЫЙ (МАЧТОВЫЙ) ПОДЪЕМНИК',
+								costs: 'от 150 000 руб',
+								capacity: 'до 2х тонн',
+								height: 'до 30 м',
+								speed: '0,13 м/с'
+							},
+							{
+								image: 'product-slider-00.png',
+								name: 'СЕРВИСНЫЙ (МАЛОГРУЗОВОЙ) ПОДЪЕМНИК',
+								costs: 'от 150 000 руб',
+								capacity: 'до 250 кг',
+								height: 'до 30 м',
+								speed: '0,13 м/с',
+							},
+							{
+								image: 'product-slider-01.png',
+								name: 'ПОДЪЕМНИК В ГЛУХУЮ ШАХТУ',
+								costs: 'от 150 000 руб',
+								capacity: 'до 10 000 кг',
+								height: 'до 50 м',
+								speed: '0,13 м/с'
+							}
+						],
+						product_items_count = [1,2],
+						product_section_class = 'grey-background';
+			include ../sections/product-page/section-products
+			+products_slider(product_title, product_items, product_items_count, product_section_class)
+
+
+			// ===================================================
+			-
+				var advantage_heading = 'Преимущества <br> грузовых подъёмников',
+						advantage_class = 'three-in-row',
+						advantage_folder = 'adventage-icons',
+						advantages_items = [
+							{
+								title: 'Не требует регистрации',
+							},
+							{
+								title: 'Дешевле грузовых лифтов'
+							},
+							{
+								title: 'Безопасный в работе'
+							},
+							{
+								title: 'Может устанавливаться как внутри, так и снаружи здания'
+							},
+							{
+								title: 'Короткие сроки изготовления <br> и монтажа'
+							},
+							{
+								title: 'Быстро окупается'
+							},
+							{
+								title: 'Долговечный в использовании, в том числе при интенсивных нагрузках'
+							},
+							{
+								title: 'Имеет собственный каркас, который впоследствии можно обшить'
+							},
+							{
+								title: 'Более экономичен и прост в эксплуатации по сравнению с лифтом'
+							}
+						];
+			include ../sections/product-page/section-freight-advantages
+			+products_advantages(advantage_heading, advantage_class, advantage_folder, advantages_items)
+
+			include ../sections/product-page/section-application
+			include ../sections/home-page/section-objects
+			include ../sections/product-page/secton-controls-five-items
+			-
+				var reviews_bg = 'home-reviews-bg.jpg';
+			include ../sections/home-page/section-reviews
+			+section_reviews(reviews_bg)
+			include ../sections/home-page/section-partners
+			include ../sections/home-page/section-certificate
+			include ../sections/product-page/section-wysiwyg
+			include ../sections/product-page/section-quality
+			include ../sections/home-page/section-commercial
+			include ../sections/home-page/section-services
+			include ../sections/home-page/section-contacts
+
+		include ../components/_footer
+		include ../common_meta/footer_scripts

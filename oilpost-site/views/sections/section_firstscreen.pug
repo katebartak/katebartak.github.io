@@ -1,0 +1,34 @@
+section.section-firstscreen(style="background-image: url(img/firstscreen-bg.jpg)")
+	.container
+		.first-screen-left
+			h1.first-screen-title Автомасла Ambra оптом и в розницу
+			p.first-screen-subtitle с доставкой по всей России
+			.first-screen-group
+				.first-screen-item
+					i.font-icon.icon-ruble
+					p.first-screen-item-text Низкие цены
+				.first-screen-item
+					i.font-icon.icon-truck
+					p.first-screen-item-text Удобная доставка
+				.first-screen-item
+					i.font-icon.icon-house
+					p.first-screen-item-text Большой товарный <br>запас
+				.first-screen-item
+					i.font-icon.icon-reward
+					p.first-screen-item-text 8 лет на рынке
+
+		.drop-wrap
+			.site-form-wrapper.inview.fade-in-left
+				.site-form-top
+					h3.site-form-title Подберем Вам автомасла
+					p.site-form-text по цене до #[span 20%] ниже <br>среднерыночной
+
+				form.site-form.js-form-submit
+					input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+					input.input-text.input-name(type="text" placeholder='Ваше имя:')
+					input.input-text.input-phone(type="text" placeholder='Ваш телефон:')
+					input.input-text.input-volume(type="text" placeholder='Примерный объем:')
+					input.request.yandex-metrika-event(type="submit" value='ОТПРАВИТЬ' data-goal='otpravit-verh')
+					.form-errors-cont
+				p.site-form-text-ps Нажимая на кнопку отправить, вы даете согласие <br>на обработку своих #[a(href="#") персональных данных.]
+

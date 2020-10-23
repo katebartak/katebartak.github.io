@@ -1,0 +1,15 @@
+section.section-oils#oils
+	.container
+		.title-wrap
+			h2.title Поставляем масла для <br> #[span большого ассортимента техники]
+			.title-group
+				.title-item.title-item1
+				.title-item.title-item2
+				.title-item.title-item3
+		.oils-group
+			each item in oils_group
+				.oils-item
+					img.oils-item__img(src='img/' + item.img alt=item.title)
+					h4.oils-item__title=item.title
+					p.oils-item__text=item.text
+					a(href="#" data-open="js-popup-form-call" data-goal="podrobnee").yandex-metrika-event.js-show-popup-form.oils-item__button=item.button

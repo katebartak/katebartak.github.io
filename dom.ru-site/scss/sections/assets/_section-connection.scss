@@ -1,0 +1,48 @@
+.section-connection {
+	background: url("../img/connection-bg.jpg") no-repeat center;
+	padding: 42px 0 42px 0;
+	background-size: cover;
+
+	@include media-q(min, 768) {
+		padding: 42px 0 127px 0;
+	}
+
+		h2.title {
+		color: $white;
+	}
+}
+
+.connection-group {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 80px;
+
+	@include media-q(min, 768) {
+		margin-top: 132px;
+	}
+}
+
+.connection-item {
+	flex-basis: 50%;
+	margin-bottom: 30px;
+
+	@include media-q(min, 768) {
+		flex-basis: 23%;
+		margin-bottom: 0;
+	}
+
+		&__number {
+		display: block;
+		margin: 0 auto 33px;
+	}
+
+	&__text {
+		font-size: 15px;
+		font-family: $sans-roboto;
+		font-weight: $f_light;
+		color: $white;
+		text-align: center;
+		line-height: 1.3;
+	}
+}

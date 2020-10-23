@@ -1,0 +1,225 @@
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    outline: none;
+
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-slider-styles {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0 40px;
+
+  @include media-q(min, 768) {
+    padding: 0 70px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.slick-arrows-styles,
+.slick-lightbox {
+  .slick-arrow {
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-size: 0;
+    color: transparent;
+    width: 35px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+
+    @include media-q(min, 768) {
+      width: 70px;
+    }
+
+    &::before {
+      content: '';
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: calc(50% - 15px);
+      left: calc(50% - 15px);
+      border-radius: 50%;
+      background-color: $white;
+      transition: transform .15s ease;
+
+      @include media-q(min, 768) {
+        width: 46px;
+        height: 46px;
+        top: calc(50% - 23px);
+        left: calc(50% - 23px);
+      }
+    }
+
+    &::after {
+      @extend %icon-arrow-left;
+      position: absolute;
+      top: calc(50% - 6px);
+      left: calc(50% - 4px);
+      transition: transform .15s ease;
+    }
+
+    &:active {
+      &::before {
+        transform: translateX(-10px);
+      }
+
+      &::after {
+        transform: translateX(-10px) rotate(-225deg);
+      }
+    }
+  }
+
+  .slick-prev {
+    left: 0;
+
+    &::after {
+    }
+  }
+
+  .slick-next {
+    right: 0;
+    transform: scaleX(-1);
+  }
+}
+
+.slick-dots-styles {
+  margin-bottom: 74px;
+
+  .slick-dots {
+    position: absolute;
+    bottom: -44px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      padding: 0 5px;
+    }
+
+    button {
+      @include font-size(0);
+      appearance: none;
+      background-color: $white;
+      border: none;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      transition: background-color .3s ease;
+      outline: none;
+
+      &:hover {
+        background-color: $c_yellow_text_hover;
+      }
+    }
+
+    .slick-active {
+      button {
+        background-color: $c_yellow_text;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.section-partners {
+	padding-top: 42px;
+	padding-bottom: 60px;
+
+	.equipment-title {
+		padding-bottom: 12px;
+	}
+}
+
+.section-partners-slide-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.partners-item-wrap {
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-partners-slider {
+	position: relative;
+	padding: 0 74px;
+
+	.slick-track {
+		display: flex;
+		align-items: center;
+	}
+
+	.slick-arrow {
+		position: absolute;
+		width: 14px;
+		height: 25px;
+		background: url(../img/slider-arrow-partners.png) no-repeat center;
+		background-size: 14px 25px;
+		top: calc(50% - 11px);
+		z-index: 5;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.slick-prev {
+		transform: scale(-1, 1);
+		left: 22px;
+
+		&:active {
+			transform: scale(.9);
+		}
+	}
+
+	.slick-next {
+		right: 25px;
+
+		&:active {
+		}
+	}
+
+	.slick-slide img {
+		margin: 0 auto;
+	}
+}

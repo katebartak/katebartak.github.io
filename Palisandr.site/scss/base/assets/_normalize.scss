@@ -1,0 +1,50 @@
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin: 0;padding: 0;text-decoration: none;outline: none;}
+button,label,a{cursor: pointer;}
+.clear {clear: both;}
+h2 {font-size: 38px;font-weight: 100;text-align: center;font-weight: 100;}
+h3 {font-size: 24px;font-weight: 100;text-align: center;font-weight: 100;}
+input {outline: none;border:none;}
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+
+// ----------------------------------------------------------------------------
+// Media queries
+// Accept two parameters Point and MIN/MAX value
+// @example: @include media-q(min, 980);
+@mixin media-q($extrema: null, $point: null, $orient: null) {
+  @if $extrema == "min" {
+    $extrema: min;
+  }
+
+  @if $extrema == "max" {
+    $extrema: max;
+  }
+
+  @if $orient == "p" {
+    $orient: portrait;
+  }
+
+  @if $orient == "l" {
+    $orient: landscape;
+  }
+
+  @if $orient == null {
+    @media only screen and (#{$extrema}-width: $point+'px') {
+      @content;
+    }
+  } @else {
+    @media only screen and (#{$extrema}-width: $point+'px') and (orientation: #{$orient}) {
+      @content;
+    }
+  }
+}
+
+
+

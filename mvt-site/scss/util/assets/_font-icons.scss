@@ -1,0 +1,168 @@
+// -----------------------------------------------------------------------------
+// All icons font set
+@font-face {
+  font-family: 'font-icon';
+  src: url('../f-icons/f-icons.eot');
+  src: url('../f-icons/f-icons.eot?#iefix') format('embedded-opentype'),
+  url('../f-icons/f-icons.woff') format('woff'),
+  url('../f-icons/f-icons.ttf') format('truetype'),
+  url('../f-icons/f-icons#font-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*='font-icon']::before,
+[class*='font-icon']::after {
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
+}
+
+%font-icon {
+  @include font-size(30);
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Icons set
+%icon-search {
+  content: '\e900';
+}
+
+%icon-zoom {
+  content: '\e90d';
+}
+
+%icon-mail {
+  content: '\e901';
+}
+
+%icon-pdf {
+  content: '\e902';
+}
+
+%icon-phone {
+  content: '\e903';
+}
+
+%icon-user-plus {
+  content: '\e904';
+}
+
+%icon-apple {
+  content: '\e909';
+}
+
+%icon-paper {
+  content: '\e90a';
+}
+
+%icon-r-arr {
+  content: '\e90b';
+}
+
+%icon-warning {
+  content: '\e90c';
+}
+
+%icon-cog-mgf {
+  content: '\e905';
+}
+
+%icon-doc {
+  content: '\e906';
+}
+
+%icon-heart {
+  content: '\e907';
+}
+
+%icon-info {
+  content: '\e908';
+}
+
+%icon-ok {
+  content: '\e90e';
+}
+
+// Custom arrow icon which created with pure styles
+%icon-arrow-r {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: solid $white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+  display: inline-block;
+  transform-origin: center;
+}
+
+// ----------------------------------------------------------------------------
+// Icons class names
+
+// 10. Search
+// No custom class because we use this icon for <input type="submit">
+// which doesn't have a pseudo elements
+
+.icon-apple::before {
+  @extend %icon-apple;
+}
+
+.icon-paper::before {
+  @extend %icon-paper;
+}
+
+.icon-round-arr::before {
+  @extend %icon-r-arr;
+}
+
+.icon-cog-mgf::before {
+  @extend %icon-cog-mgf;
+}
+
+.icon-doc::before {
+  @extend %icon-doc;
+}
+
+.icon-heart::before {
+  @extend %icon-heart;
+}
+
+.icon-info::before {
+  @extend %icon-info;
+}
+
+.icon-warn::before {
+  @extend %icon-warning;
+}
+
+.icon-phone::before {
+  @extend %icon-phone;
+}
+
+.icon-mail::before {
+  @extend %icon-mail;
+}
+
+.icon-arrow-r::before {
+  @extend %icon-arrow-r;
+}
+
+.icon-search::before {
+  @extend %icon-search;
+}
+
+
+.icon-zoom::before {
+  @extend %icon-zoom;
+}

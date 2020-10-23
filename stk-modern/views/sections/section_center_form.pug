@@ -1,0 +1,17 @@
+section.section-center-form
+	.container
+		h2.title Подберем необходимое оборудование <br>для вашей организации
+		p.center-form-text Оставьте заявку и наш менеджер свяжется с Вами в течении 5 минут
+		form.form.js-form-submit
+			input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+			.form-item.form-type-text
+				input.input-text.input-name(type="text" placeholder='Ваше имя')
+				i.font-icon.icon-form-user
+			.form-item.form-type-text
+				input.input-text.input-phone(type="text" placeholder='Номер телефона' required)
+				i.font-icon.icon-form-phone
+			input.request.yandex-metrika-event(type="submit" value='Оставить заявку' data-goal='otpravit-cent')
+			.form-errors-cont
+		.form-text-ps
+			i.font-icon.icon-form-castle
+			p Ваши персональные данные надежно защищены и <br> никогда не будут переданы третьим лицам

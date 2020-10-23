@@ -1,0 +1,50 @@
+//-----------------------------------------------------------------------------
+// Fonts variable(s).
+$sans: Helvetica, Arial, sans-serif;
+$sans-brand: 'Titillium Web', $sans;
+
+// Font weight variants
+$f_light: 300;
+$f_normal: 400;
+$f_medium: 600;
+$f_bold: 700;
+
+//-----------------------------------------------------------------------------
+// Image paths
+$images: '../img/';
+
+//-----------------------------------------------------------------------------
+// Main theme colors
+
+// Default colors
+$white: #fff;
+$black: #000;
+
+// Main site color palette
+$c_base: #545456;
+$c_primary: #9b3038;
+$primary-hover: #721a21;
+
+$c_brown: #988681;
+$c_brown_medium: #e5dddb;
+$c_brown_light: #f0efee;
+
+$c_grey: #6c6c6e;
+$c_grey_light: #f5f5f5;
+
+// These colors for the Drupal messages style
+// but also could be used for the other purposes
+$red: #f4371e;
+$green: #56c02b;
+$orange: #f87c00;
+
+//-----------------------------------------------------------------------------
+// Other settings
+
+// Font sizes
+// Site base font size and line height
+$fs-base: 16px;
+$line-height-base: 1.14;
+
+// Headings line-height
+$headings-line-height: 1.1;
