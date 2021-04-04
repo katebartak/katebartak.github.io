@@ -1,0 +1,35 @@
+.site-form {
+	width: 100%;
+
+	@media only screen and (min-width: 768px) {
+		width: 280px;
+	}
+
+	.site-btn {
+		width: 100%;
+		padding: 12px;
+		margin-top: 5px;
+	}
+}
+
+.input-item,
+.form-item {
+	width: 100%;
+	border: none;
+	padding: 15px;
+	font-size: 14px;
+	font-family: $sans-roboto;
+	outline: none;
+	margin-bottom: 10px;
+	color: #000;
+	border-radius: 0;
+
+	&::placeholder {
+		font-size: 14px;
+		font-family: $sans-roboto;
+	}
+}
+
+.form-item {
+	cursor: pointer;
+}

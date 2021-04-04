@@ -1,0 +1,241 @@
+// ----------------------------------------------------------------------------
+// Set box sizing to border-box
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+// Remove custom browser elements
+*::-ms-clear {
+  display: none;
+}
+
+*::-ms-reveal {
+  display: none;
+}
+
+// Placeholders
+::-webkit-input-placeholder {
+  color: $black;
+}
+
+::-moz-placeholder {
+  color: $black;
+}
+
+// Firefox 19+
+:-moz-placeholder {
+  color: $black;
+}
+
+// Firefox 18-
+:-ms-input-placeholder {
+  color: $black;
+}
+
+::selection {
+  background: rgba($black, .2);
+}
+
+// ----------------------------------------------------------------------------
+// Global styles
+html,
+body {
+  font-size: $fs-base;
+}
+
+html {
+  font-family: $sans;
+  min-height: 100vh;
+}
+
+body {
+  color: $black;
+  background: $white;
+  height: auto;
+  min-width: 320px;
+  font-weight: $f_normal;
+  line-height: $line-height-base;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+.js-hide {
+  @extend %element-invisible;
+}
+
+// Mobile menu active need add overlay to the page
+.active-menu {
+  overflow: hidden;
+
+  &::before {
+    opacity: 1;
+    visibility: visible;
+    z-index: 30;
+  }
+
+  @include media-q(min, 1025) {
+    overflow-y: auto;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Set all images  max size
+img {
+  max-width: 100%;
+  height: auto;
+  display: inherit;
+}
+
+figure {
+  margin: 0 0 40px 0;
+  text-align: center;
+
+  @include media-q(min, 680) {
+    text-align: inherit;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+figcaption {
+  @include font-size(11);
+  line-height: 2em;
+}
+
+// ----------------------------------------------------------------------------
+// Global links styles
+a {
+  @include links($black, $black);
+  outline: none;
+  transition: color .3s ease;
+
+  //&:visited {
+  //  color: $secondary;
+  //}
+}
+
+.ext {
+  .ext {
+    display: none;
+  }
+}
+
+// Video
+.responsive-video,
+.video-embed-field-responsive-video {
+  @extend %responsive-video;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+// ----------------------------------------------------------------------------
+// Global ul reset
+ul {
+  @extend %reset-list;
+}
+
+#livechat-compact-container {
+  .mobile & {
+    max-width: 80px;
+    transform: translate(0,0) !important;
+  }
+}
+
+.site-btn {
+  border: none;
+  background: linear-gradient(#e7b65f, #be9349);
+  color: $white;
+  text-transform: uppercase;
+  font-family: $sans-open;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+  transition: all .4s ease;
+  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    padding: 15px;
+  }
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+.site-btn.is-blicked {
+  overflow-x: hidden
+}
+
+.site-btn.is-blicked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background: -webkit-gradient(linear,left top,right top,color-stop(10%,hsla(0,0%,100%,.1)),color-stop(20%,hsla(0,0%,100%,.2)),to(hsla(0,0%,100%,.6)));
+  background: linear-gradient(90deg,hsla(0,0%,100%,.1) 10%,hsla(0,0%,100%,.2) 20%,hsla(0,0%,100%,.6));
+  width: 20px;
+  transform: skewX(-45deg);
+  left: -20%;
+  transition: all .6s ease;
+  animation-name: blick;
+  animation-duration: 3s;
+  animation-iteration-count: infinite
+}
+
+@keyframes blick {
+  60%,to {
+    left: 110%
+  }
+}
+
+@keyframes jampTrf {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  15% {
+    -webkit-transform: translateY(-7%);
+    transform: translateY(-7%);
+  }
+
+  25% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  35% {
+    -webkit-transform: translateY(-3%);
+    transform: translateY(-3%);
+  }
+
+  45% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.mokap-jump {
+  animation: jampTrf 4.5s infinite linear;
+}

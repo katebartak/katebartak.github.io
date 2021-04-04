@@ -1,0 +1,12 @@
+section.request
+	.container
+		h2.section-title Запросить выезд специалиста <br>с образцами обоев к вам на дом
+		p Заполните форму и мы вышлем специалиста в удобное для Вас время
+		form.site-form.js-form-submit
+			input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+			input.input-item.input-name(type="text" placeholder="Ваше имя:")
+			input.input-item.input-phone(type="text" placeholder="Ваш телефон:")
+			input.request-btn.yandex-metrika-event.site-btn.js-show-popup(type="submit" value='ОТПРАВИТЬ' data-goal='vyezd-1')
+			.form-errors-cont
+		.mokap.mokap-jump
+			img(src="img/request-mokap.png")

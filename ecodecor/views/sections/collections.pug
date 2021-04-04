@@ -1,0 +1,10 @@
+section.collections
+	.container
+		h2.section-title Наиболее популярные коллекции обоев ARTE
+		.collections-group
+			each item in collections_group
+				.collections-item
+					.collections-item-img-wrap
+						img(src='img/' + item.img alt=item.title)
+					.collections-item-title=item.title
+					button.collections-btn.site-btn.js-show-popup.yandex-metrika-event(data-goal='coll-1' data-form-goal='coll-2' data-collection=item.title) Узнать стоимость

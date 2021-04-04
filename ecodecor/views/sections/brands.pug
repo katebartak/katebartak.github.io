@@ -1,0 +1,14 @@
+section.brands
+	.container
+		h2.section-title В салоне представлен самый большой ассортимент известных мировых брендов
+		p.sub-title Более 35 000 наименований от 30+ ведущих производителей и дизайн-бюро
+		.brands-wrap
+			.brands-item
+				.brands-icons-group
+					each item in brands_group
+						.brands-icons-item
+							img(src='img/' + item.img alt=item.title)
+				p ... и многие другие
+			.brands-item
+				img.mokap.mokap-jump(src="img/mokap.png")
+				button.site-btn.is-blicked.js-show-popup.yandex-metrika-event(data-goal='price-brand-1' data-form-goal='price-brand-2') Запросить прайс-лист

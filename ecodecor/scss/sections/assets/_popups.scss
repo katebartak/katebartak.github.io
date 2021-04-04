@@ -1,0 +1,189 @@
+.section-popup-form,
+.section-popup-thanks {
+	position: fixed;
+	z-index: 30;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: none;
+}
+
+.section-popup-thanks {
+	.opened-popup-thanks & {
+		display: block;
+	}
+}
+
+.section-popup-form {
+	.opened-popup-form & {
+		display: block;
+	}
+
+	.site-form-wrapper {
+
+		.input-text {
+			margin-bottom: 10px;
+		}
+
+		&::before {
+			display: none;
+		}
+	}
+}
+
+.popup-wrap {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+}
+
+.popup-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.5;
+	cursor:pointer;
+
+	&:hover {
+		opacity: 0.4;
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		transform: translateY(-15px);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+.popup-form-content {
+	position: relative;
+	max-width: 340px;
+	margin: 0 auto;
+	animation: fadeInDown .3s ease;
+	animation-fill-mode: both;
+	padding: 0;
+	width: 380px;
+	text-align: center;
+	background-color: #fff;
+
+	@include media-q(min, 768) {
+		padding: 0;
+		margin-top: 140px;
+		max-width: 380px;
+	}
+}
+
+
+.popup-close-icon {
+	position: absolute;
+	background: url(../img/popup-close-icon.png) no-repeat center;
+	right: -3px;
+	top: -50px;
+	background-size: 25px 25px;
+	width: 25px;
+	height: 25px;
+	display: block;
+	border: none;
+
+	@include media-q(min, 768) {
+		right: -33px;
+		top: -30px;
+	}
+}
+
+.section-popup-thanks {
+
+	.site-form-text {
+		margin-bottom: 5px;
+		font-family: $sans-open;
+		color: $c_brown;
+		font-size: 14px;
+		padding: 0 50px;
+	}
+
+	.popup-form-content {
+		background-size: 100% 100%;
+		max-width: 380px;
+
+		@include media-q(min, 768) {
+			max-width: 400px;
+		}
+
+		.font-icon {
+			margin: 0 auto 20px;
+			display: block;
+
+			&::before {
+				font-size: 46px;
+			}
+		}
+	}
+}
+
+.site-form-wrapper {
+	background-color: #eef0f4;
+	max-width: 380px;
+	padding: 18px 16px 16px;
+	flex-basis: 100%;
+	z-index: 2;
+	border: 5px solid $c_yellow;
+
+	@include media-q(min, 768) {
+		flex-basis: 30%;
+	}
+
+	.section-title {
+		font-size: 24px;
+		margin-bottom: 50px;
+
+		&::after {
+			left: calc(50% - 50px);
+			height: 1px;
+		}
+	}
+
+	.site-form {
+		margin-bottom: 20px;
+		width: 100%;
+
+		@include media-q(min, 768) {
+			padding: 0 30px;
+		}
+	}
+
+	.site-form-text-ps {
+		font-size: 12px;
+		font-family: $sans-roboto;
+		color: $c_brown;
+
+		a {
+			text-decoration: underline;
+			color: $c_brown;
+		}
+	}
+}
+
+.thanks-logo {
+	margin-bottom: 20px;
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+

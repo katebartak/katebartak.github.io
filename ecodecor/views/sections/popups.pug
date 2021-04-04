@@ -1,0 +1,30 @@
+section.section-popup-form
+	.popup-wrap
+		.container
+			.popup-overlay
+			.popup-form-content
+				button.popup-close-icon
+				.site-form-wrapper
+					.site-form-top
+					h2.section-title(data-default-title="Узнать стоимость") Запросить прайс-лист
+					form.site-form.js-form-submit
+						input(type="hidden" name="recaptcha_response" id="recaptchaResponse")
+						input.input-item.input-name(type="text" placeholder="Ваше имя:")
+						input.input-item.input-phone(type="text" placeholder="Ваш телефон:")
+						input(type="hidden" name="collection")
+						input.request-btn.yandex-metrika-event.site-btn(type="submit" value='ОТПРАВИТЬ' data-goal='')
+						.form-errors-cont
+					p.site-form-text-ps Нажимая на кнопку отправить, вы даете согласие <br>на обработку своих #[a(href="#") персональных данных.]
+
+
+section.section-popup-thanks
+	.popup-wrap
+		.container
+			.popup-overlay
+			.popup-form-content
+				.site-form-wrapper
+					button.popup-close-icon
+					.thanks-logo
+						img(src="img/check-icon.png")
+					h2.site-form-title(data-default-title="Спасибо за заявку!") Спасибо за заявку!
+					p.site-form-text(data-default-text="Наш менеджер свяжется с Вами в ближайшее время") Наш менеджер свяжется с Вами в ближайшее время

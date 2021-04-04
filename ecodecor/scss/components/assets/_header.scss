@@ -1,0 +1,91 @@
+.site-header {
+	padding: 15px 0;
+	z-index: 1;
+	color: $white;
+
+	.container {
+
+		@media only screen and (min-width: 768px) {
+			display: flex;
+		}
+	}
+}
+
+.header-group {
+	margin-left: auto;
+	max-width: 700px;
+	padding-left: 50px;
+
+	@media only screen and (min-width: 768px) {
+		display: flex;
+		padding-left: 0;
+	}
+}
+
+.header-item {
+	flex-basis: 200px;
+	position: relative;
+	margin-bottom: 20px;
+
+	@media only screen and (min-width: 768px) {
+		margin-bottom: 0;
+	}
+
+		a {
+		display: block;
+		color: $white;
+		margin: 0 30px 10px;
+
+		@media only screen and (min-width: 768px) {
+			text-align: right;
+			margin-bottom: 10px;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.font-icon {
+		position: absolute;
+		left: -30px;
+		top: 0;
+
+		&::before {
+			font-size: 16px;
+			color: $c_yellow;
+		}
+	}
+}
+
+.header-item:nth-child(1),
+.header-item:nth-child(2) {
+	margin: 0 30px 20px;
+
+	@media only screen and (min-width: 768px) {
+		margin: 0 30px;
+	}
+}
+
+.header-item:last-child {
+	.font-icon {
+		left: 0;
+	}
+}
+
+.h-logo {
+
+	img {
+		width: 110px;
+		display: block;
+		margin: 0 auto 20px;
+
+		@media only screen and (min-width: 768px) {
+			width: auto;
+			margin: 0;
+		}
+	}
+}
+
