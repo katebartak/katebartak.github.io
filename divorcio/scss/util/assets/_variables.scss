@@ -1,0 +1,45 @@
+//-----------------------------------------------------------------------------
+// Fonts variable(s).
+$sans: Helvetica, Arial, sans-serif;
+$sans-brand: 'Exo', $sans;
+
+// Font weight variants
+$f_light: 300;
+$f_normal: 400;
+$f_medium: 500;
+$f_bold: 700;
+
+//-----------------------------------------------------------------------------
+// Image paths
+$images: '../img/';
+
+//-----------------------------------------------------------------------------
+// Main theme colors
+
+// Default colors
+$white: #fff;
+$black: #000;
+
+// Main site color palette
+$c_base: #575C6B;
+$c_primary: #9b3038;
+$primary-hover: #721a21;
+
+$dark_red: #CC2229;
+
+// These colors for the Drupal messages style
+// but also could be used for the other purposes
+$red: #f4371e;
+$green: #56c02b;
+$orange: #FF7700;
+
+//-----------------------------------------------------------------------------
+// Other settings
+
+// Font sizes
+// Site base font size and line height
+$fs-base: 16px;
+$line-height-base: 1.14;
+
+// Headings line-height
+$headings-line-height: 1.1;

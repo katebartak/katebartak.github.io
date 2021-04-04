@@ -1,0 +1,19 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='es')
+  include ../common_meta/head
+  body.front
+    include ../components/_header
+    main.page-container
+      include ../sections/firstscreen
+      include ../sections/steps
+      include ../sections/offer
+      include ../sections/divorcio-news
+      include ../sections/advantages
+      include ../sections/commitment
+      include ../sections/reviews
+
+  include ../components/_footer
+    include ../common_meta/footer_scripts

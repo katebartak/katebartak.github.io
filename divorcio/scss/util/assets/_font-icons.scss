@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'f-icons';
+  src:  url('../f-icons/f-icons.eot?gt4byt');
+  src:  url('../f-icons/f-icons.eot?gt4byt#iefix') format('embedded-opentype'),
+  url('../f-icons/f-icons.ttf?gt4byt') format('truetype'),
+  url('../f-icons/f-icons.woff?gt4byt') format('woff'),
+  url('../f-icons/f-icons.svg?gt4byt#f-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"], %font-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'f-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+%icon-adventage-1,
+.icon-adventage-1::before {
+  content: "\e90c";
+  color: #575c6b;
+}
+%icon-adventage-2,
+.icon-adventage-2::before {
+  content: "\e901";
+  color: #575c6b;
+}
+%icon-adventage-3,
+.icon-adventage-3::before {
+  content: "\e902";
+  color: #575c6b;
+}
+%icon-adventage-4,
+.icon-adventage-4::before {
+  content: "\e903";
+  color: #575c6b;
+}
+%icon-adventage-5,
+.icon-adventage-5::before {
+  content: "\e904";
+  color: #575c6b;
+}
+%icon-adventage-6,
+.icon-adventage-6::before {
+  content: "\e905";
+  color: #575c6b;
+}
+%icon-check,
+.icon-check::before {
+  content: "\e906";
+}
+%icon-danger,
+.icon-danger::before {
+  content: "\e907";
+}
+%icon-flag,
+.icon-flag::before {
+  content: "\e908";
+  color: #ff6d00;
+}
+%icon-star,
+.icon-star::before {
+  content: "\e909";
+}
+%icon-step-3,
+.icon-step-3::before {
+  content: "\e90a";
+}
+%icon-step-1,
+.icon-step-1::before {
+  content: "\e90b";
+}
+%icon-step-2,
+.icon-step-2::before {
+  content: "\e90c";
+}
+%icon-step-4,
+.icon-step-4::before {
+  content: "\e90d";
+}
+%icon-small-arrow,
+.icon-small-arrow::before {
+  content: "\e900";
+  color: #fff;
+}
+
+%icon-arrows,
+.icon-arrows::before {
+  content: "\e90f";
+  color: #575c6b;
+}
+
+%icon-arrow-slider,
+.icon-arrow-slider::before {
+  content: "\e910";
+  color: #f76b1c;
+}

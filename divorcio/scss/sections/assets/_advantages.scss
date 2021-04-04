@@ -1,0 +1,155 @@
+.advantages {
+	padding-top: 100px;
+	padding-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		background: url("../img/advantages-bg.png") no-repeat left;
+		padding-bottom: 65px;
+	}
+
+	.basic-title {
+		margin-bottom: 50px;
+	}
+
+	.request {
+		position: relative;
+
+		&::after {
+			position: absolute;
+			right: 15px;
+			top: 22px;
+			font-size: 8px;
+			transition: transform .3s ease;
+
+			@extend %icon-small-arrow;
+			@extend %font-icon;
+		}
+
+		&:hover {
+			opacity: .9;
+
+			&::after {
+				transform: translateX(5px);
+			}
+		}
+	}
+	.request-desk {
+		display: none;
+
+		@media screen and (min-width: 768px) {
+			display: block;
+		}
+	}
+
+	.request-mob {
+
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+
+	ul {
+		li {
+			margin-bottom: 20px;
+			position: relative;
+			padding-left: 40px;
+
+			&::before {
+				font-size: 16px;
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				@extend %icon-check;
+				@extend %font-icon;
+			}
+		}
+	}
+}
+
+.advantages-brands {
+	display: flex;
+}
+
+.advantages-wrap {
+	@media screen and (min-width: 1024px) {
+		display: flex;
+	}
+}
+
+.advantages-title {
+	font-size: 24px;
+
+	span {
+		font-size: 16px;
+	}
+}
+
+.advantages-left {
+	margin-right: 80px;
+
+	.advantages-title {
+		color: $orange;
+
+		span {
+			color: $c_base;
+		}
+	}
+
+	ul {
+		margin-bottom: 30px;
+
+		li {
+			&::before {
+				color: $orange;
+				@extend %icon-danger;
+				@extend %font-icon;
+			}
+		}
+	}
+}
+
+.advantages-right-wrap {
+	padding: 20px;
+	background: linear-gradient(#FFA700, #FF6E00);
+	border-radius: 5px;
+	color: $white;
+	margin-bottom: 15px;
+
+	.advantages-title {
+		color: $white;
+		padding: 0 55px;
+		text-align: center;
+	}
+
+	ul {
+		li {
+			&::before {
+
+				@extend %icon-check;
+				@extend %font-icon;
+			}
+		}
+	}
+}
+
+.advantages-right-logo {
+	margin-bottom: 15px;
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.advantages-brands {
+	justify-content: center;
+}
+
+.advantages-brands-item {
+	margin: 0 15px;
+}
