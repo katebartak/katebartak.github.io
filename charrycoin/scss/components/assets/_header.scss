@@ -1,0 +1,127 @@
+.site-header {
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: padding .2s, box-shadow .2s ease;
+
+  @include media-q(min, 600) {
+    padding: 20px 0;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .sticky-header & {
+    box-shadow: 0 0 10px transparentize($black, .9);
+    padding: 5px 0;
+  }
+}
+
+.h-logo {
+  width: 50px;
+  //margin-right: 2%;
+
+  @include media-q(min, 600) {
+    width: 66px;
+  }
+
+  @include media-q(min, 1024) {
+    margin-right: 4%;
+  }
+
+  @include media-q(min, 1200) {
+    margin-right: 10%;
+  }
+
+  svg,
+  img {
+    max-width: 100%;
+  }
+}
+
+.h-nav {
+  font-weight: 500;
+  position: absolute;
+  background-color: $white;
+  width: 100%;
+  top: 72px;
+  left: 0;
+  padding: 60px 15px;
+  z-index: 10;
+  text-align: center;
+  height: 100vh;
+  overflow: auto;
+
+  @include media-q(min, 480) {
+    top: 102px;
+
+    .sticky-header & {
+      top: 82px;
+    }
+  }
+
+  @include media-q(min, 1024) {
+    position: static;
+    background: transparent;
+    width: auto;
+    padding: 0;
+    text-align: left;
+    height: auto;
+  }
+}
+
+.h-nav__item {
+  margin-right: 5px;
+  padding: 5px;
+  display: block;
+  margin-bottom: 35px;
+
+  @include media-q(min, 1024) {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    color: $accent;
+  }
+
+  @include media-q(min, 600) {
+    //margin-right: 20px;
+    padding: 10px;
+  }
+
+  @include media-q(min, 920) {
+    margin-right: 20px;
+    padding: 30px;
+  }
+}
+
+.h-btn {
+  font-family: $sans-brand;
+  letter-spacing: 1.7px;
+  color: $accent;
+  font-weight: 600;
+  border: 1px solid $accent;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: color .2s, border-color .2s ease;
+  font-size: 14px;
+  margin: 0 auto;
+
+  @include media-q(min, 1024) {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $dark-green;
+    border-color: $dark-green;
+  }
+}

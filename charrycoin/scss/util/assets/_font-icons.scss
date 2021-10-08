@@ -1,0 +1,80 @@
+// -----------------------------------------------------------------------------
+// All icons font set
+@font-face {
+  font-family: 'font-icon';
+  src: url('../f-icons/f-icons.eot');
+  src: url('../f-icons/f-icons.eot?#iefix') format('embedded-opentype'),
+  url('../f-icons/f-icons.woff') format('woff'),
+  url('../f-icons/f-icons.ttf') format('truetype'),
+  url('../f-icons/f-icons#font-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*='font-icon']::before,
+[class*='font-icon']::after {
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
+}
+
+%font-icon {
+  @include font-size(30);
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Icons set
+.icon-barter:before {
+  content: "\e901";
+  color: #59ac80;
+}
+.icon-facebook:before {
+  content: "\e902";
+  color: #59ac80;
+}
+.icon-github:before {
+  content: "\e903";
+  color: #59ac80;
+}
+.icon-hello:before {
+  content: "\e904";
+  color: #59ac80;
+}
+.icon-magic:before {
+  content: "\e905";
+  color: #59ac80;
+}
+.icon-people:before {
+  content: "\e906";
+  color: #59ac80;
+}
+.icon-telegram:before {
+  content: "\e907";
+  color: #59ac80;
+}
+.icon-twitter:before {
+  content: "\e908";
+  color: #59ac80;
+}
+
+%icon-arrow,
+.icon-arrow:before {
+  content: "\e900";
+  color: #59ac80;
+}
+%icon-arrow-slider,
+.icon-arrow-slider:before {
+  content: "\e909";
+  color: #59ac80;
+}

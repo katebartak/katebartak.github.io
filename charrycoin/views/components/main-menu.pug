@@ -1,0 +1,4 @@
+nav.menu.h-nav
+  each item in header.main_menu
+    a(href=item.href).h-nav__item=item.title
+  include ../components/lang-switcher

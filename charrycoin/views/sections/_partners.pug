@@ -1,0 +1,9 @@
+section.partners#partners
+  .container
+    h2=our_partners.title
+      if our_partners.subtitle
+        span=our_partners.subtitle
+    .partners__group.flex
+      each item in our_partners.items
+        .partners__item
+          img(src="img/" + item.image alt=item.alt)

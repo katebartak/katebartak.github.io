@@ -1,0 +1,16 @@
+footer.footer
+  .container.flex
+    .h-logo
+      img(src="img/logo.png")
+    .footer__group.flex
+      if footer.socials.twitter
+        a(href=footer.socials.twitter title='twitter').footer__item
+          i.font-icon.icon-twitter
+      if footer.socials.telegram
+        a(href=footer.socials.telegram title='telegram').footer__item
+          i.font-icon.icon-telegram
+      if footer.socials.github
+        a(href=footer.socials.github title='github').footer__item
+          i.font-icon.icon-github
+    p=footer.copy_text
+

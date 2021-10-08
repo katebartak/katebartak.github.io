@@ -1,0 +1,8 @@
+section.advantages
+  .container
+    h2=advantages.title
+    .advantages-group.flex.jcsb
+      each item, index in advantages.items
+        .advantages-item
+          .advantages-number='0' + (index + 1)
+          p Мы не собираем деньги <br>на непонятные нужды.

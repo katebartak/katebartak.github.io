@@ -1,0 +1,6 @@
+.lang-switcher
+  .lang-switcher__container
+    each lang in languages
+      a.lang-switcher__item(href=lang.href class=meta.lang == lang.name ? 'active' : '')
+        img.lang-switcher__image(src='img/flags/' + lang.image alt=lang.name)
+        | !{lang.name}

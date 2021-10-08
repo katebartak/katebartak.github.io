@@ -1,0 +1,50 @@
+.partners {
+  position: relative;
+
+  &::after {
+
+    @include media-q(min, 768) {
+      content: '';
+      position: absolute;
+      top: -15%;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      border: 15px solid $beg;
+      right: -1%;
+    }
+  }
+
+  h2 {
+    margin-bottom: 80px;
+
+    span {
+      display: block;
+      margin-top: 14px;
+      font-size: 16px;
+      font-family: $sans;
+      text-transform: none;
+      font-weight: $f_normal;
+    }
+
+    &::before {
+      bottom: -40%;
+    }
+  }
+
+  &__group {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  &__item {
+    max-width: 100px;
+    width: 20%;
+    margin: 20px;
+
+    @include media-q(min, 768) {
+      margin: 0 50px 60px 50px;
+    }
+  }
+}
