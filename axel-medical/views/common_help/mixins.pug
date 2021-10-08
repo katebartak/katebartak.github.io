@@ -1,0 +1,26 @@
+//- ----------------------------------------------------------------------------
+//- Put mixin's here
+
+mixin main_menu(items)
+  nav.header__nav
+    ul.header__nav__list
+      each item in items
+        li.menu-item(class=(item.children && item.children.length) ? 'menu-item-has-children' : '')
+          a(href=item.href class=item.class)=item.title
+          if item.children && item.children.length
+            .header__nav__sublist
+              ul.container
+                each sub in item.children
+                  li.menu-subitem
+                    a(href=sub.href)
+                      .menu-subitem__image
+                        img.main-img(src='img/menu-subitem-image.svg' alt=sub.title)
+                        img.main-img-hover(src='img/menu-subitem-image-hover.svg' alt=sub.title)
+                      .menu-subitem__text=sub.title
+
+mixin footer_nav(items)
+  nav.footer__nav
+    ul.footer__nav__list
+      each item in items
+        li.footer__nav__item
+          a(href=item.href class=item.class)=item.title

@@ -1,0 +1,28 @@
+.brands-group {
+	flex-wrap: wrap;
+
+	.brands-item {
+		display: block;
+		width: 47%;
+		margin-bottom: rem-calc(20);
+		margin-left: 5px;
+		margin-right: 5px;
+
+		@include media-q(min, 1024) {
+			width: 20%;
+			margin: 0 .625rem rem-calc(60);
+		}
+
+		@include media-q(min, 1850) {
+			width: 22%;
+		}
+
+		&__title {
+			@include font-size(18);
+
+			@include media-q(min, 1850) {
+				@include font-size(24);
+			}
+		}
+	}
+}

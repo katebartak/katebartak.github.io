@@ -1,0 +1,17 @@
+.hero-section__content.hero-section__categories(data-anchor='categories')
+  .hero-section__content-container
+    .hero-section__content-wrap
+      h3.hero-section__title Оборудование по категориям
+      .hero-section__padding-left
+        .hero-section__categories-group.flex
+          each item in [1,2,3,4,5,6,7,8]
+            .hero-section__categories-item
+              .hero-section__categories-img
+                img.main-img-mob(src="img/white-mrt-icon.svg")
+                img.main-img(src="img/categories-item-img.png")
+                img.main-img-hover(src="img/hero-img.png" alt="MRT")
+              .hero-section__categories-title Реанимационное
+      .hero-section__categories-btn
+        a(href="categories-page.html").btn__light каталог
+    button.hero-section__arrow
+      i.font-icon.icon-arrows-down

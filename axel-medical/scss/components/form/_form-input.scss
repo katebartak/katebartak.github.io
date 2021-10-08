@@ -1,0 +1,59 @@
+//.form-text,
+//.form-email {
+//  background: $white;
+//  border-bottom: 1px solid $black;
+//  font-family: inherit;
+//  font-size: inherit;
+//  width: 100%;
+//  max-width: 100%;
+//  padding: 8px 12px 9px;
+//
+//  // Safari and iOS fix of text field
+//  -webkit-appearance: none;
+//  transition: border-color .3s ease-out;
+//
+//  &:focus {
+//    outline: none;
+//    border-color: $black;
+//    color: $black;
+//  }
+//
+//  &.error {
+//    border-color: $red;
+//    background-color: rgba($red, .05);
+//  }
+//}
+
+.form-type-text {
+  padding-bottom: rem-calc(9);
+  border-bottom: 2px solid $c_green;
+
+  input {
+    @extend %form-textfield;
+    @extend %form-input-text;
+
+    &:focus {
+      &::placeholder {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.input-search {
+  @include font-size(14);
+  color: $c_light_green;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid $c_light_green;
+  padding-left: rem-calc(10);
+  padding-bottom: rem-calc(4);
+  background: transparent;
+  outline: none;
+  width: rem-calc(155);
+
+  &::placeholder {
+    color: $c_light_green;
+  }
+}

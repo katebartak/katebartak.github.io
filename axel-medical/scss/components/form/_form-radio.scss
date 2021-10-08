@@ -1,0 +1,110 @@
+// ----------------------------------------------------------------------------
+// Radio items general styling
+
+// Single radio button item
+.form-radios {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 10px;
+  position: relative;
+
+  // Hide native radio item
+  .form-radio {
+    @extend %element-invisible;
+
+    // Active state
+    &:checked + .option {
+      &::after {
+        opacity: 1;
+        transform: scale(.5);
+        background: $black;
+      }
+    }
+
+    // Disabled state
+    &:disabled + .option {
+      cursor: not-allowed;
+
+      &::before {
+        background: $black;
+
+        .description-content & {
+          background: rgba($black, .7);
+        }
+      }
+
+      &:hover::after {
+        transform: scale(0);
+      }
+    }
+
+    // Active-Disabled state
+    &:disabled:checked + .option {
+
+      &::after {
+        opacity: 1;
+        background: $black;
+
+        .description-content & {
+          background: rgba($black, .5);
+        }
+      }
+
+      &:hover::after {
+        transform: scale(.5);
+      }
+    }
+  }
+
+  // Create 'fake' radio element
+  .option {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-weight: $fw_normal;
+    line-height: 1.45;
+
+    // Need for position of checkbox state
+    position: relative;
+
+    &::before,
+    &::after {
+      content: ' ';
+    }
+
+    // 'Fake radio'
+    &::before {
+      display: inline-block;
+      height: 20px;
+      min-width: 20px;
+      background: $black;
+      border: 1px solid $black;
+      border-radius: 50%;
+      margin: 2px 8px 0 0;
+    }
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      background: $black;
+      border-radius: 100%;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      opacity: 0;
+      transition: all .5s ease;
+      transform-origin: center;
+      transform: scale(0);
+    }
+
+    // Hover effect
+    &:hover {
+      &::after {
+        opacity: 1;
+        transform: scale(.5);
+      }
+    }
+  }
+}

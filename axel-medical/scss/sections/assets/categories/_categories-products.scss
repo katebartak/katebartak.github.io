@@ -1,0 +1,32 @@
+.categories-products {
+	margin-bottom: rem-calc(50);
+
+	@include media-q(min, 1850) {
+		margin-bottom: rem-calc(115);
+	}
+
+	.products__group {
+		justify-content: center;
+	}
+
+	.product-item {
+		width: 47%;
+		margin-bottom: rem-calc(16);
+		padding-right: 10px;
+		padding-left: 10px;
+
+		@include media-q(min, 768) {
+			width: 33%;
+		}
+
+		@include media-q(min, 1024) {
+			width: 20%;
+			padding-right: 35px;
+			padding-left: 35px;
+			margin-bottom: rem-calc(58);
+			.category-page & {
+				width: 25%;
+			}
+		}
+	}
+}

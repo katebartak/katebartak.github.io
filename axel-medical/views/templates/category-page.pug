@@ -1,0 +1,21 @@
+include ../common_help/variables
+include ../common_help/mixins
+- var hide_this_heading = true
+doctype html
+html(lang='ru')
+  include ../common_meta/head
+  body
+    include ../components/_header
+    main.page-container.category-page
+      .home-container
+        .hidden-before-desktop
+          include ../sections/category/categoy-sidebar
+        .category-page__content
+          include ../sections/categories/categories-hero
+          .hidden-from-desktop
+            include ../sections/category/categoy-sidebar
+          include ../sections/categories/categories-products
+          include ../sections/brands
+
+    include ../components/_footer
+    include ../common_meta/footer_scripts

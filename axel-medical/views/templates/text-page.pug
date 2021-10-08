@@ -1,0 +1,13 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='ru')
+  include ../common_meta/head
+  body
+    include ../components/_header
+    main.page-container
+      include ../sections/_text-page
+
+    include ../components/_footer
+    include ../common_meta/footer_scripts

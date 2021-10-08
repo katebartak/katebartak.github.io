@@ -1,0 +1,24 @@
+.product-similar {
+	@extend %section-margin-bottom;
+
+	.product-item {
+		margin: 0 7px;
+
+		@include media-q(mim, 1024) {
+			margin: 0 17px;
+		}
+
+		&__title {
+			@include font-size(14);
+
+			@include media-q(mim, 1024) {
+				@include font-size(24);
+			}
+		}
+	}
+
+	.products__group {
+		display: block;
+		width: 100%;
+	}
+}

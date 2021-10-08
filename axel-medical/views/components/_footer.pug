@@ -1,0 +1,34 @@
+include ../components/_back-to-top
+include ../components/_write-to-us
+footer.footer
+  .container
+    .footer__info
+      a.footer__logo(href='/')
+        img(src="img/main-logo-full.svg" alt="axel medical logo")
+      .footer__info__group.footer__socials
+        .footer__info__item
+          p Наши социальные сети
+        .footer__info__item
+          include _socials
+      .footer__info__group.footer__copy.hidden-before-desktop
+        .footer__info__item
+          a(href='#') Политика конфиденциальности
+        .footer__info__item
+          p ©2021 - Axel Medical | All right reserved
+    +footer_nav(footer_nav_left)
+    +footer_nav(footer_nav_right)
+    .footer__contacts
+      p.footer__title Контакты
+      a.footer__contacts__item(href='tel:+3 800 000 00 00') +3 800 000 00 00
+      a.footer__contacts__item(href='mailto:email@omg.com') email@omg.com
+      p.footer__contacts__item Адрес компании
+    .footer__info__group.footer__copy.hidden-from-desktop
+      .footer__info__item
+        a(href='#') Политика конфиденциальности
+      .footer__info__item
+        p ©2021 - Axel Medical | All right reserved
+    .footer__brand
+      include ../../img/brand-logo.svg
+
+
+include ../sections/request-hero

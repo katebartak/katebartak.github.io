@@ -1,0 +1,134 @@
+//// Global forms
+//.form-item {
+//  margin-bottom: 20px;
+//
+//  label {
+//    font-weight: $fw_medium;
+//    margin-bottom: 5px;
+//    display: inline-block;
+//  }
+//
+//  .form-text {
+//    margin-bottom: 5px;
+//  }
+//
+//  .description {
+//    font-style: italic;
+//  }
+//
+//  .form-required {
+//    color: $red;
+//  }
+//}
+//
+//.form-actions {
+//  margin-top: 40px;
+//}
+//
+//.webform-component--form-message-row {
+//  .messages {
+//    margin-bottom: 20px;
+//  }
+//}
+//
+//// Form fieldsets
+//.fieldset-wrapper {
+//  display: flex;
+//  flex-direction: row;
+//  flex-wrap: wrap;
+//}
+//
+//
+//fieldset {
+//  margin: 0;
+//  padding: 0;
+//  border: 0;
+//  width: 100%;
+//
+//  .form-item {
+//    width: 100%;
+//
+//    @include media-q(min, 1024) {
+//      width: calc(50% - 10px);
+//      margin: 0 20px 20px 0;
+//
+//      &:nth-child(2n) {
+//        margin-right: 0;
+//      }
+//    }
+//  }
+//}
+//
+//
+//
+//// Recaptcha
+//.recaptcha {
+//  min-width: 304px;
+//  margin-left: -11px;
+//
+//  @include media-q(min, 340) {
+//    margin-left: 0;
+//  }
+//}
+//
+
+%form-input-text {
+  @include font-size(18);
+  font-weight: $fw-medium;
+  color: $c_dark_blue;
+  appearance: none;
+
+  @include media-q(min, 1024) {
+    @include font-size(16);
+  }
+
+  @include media-q(min, 1280) {
+    @include font-size(20);
+  }
+
+  @include media-q(min, 1850) {
+    @include font-size(24);
+  }
+
+  &::placeholder {
+    @include font-size(18);
+    color: $c_dark_blue;
+    font-weight: $fw-medium;
+
+    @include media-q(min, 1024) {
+      @include font-size(16);
+    }
+
+    @include media-q(min, 1280) {
+      @include font-size(20);
+    }
+
+    @include media-q(min, 1850) {
+      @include font-size(24);
+    }
+  }
+}
+
+%form-textfield {
+  @include font-size(16);
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  padding: 0;
+
+  @include media-q(min, 1850) {
+    @include font-size(24);
+  }
+}
+
+.form-item {
+  margin-bottom: rem-calc(20);
+}
+
+.form-actions {
+  input[type='submit'] {
+    @extend %btn__dark;
+  }
+}

@@ -1,0 +1,11 @@
+.categories-hero {
+	.main-title {
+		@include font-size(32);
+		margin-top: rem-calc(80);
+
+		@include media-q(min, 1024) {
+			text-align: left;
+			margin-top: 0;
+		}
+	}
+}

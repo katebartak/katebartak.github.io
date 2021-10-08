@@ -1,0 +1,165 @@
+.product-hero {
+	padding-top: rem-calc(40);
+	margin-bottom: rem-calc(30);
+
+	@include media-q(min, 768) {
+		padding-top: 0;
+		margin-bottom: rem-calc(180);
+	}
+
+	&__mob {
+		text-align: center;
+		margin-bottom: rem-calc(35);
+
+		@include media-q(min, 768) {
+			display: none;
+		}
+
+		.product-hero__link {
+			@include font-size(18);
+			text-decoration: none;
+			display: block;
+			margin-bottom: rem-calc(20);
+			padding-top: 0;
+		}
+	}
+
+	&__desktop {
+		display: none;
+		@include media-q(min, 768) {
+			display: block;
+		}
+	}
+
+	.container {
+		flex-direction: column;
+
+		@include media-q(min, 768) {
+			flex-direction: row;
+			align-items: center;
+		}
+
+		@include media-q(min, 1024) {
+			align-items: normal;
+		}
+	}
+
+	& &__slider {
+		display: block;
+	}
+
+	&__for {
+		width: 100%;
+		margin-bottom: rem-calc(20);
+
+		img {
+			width: 63%;
+			margin: 0 auto;
+		}
+	}
+
+	&__nav-item {
+		cursor: pointer;
+		img {
+			width: 90%;
+
+			@include media-q(min, 768) {
+				width: 144px;
+			}
+		}
+	}
+
+	.slick-slide {
+		text-align: center;
+	}
+
+	.slick-dots {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+
+		@include media-q(min, 768) {
+			display: none !important;
+		}
+	}
+
+	.main-hero__left {
+		padding-bottom: 0;
+		margin-bottom: rem-calc(80);
+
+		@include media-q(min, 768) {
+			width: 40%;
+		}
+
+		@include media-q(min, 1024) {
+			margin-bottom: 0;
+			width: 53%;
+		}
+	}
+
+	.main-hero__right {
+
+		@include media-q(min, 768) {
+			padding-left: rem-calc(40);
+			width: 60%;
+		}
+
+		@include media-q(min, 1024) {
+			width: 47%;
+			padding-left: rem-calc(78);
+		}
+	}
+
+	h1.main-title {
+		@include font-size(24);
+		margin-bottom: rem-calc(20);
+		text-align: center;
+
+		@include media-q(min, 768) {
+			@include font-size(36);
+			text-align: left;
+		}
+
+		@include media-q(min, 1024) {
+		}
+
+
+		@include media-q(min, 1850) {
+			@include font-size(48);
+		}
+	}
+
+	.btn__dark-2 {
+		margin-top: auto;
+		width: 100%;
+
+		@include media-q(min, 768) {
+			width: 67%;
+		}
+
+		@include media-q(min, 1850) {
+			margin-bottom: rem-calc(100);
+		}
+
+		&:hover {
+			background: $c_green;
+		}
+	}
+
+	&__link {
+		@include font-size(24);
+		display: block;
+		font-weight: $fw_semibold;
+		text-transform: uppercase;
+		text-decoration: underline;
+		margin-bottom: rem-calc(45);
+		padding-top: rem-calc(65);
+	}
+
+	.slick-arrow {
+
+		@include media-q(max, 767) {
+			display: none !important;
+		}
+	}
+}

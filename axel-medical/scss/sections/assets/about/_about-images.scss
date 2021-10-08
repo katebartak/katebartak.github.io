@@ -1,0 +1,29 @@
+.about-images {
+	@extend %section-margin-bottom;
+	position: relative;
+
+	@include media-q(max, 1023) {
+		margin-left: -15px;
+		margin-right: -30px;
+	}
+
+	&__group {
+		flex-wrap: wrap;
+
+		@include media-q(min, 1024) {
+			justify-content: space-between;
+		}
+	}
+
+	&__item {
+		margin-bottom: 30px;
+		margin-right: 5px;
+		margin-left: 5px;
+
+		@include media-q(min, 1024) {
+			width: 32.33%;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}

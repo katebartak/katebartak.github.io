@@ -1,0 +1,22 @@
+section.hero-section
+  .home-container
+    aside.hero-section__sidebar.flex
+      a(href="/").main-logo
+        img(src="img/main-logo.svg" alt="axel medical logo")
+      nav.hero-section__menu
+        button.hero-section__menu-item(data-menuanchor="about") О компании
+        button.hero-section__menu-item(data-menuanchor="categories") Оборудование
+        button.hero-section__menu-item(data-menuanchor="contacts") Контакты
+      .hero-section__contacts
+        .hero-section__lang
+          a(href="#").hero-section__lang-btn.active Ru
+          a(href="#").hero-section__lang-btn Ua
+          a(href="#").hero-section__lang-btn En
+
+    form.hero-section__content-search
+        input.input-search(type="search" placeholder="Поиск")
+    .hero-section__fullpage
+      include ../sections/_hero-section-product
+      include ../sections/_hero-section-about
+      include ../sections/_hero-section-categories
+      include ../sections/_hero-section-contacts

@@ -1,0 +1,265 @@
+%footer-item-space {
+  padding-top: rem-calc(10);
+
+  @include media-q(min, 1024) {
+    margin-left: 7%;
+  }
+
+  @include media-q(min, 1280) {
+    margin-left: 9%;
+  }
+}
+
+.footer {
+  background: linear-gradient(90.16deg, #0B3442 29.16%, #0B3442 56.13%, #031D25 101.28%);
+  padding: rem-calc(50 0 46);
+
+  @include media-q(min, 1024) {
+    padding: rem-calc(30 0 15);
+  }
+
+  @include media-q(min, 1280) {
+    padding: rem-calc(50 0 20);
+  }
+
+  @include media-q(min, 1440) {
+    padding: rem-calc(70 0 26);
+  }
+
+  .container {
+    padding-left: rem-calc(25);
+    padding-right: rem-calc(25);
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media-q(max, 1023) {
+      max-width: 500px;
+    }
+  }
+
+  &__info {
+    width: 100%;
+
+    @include media-q(min, 1024) {
+      width: 38%;
+    }
+
+    @include media-q(min, 1280) {
+      width: rem-calc(490);
+    }
+
+    &__group {
+      margin-bottom: rem-calc(20);
+
+      @include media-q(min, 1024) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &__item {
+      @include media-q(min, 1024) {
+        width: calc(50% - 7px);
+      }
+
+      @include media-q(min, 1280) {
+        width: calc(50% - 15px);
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: rem-calc(30);
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__socials {
+    text-align: center;
+
+    @include media-q(min, 1024) {
+      text-align: left;
+    }
+
+    p {
+      @include font-size(24);
+      color: $white;
+
+      @include media-q(min, 1024) {
+        @include font-size(14);
+        text-align: left;
+      }
+
+      @include media-q(min, 1280) {
+        @include font-size(18);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin: rem-calc(30 16);
+
+      @include media-q(min, 1024) {
+        @include font-size(24);
+        margin: 0 1em 0 0;
+      }
+
+      @include media-q(min, 1280) {
+        @include font-size(32)
+      }
+
+      .font-icon {
+        font-size: inherit;
+
+        &::before {
+          font-size: inherit;
+          transition: color .2s ease;
+        }
+      }
+
+      &:hover {
+        .font-icon {
+          &::before {
+            color: $c_green;
+          }
+        }
+      }
+    }
+  }
+
+  &__copy {
+    @include media-q(max, 1023) {
+      width: calc(100% + 30px);
+      text-align: center;
+      margin: rem-calc(70 -15 5);
+    }
+
+    a,
+    p {
+      @include font-size(12);
+      color: $c_light_green;
+
+      &:last-child {
+        @include media-q(min, 1024) {
+          margin-bottom: 0;
+        }
+      }
+
+      @include media-q(max, 1023) {
+        @include font-size(18);
+        margin-bottom: .8em;
+      }
+    }
+
+    a {
+      display: block;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__nav {
+    @extend %footer-item-space;
+
+    @include media-q(max, 1023) {
+      width: 46%;
+      margin-bottom: rem-calc(35);
+    }
+
+    & + & {
+      @include media-q(max, 1023) {
+        margin-left: auto;
+      }
+    }
+
+    &__item {
+
+      a {
+        display: block;
+        color: $white;
+        margin-bottom: 1.3em;
+
+        @extend %main-menu-links;
+
+        @include media-q(max, 1023) {
+          @include font-size(20);
+          margin-bottom: .7em;
+        }
+
+        &:hover {
+          color: $c_light_green;
+        }
+
+        &.active {
+          font-weight: $fw_medium;
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.3em;
+    color: $c_light_green;
+    font-weight: $fw_semibold;
+
+    @extend %main-menu-links;
+
+    @include media-q(min, 1024) {
+      color: $white;
+      font-weight: $fw_bold;
+    }
+  }
+
+  &__contacts {
+    @extend %footer-item-space;
+
+    @include media-q(max, 1023) {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__item {
+      display: block;
+      margin-top: 1.15em;
+      color: $white;
+
+      @extend %main-menu-links;
+
+      &:hover {
+        color: $c_light_green;
+      }
+
+      @include media-q(min, 1024) {
+        color: $c_light_green;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    a {
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //padding-top: rem-calc(26);
+  }
+}
