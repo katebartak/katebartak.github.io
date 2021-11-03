@@ -1,0 +1,8 @@
+section.advantages#advantages
+  .container
+    h2 Advantages
+    .advantages__group.flex
+      each item in advantages
+        .advantages__item
+          span=item.number + '.'
+          p=item.text
