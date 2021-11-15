@@ -1,0 +1,56 @@
+section.product-description
+  .container.flex
+    .product-description__variants
+      each item in [1,2,3]
+        .product-gallery__colors
+          p Название ткани:
+          .product-gallery__colors-slider
+            each color, index in product_colors
+              .product-gallery__colors-item
+                .product-gallery__colors-color
+                  input(type="radio" id="radioButton_" + item + '_' + index name="radio" value ="radio")
+                  label(for="radioButton_" + item + '_' + index style="background-color: #" + color.color)
+      button.product-description__show-more Показати більше
+      .product-gallery__colors.additionally-variant
+        p Название ткани:
+        .product-gallery__colors-slider
+          each color, index in product_colors
+            .product-gallery__colors-item
+              .product-gallery__colors-color
+                input(type="radio" id="radioButton_" + item + '_' + index name="radio" value ="radio")
+                label(for="radioButton_" + item + '_' + index style="background-color: #" + color.color)
+    .show-before-tablet
+      .product-gallery__item-price Від 5 000 грн
+      .product-gallery__item-btns
+        button.btn Додати у кошик
+        button.btn-like
+          include ../../../img/heart-img.svg
+      .header__socials
+        a(href="#")
+          include ../../../img/instagram.svg
+        a(href="#")
+          include ../../../img/facebook.svg
+        a(href="#")
+          include ../../../img/youtube.svg
+        a(href="#")
+          include ../../../img/soc-phone.svg
+    .product-gallery__item-info
+      .product-gallery__item-group.flex
+        h2 Назва товару
+        .product-gallery__item-article Арт. 000000
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue porttitor nunc, facilisi facilisi aliquam scelerisque. Eu congue fames aliquam sed. Et sapien, ut cursus auctor aenean viverra enim vulputate blandit. Cursus risus orci montes, nulla a in diam facilisi mus. Vitae pretium ut lorem neque mattis libero, scelerisque quam.
+      .show-from-tablet
+        .product-gallery__item-price Від 5 000 грн
+        .product-gallery__item-btns
+          button.btn Додати у кошик
+          button.btn-like
+            include ../../../img/heart-img.svg
+        .header__socials
+          a(href="#")
+            include ../../../img/instagram.svg
+          a(href="#")
+            include ../../../img/facebook.svg
+          a(href="#")
+            include ../../../img/youtube.svg
+          a(href="#")
+            include ../../../img/soc-phone.svg

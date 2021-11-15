@@ -1,0 +1,11 @@
+.home-hero-screen__content {
+  width: calc(100% - 15rem);
+  -webkit-transform: translateX(15rem);
+      -ms-transform: translateX(15rem);
+          transform: translateX(15rem);
+  padding-left: rem-calc(80);
+  padding-top: rem-calc(150);
+  height: 590px;
+}
+
+/*# sourceMappingURL=hero-screen.css.map */

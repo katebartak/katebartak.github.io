@@ -1,0 +1,64 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+-
+  var sitemap = [
+    {
+      title: 'Home Page',
+      href: 'home',
+    },
+    {
+      title: 'Catalog Page',
+      href: 'catalog',
+    },
+    {
+      title: 'Product Page',
+      href: 'product',
+    },
+    {
+      title: 'Contact Page',
+      href: 'contact',
+    },
+    {
+      title: 'News Page',
+      href: 'news',
+    },
+    {
+      title: 'Article Page',
+      href: 'article',
+    },
+    {
+      title: 'Video Page',
+      href: 'video',
+    },
+    {
+      title: 'Cart Page',
+      href: 'cart',
+    },
+    {
+      title: 'Ordering Page',
+      href: 'ordering',
+    },
+    {
+      title: 'For designers Page',
+      href: 'for-designers',
+    },
+    {
+      title: 'Individual order Page',
+      href: 'individual-order',
+    }
+  ];
+
+doctype html
+html(lang='ua')
+  include ../common_meta/head
+  body.front
+    main.page-container
+      .container
+        div(style="padding: 100px")
+          h1 Site Prototype
+          each item in sitemap
+            a(href=item.href +'.html' style="margin-bottom: 20px; display: block;")=item.title
+
+
+    include ../common_meta/footer_scripts

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <title>AT Market</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site description">
+    <meta name="viewport" content="width=device-width, initial-scale=1" viewport-fit="cover">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#59AC80">
+    <meta name="application-name" content="Site name">
+    <meta name="msapplication-TileColor" content="#59AC80">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="front">
+    <header class="header">
+      <div class="container flex">
+        <div class="header__menu-icon"><span></span><span></span><span></span></div><a class="header__logo" href="/"><svg width="223" height="65" viewBox="0 0 223 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_131:7378)">
+<path d="M24.2758 1.1361L23.3458 2.28882e-05L22.4157 1.1361C21.4856 2.2722 -0.0265996 29.073 -0.0265996 41.6074C-0.0885941 44.718 0.469794 47.8098 1.61582 50.7017C2.76184 53.5936 4.47252 56.2276 6.64769 58.4494C8.82286 60.6712 11.4188 62.4362 14.2836 63.6412C17.1484 64.8461 20.2245 65.4667 23.3319 65.4667C26.4392 65.4667 29.5152 64.8461 32.3801 63.6412C35.2449 62.4362 37.8409 60.6712 40.016 58.4494C42.1912 56.2276 43.9018 53.5936 45.0478 50.7017C46.1939 47.8098 46.7522 44.718 46.6903 41.6074C46.7182 29.073 25.1966 2.2722 24.2758 1.1361ZM25.0571 62.5974C24.4991 62.5974 23.9317 62.6719 23.3644 62.6719C17.7937 62.6595 12.4555 60.4346 8.52166 56.4853C4.58781 52.536 2.3798 47.1851 2.38228 41.6074C2.47634 39.539 2.90997 37.5003 3.66576 35.573C5.03814 31.9585 6.72491 28.4716 8.70666 25.1526C9.04244 24.6763 9.41234 24.2249 9.81343 23.8023C11.3052 22.3468 13.1397 21.2918 15.1469 20.7349C17.1541 20.178 19.2693 20.1373 21.2964 20.6164C23.3236 21.0955 25.1973 22.079 26.744 23.4759C28.2906 24.8727 29.4602 26.6377 30.1445 28.6074H29.3633C25.2112 28.6134 21.2022 30.1266 18.0793 32.8664C14.9565 35.6062 12.9318 39.3867 12.3804 43.5072C12.2839 44.2514 12.2343 45.001 12.2316 45.7515C12.2316 45.9005 12.2316 46.0494 12.2316 46.1984C12.3369 50.0324 13.7197 53.721 16.16 56.6774C18.6003 59.6338 21.958 61.6882 25.6988 62.5136L25.0571 62.5974ZM14.8265 43.3674C15.392 39.9209 17.1644 36.7885 19.8263 34.5311C22.4881 32.2737 25.8656 31.0387 29.354 31.0473C29.8105 31.0453 30.2668 31.0671 30.7211 31.1125C30.9476 32.86 30.7987 34.6357 30.2845 36.3209C29.7703 38.0061 28.9027 39.562 27.7395 40.8844C26.5764 42.2068 25.1446 43.2652 23.54 43.9889C21.9354 44.7126 20.195 45.085 18.4351 45.081C17.5567 45.0781 16.6809 44.9844 15.8216 44.8016L27.9124 33.841L14.8265 43.3674ZM34.2088 59.5802C32.1044 60.3239 29.8582 60.5766 27.6414 60.3191C25.4247 60.0616 23.2959 59.3007 21.4174 58.0944C19.5389 56.8881 17.9603 55.2683 16.802 53.3584C15.6436 51.4485 14.9362 49.299 14.7335 47.0737C15.9494 47.3831 17.1991 47.5395 18.4537 47.5394C22.4004 47.5394 26.1854 45.9696 28.9761 43.1753C31.7668 40.3811 33.3346 36.5913 33.3346 32.6396C33.3346 32.2578 33.3346 31.8947 33.3346 31.5222C33.2654 30.6327 33.1191 29.751 32.8975 28.8869C32.3571 26.7993 31.369 24.8546 30.0018 23.1883C28.6346 21.522 26.9212 20.1739 24.9808 19.2379C23.0404 18.302 20.9197 17.8006 18.7661 17.7687C16.6125 17.7367 14.4778 18.175 12.5106 19.053C16.9284 12.2457 21.5415 6.20205 23.4667 3.74359C27.624 9.07024 44.4581 31.2522 44.4581 41.5609C44.4581 41.8962 44.4581 42.2314 44.4581 42.5666C44.2835 46.0289 43.2564 49.3941 41.4682 52.3626C39.6799 55.3311 37.186 57.8106 34.2088 59.5802Z" fill="#17BFAB"/>
+<path d="M27.8359 60.4277L28.0684 60.3718C24.644 60.0686 21.4341 58.573 18.9973 56.145C16.5605 53.717 15.051 50.5103 14.7314 47.0831C15.9474 47.3925 17.1971 47.5489 18.4517 47.5487C22.3983 47.5487 26.1833 45.9789 28.974 43.1847C31.7647 40.3905 33.3326 36.6006 33.3326 32.649C33.3326 32.2672 33.3326 31.9041 33.3326 31.5316C33.2633 30.6421 33.117 29.7604 32.8954 28.8962C32.3551 26.8087 31.3669 24.864 29.9997 23.1976C28.6325 21.5313 26.9191 20.1833 24.9788 19.2473C23.0384 18.3113 20.9176 17.81 18.764 17.778C16.6105 17.7461 14.4758 18.1843 12.5086 19.0624L7.26303 23.0294C3.29168 29.8088 0.101573 36.7465 0.101573 41.5703C0.0971839 46.3109 1.53257 50.9407 4.21724 54.8456C6.90191 58.7504 10.7089 61.7455 15.1332 63.4336C19.5575 65.1217 24.3899 65.423 28.9891 64.2974C33.5883 63.1717 37.737 60.6724 40.8847 57.1311C36.9922 59.5827 32.4241 60.7368 27.8359 60.4277V60.4277ZM30.8121 32.6863C30.8072 35.9737 29.5001 39.1249 27.1776 41.4485C24.8552 43.7722 21.707 45.0786 18.4237 45.081C17.5453 45.0781 16.6695 44.9844 15.8103 44.8016L27.901 33.841L14.8337 43.3303C15.4069 39.8922 17.1814 36.7697 19.8406 34.52C22.4997 32.2702 25.8706 31.0395 29.3519 31.0473C29.8085 31.0453 30.2648 31.0672 30.7191 31.1126C30.7833 31.6346 30.8144 32.1602 30.8121 32.6863V32.6863ZM25.055 62.5602C24.497 62.5602 23.9297 62.6347 23.3623 62.6347C17.7981 62.6224 12.4656 60.4025 8.53278 56.4612C4.6 52.52 2.3876 47.1787 2.38023 41.6074C2.47429 39.5391 2.90792 37.5003 3.66371 35.5731C5.03609 31.9585 6.72286 28.4717 8.70461 25.1526C9.0404 24.6763 9.41029 24.225 9.81138 23.8023C11.3032 22.3469 13.1376 21.2919 15.1449 20.735C17.1521 20.1781 19.2672 20.1373 21.2944 20.6164C23.3216 21.0955 25.1953 22.0791 26.7419 23.4759C28.2886 24.8728 29.4581 26.6377 30.1424 28.6075H29.3612C25.2092 28.6135 21.2001 30.1267 18.0773 32.8665C14.9545 35.6062 12.9297 39.3867 12.3783 43.5072C12.2819 44.2514 12.2322 45.001 12.2296 45.7515C12.2296 45.9005 12.2296 46.0495 12.2296 46.1985C12.3349 50.0324 13.7176 53.721 16.158 56.6774C18.5983 59.6338 21.956 61.6882 25.6968 62.5137L25.055 62.5602Z" fill="#00A8BF"/>
+<path d="M7.16016 23.0667L12.4057 19.0996C10.3357 19.9309 8.52482 21.3004 7.16016 23.0667V23.0667Z" fill="#05A6C5"/>
+<path d="M143.118 23.5788H141.593L132.785 44.6805H135.426L138.272 37.808V37.7429L138.328 37.808C138.798 38.4169 139.402 38.9098 140.092 39.249C140.782 39.5881 141.54 39.7645 142.309 39.7645C143.078 39.7645 143.836 39.5881 144.526 39.249C145.216 38.9098 145.819 38.4169 146.29 37.808V37.7429V37.808L149.136 44.6805H151.861L143.118 23.5788ZM145.08 34.9119C145.061 35.1212 145.018 35.3275 144.95 35.5265C144.757 36.069 144.4 36.5383 143.93 36.8701C143.46 37.2019 142.898 37.38 142.323 37.38C141.748 37.38 141.186 37.2019 140.716 36.8701C140.246 36.5383 139.889 36.069 139.695 35.5265C139.631 35.3271 139.591 35.1208 139.575 34.9119C139.57 34.8406 139.57 34.769 139.575 34.6977L141.946 28.9427C142.067 28.6726 142.188 28.3653 142.318 28.0114C142.43 28.2722 142.569 28.5795 142.737 28.9427L145.118 34.6884C145.099 34.7722 145.08 34.8467 145.08 34.9119V34.9119Z" fill="#001F3D"/>
+<path d="M72.6571 23.5788H71.1318L62.3242 44.6805H64.9656L67.8115 37.808V37.7429V37.808C68.2826 38.417 68.8867 38.91 69.5775 39.2492C70.2683 39.5883 71.0275 39.7646 71.7969 39.7646C72.5662 39.7646 73.3253 39.5883 74.0161 39.2492C74.7069 38.91 75.311 38.417 75.7821 37.808V37.7429V37.808L78.6374 44.6805H81.3532L72.6571 23.5788ZM74.6102 34.9119C74.5942 35.1208 74.5537 35.3271 74.4894 35.5265C74.2958 36.069 73.9393 36.5383 73.469 36.8701C72.9986 37.2019 72.4373 37.38 71.862 37.38C71.2866 37.38 70.7253 37.2019 70.2549 36.8701C69.7846 36.5383 69.4282 36.069 69.2345 35.5265C69.1702 35.3271 69.1296 35.1208 69.1136 34.9119C69.109 34.8406 69.109 34.769 69.1136 34.6977L71.4853 28.9427C71.6062 28.6726 71.7271 28.3653 71.848 28.0114L72.2758 28.9427L74.6568 34.6884C74.6468 34.7639 74.6312 34.8386 74.6102 34.9119V34.9119Z" fill="#001F3D"/>
+<path d="M80.4492 26.0093H87.1456V44.6619H89.601V26.0093H96.2974V23.7185H80.4492V26.0093Z" fill="#001F3D"/>
+<path d="M125.557 23.5509L118.517 38.5902C118.396 38.823 118.293 39.0373 118.21 39.2142C118.126 39.0093 118.033 38.7951 117.94 38.5902L111.616 23.5509H109.988L106.547 44.6805H109.049L111.383 29.2686L117.317 43.6375H118.796L125.492 29.2965L125.576 29.1103L127.808 44.6432H130.338L127.148 23.5323L125.557 23.5509Z" fill="#001F3D"/>
+<path d="M196.457 34.437H203.562V32.1648H196.457V26.0093H204.316V23.7185H193.992V44.6619H204.613V42.3711H196.457V34.437Z" fill="#001F3D"/>
+<path d="M207.141 23.7185V26.0093H213.837V44.6619H216.292V26.0093H222.998V23.7185H207.141Z" fill="#001F3D"/>
+<path d="M171.318 42.6691C170.345 42.3471 169.476 41.7719 168.798 41.0022C168.519 40.6949 167.868 39.8753 166.873 38.5809C166.036 37.51 165.301 36.5322 164.668 35.6755C165.532 35.1836 166.271 34.4984 166.826 33.6734C167.528 32.6449 167.877 31.4162 167.821 30.172C167.844 29.2223 167.649 28.2799 167.251 27.4177C166.853 26.5555 166.262 25.7965 165.524 25.1991C164.201 24.1134 162.528 23.5474 160.818 23.6068C159.637 23.6068 158.14 23.6719 156.372 23.8023H155.852V44.6805H158.316V36.672H162.353C164.817 40.0523 166.343 42.0545 167.003 42.7343C167.618 43.4044 168.357 43.9483 169.179 44.336C170.059 44.7196 171.01 44.9162 171.969 44.9134H172.741V42.8925C172.259 42.8849 171.78 42.8097 171.318 42.6691V42.6691ZM160.734 34.437H158.233L158.316 25.9908C159.19 25.9908 159.981 25.9255 160.66 25.9255C161.788 25.8666 162.899 26.2209 163.785 26.922C164.242 27.3318 164.612 27.8303 164.871 28.3874C165.13 28.9445 165.273 29.5485 165.292 30.1627C165.284 31.2397 164.876 32.2753 164.148 33.0681C163.707 33.5244 163.176 33.8823 162.587 34.1182C161.999 34.3542 161.368 34.4628 160.734 34.437V34.437Z" fill="#001F3D"/>
+<path d="M189.733 42.818C189.533 42.7989 189.336 42.7551 189.147 42.6877C188.754 42.5671 188.379 42.3949 188.031 42.1756H187.966C187.842 42.1106 187.724 42.0357 187.613 41.952C187.613 41.952 187.613 41.952 187.547 41.8961L187.092 41.5236L186.617 41.0953C185.637 40.1345 184.705 39.1243 183.827 38.0688C182.581 36.6626 181.446 35.3495 180.451 34.1669L180.256 33.9341L183.046 30.7027L185.297 28.1418L189.129 23.7744H186.078L184.097 26.0186L182.395 27.9463L177.866 33.0867V23.7744H175.41V44.6805H177.866V34.8746L179.4 36.6719C179.995 37.3704 180.684 38.1525 181.465 39.0465C183.325 41.1325 184.441 42.4083 184.99 42.9578C185.26 43.2217 185.552 43.4616 185.864 43.6748L186.022 43.7772C186.346 43.9959 186.688 44.186 187.045 44.3453C187.983 44.7293 188.989 44.9194 190.003 44.904H190.57V42.8832C190.254 42.8646 189.752 42.818 189.733 42.818Z" fill="#001F3D"/>
+</g>
+<defs>
+<clipPath id="clip0_131:7378">
+<rect width="223" height="65" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+</a><a class="header__cart header__cart-mob" href="#" data-show-popup="cart-popup-empty"><i class="font-icon-cart"></i><span>1</span></a><a class="show-before-tablet close-menu" href="#"><i class="font-icon-close"></i></a>
+        <div class="header-content">
+          <nav class="header__nav-catalog"><a class="header__nav-catalog-item" href="#">Каталог<i class="font-icon-arrow-small"></i></a>
+            <div class="header__nav-catalog-wrap">
+              <div class="container">
+                <div class="header__nav-catalog-content"><a class="header__nav-catalog-title" href="#"><i class="font-icon font-icon-water"></i>Вода & Напитки<i class="font-icon-arrow show-before-tablet"></i></a>
+                  <div class="header__nav-catalog-group">
+                    <div class="header__nav-catalog-list">
+                      <ul>
+                        <li><a class="catalog-item" href="#">Smeraldina</a></li>
+                        <li><a class="catalog-item" href="#">Vichy Catalan</a></li>
+                        <li><a class="catalog-item" href="#">Горянка</a></li>
+                        <li><a class="catalog-item" href="#">Smeraldina</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__nav-catalog-list">
+                      <ul class="show-from-tablet">
+                        <li><a class="catalog-item" href="#">Vichy Catalan</a></li>
+                        <li><a class="catalog-item" href="#">Горянка</a></li>
+                      </ul><a class="header__nav-catalog-showmore" href="#">Показать все</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__nav-catalog-content"><a class="header__nav-catalog-title" href="#"><i class="font-icon font-icon-tea"></i>Чай<i class="font-icon-arrow show-before-tablet"></i></a>
+                  <div class="header__nav-catalog-group">
+                    <div class="header__nav-catalog-list">
+                      <ul>
+                        <li><a class="catalog-item" href="#">Smeraldina</a></li>
+                        <li><a class="catalog-item" href="#">Vichy Catalan</a></li>
+                        <li><a class="catalog-item" href="#">Горянка</a></li>
+                        <li><a class="catalog-item" href="#">Smeraldina</a></li>
+                        <li><a class="catalog-item" href="#">Vichy Catalan</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="menu-item"><a href="#">Про компанию</a></li>
+              <li class="menu-item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav><a class="menu-item show-before-tablet" href="#" data-show-popup="cart-popup">Корзина</a>
+          <div class="header__socials show-before-tablet"><a href="#"><i class="font-icon font-icon-instagram"></i></a><a href="#"><i class="font-icon font-icon-telegram"></i></a><a href="#"><i class="font-icon font-icon-facebook"></i></a></div>
+          <div class="header__land-switcher form-type-select show-before-tablet"><a class="active" href="#">ENG</a><a href="#">RU</a><a href="#">UA</a></div>
+          <form class="form-type-search"><a href="#"><i class="font-icon-search"></i></a>
+            <input class="form-search" type="search">
+          </form><a class="header__phone" href="tel:+38 (067) 662 67 67">+38 (067) 662 67 67</a>
+          <div class="show-from-tablet"><a class="header__cart header__cart-desktop" href="#" data-show-popup="cart-popup-full">
+              <p>0.00 грн</p><i class="font-icon-cart"></i><span>1</span></a></div>
+          <div class="header__land-switcher form-type-select show-from-tablet">
+            <select class="form-select">
+              <option>UA</option>
+              <option>RU</option>
+            </select><i class="font-icon-arrow-small"></i>
+          </div><a class="header__signin" href="#"><i class="font-icon-user"></i><span>Личный кабинет</span></a>
+        </div>
+      </div>
+    </header>
+    <main class="page-container">
+      <section class="hero-section-slider">
+        <div class="hero-section">
+          <div class="hero-section__background hero-section__background-mob" style="background-image: url(img/hero-mob-bg-01.png)"></div>
+          <div class="hero-section__background hero-section__background-desktop" style="background-image: url(img/hero-bg.png)"></div>
+          <div class="container flex">
+            <div class="hero-section__info">
+              <h1>VODA UA<span>Карпатська джерельна високогірна</span></h1><a class="btn" href="#">Каталог</a>
+            </div>
+            <div class="hero-section__socials"><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-instagram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-telegram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-facebook"></i></a></div>
+          </div>
+        </div>
+        <div class="hero-section">
+          <div class="hero-section__background hero-section__background-mob" style="background-image: url(img/hero-mob-bg-01.png)"></div>
+          <div class="hero-section__background hero-section__background-desktop" style="background-image: url(img/hero-bg-01.png)"></div>
+          <div class="container flex">
+            <div class="hero-section__info">
+              <h1>VODA UA<span>Карпатська джерельна високогірна</span></h1><a class="btn" href="#">Каталог</a>
+            </div>
+            <div class="hero-section__socials"><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-instagram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-telegram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-facebook"></i></a></div>
+          </div>
+        </div>
+        <div class="hero-section">
+          <div class="hero-section__background hero-section__background-mob" style="background-image: url(img/hero-mob-bg-01.png)"></div>
+          <div class="hero-section__background hero-section__background-desktop" style="background-image: url(img/hero-bg-02.png)"></div>
+          <div class="container flex">
+            <div class="hero-section__info">
+              <h1>VODA UA<span>Карпатська джерельна високогірна</span></h1><a class="btn" href="#">Каталог</a>
+            </div>
+            <div class="hero-section__socials"><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-instagram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-telegram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-facebook"></i></a></div>
+          </div>
+        </div>
+        <div class="hero-section">
+          <div class="hero-section__background hero-section__background-mob" style="background-image: url(img/hero-mob-bg-01.png)"></div>
+          <div class="hero-section__background hero-section__background-desktop" style="background-image: url(img/hero-bg-03.png)"></div>
+          <div class="container flex">
+            <div class="hero-section__info">
+              <h1>VODA UA<span>Карпатська джерельна високогірна</span></h1><a class="btn" href="#">Каталог</a>
+            </div>
+            <div class="hero-section__socials"><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-instagram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-telegram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-facebook"></i></a></div>
+          </div>
+        </div>
+        <div class="hero-section">
+          <div class="hero-section__background hero-section__background-mob" style="background-image: url(img/hero-mob-bg-01.png)"></div>
+          <div class="hero-section__background hero-section__background-desktop" style="background-image: url(img/hero-bg-04.png)"></div>
+          <div class="container flex">
+            <div class="hero-section__info">
+              <h1>VODA UA<span>Карпатська джерельна високогірна</span></h1><a class="btn" href="#">Каталог</a>
+            </div>
+            <div class="hero-section__socials"><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-instagram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-telegram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-facebook"></i></a></div>
+          </div>
+        </div>
+        <div class="hero-section">
+          <div class="hero-section__background hero-section__background-mob" style="background-image: url(img/hero-mob-bg-01.png)"></div>
+          <div class="hero-section__background hero-section__background-desktop" style="background-image: url(img/hero-bg-05.png)"></div>
+          <div class="container flex">
+            <div class="hero-section__info">
+              <h1>VODA UA<span>Карпатська джерельна високогірна</span></h1><a class="btn" href="#">Каталог</a>
+            </div>
+            <div class="hero-section__socials"><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-instagram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-telegram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-facebook"></i></a></div>
+          </div>
+        </div>
+        <div class="hero-section">
+          <div class="hero-section__background hero-section__background-mob" style="background-image: url(img/hero-mob-bg-01.png)"></div>
+          <div class="hero-section__background hero-section__background-desktop" style="background-image: url(img/hero-bg-06.png)"></div>
+          <div class="container flex">
+            <div class="hero-section__info">
+              <h1>VODA UA<span>Карпатська джерельна високогірна</span></h1><a class="btn" href="#">Каталог</a>
+            </div>
+            <div class="hero-section__socials"><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-instagram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-telegram"></i></a><a class="hero-section__socials-item" href="#"><i class="font-icon font-icon-facebook"></i></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog-section js-tabs catalog-section-01">
+        <div class="container">
+          <h2>КАТАЛОГ ТОВАРОВ</h2>
+          <div class="section-tabs js-tabs__nav">
+            <button class="section-tabs-item js-tabs__nav-item active">Вода & Напитки</button>
+            <button class="section-tabs-item js-tabs__nav-item">Чай</button>
+          </div>
+          <div class="section-tabs__content js-tabs__content active">
+            <div class="product-list">
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-01.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-02.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-03.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-04.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-01.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-02.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-03.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-04.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-01.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-02.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-03.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-04.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+            </div>
+          </div>
+          <div class="section-tabs__content js-tabs__content">
+            <div class="product-list">
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-01.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-02.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-03.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-04.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-01.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-02.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-03.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-04.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-01.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-02.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-03.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+              <div class="product-item">
+                <div class="product-item__img"><img src="img/product-img-04.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+                <p class="product-item__price">50.00 грн/ шт</p>
+                <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+                <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="brands js-tabs">
+        <div class="container">
+          <h2>БРЕНДЫ</h2>
+          <div class="section-tabs js-tabs__nav">
+            <button class="section-tabs-item js-tabs__nav-item active">Вода & Напитки</button>
+            <button class="section-tabs-item js-tabs__nav-item">Чай</button>
+          </div>
+          <div class="section-tabs__content js-tabs__content active">
+            <div class="brands__slider">
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-01.png"></div>
+                <p class="brands-item__title">Smeraldina</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-02.png"></div>
+                <p class="brands-item__title">Vichy Catalan</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-03.png"></div>
+                <p class="brands-item__title">Горянка</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-04.png"></div>
+                <p class="brands-item__title">Voda UA</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-05.png"></div>
+                <p class="brands-item__title">Карпатська джерельна високогірна</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-06.png"></div>
+                <p class="brands-item__title">Solan</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-07.png"></div>
+                <p class="brands-item__title">Grands Crus Prestige</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-08.png"></div>
+                <p class="brands-item__title">Mondariz</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-09.png"></div>
+                <p class="brands-item__title">Orientea</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-tabs__content js-tabs__content">
+            <div class="brands__slider">
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-01.png"></div>
+                <p class="brands-item__title">Smeraldina</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-02.png"></div>
+                <p class="brands-item__title">Vichy Catalan</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-03.png"></div>
+                <p class="brands-item__title">Горянка</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-04.png"></div>
+                <p class="brands-item__title">Voda UA</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-05.png"></div>
+                <p class="brands-item__title">Карпатська джерельна високогірна</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-06.png"></div>
+                <p class="brands-item__title">Solan</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-07.png"></div>
+                <p class="brands-item__title">Grands Crus Prestige</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-08.png"></div>
+                <p class="brands-item__title">Mondariz</p>
+              </div>
+              <div class="brands-item">
+                <div class="brands-item__img"><img src="img/brand-09.png"></div>
+                <p class="brands-item__title">Orientea</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quick-order">
+        <div class="container">
+          <h2>Быстрый заказ</h2>
+          <div class="quick-order__title">заполните форму и мы свяжемся с вами</div>
+          <form class="request-form">
+            <div class="request-form__group">
+              <input class="input-text" type="text" placeholder="Имя">
+              <input class="input-text" type="text" placeholder="Телефон">
+              <input class="input-text" type="text" placeholder="E-mail">
+            </div>
+            <input class="btn" type="submit" value="Заказать">
+            <div class="request-form__agree">
+              <input class="checkbox" type="checkbox" id="agree" name="agree" checked>
+              <label for="agree">Нажимая кнопку, вы даете согласие на обработку персональных данных. &nbsp;<a href="#">Политика конфиденциальности</a></label>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__group flex">
+            <div class="advantages__item">
+              <div class="advantages__img"><img src="img/advantages-01.png" alt="Опт"></div>
+              <div class="advantages__title">Опт</div>
+              <div class="advantages__content"><a href="tel: +380 (00) 000 00 00">+380 (00) 000 00 00</a><a href="mailto: email@atmarket.ua">email@atmarket.ua</a></div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__img"><img src="img/advantages-02.png" alt="В магазинах"></div>
+              <div class="advantages__title">В магазинах</div>
+              <div class="advantages__content">
+                <p>Lorem ipsum dolor sit amet, consecetuer adipiscing elit</p>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__img"><img src="img/advantages-03.png" alt="Доставка"></div>
+              <div class="advantages__title">Доставка</div>
+              <div class="advantages__content"><a href="tel: +380 (00) 000 00 00">+380 (00) 000 00 00</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog-section tabs-wrapper hits-section">
+        <div class="container">
+          <h2>ХИТЫ ПРОДАЖ</h2>
+          <div class="subtitle">ЧАЩЕ ВСЕГО ЗАКАЗЫВАЮТ</div>
+          <div class="product-list">
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-01.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-02.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-03.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-04.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-01.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-02.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-03.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-04.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-01.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-02.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-03.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="product-item">
+              <div class="product-item__img"><img src="img/product-img-04.png" alt="Smeraldina, 0,5 л, вода мінеральна газована, скло"></div><a class="product-item__title" href="#">Smeraldina, 0,5 л, вода мінеральна газована, скло</a>
+              <p class="product-item__price">50.00 грн/ шт</p>
+              <div class="product-item__price-group"><span>20шт. в уп.</span><span>1 000грн</span></div>
+              <button class="btn"><i class="font-icon-cart"></i>в корзину</button><a class="btn btn-secondary" href="#">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="brands tabs-wrapper">
+        <div class="container">
+          <h2>ПАРТНЕРЫ</h2>
+          <div class="brands__slider">
+            <div class="brands-item">
+              <div class="brands-item__img"><img src="img/brand-01.png"></div>
+              <p class="brands-item__title">Smeraldina</p>
+            </div>
+            <div class="brands-item">
+              <div class="brands-item__img"><img src="img/brand-02.png"></div>
+              <p class="brands-item__title">Vichy Catalan</p>
+            </div>
+            <div class="brands-item">
+              <div class="brands-item__img"><img src="img/brand-03.png"></div>
+              <p class="brands-item__title">Горянка</p>
+            </div>
+            <div class="brands-item">
+              <div class="brands-item__img"><img src="img/brand-04.png"></div>
+              <p class="brands-item__title">Voda UA</p>
+            </div>
+            <div class="brands-item">
+              <div class="brands-item__img"><img src="img/brand-05.png"></div>
+              <p class="brands-item__title">Карпатська джерельна високогірна</p>
+            </div>
+            <div class="brands-item">
+              <div class="brands-item__img"><img src="img/brand-06.png"></div>
+              <p class="brands-item__title">Solan</p>
+            </div>
+            <div class="brands-item">
+              <div class="brands-item__img"><img src="img/brand-07.png"></div>
+              <p class="brands-item__title">Grands Crus Prestige</p>
+            </div>
+            <div class="brands-item">
+              <div class="brands-item__img"><img src="img/brand-08.png"></div>
+              <p class="brands-item__title">Mondariz</p>
+            </div>
+            <div class="brands-item">
+              <div class="brands-item__img"><img src="img/brand-09.png"></div>
+              <p class="brands-item__title">Orientea</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="quik-order-popup section-popup">
+      <div class="popup-overlay"></div>
+      <div class="section-popup__content">
+        <button class="popup-close-icon"></button>
+        <h2> Быстрый заказ</h2>
+        <div class="quick-order__title">заполните форму и мы свяжемся с вами</div>
+        <form class="request-form">
+          <div class="request-form__group">
+            <input class="input-text" type="text" placeholder="Имя">
+            <input class="input-text" type="text" placeholder="Телефон">
+            <input class="input-text" type="text" placeholder="E-mail">
+          </div>
+          <input class="btn" type="submit" value="Заказать">
+          <div class="request-form__agree">
+            <input class="checkbox" type="checkbox" id="agree" name="agree" checked>
+            <label for="agree">Нажимая кнопку, вы даете согласие на обработку персональных данных. &nbsp;<a href="#">Политика конфиденциальности</a></label>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="cart-popup cart-popup-empty section-popup">
+      <div class="popup-overlay"></div>
+      <div class="section-popup__content">
+        <div class="cart-popup__top flex">
+          <button class="popup-close-icon">Закрыть</button>
+          <div class="cart-popup__title"><i class="font-icon-cart"></i>Корзина</div>
+        </div>
+        <div class="cart-popup__content">
+          <div class="cart-popup__text">Ваша корзина пуста!<br> Выберите товары</div><a class="btn" href="#">Каталог</a>
+        </div>
+      </div>
+    </section>
+    <section class="cart-popup cart-popup-full section-popup">
+      <div class="popup-overlay"></div>
+      <div class="section-popup__content">
+        <div class="cart-popup__top flex">
+          <button class="popup-close-icon">Закрыть</button>
+          <div class="cart-popup__title"><i class="font-icon-cart"></i>Корзина</div>
+        </div>
+        <div class="cart-popup__content">
+          <div class="cart-popup__text">Ваш товар успешно добавлен в корзину!</div>
+          <div class="cart-popup__product">
+            <div class="cart-popup__img"><img src="img/product-img-01.png" alt="бутылка"></div>
+            <div class="cart-popup__product-title">Smeraldina, 0,5 л, вода мінеральна газована, скло</div>
+            <div class="cart-popup__price">Цена за единицу<span>50 грн.</span></div>
+            <div class="product-hero__count flex">
+              <button><svg width="22" height="2" viewBox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1H21" stroke="#002B4E" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+              </button><span>1</span>
+              <button><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 11H21" stroke="#002B4E" stroke-width="2" stroke-linecap="round"/>
+<path d="M11 1L11 21" stroke="#002B4E" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+              </button>
+            </div>
+            <div class="cart-popup__to-pay">К оплате<span>50 грн.</span></div>
+            <button class="cart-popup__product-delete"><i class="font-icon-close"></i></button>
+          </div>
+          <div class="cart-popup__product">
+            <div class="cart-popup__img"><img src="img/product-img-01.png" alt="бутылка"></div>
+            <div class="cart-popup__product-title">Smeraldina, 0,5 л, вода мінеральна газована, скло</div>
+            <div class="cart-popup__price">Цена за единицу<span>50 грн.</span></div>
+            <div class="product-hero__count flex">
+              <button><svg width="22" height="2" viewBox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1H21" stroke="#002B4E" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+              </button><span>1</span>
+              <button><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 11H21" stroke="#002B4E" stroke-width="2" stroke-linecap="round"/>
+<path d="M11 1L11 21" stroke="#002B4E" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+              </button>
+            </div>
+            <div class="cart-popup__to-pay">К оплате<span>50 грн.</span></div>
+            <button class="cart-popup__product-delete"><i class="font-icon-close"></i></button>
+          </div>
+          <div class="cart-popup__order-price">Сумма всего заказа<span>100 грн.</span></div><a class="btn" href="#">Оформить заказ</a>
+        </div>
+      </div>
+    </section>
+    <section class="new-address-popup section-popup personal-area">
+      <div class="popup-overlay"></div>
+      <div class="section-popup__content">
+        <button class="popup-close-icon"></button>
+        <h2> Добавить новый адрес</h2>
+        <div class="personal-area__addresses-input">
+          <p>Город</p>
+          <input class="input-text" type="text" placeholder="Lorem ipsum">
+          <p>Улица</p>
+          <input class="input-text" type="text" placeholder="Lorem ipsum">
+          <div class="personal-area__addresses-group-input flex">
+            <div>
+              <p>Дом</p>
+              <input class="input-text" type="text" placeholder="Lorem ipsum">
+            </div>
+            <div>
+              <p>Квартира</p>
+              <input class="input-text" type="text" placeholder="Lorem ipsum">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cookies-popup section-popup">
+      <div class="popup-overlay"></div>
+      <div class="section-popup__content">
+        <button class="popup-close-icon"></button>
+        <h2> У нас тут cookies....</h2>
+        <p>На сайте используются файлы cookies. Продолжая использование сайта, вы соглашаетесь с этим. Подробности об обработке ваших данных — в &nbsp<a href="#">политике конфиденциальности.</a></p>
+      </div>
+    </section>
+    <button class="make-an-order"><i class="font-icon-cart"></i><span>Сделать <br>заказ</span></button>
+    <footer class="footer">
+      <div class="container"><a class="footer__logo" href="/"><svg width="271" height="180" viewBox="0 0 271 180" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect y="0.431152" width="270.577" height="157.843" fill="url(#pattern0)"/>
+<path d="M65.6571 158.579H64.1318L55.3242 179.68H57.9656L60.8115 172.808V172.743V172.808C61.2826 173.417 61.8867 173.91 62.5775 174.249C63.2683 174.588 64.0275 174.764 64.7969 174.764C65.5662 174.764 66.3253 174.588 67.0161 174.249C67.7069 173.91 68.311 173.417 68.7821 172.808V172.743V172.808L71.6374 179.68H74.3532L65.6571 158.579ZM67.6102 169.912C67.5942 170.121 67.5537 170.327 67.4894 170.526C67.2958 171.069 66.9393 171.538 66.469 171.87C65.9986 172.202 65.4373 172.38 64.862 172.38C64.2866 172.38 63.7253 172.202 63.2549 171.87C62.7846 171.538 62.4282 171.069 62.2345 170.526C62.1702 170.327 62.1296 170.121 62.1136 169.912C62.109 169.84 62.109 169.769 62.1136 169.698L64.4853 163.943C64.6062 163.672 64.7271 163.365 64.848 163.011L65.2758 163.943L67.6568 169.688C67.6468 169.764 67.6312 169.838 67.6102 169.912Z" fill="white"/>
+<path d="M137.044 158.579H135.519L126.711 179.68H129.352L132.198 172.808V172.743V172.808C132.669 173.417 133.273 173.91 133.964 174.249C134.655 174.588 135.414 174.764 136.184 174.764C136.953 174.764 137.712 174.588 138.403 174.249C139.094 173.91 139.698 173.417 140.169 172.808V172.743V172.808L143.024 179.68H145.74L137.044 158.579ZM138.997 169.912C138.981 170.121 138.94 170.327 138.876 170.526C138.682 171.069 138.326 171.538 137.856 171.87C137.385 172.202 136.824 172.38 136.249 172.38C135.673 172.38 135.112 172.202 134.642 171.87C134.171 171.538 133.815 171.069 133.621 170.526C133.557 170.327 133.516 170.121 133.5 169.912C133.496 169.84 133.496 169.769 133.5 169.698L135.872 163.943C135.993 163.672 136.114 163.365 136.235 163.011L136.663 163.943L139.044 169.688C139.034 169.764 139.018 169.838 138.997 169.912Z" fill="white"/>
+<path d="M73.4492 161.291H80.1456V179.943H82.601V161.291H89.2974V159H73.4492V161.291Z" fill="white"/>
+<path d="M118.557 158.551L111.517 173.59C111.396 173.823 111.293 174.037 111.21 174.214C111.126 174.009 111.033 173.795 110.94 173.59L104.616 158.551H102.988L99.5469 179.68H102.049L104.383 164.269L110.317 178.637H111.796L118.492 164.296L118.576 164.11L120.808 179.643H123.338L120.148 158.532L118.557 158.551Z" fill="white"/>
+<path d="M189.457 169.437H196.562V167.165H189.457V161.009H197.316V158.718H186.992V179.662H197.613V177.371H189.457V169.437Z" fill="white"/>
+<path d="M200.141 158.718V161.009H206.837V179.662H209.292V161.009H215.998V158.718H200.141Z" fill="white"/>
+<path d="M164.318 177.669C163.345 177.347 162.476 176.772 161.798 176.002C161.519 175.695 160.868 174.875 159.873 173.581C159.036 172.51 158.301 171.532 157.668 170.676C158.532 170.184 159.271 169.498 159.826 168.673C160.528 167.645 160.877 166.416 160.821 165.172C160.844 164.222 160.649 163.28 160.251 162.418C159.853 161.556 159.262 160.797 158.524 160.199C157.201 159.113 155.528 158.547 153.818 158.607C152.637 158.607 151.14 158.672 149.372 158.802H148.852V179.681H151.316V171.672H155.353C157.817 175.052 159.343 177.055 160.003 177.734C160.618 178.404 161.357 178.948 162.179 179.336C163.059 179.72 164.01 179.916 164.969 179.913H165.741V177.893C165.259 177.885 164.78 177.81 164.318 177.669ZM153.734 169.437H151.233L151.316 160.991C152.19 160.991 152.981 160.926 153.66 160.926C154.788 160.867 155.899 161.221 156.785 161.922C157.242 162.332 157.612 162.83 157.871 163.387C158.13 163.944 158.273 164.548 158.292 165.163C158.284 166.24 157.876 167.275 157.148 168.068C156.707 168.524 156.176 168.882 155.587 169.118C154.999 169.354 154.368 169.463 153.734 169.437Z" fill="white"/>
+<path d="M182.733 177.818C182.533 177.799 182.336 177.755 182.147 177.688C181.754 177.567 181.379 177.395 181.031 177.176H180.966C180.842 177.111 180.724 177.036 180.613 176.952C180.613 176.952 180.613 176.952 180.547 176.896L180.092 176.524L179.617 176.095C178.637 175.134 177.705 174.124 176.827 173.069C175.581 171.663 174.446 170.35 173.451 169.167L173.256 168.934L176.046 165.703L178.297 163.142L182.129 158.774H179.078L177.097 161.019L175.395 162.946L170.866 168.087V158.774H168.41V179.681H170.866V169.875L172.4 171.672C172.995 172.37 173.684 173.153 174.465 174.047C176.325 176.132 177.441 177.408 177.99 177.958C178.26 178.222 178.552 178.462 178.864 178.675L179.022 178.777C179.346 178.996 179.688 179.186 180.045 179.345C180.983 179.729 181.989 179.919 183.003 179.904H183.57V177.883C183.254 177.865 182.752 177.818 182.733 177.818Z" fill="white"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_131:7903" transform="translate(0 -0.000391418) scale(0.00165837 0.00279143)"/>
+</pattern>
+<image id="image0_131:7903" width="603" height="472" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>
+</a>
+        <p class="footer__text">Доставка здійснюється нашими кур'єрами по Києву. Відправлення в інші міста здійснюються за тарифами "Нової Пошти" до найближчого відділення.</p>
+        <div class="footer__group flex">
+          <div class="footer__item">
+            <div class="footer__item-title">Графік доставки<br><span>(КИЇВ):</span></div>
+            <p>Понеділок – П’ятниця</p>
+            <p>з 9:00 до 18:00</p>
+            <p class="footer__item-ps">*якщо замовлення отримано до 18:00 попереднього дня</p>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-title">Робочі Години</div>
+            <p>Понеділок – П’ятниця</p>
+            <p>з 9:00 до 17:30</p>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-title">ІНФОРМАЦІЯ</div>
+            <ul>
+              <li><a href="#">Про компанію</a></li>
+              <li><a href="#">Оплата/доставка</a></li>
+              <li><a href="#">Повернення товару</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-title">Контакти</div><a class="footer__item-contact" href="tel:+38 067 662 67 67">+38 067 662 67 67</a><a class="footer__item-contact" href="mailto:zakaz@voda.ua">zakaz@voda.ua</a>
+            <div class="footer__socials flex"><a class="footer__socials-item" href="#"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.1606 1.37918L11.1383 0.879679L11.1381 0.879685L11.1606 1.37918ZM7.15194 2.13224L7.33001 2.59946L7.33024 2.59937L7.15194 2.13224ZM4.22614 4.00138L4.57623 4.35836L4.57643 4.35816L4.22614 4.00138ZM2.31989 6.87245L2.78458 7.05701L2.78459 7.05699L2.31989 6.87245ZM1.55257 10.8066L1.05309 10.7837L1.05309 10.7838L1.55257 10.8066ZM1.55291 24.1725L1.05344 24.1956L1.05346 24.1959L1.55291 24.1725ZM2.32023 28.1067L1.85535 28.2907L1.85536 28.2908L2.32023 28.1067ZM4.22511 30.9781L4.57553 30.6214L4.57527 30.6211L4.22511 30.9781ZM7.14987 32.8489L7.32807 32.3817L7.32804 32.3817L7.14987 32.8489ZM11.1592 33.602L11.1368 34.1014L11.1369 34.1015L11.1592 33.602ZM24.7776 33.602L24.7999 34.1015L24.8 34.1014L24.7776 33.602ZM28.7883 32.8489L28.6102 32.3817L28.6101 32.3817L28.7883 32.8489ZM31.712 30.9781L31.3619 30.6211L31.3616 30.6214L31.712 30.9781ZM33.6183 28.107L34.083 28.2915L34.0835 28.2902L33.6183 28.107ZM34.3856 24.1729L34.885 24.1968L34.8851 24.1957L34.3856 24.1729ZM34.3856 10.8069L34.8851 10.7841L34.885 10.783L34.3856 10.8069ZM33.6183 6.87279L34.0835 6.68952L34.083 6.6883L33.6183 6.87279ZM31.712 4.00138L31.3618 4.35823L31.3619 4.35836L31.712 4.00138ZM28.7873 2.13224L28.6094 2.59952L28.6095 2.59956L28.7873 2.13224ZM24.7752 1.37918L24.7976 0.879685L24.7975 0.879679L24.7752 1.37918ZM17.9708 0.78125C13.4827 0.78125 12.9111 0.800501 11.1383 0.879679L11.1829 1.87868C12.9335 1.8005 13.4878 1.78125 17.9708 1.78125V0.78125ZM11.1381 0.879685C9.33362 0.960783 8.07994 1.24284 6.97364 1.66511L7.33024 2.59937C8.32426 2.21995 9.47095 1.95562 11.183 1.87868L11.1381 0.879685ZM6.97387 1.66502C5.82845 2.10157 4.84694 2.69119 3.87585 3.64459L4.57643 4.35816C5.4414 3.50895 6.30284 2.99093 7.33 2.59946L6.97387 1.66502ZM3.87606 3.64439C2.9041 4.59756 2.30235 5.5619 1.85519 6.68791L2.78459 7.05699C3.18389 6.05148 3.71074 5.20713 4.57623 4.35836L3.87606 3.64439ZM1.8552 6.68789C1.42279 7.77662 1.13445 9.01034 1.05309 10.7837L2.05204 10.8295C2.12896 9.15295 2.39805 8.03024 2.78458 7.05701L1.8552 6.68789ZM1.05309 10.7838C0.973781 12.524 0.953125 13.0855 0.953125 17.4906H1.95312C1.95312 13.0913 1.97376 12.5472 2.05205 10.8294L1.05309 10.7838ZM0.953125 17.4906C0.953125 21.8955 0.973087 22.4552 1.05344 24.1956L2.05238 24.1495C1.97308 22.4319 1.95312 21.89 1.95312 17.4906H0.953125ZM1.05346 24.1959C1.13657 25.9696 1.4245 27.2026 1.85535 28.2907L2.78511 27.9226C2.39978 26.9494 2.13097 25.8267 2.05236 24.1491L1.05346 24.1959ZM1.85536 28.2908C2.30154 29.4174 2.90339 30.3818 3.87496 31.335L4.57527 30.6211C3.71008 29.7724 3.18331 28.9281 2.7851 27.9226L1.85536 28.2908ZM3.87469 31.3347C4.84525 32.2883 5.8267 32.8794 6.97171 33.3161L7.32804 32.3817C6.30184 31.9904 5.44035 31.4711 4.57553 30.6214L3.87469 31.3347ZM6.97167 33.3161C8.0786 33.7383 9.33257 34.0203 11.1368 34.1014L11.1817 33.1025C9.46993 33.0255 8.32285 32.7612 7.32807 32.3817L6.97167 33.3161ZM11.1369 34.1015C12.9097 34.1806 13.481 34.1999 17.9687 34.1999V33.1999C13.4861 33.1999 12.9322 33.1806 11.1815 33.1024L11.1369 34.1015ZM17.9687 34.1999C22.4572 34.1999 23.0271 34.1806 24.7999 34.1015L24.7553 33.1024C23.0046 33.1806 22.4521 33.1999 17.9687 33.1999V34.1999ZM24.8 34.1014C26.6045 34.0204 27.8595 33.7383 28.9665 33.3161L28.6101 32.3817C27.6154 32.7612 26.4673 33.0255 24.7551 33.1025L24.8 34.1014ZM28.9664 33.3161C30.112 32.8793 31.092 32.2882 32.0624 31.3347L31.3616 30.6214C30.4966 31.4712 29.6365 31.9904 28.6102 32.3817L28.9664 33.3161ZM32.0621 31.3351C33.0341 30.3819 33.6358 29.4175 34.083 28.2915L33.1536 27.9225C32.7543 28.928 32.2274 29.7723 31.3619 30.6211L32.0621 31.3351ZM34.0835 28.2902C34.5119 27.2024 34.8001 25.9696 34.885 24.1968L33.8862 24.1489C33.8059 25.826 33.5367 26.9496 33.1531 27.9238L34.0835 28.2902ZM34.8851 24.1957C34.9647 22.4555 34.9854 21.8957 34.9854 17.4906H33.9854C33.9854 21.8898 33.9647 22.4322 33.8861 24.15L34.8851 24.1957ZM34.9854 17.4906C34.9854 13.0855 34.9647 12.5243 34.8851 10.7841L33.8861 10.8298C33.9647 12.5476 33.9854 13.0913 33.9854 17.4906H34.9854ZM34.885 10.783C34.8002 9.00952 34.5119 7.77698 34.0835 6.68952L33.1531 7.05606C33.5367 8.02988 33.8059 9.1531 33.8862 10.8308L34.885 10.783ZM34.083 6.6883C33.6358 5.56192 33.0341 4.59757 32.0621 3.64439L31.3619 4.35836C32.2274 5.20712 32.7543 6.05146 33.1536 7.05728L34.083 6.6883ZM32.0622 3.64452C31.0908 2.69113 30.1121 2.10133 28.9651 1.66492L28.6095 2.59956C29.637 2.9905 30.4958 3.50833 31.3618 4.35823L32.0622 3.64452ZM28.9652 1.66496C27.8564 1.24285 26.6022 0.960786 24.7976 0.879685L24.7527 1.87868C26.4647 1.95562 27.6123 2.21994 28.6094 2.59952L28.9652 1.66496ZM24.7975 0.879679C23.0247 0.800501 22.4551 0.78125 17.9656 0.78125V1.78125C22.45 1.78125 23.0022 1.8005 24.7529 1.87868L24.7975 0.879679ZM17.9656 1.78125H17.9708V0.78125H17.9656V1.78125Z" fill="url(#paint0_linear_555:458)"/>
+<path d="M17.4191 4.20214L17.4189 4.70214L17.419 4.70214L17.4191 4.20214ZM16.488 4.20229H15.988V4.70306L16.4887 4.70229L16.488 4.20229ZM17.9696 4.20229L17.9695 4.70229H17.9696V4.20229ZM24.6436 4.2955L24.666 3.796L24.6658 3.79599L24.6436 4.2955ZM27.7101 4.85371L27.8882 4.3865L27.8881 4.38648L27.7101 4.85371ZM29.6081 6.06603L29.2578 6.42278L29.2579 6.42288L29.6081 6.06603ZM30.8441 7.9301L31.3089 7.74596L31.3088 7.74575L30.8441 7.9301ZM31.4128 10.939L31.9123 10.9158L31.9123 10.9158L31.4128 10.939ZM31.4128 24.0347L31.9123 24.058L31.9123 24.0579L31.4128 24.0347ZM30.8441 27.0436L30.3792 26.8595L30.3791 26.8596L30.8441 27.0436ZM29.6081 28.9056L29.258 28.5487L29.2579 28.5488L29.6081 28.9056ZM27.7101 30.118L27.5321 29.6507L27.5312 29.6511L27.7101 30.118ZM24.6436 30.6765L24.6659 31.176L24.666 31.176L24.6436 30.6765ZM11.2957 30.6765L11.273 31.176L11.2734 31.176L11.2957 30.6765ZM8.22878 30.1176L8.05069 30.5848L8.05082 30.5849L8.22878 30.1176ZM6.32941 28.9053L5.97918 29.2622L5.97918 29.2622L6.32941 28.9053ZM5.09344 27.0422L4.62858 27.2264L4.62864 27.2265L5.09344 27.0422ZM4.52466 24.0334L4.02519 24.0565L4.02519 24.0565L4.52466 24.0334ZM4.52466 10.9349L4.0252 10.9116L4.02519 10.9118L4.52466 10.9349ZM5.09344 7.92537L4.62852 7.74138L4.6285 7.74142L5.09344 7.92537ZM6.32941 6.0613L6.67963 6.41816L6.32941 6.0613ZM8.22878 4.8483L8.40723 5.31538L8.40754 5.31526L8.22878 4.8483ZM11.2957 4.28942L11.2735 3.78991L11.2731 3.78993L11.2957 4.28942ZM16.488 4.19824H16.988V3.69769L16.4874 3.69824L16.488 4.19824ZM26.7859 6.89372V7.39372H27.2859V6.89372H26.7859ZM26.7859 6.89305V6.39305H26.2859V6.89305H26.7859ZM17.4194 3.70214C17.0855 3.70199 16.7755 3.70185 16.4872 3.7023L16.4887 4.70229C16.7758 4.70185 17.0848 4.70199 17.4189 4.70214L17.4194 3.70214ZM17.9698 3.70229L17.4193 3.70214L17.419 4.70214L17.9695 4.70229L17.9698 3.70229ZM24.6658 3.79599C22.913 3.71782 22.3813 3.70229 17.9696 3.70229V4.70229C22.3776 4.70229 22.8913 4.71784 24.6213 4.795L24.6658 3.79599ZM27.8881 4.38648C27.2569 4.14593 26.3304 3.8707 24.666 3.796L24.6212 4.795C26.1774 4.86483 26.9989 5.11775 27.532 5.32093L27.8881 4.38648ZM29.9584 5.70928C29.3307 5.09281 28.7222 4.70441 27.8882 4.3865L27.532 5.32092C28.2395 5.59059 28.7301 5.90459 29.2578 6.42278L29.9584 5.70928ZM31.3088 7.74575C30.9833 6.92497 30.5866 6.32577 29.9583 5.70917L29.2579 6.42288C29.7857 6.94094 30.1048 7.42236 30.3793 8.11446L31.3088 7.74575ZM31.9123 10.9158C31.8364 9.27902 31.5549 8.36695 31.3089 7.74596L30.3792 8.11424C30.5854 8.63466 30.8427 9.43807 30.9134 10.9621L31.9123 10.9158ZM32.0092 17.4868C32.0092 13.1587 31.992 12.6362 31.9123 10.9158L30.9134 10.9621C30.992 12.6591 31.0092 13.1633 31.0092 17.4868H32.0092ZM31.9123 24.0579C31.992 22.3374 32.0092 21.815 32.0092 17.4868H31.0092C31.0092 21.8104 30.992 22.3146 30.9134 24.0116L31.9123 24.0579ZM31.3089 27.2277C31.5549 26.6067 31.836 25.6946 31.9123 24.058L30.9134 24.0115C30.8424 25.5357 30.5853 26.3391 30.3792 26.8595L31.3089 27.2277ZM29.9582 29.2626C30.5861 28.6468 30.9838 28.0493 31.309 27.2276L30.3791 26.8596C30.1056 27.5508 29.7863 28.0305 29.258 28.5487L29.9582 29.2626ZM27.8881 30.5852C28.7227 30.2672 29.3304 29.8788 29.9583 29.2625L29.2579 28.5488C28.7297 29.0672 28.2397 29.3811 27.5321 29.6507L27.8881 30.5852ZM24.666 31.176C26.33 31.1013 27.2576 30.8269 27.889 30.5848L27.5312 29.6511C26.9996 29.8548 26.1778 30.1072 24.6212 30.177L24.666 31.176ZM17.9696 31.2711C22.3817 31.2711 22.9135 31.2542 24.6659 31.176L24.6213 30.177C22.8915 30.2542 22.3773 30.2711 17.9696 30.2711V31.2711ZM11.2734 31.176C13.0257 31.2542 13.5572 31.2711 17.9696 31.2711V30.2711C13.5616 30.2711 13.0478 30.2542 11.3179 30.177L11.2734 31.176ZM8.05082 30.5849C8.68228 30.8254 9.60866 31.1006 11.273 31.176L11.3183 30.177C9.76197 30.1065 8.94037 29.8536 8.40674 29.6504L8.05082 30.5849ZM5.97918 29.2622C6.60742 29.8787 7.21688 30.267 8.05069 30.5848L8.40687 29.6504C7.69915 29.3807 7.20754 29.0665 6.67963 28.5484L5.97918 29.2622ZM4.62864 27.2265C4.95434 28.048 5.35115 28.6458 5.97918 29.2622L6.67963 28.5484C6.15152 28.0302 5.83263 27.55 5.55824 26.858L4.62864 27.2265ZM4.02519 24.0565C4.1011 25.6933 4.38259 26.6054 4.62858 27.2264L5.55829 26.8581C5.35215 26.3377 5.0948 25.5343 5.02412 24.0102L4.02519 24.0565ZM3.92969 17.4828C3.92969 21.8133 3.9455 22.3359 4.02519 24.0565L5.02412 24.0103C4.94553 22.3134 4.92969 21.8094 4.92969 17.4828H3.92969ZM4.02519 10.9118C3.9455 12.6324 3.92969 13.1523 3.92969 17.4828H4.92969C4.92969 13.1562 4.94553 12.6549 5.02412 10.958L4.02519 10.9118ZM4.6285 7.74142C4.38257 8.36302 4.10145 9.27498 4.0252 10.9116L5.02411 10.9582C5.09513 9.43401 5.35217 8.63049 5.55837 8.10932L4.6285 7.74142ZM5.97918 5.70445C5.35111 6.32085 4.95355 6.92009 4.62852 7.74138L5.55835 8.10936C5.83204 7.41779 6.15157 6.9364 6.67963 6.41816L5.97918 5.70445ZM8.05033 4.38123C7.21679 4.69969 6.60741 5.08789 5.97918 5.70445L6.67963 6.41816C7.20754 5.90006 7.69925 5.58586 8.40723 5.31538L8.05033 4.38123ZM11.2731 3.78993C9.60907 3.86495 8.682 4.13942 8.05002 4.38135L8.40754 5.31526C8.93996 5.11143 9.76156 4.85909 11.3182 4.78891L11.2731 3.78993ZM16.4874 3.69824C13.4045 3.70162 12.8064 3.72196 11.2735 3.78991L11.3178 4.78893C12.8321 4.7218 13.415 4.70161 16.4885 4.69824L16.4874 3.69824ZM16.988 4.20229V4.19824H15.988V4.20229H16.988ZM25.3039 8.83816C25.3039 8.04918 25.9586 7.39372 26.7859 7.39372V6.39372C25.4247 6.39372 24.3039 7.47873 24.3039 8.83816H25.3039ZM26.7859 10.2833C25.9589 10.2833 25.3039 9.62708 25.3039 8.83816H24.3039C24.3039 10.197 25.4244 11.2833 26.7859 11.2833V10.2833ZM28.2678 8.83816C28.2678 9.62708 27.6128 10.2833 26.7859 10.2833V11.2833C28.1473 11.2833 29.2678 10.197 29.2678 8.83816H28.2678ZM26.7859 7.39305C27.6128 7.39305 28.2678 8.04924 28.2678 8.83816H29.2678C29.2678 7.47935 28.1473 6.39305 26.7859 6.39305V7.39305ZM27.2859 6.89372V6.89305H26.2859V6.89372H27.2859ZM17.9696 8.66639C13.0182 8.66639 8.98779 12.6086 8.98779 17.4906H9.98779C9.98779 13.1785 13.5528 9.66639 17.9696 9.66639V8.66639ZM17.9693 9.66639H17.9696V8.66639H17.9693V9.66639ZM26.95 17.4906C26.95 12.6087 22.9207 8.66639 17.9693 8.66639V9.66639C22.386 9.66639 25.95 13.1784 25.95 17.4906H26.95ZM17.9696 26.313C22.9209 26.313 26.95 22.3726 26.95 17.4906H25.95C25.95 21.8026 22.3865 25.313 17.9696 25.313V26.313ZM8.98779 17.4906C8.98779 22.3727 13.0184 26.313 17.9696 26.313V25.313C13.5526 25.313 9.98779 21.8025 9.98779 17.4906H8.98779Z" fill="url(#paint1_linear_555:458)"/>
+<path d="M17.9703 12.0874C21.0107 12.0874 23.4757 14.5063 23.4757 17.4905C23.4757 20.4744 21.0107 22.8936 17.9703 22.8936C14.9296 22.8936 12.4648 20.4744 12.4648 17.4905C12.4648 14.5063 14.9296 12.0874 17.9703 12.0874V12.0874Z" stroke="url(#paint2_linear_555:458)"/>
+<defs>
+<linearGradient id="paint0_linear_555:458" x1="17.9693" y1="1.28125" x2="17.9693" y2="33.6999" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00A8BF"/>
+<stop offset="1" stop-color="#17BFAB"/>
+</linearGradient>
+<linearGradient id="paint1_linear_555:458" x1="17.9694" y1="4.19824" x2="17.9694" y2="30.7711" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00A8BF"/>
+<stop offset="1" stop-color="#17BFAB"/>
+</linearGradient>
+<linearGradient id="paint2_linear_555:458" x1="17.9703" y1="12.0874" x2="17.9703" y2="22.8936" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00A8BF"/>
+<stop offset="1" stop-color="#17BFAB"/>
+</linearGradient>
+</defs>
+</svg>
+</a><a class="footer__socials-item" href="#"><svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.8402 17.5433L13.3391 17.5772L13.3578 17.3022L13.1352 17.1396L12.8402 17.5433ZM12.3728 24.4158L11.874 24.3819L11.8376 24.9158H12.3728V24.4158ZM13.7464 23.7418L14.0915 24.1035L14.0916 24.1035L13.7464 23.7418ZM17.046 20.5929L17.3395 20.1881L17.0023 19.9435L16.7008 20.2312L17.046 20.5929ZM23.9108 25.5704L23.6173 25.9752L23.6438 25.9944L23.6727 26.0101L23.9108 25.5704ZM26.4006 24.4193L25.9119 24.3136L25.9115 24.3153L26.4006 24.4193ZM30.9071 3.57791L30.4225 3.45475L30.4203 3.46345L30.4184 3.47223L30.9071 3.57791ZM28.9934 1.47762L29.1703 1.94525L29.1837 1.94017L29.1969 1.93433L28.9934 1.47762ZM2.53154 11.4915L2.35456 11.0238L2.3484 11.0263L2.53154 11.4915ZM2.2023 13.6322L2.34874 13.1541L2.34619 13.1534L2.2023 13.6322ZM8.99299 15.7123L8.84655 16.1904L9.06339 16.2568L9.25621 16.1374L8.99299 15.7123ZM24.7142 5.97834L24.4584 5.5486L24.451 5.55323L24.7142 5.97834ZM25.5784 6.26107L25.25 5.88402L25.2469 5.88676L25.5784 6.26107ZM12.8398 17.543L12.5083 17.1687L12.0435 17.5804L12.5448 17.9467L12.8398 17.543ZM12.3414 17.5094L11.874 24.3819L12.8716 24.4497L13.3391 17.5772L12.3414 17.5094ZM12.3728 24.9158C12.8004 24.9158 13.1359 24.8173 13.4261 24.6474C13.6965 24.489 13.913 24.2738 14.0915 24.1035L13.4012 23.38C13.1964 23.5755 13.0695 23.6973 12.9207 23.7845C12.7916 23.8601 12.632 23.9158 12.3728 23.9158V24.9158ZM14.0916 24.1035L17.3912 20.9546L16.7008 20.2312L13.4012 23.38L14.0916 24.1035ZM16.7525 20.9977L23.6173 25.9752L24.2043 25.1656L17.3395 20.1881L16.7525 20.9977ZM23.6727 26.0101C24.3626 26.3836 25.0819 26.5436 25.7138 26.264C26.3512 25.9819 26.7174 25.3342 26.8897 24.5232L25.9115 24.3153C25.7692 24.9853 25.5221 25.2553 25.3091 25.3495C25.0905 25.4462 24.7223 25.4412 24.1489 25.1307L23.6727 26.0101ZM26.8893 24.5249L31.3958 3.68358L30.4184 3.47223L25.9119 24.3136L26.8893 24.5249ZM31.3917 3.70106C31.6489 2.6889 31.4826 1.81579 30.9207 1.2824C30.3551 0.745604 29.5323 0.690081 28.7899 1.0209L29.1969 1.93433C29.663 1.72665 30.0277 1.81357 30.2322 2.0077C30.4403 2.20522 30.6266 2.65151 30.4225 3.45475L31.3917 3.70106ZM28.8164 1.00998L2.35457 11.0239L2.70851 11.9592L29.1703 1.94525L28.8164 1.00998ZM2.3484 11.0263C1.86473 11.2167 1.47125 11.4373 1.18423 11.6863C0.900992 11.932 0.679826 12.2432 0.642206 12.6126C0.602562 13.0019 0.777908 13.3347 1.04128 13.5786C1.29616 13.8147 1.65036 13.9884 2.0584 14.1111L2.34619 13.1534C2.02099 13.0556 1.82394 12.9405 1.72083 12.845C1.62623 12.7574 1.63687 12.7158 1.63706 12.7139C1.63928 12.6921 1.6625 12.5952 1.83947 12.4417C2.01267 12.2915 2.29522 12.1219 2.71468 11.9568L2.3484 11.0263ZM2.05585 14.1103L8.84655 16.1904L9.13944 15.2342L2.34874 13.1541L2.05585 14.1103ZM9.25621 16.1374L24.9774 6.40345L24.451 5.55323L8.72978 15.2872L9.25621 16.1374ZM24.9699 6.408C25.1109 6.32411 25.24 6.278 25.34 6.25779C25.4495 6.23565 25.4905 6.25064 25.4748 6.24534C25.4643 6.24181 25.4157 6.22364 25.3668 6.1666C25.3107 6.10116 25.2808 6.01461 25.284 5.93048C25.2854 5.89351 25.2928 5.86533 25.2991 5.84776C25.3053 5.83043 25.311 5.82165 25.3111 5.82146C25.3113 5.82117 25.3076 5.82691 25.2973 5.83832C25.2872 5.84963 25.2719 5.86498 25.25 5.88403L25.9068 6.6381C26.0737 6.49279 26.272 6.2665 26.2833 5.9682C26.2896 5.80024 26.2334 5.641 26.1259 5.5157C26.0257 5.39881 25.9008 5.33363 25.7938 5.29759C25.5848 5.22726 25.3514 5.23526 25.1419 5.27761C24.9229 5.32188 24.6886 5.41172 24.4585 5.54867L24.9699 6.408ZM25.2469 5.88676L12.5083 17.1687L13.1713 17.9173L25.9099 6.63537L25.2469 5.88676ZM12.5448 17.9467L12.5452 17.947L13.1352 17.1396L13.1348 17.1393L12.5448 17.9467Z" fill="url(#paint0_linear_555:3587)"/>
+<defs>
+<linearGradient id="paint0_linear_555:3587" x1="16.0735" y1="1.31494" x2="16.0735" y2="25.9053" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00A8BF"/>
+<stop offset="1" stop-color="#17BFAB"/>
+</linearGradient>
+</defs>
+</svg>
+</a><a class="footer__socials-item" href="#"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.2539 33.0588L17.2539 33.5588L17.2541 33.5588L17.2539 33.0588ZM33.5891 17.0272L34.0891 17.0274L34.0891 17.0274L33.5891 17.0272ZM28.8092 5.68563L28.4587 6.04228L28.4587 6.04229L28.8092 5.68563ZM17.2537 0.983887L17.2539 0.483887H17.2537V0.983887ZM0.918206 17.0146L1.41821 17.0148L1.41821 17.0148L0.918206 17.0146ZM3.09871 25.0294L3.58032 25.1637L3.6374 24.9591L3.52973 24.7759L3.09871 25.0294ZM0.78125 33.3368L0.299638 33.2025L0.0668232 34.0371L0.905908 33.821L0.78125 33.3368ZM9.44086 31.1075L9.67683 30.6666L9.50498 30.5746L9.3162 30.6232L9.44086 31.1075ZM17.2471 33.0588L17.2469 33.5588H17.2471V33.0588ZM17.2541 33.5588C26.5277 33.5551 34.0854 26.1494 34.0891 17.0274L33.0891 17.027C33.0856 25.5795 25.993 32.5553 17.2537 32.5588L17.2541 33.5588ZM34.0891 17.0274C34.0909 12.6082 32.3384 8.45222 29.1596 5.32898L28.4587 6.04229C31.4481 8.9794 33.0908 12.8791 33.0891 17.027L34.0891 17.0274ZM29.1596 5.32899C25.981 2.2058 21.7534 0.485793 17.2539 0.483887L17.2535 1.48389C21.4939 1.48568 25.4691 3.1048 28.4587 6.04228L29.1596 5.32899ZM17.2537 0.483887C7.98248 0.483887 0.421905 7.89042 0.418206 17.0144L1.41821 17.0148C1.42167 8.46024 8.51716 1.48389 17.2537 1.48389V0.483887ZM0.418206 17.0144C0.416942 19.9293 1.19305 22.7747 2.66769 25.2828L3.52973 24.7759C2.14532 22.4213 1.41702 19.751 1.41821 17.0148L0.418206 17.0144ZM2.6171 24.895L0.299638 33.2025L1.26286 33.4712L3.58032 25.1637L2.6171 24.895ZM0.905908 33.821L9.56551 31.5917L9.3162 30.6232L0.656592 32.8526L0.905908 33.821ZM9.20488 31.5483C11.6639 32.8646 14.4313 33.5579 17.2469 33.5588L17.2473 32.5588C14.5951 32.5579 11.9898 31.9048 9.67683 30.6666L9.20488 31.5483ZM17.2471 33.5588H17.2539V32.5588H17.2471V33.5588Z" fill="url(#paint0_linear_555:2276)"/>
+<path d="M9.84161 28.2054L10.0933 27.7733L9.91582 27.67L9.71695 27.7212L9.84161 28.2054ZM4.70288 29.5283L4.22126 29.394L3.98846 30.2285L4.82753 30.0125L4.70288 29.5283ZM10.3374 28.4941L10.0857 28.9262L10.0858 28.9262L10.3374 28.4941ZM17.2479 30.3515L17.2477 30.8515H17.2479V30.3515ZM30.8305 17.0265L31.3305 17.0267L31.3305 17.0267L30.8305 17.0265ZM26.8576 7.59958L26.5072 7.95623L26.5072 7.95623L26.8576 7.59958ZM17.2587 3.69189L17.2589 3.19189H17.2587V3.69189ZM3.67578 17.0157L4.17578 17.0159L4.17578 17.0159L3.67578 17.0157ZM5.75166 24.107L6.17273 23.8374L6.17267 23.8373L5.75166 24.107ZM6.07448 24.6112L6.55609 24.7455L6.61622 24.53L6.49555 24.3416L6.07448 24.6112ZM25.483 20.8397L25.0563 21.1002L25.0563 21.1003L25.483 20.8397ZM24.924 20.479L24.7097 20.9308L24.7097 20.9308L24.924 20.479ZM25.2451 22.7446L25.715 22.9155L25.715 22.9154L25.2451 22.7446ZM22.4899 24.6493L22.4174 24.1546L22.4173 24.1546L22.4899 24.6493ZM19.9191 24.4906L20.068 24.0132L20.0678 24.0132L19.9191 24.4906ZM17.5923 23.6467L17.7874 23.1864L17.7873 23.1864L17.5923 23.6467ZM10.6911 17.6976L10.2835 17.9871L10.2835 17.9871L10.6911 17.6976ZM10.6196 17.5982L11.0171 17.2949L11.017 17.2947L10.6196 17.5982ZM10.6163 17.5938L11.0137 17.2904L11.0137 17.2904L10.6163 17.5938ZM10.3016 10.1968L9.94 9.85152L9.94 9.85152L10.3016 10.1968ZM10.3815 10.1126L10.0159 9.77149L10.0159 9.77149L10.3815 10.1126ZM12.2522 9.62545L12.2276 10.1248L12.2276 10.1248L12.2522 9.62545ZM12.3437 9.62654L12.3408 9.12655L12.3408 9.12655L12.3437 9.62654ZM13.1706 10.3131L13.6309 10.1179L13.6309 10.1178L13.1706 10.3131ZM13.6215 11.3869L14.0827 11.1939L14.0827 11.1939L13.6215 11.3869ZM14.429 13.2874L13.9834 13.5142L13.9834 13.5142L14.429 13.2874ZM14.4631 13.9892L14.9086 14.2162L14.9087 14.2159L14.4631 13.9892ZM14.4057 14.1034L14.8531 14.3266L14.8531 14.3266L14.4057 14.1034ZM14.0549 14.6574L13.6782 14.3287L13.6782 14.3287L14.0549 14.6574ZM13.8457 14.9041L14.2292 15.2249L14.2292 15.2249L13.8457 14.9041ZM13.4426 15.3593L13.7922 15.7168L13.7922 15.7168L13.4426 15.3593ZM13.2637 16.1768L13.6936 15.9215L13.6936 15.9215L13.2637 16.1768ZM15.5343 18.9518L15.205 19.328L15.205 19.328L15.5343 18.9518ZM18.547 20.8208L18.7428 20.3607L18.7428 20.3607L18.547 20.8208ZM18.8167 20.94L19.0373 20.4913L19.0372 20.4912L18.8167 20.94ZM19.701 20.8397L20.0743 21.1723L20.0743 21.1723L19.701 20.8397ZM20.9934 19.269L20.5796 18.9883L20.5796 18.9883L20.9934 19.269ZM21.9117 19.0685L22.08 18.5977L22.0799 18.5977L21.9117 19.0685ZM24.7008 20.3718L24.9213 19.9231L24.9212 19.923L24.7008 20.3718ZM9.71695 27.7212L4.57822 29.0441L4.82753 30.0125L9.96627 28.6896L9.71695 27.7212ZM10.5891 28.0621L10.0933 27.7733L9.58995 28.6374L10.0857 28.9262L10.5891 28.0621ZM17.2481 29.8515C14.8992 29.8506 12.5965 29.2312 10.589 28.0621L10.0858 28.9262C12.2475 30.1852 14.7239 30.8505 17.2477 30.8515L17.2481 29.8515ZM17.2534 29.8515H17.2479V30.8515H17.2534V29.8515ZM30.3305 17.0263C30.3276 24.089 24.4694 29.8515 17.2534 29.8515V30.8515C25.0042 30.8515 31.3274 24.6587 31.3305 17.0267L30.3305 17.0263ZM26.5072 7.95623C28.9759 10.3819 30.3319 13.6015 30.3305 17.0263L31.3305 17.0267C31.332 13.3306 29.8662 9.85469 27.208 7.24293L26.5072 7.95623ZM17.2586 4.19189C20.7554 4.19308 24.0382 5.5303 26.5072 7.95623L27.208 7.24293C24.5502 4.63147 21.0151 3.19317 17.2589 3.19189L17.2586 4.19189ZM4.17578 17.0159C4.17864 9.95401 10.0368 4.19189 17.2587 4.19189V3.19189C9.50237 3.19189 3.17887 9.3839 3.17578 17.0155L4.17578 17.0159ZM6.17267 23.8373C4.86513 21.7963 4.17477 19.438 4.17578 17.0159L3.17578 17.0155C3.17469 19.6291 3.91996 22.1748 5.33064 24.3768L6.17267 23.8373ZM6.49555 24.3416L6.17273 23.8374L5.33058 24.3767L5.65341 24.8808L6.49555 24.3416ZM5.18449 29.6627L6.55609 24.7455L5.59287 24.4769L4.22126 29.394L5.18449 29.6627ZM25.9098 20.5792C25.8062 20.4095 25.6558 20.3024 25.5372 20.2311C25.4175 20.1591 25.2729 20.0911 25.1383 20.0273L24.7097 20.9308C24.8598 21.002 24.9537 21.0471 25.0218 21.0881C25.091 21.1297 25.0778 21.1355 25.0563 21.1002L25.9098 20.5792ZM25.715 22.9154C25.9001 22.406 25.9944 21.9288 26.0279 21.5477C26.0446 21.3576 26.0468 21.1838 26.0351 21.0365C26.0256 20.9169 26.0019 20.7301 25.9097 20.5791L25.0563 21.1003C25.0151 21.0329 25.0297 21.009 25.0383 21.116C25.0446 21.1953 25.0447 21.3117 25.0317 21.4601C25.0057 21.7557 24.93 22.1474 24.7751 22.5739L25.715 22.9154ZM22.5624 25.144C23.0467 25.073 23.717 24.7948 24.3002 24.428C24.8702 24.0695 25.4854 23.5467 25.715 22.9155L24.7752 22.5738C24.6644 22.8783 24.2943 23.2503 23.7678 23.5815C23.2545 23.9043 22.7174 24.1106 22.4174 24.1546L22.5624 25.144ZM19.7702 24.9679C20.846 25.3034 21.8185 25.2532 22.5625 25.144L22.4173 24.1546C21.755 24.2518 20.9477 24.2876 20.068 24.0132L19.7702 24.9679ZM17.3971 24.1071C18.3926 24.529 19.1703 24.7811 19.7705 24.9679L20.0678 24.0132C19.4822 23.8308 18.7396 23.59 17.7874 23.1864L17.3971 24.1071ZM10.2835 17.9871C10.7712 18.6735 13.4275 22.4249 17.3972 24.1071L17.7873 23.1864C14.104 21.6255 11.5886 18.0974 11.0988 17.408L10.2835 17.9871ZM10.2221 17.9015C10.2288 17.9103 10.246 17.9343 10.2835 17.9871L11.0988 17.408C11.0678 17.3644 11.0371 17.3211 11.0171 17.2949L10.2221 17.9015ZM10.2189 17.8973L10.2222 17.9016L11.017 17.2947L11.0137 17.2904L10.2189 17.8973ZM8.45297 13.4543C8.45297 14.5492 8.85381 15.5962 9.25921 16.3827C9.66827 17.1762 10.1051 17.7482 10.2189 17.8973L11.0137 17.2904C10.9115 17.1566 10.5167 16.6396 10.1481 15.9245C9.7758 15.2023 9.45297 14.3209 9.45297 13.4543H8.45297ZM9.94 9.85152C9.48945 10.3234 8.45297 11.4113 8.45297 13.4543H9.45297C9.45297 11.807 10.2636 10.9607 10.6632 10.5421L9.94 9.85152ZM10.0159 9.77149C9.99429 9.79466 9.96965 9.82047 9.94 9.85152L10.6632 10.5421C10.6918 10.5122 10.7208 10.4819 10.7471 10.4536L10.0159 9.77149ZM11.4699 9.11126C11.0862 9.11126 10.5015 9.25094 10.0159 9.77149L10.7471 10.4536C11.0098 10.1721 11.3096 10.1113 11.4699 10.1113V9.11126ZM12.2769 9.12606C12.026 9.11369 11.7433 9.11126 11.4699 9.11126V10.1113C11.7408 10.1113 12.0028 10.1138 12.2276 10.1248L12.2769 9.12606ZM12.3408 9.12655C12.3064 9.12675 12.29 9.12671 12.2768 9.12606L12.2276 10.1248C12.2732 10.1271 12.3178 10.1267 12.3465 10.1265L12.3408 9.12655ZM13.6309 10.1178C13.4645 9.72553 13.2631 9.44604 12.9969 9.28376C12.7235 9.11712 12.458 9.12587 12.3408 9.12655L12.3465 10.1265C12.4671 10.1258 12.4689 10.1331 12.4764 10.1376C12.491 10.1466 12.5842 10.211 12.7103 10.5083L13.6309 10.1178ZM14.0827 11.1939C13.9092 10.7794 13.744 10.3846 13.6309 10.1179L12.7103 10.5083C12.8222 10.7723 12.9864 11.1645 13.1602 11.5799L14.0827 11.1939ZM14.8747 13.0607C14.8747 13.0608 14.874 13.0594 14.8723 13.0559C14.8707 13.0526 14.8686 13.0481 14.866 13.0424C14.8606 13.0309 14.8538 13.016 14.8455 12.9974C14.8289 12.9602 14.8076 12.9118 14.7823 12.8532C14.7317 12.7363 14.6664 12.5831 14.5919 12.4068C14.4429 12.0544 14.2584 11.6137 14.0827 11.1939L13.1602 11.5799C13.5037 12.4006 13.9039 13.358 13.9834 13.5142L14.8747 13.0607ZM14.9087 14.2159C15.15 13.7415 15.0085 13.3237 14.8746 13.0606L13.9834 13.5142C14.0208 13.5876 14.0347 13.6348 14.0383 13.6674C14.0409 13.691 14.0399 13.7184 14.0174 13.7626L14.9087 14.2159ZM14.8531 14.3266C14.8712 14.2903 14.8892 14.2542 14.9086 14.2162L14.0175 13.7623C13.996 13.8045 13.9763 13.8441 13.9583 13.8801L14.8531 14.3266ZM14.4316 14.9862C14.6498 14.7362 14.7484 14.5363 14.8531 14.3266L13.9583 13.8801C13.8586 14.0799 13.8069 14.1812 13.6782 14.3287L14.4316 14.9862ZM14.2292 15.2249C14.3004 15.1399 14.3675 15.0597 14.4316 14.9862L13.6782 14.3287C13.6059 14.4115 13.532 14.4998 13.4623 14.5832L14.2292 15.2249ZM13.7922 15.7168C13.9363 15.5759 14.0943 15.3861 14.2292 15.2249L13.4623 14.5832C13.3163 14.7577 13.1935 14.9035 13.0931 15.0018L13.7922 15.7168ZM13.6936 15.9215C13.6605 15.8658 13.658 15.8415 13.6583 15.8437C13.6591 15.8498 13.6579 15.8616 13.6548 15.8696C13.6537 15.8727 13.6573 15.8615 13.6812 15.8324C13.7065 15.8016 13.7395 15.7683 13.7922 15.7168L13.0931 15.0017C13.005 15.0879 12.8142 15.2659 12.7197 15.5155C12.6063 15.8149 12.6536 16.1285 12.8338 16.432L13.6936 15.9215ZM15.8637 18.5755C14.7101 17.5657 13.9231 16.308 13.6936 15.9215L12.8338 16.432C13.0805 16.8476 13.9318 18.2134 15.205 19.328L15.8637 18.5755ZM18.7428 20.3607C18.1851 20.1233 17.1087 19.6654 15.8637 18.5755L15.205 19.328C16.5687 20.5217 17.7596 21.029 18.3511 21.2808L18.7428 20.3607ZM19.0372 20.4912C18.9555 20.4511 18.8498 20.4062 18.7428 20.3607L18.3511 21.2808C18.4686 21.3308 18.5447 21.3634 18.5963 21.3888L19.0372 20.4912ZM19.3276 20.5071C19.2912 20.548 19.2692 20.5636 19.261 20.5685C19.256 20.5715 19.2588 20.5694 19.2634 20.5688C19.2648 20.5686 19.2083 20.5753 19.0373 20.4913L18.5962 21.3887C18.8332 21.5052 19.0998 21.5954 19.3818 21.5618C19.6841 21.5257 19.9064 21.3608 20.0743 21.1723L19.3276 20.5071ZM20.5796 18.9883C20.3297 19.3566 19.5716 20.2333 19.3276 20.5072L20.0743 21.1723C20.3066 20.9115 21.1129 19.9834 21.4071 19.5498L20.5796 18.9883ZM22.0799 18.5977C21.9074 18.5361 21.6394 18.4399 21.3585 18.4715C21.0232 18.5091 20.7711 18.7062 20.5796 18.9883L21.4071 19.5498C21.4507 19.4855 21.4776 19.4651 21.4829 19.4614C21.4836 19.4609 21.4763 19.4645 21.4701 19.4652C21.47 19.4652 21.4879 19.4633 21.5375 19.4746C21.5887 19.4863 21.6519 19.5067 21.7435 19.5394L22.0799 18.5977ZM24.9212 19.923C24.7148 19.8216 24.1089 19.5282 23.5076 19.2433C22.922 18.9659 22.297 18.6753 22.08 18.5977L21.7433 19.5394C21.9006 19.5956 22.4661 19.8564 23.0794 20.147C23.6771 20.4302 24.2787 20.7215 24.4804 20.8206L24.9212 19.923ZM25.1383 20.0273C25.069 19.9944 24.9974 19.9605 24.9213 19.9231L24.4803 20.8206C24.5635 20.8615 24.641 20.8982 24.7097 20.9308L25.1383 20.0273Z" fill="url(#paint1_linear_555:2276)"/>
+<defs>
+<linearGradient id="paint0_linear_555:2276" x1="17.1852" y1="0.983887" x2="17.1852" y2="33.3368" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00A8BF"/>
+<stop offset="1" stop-color="#17BFAB"/>
+</linearGradient>
+<linearGradient id="paint1_linear_555:2276" x1="17.2531" y1="3.69189" x2="17.2531" y2="30.3515" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00A8BF"/>
+<stop offset="1" stop-color="#17BFAB"/>
+</linearGradient>
+</defs>
+</svg>
+</a></div>
+            <div class="footer__payment flex"><a class="footer__payment-item" href="#"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 31.0081H12.1253V18.8828H0V31.0081Z" fill="#030303"/>
+<path d="M24.6142 6.41007C24.6142 10.5331 24.6142 20.4771 24.6142 24.6002C23.4626 24.6002 23.2597 24.6002 22.1406 24.6002C21.0726 15.6042 15.4201 9.95325 6.42257 8.88522C6.42257 7.7661 6.42257 7.56404 6.42257 6.41007C10.546 6.41007 20.4908 6.41007 24.6142 6.41007ZM0.0117188 0V15.0921H3.21811C11.6558 15.0921 15.9341 19.3696 15.9341 27.8046V31.011H31.025V0H0.0117188Z" fill="#60B238"/>
+</svg>
+</a><a class="footer__payment-item" href="#"><svg width="57" height="44" viewBox="0 0 57 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.3614 43.7814V40.8692C10.3614 39.7526 9.67695 39.0247 8.50377 39.0247C7.91729 39.0247 7.28183 39.2189 6.84186 39.8499C6.49986 39.3159 6.01113 39.0247 5.27793 39.0247C4.78897 39.0247 4.30046 39.1702 3.90926 39.7042V39.1218H2.88281V43.7814H3.90926V41.2088C3.90926 40.3839 4.34923 39.9954 5.03367 39.9954C5.71767 39.9954 6.06012 40.4323 6.06012 41.2088V43.7814H7.08656V41.2088C7.08656 40.3839 7.57507 39.9954 8.21053 39.9954C8.89498 39.9954 9.23698 40.4323 9.23698 41.2088V43.7814H10.3614ZM25.5624 39.1218H23.9007V37.7142H22.8742V39.1218H21.9455V40.0438H22.874V42.1797C22.874 43.2476 23.314 43.8784 24.4871 43.8784C24.9271 43.8784 25.4156 43.733 25.7581 43.5388L25.4646 42.665C25.1714 42.8592 24.8294 42.9078 24.5849 42.9078C24.0962 42.9078 23.9007 42.6166 23.9007 42.1311V40.0438H25.5624V39.1218ZM34.2629 39.0245C33.6764 39.0245 33.2854 39.3159 33.0409 39.7042V39.1218H32.0145V43.7814H33.0409V41.1604C33.0409 40.3839 33.3829 39.947 34.0184 39.947C34.2139 39.947 34.4584 39.9956 34.6539 40.044L34.9471 39.0734C34.7516 39.0247 34.4584 39.0247 34.2629 39.0247V39.0245ZM21.1146 39.5101C20.6256 39.1702 19.9414 39.0247 19.2082 39.0247C18.0352 39.0247 17.2533 39.6071 17.2533 40.5294C17.2533 41.3061 17.8397 41.7428 18.8662 41.8885L19.3549 41.9371C19.8926 42.034 20.1859 42.1797 20.1859 42.4225C20.1859 42.7621 19.7949 43.0049 19.1104 43.0049C18.4262 43.0049 17.8885 42.7621 17.5463 42.5195L17.0576 43.2961C17.5953 43.6843 18.3285 43.8784 19.0615 43.8784C20.4301 43.8784 21.2123 43.2476 21.2123 42.3738C21.2123 41.5487 20.5769 41.1118 19.5992 40.9663L19.1104 40.9176C18.6705 40.869 18.3285 40.7721 18.3285 40.4809C18.3285 40.1411 18.6705 39.947 19.2082 39.947C19.7949 39.947 20.3814 40.1895 20.6746 40.3352L21.1146 39.5101ZM48.3889 39.0247C47.8022 39.0247 47.4112 39.3159 47.1667 39.7042V39.1218H46.1402V43.7814H47.1667V41.1604C47.1667 40.3839 47.5089 39.947 48.1442 39.947C48.3399 39.947 48.5843 39.9956 48.7798 40.044L49.0731 39.0734C48.8776 39.0247 48.5843 39.0247 48.3889 39.0247ZM35.2893 41.4516C35.2893 42.8592 36.2668 43.8784 37.7822 43.8784C38.4664 43.8784 38.9551 43.733 39.4439 43.3447L38.9551 42.5195C38.5641 42.8107 38.1732 42.9562 37.7332 42.9562C36.9022 42.9562 36.3158 42.3738 36.3158 41.4516C36.3158 40.578 36.9022 39.9954 37.7332 39.947C38.1732 39.947 38.5641 40.0925 38.9551 40.3839L39.4439 39.5587C38.9551 39.1702 38.4664 39.0247 37.7822 39.0247C36.2668 39.0247 35.2893 40.044 35.2893 41.4516ZM44.7718 41.4516V39.1218H43.7454V39.7042C43.4031 39.2675 42.9144 39.0247 42.2789 39.0247C40.9593 39.0247 39.9328 40.044 39.9328 41.4516C39.9328 42.8592 40.9593 43.8784 42.2789 43.8784C42.9632 43.8784 43.4521 43.6359 43.7454 43.199V43.7814H44.7718V41.4516ZM41.008 41.4516C41.008 40.6264 41.5457 39.947 42.4254 39.947C43.2564 39.947 43.8431 40.578 43.8431 41.4516C43.8431 42.2768 43.2564 42.9562 42.4254 42.9562C41.5457 42.9076 41.008 42.2768 41.008 41.4516ZM28.7397 39.0247C27.371 39.0247 26.3933 39.9954 26.3933 41.4516C26.3933 42.9078 27.3708 43.8784 28.7884 43.8784C29.4726 43.8784 30.1571 43.6843 30.6948 43.2476L30.2059 42.5195C29.8149 42.8107 29.3261 43.0049 28.8374 43.0049C28.2019 43.0049 27.5665 42.7137 27.4198 41.8883H30.8903V41.5002C30.9393 39.9954 30.0593 39.0247 28.7394 39.0247H28.7397ZM28.7397 39.8983C29.3749 39.8983 29.8151 40.2868 29.9126 41.0149H27.4687C27.5665 40.3839 28.0065 39.8983 28.7397 39.8983ZM54.2053 41.4516V37.2773H53.1789V39.7042C52.8366 39.2675 52.3479 39.0247 51.7124 39.0247C50.3928 39.0247 49.3663 40.044 49.3663 41.4516C49.3663 42.8592 50.3928 43.8784 51.7124 43.8784C52.3969 43.8784 52.8856 43.6359 53.1789 43.199V43.7814H54.2053V41.4516ZM50.4417 41.4516C50.4417 40.6264 50.9792 39.947 51.8592 39.947C52.6901 39.947 53.2766 40.578 53.2766 41.4516C53.2766 42.2768 52.6901 42.9562 51.8592 42.9562C50.9792 42.9076 50.4417 42.2768 50.4417 41.4516ZM16.1289 41.4516V39.1218H15.1024V39.7042C14.7602 39.2675 14.2715 39.0247 13.636 39.0247C12.3163 39.0247 11.2899 40.044 11.2899 41.4516C11.2899 42.8592 12.3163 43.8784 13.636 43.8784C14.3204 43.8784 14.8092 43.6359 15.1024 43.199V43.7814H16.1289V41.4516ZM12.3163 41.4516C12.3163 40.6264 12.854 39.947 13.7337 39.947C14.5647 39.947 15.1514 40.578 15.1514 41.4516C15.1514 42.2768 14.5647 42.9562 13.7337 42.9562C12.854 42.9076 12.3163 42.2768 12.3163 41.4516Z" fill="white"/>
+<path d="M20.7734 3.7373H36.1701V31.2099H20.7734V3.7373Z" fill="#FF5F00"/>
+<path d="M21.7511 17.4737C21.7511 11.8919 24.3904 6.94094 28.4472 3.73735C25.4659 1.40756 21.7023 0 17.5965 0C7.86934 0 0 7.81453 0 17.4737C0 27.1327 7.86934 34.9475 17.5963 34.9475C21.7021 34.9475 25.4656 33.5399 28.4472 31.2099C24.3904 28.055 21.7511 23.0556 21.7511 17.4737Z" fill="#EB001B"/>
+<path d="M56.9433 17.4737C56.9433 27.1327 49.074 34.9475 39.347 34.9475C35.2412 34.9475 31.4777 33.5399 28.4961 31.2099C32.6019 28.0066 35.1925 23.0556 35.1925 17.4737C35.1925 11.8919 32.5529 6.94094 28.4961 3.73735C31.4775 1.40756 35.2412 0 39.347 0C49.074 0 56.9436 7.86318 56.9436 17.4737H56.9433Z" fill="#F79E1B"/>
+</svg>
+</a><a class="footer__payment-item" href="#"><svg width="65" height="17" viewBox="0 0 65 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M47.0625 0.669592C45.5711 0.217886 43.9946 -0.00878237 42.4072 0.000260253C37.2739 0.000260253 33.6485 2.14959 33.6228 5.23493C33.5907 7.50159 36.1991 8.77893 38.1722 9.53626C40.1967 10.3149 40.8737 10.8056 40.8672 11.5016C40.8544 12.5603 39.2502 13.0403 37.7584 13.0403C35.7082 13.0403 34.5885 12.8029 32.8657 12.2083L32.2272 11.9603L31.4989 15.5123C32.7469 15.9443 34.996 16.3149 37.3188 16.3469C42.7762 16.3469 46.3439 14.2109 46.3856 10.9283C46.4305 9.11759 45.0188 7.74959 42.0479 6.61893C40.2416 5.88559 39.1219 5.39493 39.1219 4.65093C39.1219 3.99226 40.0812 3.28826 42.0864 3.28826C43.4209 3.26142 44.7472 3.46953 45.9781 3.89893L46.4594 4.07759L47.1877 0.645593L47.0625 0.669592ZM60.3835 0.28826H56.3731C55.1251 0.28826 54.185 0.573593 53.6396 1.60293L45.9268 16.1256H51.3842L52.475 13.7443L59.1355 13.7496C59.2927 14.3069 59.7739 16.1256 59.7739 16.1256H64.5864L60.3835 0.28826ZM26.2404 0.154926H31.4412L28.1879 16.0003H22.9936L26.2404 0.149593V0.154926ZM13.0382 8.88826L13.5772 11.0883L18.6592 0.28826H24.1679L15.9834 16.1043H10.4875L5.99586 2.71226C5.92312 2.49144 5.75227 2.30178 5.51782 2.18159C3.8989 1.48649 2.18355 0.959 0.410156 0.610925L0.480739 0.277591H8.85128C9.98703 0.314925 10.9014 0.610925 11.2062 1.61893L13.0349 8.89626V8.88826H13.0382ZM53.9669 10.5043L56.0394 6.07226C56.0138 6.12026 56.4662 5.15759 56.7292 4.56293L57.0854 5.93093L58.2885 10.5016H53.9637V10.5043H53.9669Z" fill="white"/>
+</svg>
+</a></div>
+          </div>
+        </div>
+        <div class="footer__links-group flex"><a class="footer__links-item" href="#">Політіка Конфіденційності</a><a class="footer__links-item" href="#">Публічний договір (ОФЕРТА)</a>
+          <p class="footer__links-item">© Copyright of AT Market. 2021 All rights reserved.</p>
+        </div><a class="footer__design-logo" href="#"><svg width="216" height="47" viewBox="0 0 216 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M215.698 0.882324H97.4023V14.5905H215.698V0.882324Z" fill="white"/>
+<path d="M102.91 3.65967H104.021V11.9093H102.91V3.65967Z" fill="#002B4E"/>
+<path d="M108.358 4.26285C108.358 4.88793 107.904 5.49847 106.988 6.09448L106.656 5.61477C107.132 5.25862 107.421 4.97515 107.529 4.7789H107.486C107.14 4.7789 106.88 4.48817 106.88 4.13201C106.88 3.73952 107.204 3.44152 107.601 3.44152C108.041 3.43425 108.358 3.78313 108.358 4.26285Z" fill="#002B4E"/>
+<path d="M110.891 11.9093V3.65967H111.425L114.961 8.89291L118.475 3.65967H119.017V11.9093H117.905V6.33444L115.091 10.4992H114.802L111.988 6.33444V11.902H110.891V11.9093Z" fill="#002B4E"/>
+<path d="M126.023 11.9093V3.65967H129.069C130.231 3.65967 131.14 4.03036 131.818 4.779C132.497 5.52764 132.836 6.53068 132.836 7.80265C132.836 9.06735 132.49 10.0704 131.797 10.8045C131.111 11.5386 130.166 11.9093 128.961 11.9093H126.023ZM127.135 10.8481H129.011C129.855 10.8481 130.505 10.5574 130.981 9.99044C131.458 9.40896 131.689 8.67486 131.689 7.76631C131.689 6.8723 131.458 6.14546 130.981 5.57852C130.505 5.01159 129.848 4.72085 129.011 4.72085H127.135V10.8481Z" fill="#002B4E"/>
+<path d="M135.539 11.9093V3.65967H140.634V4.72085H136.643V7.18484H140.331V8.24602H136.643V10.8481H140.634V11.9093H135.539Z" fill="#002B4E"/>
+<path d="M142.66 10.346L143.483 9.66278C143.923 10.5423 144.645 10.9784 145.446 10.9784C146.377 10.9784 146.954 10.4332 146.954 9.7282C146.954 9.28483 146.665 8.8996 146.103 8.57979C145.958 8.49984 145.67 8.36901 145.258 8.18003C144.847 7.99106 144.551 7.83115 144.342 7.71486C143.519 7.19153 143.115 6.53011 143.115 5.75239C143.115 5.11277 143.339 4.58945 143.793 4.16788C144.248 3.73178 144.847 3.521 145.59 3.521C146.6 3.521 147.409 3.92076 147.993 4.73482L147.25 5.44712C146.81 4.85838 146.254 4.56764 145.597 4.56764C144.854 4.56764 144.298 5.01102 144.298 5.68698C144.298 6.12308 144.529 6.47196 144.998 6.74816C145.143 6.83538 145.453 7.00255 145.951 7.24241C146.449 7.475 146.795 7.65671 146.983 7.76574C147.77 8.24545 148.166 8.88507 148.166 9.68459C148.166 10.3896 147.914 10.9566 147.394 11.3927C146.882 11.8288 146.24 12.0541 145.467 12.0541C144.269 12.0395 143.194 11.4508 142.66 10.346Z" fill="#002B4E"/>
+<path d="M150.965 3.65967H152.076V11.9093H150.965V3.65967Z" fill="#002B4E"/>
+<path d="M155.691 10.8257C154.905 10.0189 154.508 9.00857 154.508 7.78748C154.508 6.55186 154.919 5.53428 155.749 4.72749C156.579 3.91343 157.575 3.51367 158.766 3.51367C160.137 3.51367 161.436 4.12422 162.179 5.03277L161.392 5.7596C160.707 4.98915 159.826 4.59666 158.78 4.59666C157.892 4.59666 157.149 4.89467 156.543 5.49794C155.944 6.10122 155.648 6.87167 155.648 7.79475C155.648 8.69603 155.951 9.45921 156.543 10.0625C157.142 10.6512 157.871 10.9565 158.751 10.9565C159.725 10.9565 160.7 10.5131 161.378 9.79356V8.1509H158.643V7.12606H162.424V10.2878C161.429 11.4508 160.187 12.0322 158.715 12.0322C157.488 12.0322 156.492 11.6252 155.691 10.8257Z" fill="#002B4E"/>
+<path d="M170.625 3.65967H171.722V11.9093H171.145L166.238 6.05824V11.9093H165.141V3.65967H165.639L170.625 9.53979V3.65967Z" fill="#002B4E"/>
+<path d="M174.891 11.9093V3.65967H179.993V4.72085H176.002V7.18484H179.69V8.24602H176.002V10.8481H179.993V11.9093H174.891Z" fill="#002B4E"/>
+<path d="M182.75 11.9093V3.65967H185.795C186.957 3.65967 187.867 4.03036 188.545 4.779C189.223 5.52764 189.563 6.53068 189.563 7.80265C189.563 9.06735 189.216 10.0704 188.523 10.8045C187.838 11.5386 186.892 11.9093 185.687 11.9093H182.75ZM183.854 10.8481H185.73C186.575 10.8481 187.224 10.5574 187.701 9.99044C188.177 9.40896 188.408 8.67486 188.408 7.76631C188.408 6.8723 188.177 6.14546 187.701 5.57852C187.224 5.01159 186.568 4.72085 185.73 4.72085H183.854V10.8481Z" fill="#002B4E"/>
+<path d="M202.015 9.53979C202.015 10.1794 201.792 10.7318 201.337 11.2043C200.897 11.6694 200.276 11.9093 199.475 11.9093H196.098V3.65967H199.338C200.045 3.65967 200.601 3.87045 200.991 4.28475C201.387 4.69905 201.59 5.17876 201.59 5.72389C201.59 6.47253 201.157 7.14123 200.478 7.39562C201.488 7.67909 202.015 8.55129 202.015 9.53979ZM197.195 4.69905V6.99586H199.158C199.966 6.99586 200.457 6.42892 200.457 5.78931C200.457 5.20783 199.98 4.69178 199.194 4.69178H197.195V4.69905ZM199.302 10.8554C199.778 10.8554 200.168 10.7245 200.442 10.4411C200.731 10.1649 200.875 9.83053 200.875 9.45984C200.875 8.66759 200.291 8.00617 199.259 8.00617H197.195V10.8554H199.302Z" fill="#002B4E"/>
+<path d="M210.202 3.65967L207.394 8.93652V11.902H206.283V8.93652L203.512 3.65967H204.739L206.831 7.83172L208.96 3.65967H210.202Z" fill="#002B4E"/>
+<path d="M0 34.9913L3.03099 30.5358C5.03 32.5491 7.28881 33.5594 9.80742 33.5594C11.258 33.5594 12.4848 32.9416 12.4848 31.8005C12.4848 31.0518 11.8425 30.434 10.5507 29.947L8.42183 29.2347C7.10118 28.7477 6.0692 28.3552 5.39083 27.9991C2.77841 26.6036 1.45055 24.5175 1.45055 21.7556C1.45055 19.6405 2.28768 17.8524 3.93307 16.4569C5.57847 15.0614 7.70738 14.3418 10.327 14.3418C13.5889 14.3418 16.3962 15.3521 18.8138 17.3654L16.0065 21.9809C14.5848 20.8107 12.2322 19.9966 10.4208 19.9966C8.77544 19.9966 7.87336 20.6798 7.87336 21.5593C7.87336 22.2716 8.51564 22.8603 9.77855 23.3473L11.8786 24.125C13.0693 24.5466 14.0075 24.9028 14.6209 25.1644C17.6519 26.4655 19.1746 28.5806 19.1746 31.4734C19.1746 33.7193 18.3014 35.5364 16.5911 36.9974C14.8807 38.4292 12.5858 39.1415 9.7136 39.1415C5.74445 39.1488 2.48253 37.7533 0 34.9913Z" fill="white"/>
+<path d="M21.3477 20.7812H27.0632V30.957C27.0632 32.745 28.1963 33.9443 29.9066 33.9443C31.6819 33.9443 32.7788 32.745 32.7788 30.957V20.7812H38.4944V30.8916C38.4944 36.1902 35.2325 39.1775 29.9066 39.1775C24.5807 39.1775 21.3549 36.1902 21.3549 30.8916V20.7812H21.3477Z" fill="white"/>
+<path d="M58.6073 23.0576C60.2527 24.8456 61.0609 27.0916 61.0609 29.7227C61.0609 32.3539 60.2238 34.5998 58.5784 36.4533C56.933 38.2704 54.8691 39.1862 52.3793 39.1862C50.4092 39.1862 48.6988 38.5393 47.3132 37.2382V46.6217H41.5977V20.7826H47.2122V22.4398C48.5978 21.0443 50.3081 20.3247 52.3432 20.3247C54.8979 20.332 56.9619 21.2405 58.6073 23.0576ZM51.2463 25.6597C48.9225 25.6597 47.2122 27.4477 47.2122 29.7881C47.2122 30.9293 47.6019 31.9032 48.3452 32.7173C49.1174 33.5314 50.0844 33.9166 51.2535 33.9166C52.4154 33.9166 53.3824 33.5241 54.1257 32.7173C54.8691 31.9032 55.2588 30.9293 55.2588 29.7881C55.2515 27.4477 53.5701 25.6597 51.2463 25.6597Z" fill="white"/>
+<path d="M80.9647 31.6116H68.2489C68.8912 33.4941 70.349 34.439 72.6078 34.439C74.5779 34.439 76.3532 33.8866 77.9986 32.7818L80.2286 36.6486C77.9337 38.3058 75.3213 39.1198 72.3552 39.1198C69.1943 39.1198 66.7695 38.2113 65.0592 36.4233C63.3488 34.6062 62.5117 32.3893 62.5117 29.7582C62.5117 27.0616 63.3849 24.8156 65.1602 23.0276C66.9355 21.2396 69.2232 20.3311 72.0377 20.3311C74.6862 20.3311 76.8801 21.1451 78.5904 22.7369C80.3007 24.3287 81.174 26.5383 81.174 29.3002C81.1595 30.0489 81.0946 30.7975 80.9647 31.6116ZM68.184 27.6721H75.7398C75.2563 25.9495 73.9357 24.9101 72.0305 24.9101C70.0603 24.9101 68.7974 25.826 68.184 27.6721Z" fill="white"/>
+<path d="M83.5469 38.7276V20.7819H89.0027V22.9915C90.1357 21.2035 91.7161 20.2949 93.744 20.2949C94.5162 20.2949 95.2595 20.4548 95.9739 20.7819L95.5193 26.2405C94.6822 25.9497 93.9028 25.8189 93.1667 25.8189C90.5542 25.8189 89.2264 27.5415 89.2264 30.9867V38.7203H83.5469V38.7276Z" fill="white"/>
+<path d="M97.4023 38.7275V13.9277H102.952V23.224C103.825 21.6322 105.954 20.2948 108.538 20.2948C110.443 20.2948 112.088 20.9417 113.409 22.2137C114.73 23.4784 115.408 25.3318 115.408 27.7086V38.7275H109.692V29.235C109.692 26.8945 108.502 25.5281 106.56 25.5281C104.496 25.5281 103.075 27.0544 103.075 29.3658V38.7275H97.4023Z" fill="white"/>
+<path d="M136.07 31.6116H123.354C123.997 33.4941 125.454 34.439 127.713 34.439C129.683 34.439 131.459 33.8866 133.104 32.7818L135.334 36.6486C133.039 38.3058 130.427 39.1198 127.461 39.1198C124.3 39.1198 121.875 38.2113 120.165 36.4233C118.454 34.6062 117.617 32.3893 117.617 29.7582C117.617 27.0616 118.49 24.8156 120.266 23.0276C122.041 21.2396 124.329 20.3311 127.143 20.3311C129.792 20.3311 131.986 21.1451 133.696 22.7369C135.406 24.3287 136.279 26.5383 136.279 29.3002C136.265 30.0489 136.2 30.7975 136.07 31.6116ZM123.289 27.6721H130.845C130.362 25.9495 129.041 24.9101 127.136 24.9101C125.159 24.9101 123.903 25.826 123.289 27.6721Z" fill="white"/>
+<path d="M138.652 38.7276V20.7819H144.108V22.9915C145.241 21.2035 146.822 20.2949 148.849 20.2949C149.622 20.2949 150.365 20.4548 151.079 20.7819L150.625 26.2405C149.788 25.9497 149.008 25.8189 148.272 25.8189C145.66 25.8189 144.332 27.5415 144.332 30.9867V38.7203H138.652V38.7276Z" fill="white"/>
+<path d="M154.338 36.4813C152.562 34.6642 151.66 32.4183 151.66 29.7508C151.66 27.0833 152.562 24.8447 154.338 23.0203C156.142 21.1668 158.465 20.2583 161.345 20.2583C164.217 20.2583 166.577 21.1668 168.345 23.0203C170.149 24.8374 171.059 27.0833 171.059 29.7508C171.059 32.4183 170.156 34.657 168.345 36.4813C166.57 38.2984 164.217 39.2143 161.345 39.2143C158.465 39.2143 156.142 38.3057 154.338 36.4813ZM164.21 32.68C164.982 31.8659 165.372 30.892 165.372 29.7217C165.372 28.5806 164.982 27.6066 164.181 26.8289C163.409 26.0512 162.471 25.6587 161.338 25.6587C160.205 25.6587 159.274 26.0512 158.494 26.858C157.722 27.6357 157.332 28.5806 157.332 29.7217C157.332 30.892 157.722 31.8659 158.494 32.68C159.267 33.4577 160.205 33.8502 161.338 33.8502C162.471 33.8502 163.438 33.465 164.21 32.68Z" fill="white"/>
+<path d="M190.961 31.6116H178.245C178.887 33.4941 180.345 34.439 182.604 34.439C184.574 34.439 186.349 33.8866 187.995 32.7818L190.225 36.6486C187.93 38.3058 185.317 39.1198 182.351 39.1198C179.19 39.1198 176.766 38.2113 175.055 36.4233C173.345 34.6062 172.508 32.3893 172.508 29.7582C172.508 27.0616 173.381 24.8156 175.156 23.0276C176.932 21.2396 179.227 20.3311 182.034 20.3311C184.682 20.3311 186.876 21.1451 188.587 22.7369C190.297 24.3287 191.17 26.5383 191.17 29.3002C191.156 30.0489 191.091 30.7975 190.961 31.6116ZM178.18 27.6721H185.736C185.252 25.9495 183.932 24.9101 182.027 24.9101C180.049 24.9101 178.794 25.826 178.18 27.6721Z" fill="white"/>
+<path d="M192.016 36.125L194.563 32.2582C196.273 33.7555 198.049 34.5041 199.889 34.5041C201.145 34.5041 201.794 34.1116 201.794 33.363C201.794 32.9414 201.469 32.6143 200.827 32.3527C200.733 32.3236 200.084 32.1273 198.857 31.7058C197.666 31.2842 196.822 30.9935 196.403 30.7972C194.173 29.7579 193.076 28.1297 193.076 25.9201C193.076 24.2266 193.755 22.8674 195.075 21.8208C196.396 20.7451 198.208 20.229 200.43 20.229C202.978 20.229 205.172 21.0067 207.077 22.5694L204.623 26.3417C203.136 25.3314 201.715 24.8154 200.329 24.8154C199.391 24.8154 198.713 25.2733 198.713 25.8257C198.713 26.4144 199.261 26.836 200.329 27.1267C202.04 27.6137 203.461 28.137 204.522 28.6894C206.687 29.7651 207.553 31.1607 207.553 33.2394C207.553 34.9984 206.875 36.423 205.489 37.5641C204.103 38.6689 202.263 39.2213 199.903 39.2213C196.786 39.214 194.173 38.1746 192.016 36.125Z" fill="white"/>
+<path d="M209.508 36.126C209.508 34.4034 210.893 33.0732 212.669 33.0732C214.35 33.0732 215.7 34.4397 215.7 36.126C215.7 37.914 214.343 39.2441 212.669 39.2441C210.893 39.2514 209.508 37.914 209.508 36.126Z" fill="white"/>
+</svg>
+</a>
+      </div>
+    </footer>
+    <!-- External-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--  Third party libraries-->
+    <script src="js/slick.js"></script>
+    <!-- Custom scripts-->
+    <script src="js/es2015/main.js"></script>
+  </body>
+</html>

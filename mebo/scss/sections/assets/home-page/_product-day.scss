@@ -1,0 +1,55 @@
+.product-day {
+
+	&__group {
+		flex-direction: column;
+		@include media-q(min, 1024) {
+			flex-direction: row;
+		}
+	}
+
+	&__img {
+		background-color: #E8F0F2;
+		padding: 100px 0;
+		margin-bottom: 40px;
+
+		@include media-q(min, 1024) {
+			width: 50%;
+			margin-bottom: 0;
+		}
+	}
+
+	&__info {
+
+		@include media-q(min, 768) {
+			margin-left: 20px;
+		}
+
+		@include media-q(min, 1024) {
+			width: 50%;
+		}
+	}
+
+	&__title {
+		@include font-size(24);
+		font-weight: $f_medium;
+		margin-bottom: 15px;
+
+		@include media-q(min, 768) {
+			margin-bottom: 30px;
+		}
+
+		&-group {
+			flex-direction: column;
+
+			@include media-q(min, 768) {
+				justify-content: space-between;
+				flex-direction: row;
+			}
+		}
+	}
+
+
+	&__price {
+		margin-bottom: 40px;
+	}
+}

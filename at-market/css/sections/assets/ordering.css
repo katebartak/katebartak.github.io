@@ -1,0 +1,41 @@
+.ordering-page__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ordering-page__content {
+  width: 54%;
+  padding-left: 11%;
+}
+
+.ordering-page__content h2 {
+  text-align: left;
+}
+
+.ordering-page__subtitle {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.ordering-page__order-wrap {
+  width: 39%;
+}
+
+.ordering-page .section-tabs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 60px;
+}
+
+.ordering-page .section-tabs-item {
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 40px;
+  margin-left: 0;
+}
+
+/*# sourceMappingURL=ordering.css.map */

@@ -1,0 +1,32 @@
+.breadcrumbs {
+  padding-top: 50px;
+  margin-bottom: 45px;
+
+  @include media-q(min, 1024) {
+    margin-bottom: 55px;
+  }
+}
+
+.bs-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bs-item {
+  color: $black;
+  margin-bottom: 15px;
+
+  &::after {
+    content: '\203A';
+    margin: 0 10px;
+    color: $black;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+
+  a {
+    @include links($black, $black);
+  }
+}

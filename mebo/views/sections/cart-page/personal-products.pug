@@ -1,0 +1,17 @@
+section.product-gallery.product-gallery-discount
+  .container
+    h2 Персональні рекомендації
+    .product-gallery__group.flex
+      each item in [1,2,3,4]
+        .product-gallery__item
+          .product-gallery__item-img
+            img(src="img/product-img.png" alt="sofa")
+          .product-gallery__item-info
+            .product-gallery__item-group.flex
+              a(href="#").product-gallery__item-name Назва товару
+              .product-gallery__item-article Арт. 000000
+            .product-gallery__item-price Від 5 000 грн
+            .product-gallery__item-btns
+              button.btn Додати у кошик
+              button.btn-like
+                include ../../../img/heart-img.svg

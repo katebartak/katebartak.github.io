@@ -1,0 +1,39 @@
+//-----------------------------------------------------------------------------
+// Fonts variable(s).
+$sans: Montserrat, Arial, sans-serif;
+
+// Font weight variants
+$f_light: 300;
+$f_normal: 400;
+$f_medium: 500;
+$f_semibold: 600;
+$f_bold: 700;
+$f_black: 900;
+
+//-----------------------------------------------------------------------------
+// Image paths
+$images: '../img/';
+
+//-----------------------------------------------------------------------------
+// Main theme colors
+
+// Default colors
+$white: #fff;
+$black: #323232;
+$red: red;
+
+// Main colors
+$c-light-blue: #8AB6D6;
+$c-light: #E8F0F2;
+$c-blue: #3AA2DB;
+
+//-----------------------------------------------------------------------------
+// Other settings
+
+// Font sizes
+// Site base font size and line height
+$fs-base: 18px;
+$line-height-base: 1.14;
+
+// Headings line-height
+$headings-line-height: 1.1;

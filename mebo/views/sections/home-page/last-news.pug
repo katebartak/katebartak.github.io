@@ -1,0 +1,12 @@
+section.last-news
+  .container
+    h2 Останні новини
+    .last-news__group
+      each item in [1,2,3]
+        a(href="#").last-news__item
+          .last-news__img
+            img(src="img/home-hero-bg.jpg" alt="interior room")
+          .last-news__info
+            .last-news__date 01.01.22
+            .last-news__title Назва статті
+            .last-news__description Короткий опис. Lorem ipsum dolor sit amet, consectetur adipiscing elit.

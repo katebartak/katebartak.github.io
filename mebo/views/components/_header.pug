@@ -1,0 +1,65 @@
+mixin header_part()
+  form.form-type-search
+    i.font-icon-search
+    input.form-search(type="search" placeholder="Пошук")
+  .header__socials
+    a(href="#")
+      include ../../img/instagram.svg
+    a(href="#")
+      include ../../img/facebook.svg
+    a(href="#")
+      include ../../img/youtube.svg
+  .header__contacts
+    a(href="tel:+38 000 000 00 00").header__contact
+      include ../../img/icon-phone.svg
+      .header__contact-tel +38 000 000 00 00
+    a.header__callback(href="#" data-show-popup="request-popup") Зателефонувати вам?
+  .header__land-switcher.form-type-select
+    select.form-select
+      option UA
+      option RU
+
+mixin header_buttons()
+  a(href="#").header__favorites
+    include ../../img/icon-heart.svg
+  a(href="#").header__cart
+    include ../../img/icon-basket.svg
+    span 20
+
+
+header.header
+  .container
+    .header__top.flex
+      button.toggle-mobile-menu МЕНЮ
+        span
+      a(href="/").header__logo
+        img(src="img/logo.png" alt="mebo")
+        span Furniture
+      .header-part.show-from-tablet
+        +header_part
+      .header__bottom-right.show-before-tablet
+        +header_buttons
+
+  .header__bottom
+    .container
+      .header__bottom-wrap.flex
+        nav.header__nav-catalog
+          a(href="#").header__nav-catalog-item
+            .header__menu-icon
+              span
+              span
+              span
+            | Каталог
+          ul.header__nav-catalog-list
+            each item in catalog_menu
+              li
+                a(href=item.href).catalog-item=item.title
+        include main-menu
+        .show-before-tablet
+          +header_part
+        .header__bottom-right.show-from-tablet
+          +header_buttons
+
+
+
+

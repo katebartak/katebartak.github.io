@@ -1,0 +1,13 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='ua')
+  include ../common_meta/head
+  body.front
+    include ../components/_header
+    main.page-container.product-page
+      include ../sections/news-block
+
+    include ../components/_footer
+    include ../common_meta/footer_scripts

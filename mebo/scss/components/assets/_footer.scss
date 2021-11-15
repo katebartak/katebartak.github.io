@@ -1,0 +1,101 @@
+.footer {
+	border-top: 1px solid $c-light;
+	padding-top: 60px;
+	position: relative;
+
+	&__logo {
+		position: absolute;
+		bottom: 17%;
+		left: 50%;
+		transform: translateX(-50%);
+
+		@include media-q(min, 768) {
+			bottom: 20%;
+		}
+
+		@include media-q(min, 1024) {
+			position: static;
+			transform: none;
+		}
+	}
+
+	&__top {
+		padding-bottom: 70px;
+	}
+
+	&__group {
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		margin-bottom: 50px;
+
+		@include media-q(min, 768) {
+			width: 50%;
+		}
+
+		@include media-q(min, 1024) {
+			width: 20%;
+			margin-bottom: 0;
+		}
+
+		&-title {
+			@include font-size(24);
+			font-weight: $f_medium;
+			margin-bottom: 30px;
+		}
+
+		&-contact {
+			display: block;
+			margin-bottom: 30px;
+			transition: color .2s ease;
+
+			&:hover {
+				color: $c-light-blue;
+			}
+		}
+	}
+
+	&__nav {
+		li {
+			margin-bottom: 15px;
+
+			a {
+				transition: color .2s ease;
+
+				&:hover {
+					color: $c-light-blue;
+				}
+			}
+		}
+	}
+
+	&__bottom {
+		background-color: #E8F0F2;
+		padding: 50px 0;
+
+		.container {
+			align-items: center;
+			flex-direction: column-reverse;
+
+			@include media-q(min, 1024) {
+				flex-direction: row;
+			}
+		}
+
+		img {
+			flex-shrink: 0;
+		}
+
+		p {
+			text-align: center;
+			width: 100%;
+			margin-bottom: 40px;
+
+			@include media-q(min, 1024) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

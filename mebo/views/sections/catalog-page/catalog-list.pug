@@ -1,0 +1,60 @@
+section.catalog-list
+  .container
+    .product-gallery__wrap
+      .filters-wrap
+        button.filters-btn.show-before-tablet Фільтри
+        include ../catalog-page/catalog-sidebar
+        .filters-sorting.show-before-tablet
+          | Сортувати по:
+          select
+            option ціні
+            option ціні
+      each item in [1,2,3,4,5,6,7,8,9,10,11,12]
+        .product-gallery__item
+          .product-gallery__item-img
+            img(src="img/product-img.png" alt="sofa")
+            .product-gallery__colors
+              .product-gallery__colors-slider
+                each color, index in product_colors
+                  .product-gallery__colors-item
+                    .product-gallery__colors-color
+                      input(type="radio" id="radioButton_" + item + '_' + index name="radio" value ="radio")
+                      label(for="radioButton_" + item + '_' + index style="background-color: #" + color.color)
+                    .product-gallery__colors-popup
+                      .product-gallery__colors-color(style="background-color: #" + color.color)
+                      div
+                        .product-gallery__colors-title=color.name
+                        .product-gallery__colors-price=color.price
+          .product-gallery__item-info
+            .product-gallery__item-group.flex
+              a(href="#").product-gallery__item-name Назва товару
+              .product-gallery__item-article Арт. 000000
+            .product-gallery__item-price Від 5 000 грн
+            .product-gallery__item-btns
+              button.btn Додати у кошик
+              button.btn-like
+                include ../../../img/heart-img.svg
+
+      .product-gallery__big-list
+      .filters-sorting.show-from-tablet
+        | Сортувати по:
+        select
+          option ціні
+          option ціні
+    button.product-gallery__show-more Завантажити більше товарів
+    ul.pagination
+      li.arrow.prev.disabled
+        a(href="#")
+      li.active
+        a(href="#") 1
+      li
+        a(href="#") 2
+      li
+        a(href="#") 3
+      li
+        a(href="#") 4
+      li
+        a(href="#") 5
+      li.arrow.next
+        a(href="#")
+

@@ -1,0 +1,140 @@
+.product-description {
+	margin-bottom: 70px;
+
+	.container {
+		flex-direction: column;
+		@include media-q(min, 1024) {
+			flex-direction: row;
+		}
+	}
+
+	h2 {
+		margin-bottom: 40px;
+	}
+
+	.show-before-tablet {
+
+		@include media-q(max, 768) {
+			order: 3;
+		}
+	}
+
+	&__variants {
+		border: 1px solid $c-light;
+		padding: 30px;
+		max-height: 530px;
+		overflow: scroll;
+		overflow-x: auto;
+
+		@include media-q(max, 768) {
+			order: 2;
+		}
+
+		@include media-q(min, 768) {
+			padding: 40px;
+			margin-right: 20px;
+		}
+
+		@include media-q(min, 1024) {
+			width: 50%;
+		}
+
+		&::-webkit-scrollbar {
+			width: 2px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: #F2FAFC;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: #3AA2DB;
+			outline: 2px solid #3AA2DB;
+		}
+
+		.product-gallery__colors {
+			position: static;
+			overflow: hidden;
+			padding: 0;
+			padding-right: 30px;
+			margin-bottom: 30px;
+
+			@include media-q(min, 1024) {
+				max-width: 540px;
+			}
+
+			.slick-list {
+				&::before,
+				&::after {
+					height: 63px;
+					top: -1px;
+
+					@include media-q(min, 1024) {
+						top: 0;
+					}
+				}
+			}
+
+			.slick-next {
+				right: -36px;
+				top: -18px;
+				bottom: auto;
+
+				&::after {
+					font-size: 50px;
+				}
+			}
+
+			&.additionally-variant {
+				display: none;
+			}
+		}
+
+		.product-gallery__colors-color {
+			label {
+				width: 60px;
+				height: 60px;
+			}
+		}
+	}
+
+	.product-gallery__item-info {
+		margin-top: 0;
+
+		@include media-q(min, 1024) {
+			width: 50%;
+		}
+	}
+
+	&__show-more {
+		font-size: 18px;
+		color: #8AB6D6;
+		text-decoration: underline;
+		text-underline-offset: 1px;
+		margin-bottom: 30px;
+
+		@extend %reset-button;
+	}
+
+	.product-gallery__item-price {
+		font-size: 24px;
+		font-weight: $f_medium;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.product-gallery__item-btns {
+		margin-bottom: 50px;
+
+		.btn {
+			padding: 20px 40px;
+			height: 62px;
+		}
+
+		.btn-like {
+			height: 62px;
+			padding: 20px;
+		}
+	}
+
+}

@@ -1,0 +1,48 @@
+// Default select styles (for mobile devices)
+select {
+  font-size: 16px;
+  color: $black;
+  border: 1px solid $black;
+  margin-bottom: 10px;
+  min-width: 280px;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 3px;
+  -webkit-appearance: none;
+
+  @include media-q(min, 1024) {
+    padding: 8px 12px 9px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-type-select {
+  position: relative;
+  color: $c-light-blue;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    @include font-size(20);
+    @extend %font-icon;
+    @extend %icon-arrow-small;
+  }
+}
+
+.form-select {
+  font-size: 18px;
+  border: none;
+  padding-right: 30px;
+  cursor: pointer;
+  min-width: auto;
+  margin-bottom: 0;
+  color: $c-light-blue;
+  background: transparent;
+}

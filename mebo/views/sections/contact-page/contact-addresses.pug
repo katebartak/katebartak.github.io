@@ -1,0 +1,84 @@
+-
+  var map_items = [
+    {
+      title: 'Київ',
+      id: 'contact-addresses-option1'
+    },
+    {
+      title: 'Житомир',
+      id: 'contact-addresses-option2'
+    },
+    {
+      title: 'Одеса',
+      id: 'contact-addresses-option3'
+    },
+  ];
+
+-
+  var map_items_address = [
+    {
+      title: 'Адреса',
+      id: 'contact-addresses-option4',
+      parent_id: 'contact-addresses-option1'
+    },
+    {
+      title: 'Адреса 2',
+      id: 'contact-addresses-option5',
+      parent_id: ''
+    },
+    {
+      title: 'Адреса 3',
+      id: 'contact-addresses-option6',
+      parent_id: ''
+    },
+  ];
+
+section.contact-addresses
+  .container
+    h2 Адреси магазинів Mebo
+    .contact-addresses__title Місто
+    .contact-addresses__city.from-type-select
+      select.form-select
+        each item in map_items
+          option(value=item.id)=item.title
+    .show-before-tablet
+      .contact-addresses__city.from-type-select.select-address.active(data-parent-select='contact-addresses-option1')
+        select.form-select
+          each item in map_items_address
+            option(value=item.id)=item.title
+      .contact-addresses__city.from-type-select.select-address(data-parent-select='contact-addresses-option3')
+        select.form-select
+          each item in map_items_address
+            option(value=item.id)=item.title
+
+    .contact-addresses__content-group
+      each item, index in map_items
+        .contact-addresses__content(data-content=item.id class=index === 0 ? 'active' : '')
+          .contact-addresses__map
+            img(src="img/map-img.jpg" alt="карта " + item.title)
+          .contact-addresses__info
+            each item in [1,2,3,4]
+              .contact-addresses__info-item
+                .contact-addresses__info-img
+                  img(src="img/shop-img.jpg" alt="магазин")
+                div
+                  .contact-addresses__info-title Адреса адреса !{item.title}
+                  .contact-addresses__info-text З понеділка по п’ятницю
+                  .contact-addresses__info-text 10:00 - 20:00
+                  .contact-addresses__info-tel
+                    a(href="tel:+380 00 000 00 00") +380 00 000 00 00
+
+      each item, index in map_items_address
+        .contact-addresses__content(data-content=item.id)
+          .contact-addresses__map
+            img(src="img/map-img.jpg" alt="карта " + item.title)
+          .contact-addresses__info
+            .contact-addresses__info-item
+              .contact-addresses__info-img
+                img(src="img/shop-img.jpg" alt="магазин")
+              div
+                .contact-addresses__info-title Адреса адреса !{item.title}
+                .contact-addresses__info-text З понеділка по п’ятницю
+                .contact-addresses__info-text 10:00 - 20:00
+                .contact-addresses__info-tel
+                  a(href="tel:+380 00 000 00 00") +380 00 000 00 00

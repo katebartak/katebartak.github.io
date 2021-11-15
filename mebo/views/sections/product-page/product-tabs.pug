@@ -1,0 +1,31 @@
+section.product-tabs
+  .container
+    .product-tabs__nav.flex
+      each item, index in product_tabs
+        button.product-tabs__nav-item(class=index === 0 ? 'active' : '')=item.title
+    .product-tabs__content
+      each item, index in product_tabs
+        .product-tabs__content-item(class=index === 0 ? 'active' : '')
+          if index !== 1
+            p=item.title
+            p Каркас: сосновый брус, березовая фанера класса Е1 (Литва)
+            p Наполнитель: подушки сидений — эластичный пенополиуретан, сырьё BAYER, BASF (Германия), SHELL (Нидерланды), формование Interfoam (Украина), спиновые и декоративные подушки — холлофайбер
+            p Уровень мягкости и эластичности сидений: средний SS/Medium
+            p Опоры (ножки): дерево
+            p Раскладной механизм: Puma
+            p Клей для каркаса: Jowat (Германия)
+            p Клей для пенополиуретана (мягкие части изделия): Saba (Нидерланды)
+          else
+            .reviews__button-wrap
+              button.btn(data-show-popup='review-popup') Залишити відгук
+            .reviews__content
+              .reviews__count 5 відгуків
+              each item in reviews
+                .reviews__item
+                  .reviews__name=item.name
+                  .reviews__text
+                    span Переваги:
+                    p=item.advantages
+                  .reviews__text
+                    span Недоліки:
+                    p=item.limitations

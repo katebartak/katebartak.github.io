@@ -1,0 +1,23 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='ua')
+  include ../common_meta/head
+  body.front.active-catalog-menu
+    include ../components/_header
+    main.page-container
+      include ../sections/home-page/hero-screen
+      include ../sections/home-page/individual-order
+      include ../sections/home-page/request
+      include ../sections/home-page/new-items
+      include ../sections/home-page/product-day
+      include ../sections/home-page/sales
+      include ../sections/home-page/discount
+      include ../sections/home-page/about
+      include ../sections/home-page/advantages
+      include ../sections/home-page/for-designers
+      include ../sections/home-page/last-news
+
+    include ../components/_footer
+    include ../common_meta/footer_scripts

@@ -1,0 +1,69 @@
+.slick-arrow {
+	font-size: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	position: absolute;
+	bottom: 40px;
+	transform: translateY(50%);
+	z-index: 1;
+
+	&::after {
+		@include font-size(40);
+		color: $c-light-blue;
+
+		@extend %font-icon;
+		@extend %icon-arrow-small;
+
+		&:hover {
+			color: $c-light;
+
+		}
+	}
+}
+
+.slick-prev {
+	right: 50px;
+	&::after {
+		transform: rotate(90deg);
+	}
+}
+
+.slick-next {
+	right: 0;
+	&::after {
+		transform: rotate(-90deg);
+	}
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	overflow: auto;
+	padding-bottom: 22px;
+	position: absolute;
+	top: 103%;
+	left: 50%;
+	transform: translateX(-50%);
+
+	li {
+		flex-shrink: 0;
+	}
+
+	button {
+		color: $black;
+		font-size: 18px;
+		font-weight: $f_medium;
+		outline: none;
+		background: transparent;
+		border: none;
+		margin: 0 5px;
+		flex-shrink: 0;
+	}
+
+
+	.mobile-slick & {
+		width: 100%;
+		text-align: center;
+	}
+}

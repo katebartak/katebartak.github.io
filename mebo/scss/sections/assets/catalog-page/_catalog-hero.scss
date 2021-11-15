@@ -1,0 +1,82 @@
+.catalog-hero {
+	padding-top: 60px;
+	margin-bottom: 70px;
+
+	@include media-q(min, 768) {
+		padding-top: 115px;
+	}
+
+	&__wrap {
+		align-items: center;
+		justify-content: space-between;
+		background-color: #8AB6D6;
+		padding: 50px 20px;
+		position: relative;
+		overflow: hidden;
+
+		@include media-q(min, 768) {
+			padding: 50px 40px;
+		}
+
+		@include media-q(min, 1024) {
+			overflow: visible;
+		}
+	}
+
+	&__info {
+		z-index: 1;
+
+		.breadcrumbs {
+			margin-bottom: 0;
+			padding-top: 0;
+		}
+	}
+
+	&__title {
+		@include font-size(32);
+		color: $white;
+		margin-bottom: 30px;
+
+		@include media-q(min, 768) {
+			@include font-size(40);
+		}
+
+		@include media-q(min, 1024) {
+			@include font-size(48);
+		}
+	}
+
+	&__img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		transform: translateX(60%);
+		width: 150%;
+
+		@include media-q(min, 768) {
+			transform: translateX(50%);
+			width: 76%;
+		}
+
+		@include media-q(min, 1024) {
+			transform: none;
+			width: 50%;
+		}
+
+		@include media-q(min, 1440) {
+			width: auto;
+		}
+	}
+
+	.bs-item {
+		color: $white;
+
+		&::after {
+			color: $white;
+		}
+
+		a {
+			color: $white;
+		}
+	}
+}

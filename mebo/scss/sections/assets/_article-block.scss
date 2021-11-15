@@ -1,0 +1,30 @@
+.article-page {
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	&__date {
+		color: $c-blue;
+		margin-bottom: 70px;
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+
+	img {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		width: 100%;
+
+		&.article-page__img {
+			display: inline-block;
+			float: left;
+			margin-right: 20px;
+			max-width: 700px;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+	}
+}

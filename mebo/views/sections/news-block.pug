@@ -1,0 +1,28 @@
+section.news-block
+  .container
+    include ../components/breadcrumbs
+    h2 Статті
+    .news-block__group
+      each item in [1,2,3,4,5,6,7]
+        a(href="#").news-block__item
+          .last-news__img
+            img(src="img/home-hero-bg.jpg" alt="interior room")
+          .last-news__info
+            .last-news__date 01.01.22
+            .last-news__title Назва статті
+            .last-news__description Короткий опис. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    ul.pagination
+      li.arrow.prev.disabled
+        a(href="#")
+      li.active
+        a(href="#") 1
+      li
+        a(href="#") 2
+      li
+        a(href="#") 3
+      li
+        a(href="#") 4
+      li
+        a(href="#") 5
+      li.arrow.next
+        a(href="#")
