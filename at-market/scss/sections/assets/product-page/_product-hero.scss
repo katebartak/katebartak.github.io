@@ -1,0 +1,347 @@
+.product-hero {
+	padding-top: 0;
+	position: relative;
+	overflow: hidden;
+
+	@include media-q(min, 1920) {
+		overflow: inherit;
+	}
+
+	@include media-q(min, 1920) {
+		padding-bottom: 100px;
+	}
+
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+
+	&::before,
+	&::after {
+		display: none;
+
+		@include media-q(min, 768) {
+			display: block;
+			content: '';
+			position: absolute;
+			background-size: contain;
+			width: 254px;
+			height: 390px;
+			pointer-events: none;
+		}
+
+		@include media-q(min, 1920) {
+			width: 344px;
+			height: 530px;
+		}
+	}
+
+	&::before {
+		top: -5%;
+		left: -25%;
+		background: url("../img/decorate-item.png") no-repeat center;
+
+		@include media-q(min, 1024) {
+			left: -16%;
+		}
+
+		@include media-q(min, 1280) {
+			top: 25%;
+			left: -6%;
+		}
+	}
+
+	&::after {
+		right: -35%;
+		top: 90%;
+		left: auto;
+		background: url("../img/decorate-item-02.png") no-repeat center;
+		display: none;
+
+		@include media-q(min, 1280) {
+			right: -8%;
+			display: block;
+		}
+
+		@include media-q(min, 1920) {
+			top: 60%;
+		}
+	}
+
+	h2 {
+		text-align: left;
+		text-transform: none;
+		letter-spacing: normal;
+		font-size: 24px;
+		margin-bottom: 50px;
+
+		@include media-q(min, 1024) {
+			margin-bottom: 25px;
+		}
+
+		@include media-q(min, 1441) {
+			font-size: 48px;
+		}
+	}
+
+	&__wrap {
+		flex-direction: column;
+
+		@include media-q(min, 768) {
+			flex-direction: row;
+		}
+	}
+
+	&__characteristic-group {
+		margin-bottom: 15px;
+		align-items: center;
+
+		@include media-q(min, 768) {
+			margin-bottom: 45px;
+		}
+	}
+
+	&__characteristic-item {
+		font-size: 18px;
+		font-weight: $f_medium;
+		color: #BAD2E5;
+		margin-bottom: 5px;
+
+		@include media-q(min, 768) {
+			margin-bottom: 0;
+		}
+
+		&:not(:last-child) {
+			margin-right: 20px;
+
+			@include media-q(min, 1024) {
+				margin-right: 60px;
+			}
+		}
+
+		a {
+			color: $c_dark;
+			text-decoration: underline;
+		}
+	}
+
+	&__img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 210px;
+		margin-bottom: 20px;
+
+		@include media-q(min, 768) {
+			width: 50%;
+			height: auto;
+			margin-bottom: 0;
+		}
+
+		img {
+			height: 100%;
+		}
+	}
+
+	&__info {
+		@include media-q(min, 768) {
+			width: 50%;
+		}
+
+		p {
+			font-size: 16px;
+			display: inline-block;
+
+			@include media-q(min, 768) {
+				display: block;
+			}
+
+			@include media-q(min, 1441) {
+				font-size: 24px;
+			}
+		}
+	}
+
+	&__availability {
+		align-items: center;
+		font-size: 18px;
+		font-weight: $f_medium;
+		position: absolute;
+		top: 15%;
+		left: 15px;
+
+		&.availability-in-stock {
+			color: $c_blue;
+		}
+
+		&.availability-out-of-stock {
+			color: $c_dark;
+		}
+
+		@include media-q(min, 768) {
+			position: static;
+			margin-bottom: 30px;
+		}
+
+		svg {
+			margin-right: 5px;
+			width: 15px;
+
+			@include media-q(min, 768) {
+				width: 30px;
+				margin-right: 22px;
+			}
+		}
+	}
+
+	&__price {
+		font-size: 24px;
+		font-weight: $f_medium;
+		color: $c_blue;
+		margin-bottom: 20px;
+		text-align: center;
+
+		@include media-q(min, 768) {
+			text-align: left;
+			margin-bottom: 30px;
+		}
+
+		@include media-q(min, 1441) {
+			font-size: 48px;
+		}
+
+		&-for-one {
+			font-size: 16px;
+			margin-bottom: 15px;
+
+			@include media-q(min, 768) {
+				margin-bottom: 40px;
+			}
+
+			@include media-q(min, 1441) {
+				font-size: 24px;
+			}
+
+			span {
+				font-weight: $f_medium;
+				margin-left: 15px;
+				font-size: 18px;
+
+				@include media-q(min, 1441) {
+					font-size: 24px;
+				}
+			}
+
+			p {
+				margin-bottom: 0;
+				margin-top: 5px;
+				font-size: 16px;
+				font-weight: $f_medium;
+				color: #BAD2E5;
+
+				@include media-q(min, 768) {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	&__count {
+		border: 1px solid $c_dark;
+		border-radius: 15px;
+		display: inline-flex;
+		padding: 0;
+		color: $c_blue;
+		font-size: 24px;
+		font-weight: $f_medium;
+		align-items: center;
+		margin-bottom: 30px;
+		margin-left: 20px;
+
+		@include media-q(min, 768) {
+			border-radius: 10px;
+			margin-left: 0;
+			margin-bottom: 45px;
+		}
+
+		@include media-q(min, 1441) {
+			font-size: 36px;
+			padding: 7px 0;
+		}
+
+		button {
+			@extend %reset-button;
+			padding: 10px 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@include media-q(min, 768) {
+				padding: 10px 30px;
+			}
+
+			svg {
+				width: 13px;
+
+				@include media-q(min, 768) {
+					width: 20px;
+				}
+			}
+		}
+	}
+
+	&__btns {
+		flex-direction: column;
+
+		@include media-q(min, 1280) {
+			flex-direction: row;
+		}
+
+		.btn {
+			margin-bottom: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@include media-q(min, 768) {
+				margin-right: 20px;
+				margin-bottom: 20px;
+			}
+
+			@include media-q(min, 1280) {
+				padding: 15px 50px;
+				margin-bottom: 0;
+			}
+
+			@include media-q(min, 1920) {
+				padding: 15px 80px;
+			}
+
+			.font-icon-cart {
+				//&::before {
+				//	font-size: 24px;
+				//
+				//	@include media-q(min, 1280) {
+				//		font-size: 33px;
+				//	}
+				//}
+			}
+		}
+	}
+
+	.show-before-tablet {
+		display: block;
+
+		@include media-q(min, 768) {
+			display: none;
+		}
+	}
+
+	.show-from-tablet {
+		display: none;
+
+		@include media-q(min, 768) {
+			display: flex;
+		}
+	}
+}

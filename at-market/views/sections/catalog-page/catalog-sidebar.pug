@@ -1,0 +1,237 @@
+-
+  var sidebar_categories = {
+    class: 'sidebar-categories',
+    title: 'Бренды',
+    visible_count: 6,
+    groups: [
+      {
+        title: false,
+        items: [
+          {
+            title: 'Smeraldina'
+          },
+          {
+            title: 'Vichy Catalan',
+            class: 'active'
+          },
+          {
+            title: 'Горянка',
+          },
+          {
+            title: 'Smeraldina',
+          },
+          {
+            title: 'Vichy Catalan',
+          },
+          {
+            title: 'Горянка',
+          }
+        ]
+      }
+    ]
+  };
+
+-
+  var sidebar_categories_2 = {
+    class: 'sidebar-categories',
+    title: 'Газованость',
+    visible_count: 6,
+    groups: [
+      {
+        title: false,
+        items: [
+          {
+            title: 'Smeraldina'
+          },
+          {
+            title: 'Vichy Catalan',
+            class: 'active'
+          },
+          {
+            title: 'Горянка',
+          },
+          {
+            title: 'Smeraldina',
+          },
+          {
+            title: 'Vichy Catalan',
+          },
+          {
+            title: 'Горянка',
+          }
+        ]
+      }
+    ]
+  };
+
+-
+  var sidebar_categories_3 = {
+    class: 'sidebar-categories',
+    title: 'Упаковка',
+    visible_count: 6,
+    groups: [
+      {
+        title: false,
+        items: [
+          {
+            title: 'Smeraldina'
+          },
+          {
+            title: 'Vichy Catalan',
+            class: 'active'
+          },
+          {
+            title: 'Горянка',
+          },
+          {
+            title: 'Smeraldina',
+          },
+          {
+            title: 'Vichy Catalan',
+          },
+          {
+            title: 'Горянка',
+          }
+        ]
+      }
+    ]
+  };
+
+-
+  var sidebar_categories_4 = {
+    class: 'sidebar-categories',
+    title: 'Объем',
+    visible_count: 6,
+    groups: [
+      {
+        title: false,
+        items: [
+          {
+            title: 'Smeraldina'
+          },
+          {
+            title: 'Vichy Catalan',
+            class: 'active'
+          },
+          {
+            title: 'Горянка',
+          },
+          {
+            title: 'Smeraldina',
+          },
+          {
+            title: 'Vichy Catalan',
+          },
+          {
+            title: 'Горянка',
+          }
+        ]
+      }
+    ]
+  };
+
+-
+  var sidebar_categories_5 = {
+    class: 'sidebar-categories',
+    title: 'Количество в упаковке',
+    visible_count: 6,
+    groups: [
+      {
+        title: false,
+        items: [
+          {
+            title: 'Smeraldina'
+          },
+          {
+            title: 'Vichy Catalan',
+            class: 'active'
+          },
+          {
+            title: 'Горянка',
+          },
+          {
+            title: 'Smeraldina',
+          },
+          {
+            title: 'Vichy Catalan',
+          },
+          {
+            title: 'Горянка',
+          }
+        ]
+      }
+    ]
+  };
+
+-
+  var sidebar_categories_6 = {
+    class: 'sidebar-categories',
+    title: 'Производитель',
+    visible_count: 6,
+    groups: [
+      {
+        title: false,
+        items: [
+          {
+            title: 'Smeraldina'
+          },
+          {
+            title: 'Vichy Catalan',
+            class: 'active'
+          },
+          {
+            title: 'Горянка',
+          },
+          {
+            title: 'Smeraldina',
+          },
+          {
+            title: 'Vichy Catalan',
+          },
+          {
+            title: 'Горянка',
+          }
+        ]
+      }
+    ]
+  };
+
+mixin sidebar_item(group, i)
+  .sidebar-item(class=group.class)
+    p.sidebar-item__title
+      | !{group.title}
+      i.font-icon-arrow
+    each group_item in group.groups
+      .sidebar-group
+        if group_item.title
+          p.sidebar-group__title=group_item.title
+        .sidebar-group__content(data-visible-items-count=group.visible_count data-visible-items-textmore='Показать все')
+          each item, index in group_item.items
+            //a.sidebar-group__item(href='#' class=item.class)=item.title
+            div.sidebar-group__item
+              input.checkbox(type="checkbox" id="filter-item-" + i + index)
+              label(for="filter-item-" + i + index)=item.title
+
+aside.category-page__sidebar
+  .sidebar-title Фильтры
+  +sidebar_item(sidebar_categories, 1)
+  +sidebar_item(sidebar_categories_2, 2)
+  +sidebar_item(sidebar_categories_3, 3)
+  +sidebar_item(sidebar_categories_4, 4)
+  +sidebar_item(sidebar_categories_5, 5)
+  +sidebar_item(sidebar_categories_6, 6)
+  //+sidebar_item(sidebar_categories, 3)
+  //input(type="range" min="100" max="10000" value="100" name="range" step="100")
+
+  //.sidebar-item.sidebar-range
+    p.sidebar-item__title По ціні
+    .noUiSlider
+    .range-price-group
+      p
+        span#event-start
+        |  грн
+      p
+        span#event-end
+        |  грн
+    p Від 100 до 10000 грн
+

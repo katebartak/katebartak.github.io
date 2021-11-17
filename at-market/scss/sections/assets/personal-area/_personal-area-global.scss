@@ -1,0 +1,180 @@
+.personal-area {
+  padding-top: 0;
+
+  .breadcrumbs {
+    margin-bottom: 40px;
+
+    @include media-q(min, 1024) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+
+    @include media-q(min, 1280) {
+      width: 60%;
+      margin-left: auto;
+    }
+
+    @include media-q(min, 1920) {
+      width: 66%;
+    }
+  }
+
+  &__title {
+    color: $c-blue;
+    font-size: 24px;
+    font-weight: $f-medium;
+    margin-bottom: 24px;
+
+    @include media-q(min, 768) {
+      font-size: 36px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .request-form {
+    max-width: 560px;
+
+    p {
+      margin-bottom: 8px;
+      font-size: 18px;
+      font-weight: $f-medium;
+
+      @include media-q(min, 1441) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__input-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+
+    .font-icon {
+      display: none;
+      position: absolute;
+      right: -50px;
+      top: 45%;
+      color: $c-dark;
+    }
+  }
+
+  .input-text {
+    border: 1px solid $c_dark;
+    width: 100%;
+    margin: 0 auto 20px;
+    color: $c_dark;
+    letter-spacing: initial;
+
+    &::placeholder {
+      color: $c_dark;
+    }
+  }
+
+  .btn {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .checkbox:checked + label:after {
+    color: $white;
+  }
+
+  .request-form__agree label a {
+    color: $c_green;
+  }
+
+  &-data {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+
+      @include media-q(min, 1024) {
+        background: url("../img/decorate-item.png") no-repeat center;
+        background-size: contain;
+        left: -4%;
+        bottom: 0;
+        width: 344px;
+        height: 500px;
+      }
+    }
+
+    &::after {
+
+      @include media-q(min, 1024) {
+        right: 0;
+        top: 0;
+        background: url("../img/personal-data-after.png") no-repeat center;
+        background-size: contain;
+        height: 1160px;
+        width: 340px;
+      }
+    }
+  }
+}
+
+.personal-area-registration {
+  .request-form {
+    margin: 0 auto;
+  }
+}
+
+.personal-page {
+  padding-bottom: 180px;
+
+  .catalog-section {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+section.personal-area {
+
+  @include media-q(min, 1024) {
+    min-height: 600px;
+  }
+}
+
+.personal-area-data {
+  .input-text {
+    border: 1px solid $c_dark;
+    width: 100%;
+    margin: 0 auto 20px;
+    color: $c_dark;
+    letter-spacing: initial;
+
+    &::placeholder {
+      color: $c_dark;
+    }
+
+    &:not(:placeholder-shown) {
+      border-color: #00C8B9;
+
+      & ~ p {
+        color: #00C8B9;
+      }
+
+      & ~ .font-icon {
+
+        @include media-q(min, 768) {
+          display: block;
+        }
+      }
+    }
+  }
+}

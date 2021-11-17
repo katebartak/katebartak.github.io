@@ -113,6 +113,13 @@
       responsive: [{
         breakpoint: 1280,
         settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false
+        }
+      }, {
+        breakpoint: 768,
+        settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
           arrows: false

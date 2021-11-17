@@ -1,0 +1,30 @@
+section.cart-popup.cart-popup-full.section-popup
+  .popup-overlay
+  .section-popup__content
+    .cart-popup__top.flex
+      button.popup-close-icon Закрыть
+      .cart-popup__title
+        i.font-icon-cart
+        | Корзина
+    .cart-popup__content
+      .cart-popup__text Ваш товар успешно добавлен в корзину!
+      each item in [1,2]
+        .cart-popup__product
+          .cart-popup__img
+            img(src="img/product-img-01.png" alt="бутылка")
+          .cart-popup__product-title Smeraldina, 0,5 л, вода мінеральна газована, скло
+          .cart-popup__price Цена за единицу
+            span 50 грн.
+          .product-hero__count.flex
+            button
+              include ../../img/count-minus.svg
+            span 1
+            button
+              include ../../img/count-plus.svg
+          .cart-popup__to-pay К оплате
+            span 50 грн.
+          button.cart-popup__product-delete
+            i.font-icon-close
+      .cart-popup__order-price Сумма всего заказа
+        span 100 грн.
+      a(href="#").btn Оформить заказ

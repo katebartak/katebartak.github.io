@@ -1,0 +1,35 @@
+section.personal-area__addresses.personal-area
+    .container
+        include ../../components/breadcrumbs
+        include personal-area-siderbar
+        .personal-area__content
+            .personal-area__title Мои адреса доставок
+            form.request-form
+                each item in [1,2,3]
+                    .personal-area__addresses-wrap
+                        .personal-area__addresses-input
+                            p Адрес 1
+                            input.input-text(type="text" placeholder="Lorem ipsum")
+                        .personal-area__addresses-btn
+                            i.font-icon.font-icon-edit
+                            | Редактировать
+                        .personal-area__addresses-btn
+                            i.font-icon.font-icon-delete
+                            | Удалить
+                a(href="#" data-show-popup="new-address-popup").personal-area__addresses-add-new
+                    i.font-icon-plus
+                    | Добавить новый адрес
+                .personal-area__addresses-input
+                    p Город
+                    input.input-text(type="text" placeholder="Lorem ipsum")
+                    p Улица
+                    input.input-text(type="text" placeholder="Lorem ipsum")
+                    .personal-area__addresses-group-input.flex
+                        div
+                            p Дом
+                            input.input-text(type="text" placeholder="Lorem ipsum")
+                        div
+                            p Квартира
+                            input.input-text(type="text" placeholder="Lorem ipsum")
+
+                input.btn(type="submit" value="сохранить все изменения")

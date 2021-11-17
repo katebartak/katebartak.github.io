@@ -1,0 +1,52 @@
+.section-404 {
+  padding-bottom: 220px;
+  background: url("../img/thanks-bg-mob.png") no-repeat center bottom;
+  background-size: contain;
+  padding-top: 0;
+
+  @include media-q(min, 768) {
+    padding-bottom: 300px;
+    background: url("../img/thanks-bg.png") no-repeat center bottom;
+    background-size: cover;
+  }
+
+  @include media-q(min, 1920) {
+    padding-bottom: 500px;
+    padding-top: 70px;
+  }
+
+  &__title {
+    font-size: 144px;
+    font-weight: $f-medium;
+    color: $c-green;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+
+    @include media-q(min, 768) {
+      font-size: 200px;
+      margin-bottom: 80px;
+    }
+
+    @include media-q(min, 1920) {
+      font-size: 288px;
+    }
+
+    span {
+      display: block;
+      font-weight: $f-normal;
+      font-size: 24px;
+
+      @include media-q(min, 768) {
+        position: absolute;
+        right: 16%;
+        bottom: 0;
+        font-size: 36px;
+      }
+
+      @include media-q(min, 1920) {
+        font-size: 48px;
+      }
+    }
+  }
+}

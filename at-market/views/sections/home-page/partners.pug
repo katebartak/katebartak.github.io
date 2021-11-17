@@ -1,0 +1,9 @@
+section.brands.tabs-wrapper
+  .container
+    h2 ПАРТНЕРЫ
+    .brands__slider
+      each item in brands
+        .brands-item
+          .brands-item__img
+           img(src='img/'+item.img + '.png')
+          p.brands-item__title=item.title

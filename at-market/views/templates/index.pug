@@ -1,0 +1,80 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+-
+	var sitemap = [
+		{
+			title: 'Главная',
+			href: 'home',
+		},
+		{
+			title: 'Каталог',
+			href: 'catalog',
+		},
+		{
+			title: 'Каталог главная',
+			href: 'catalog-main',
+		},
+		{
+			title: 'Товар',
+			href: 'product-page',
+		},
+		{
+			title: 'Контакты',
+			href: 'contacts',
+		},
+		{
+			title: 'О компании',
+			href: 'about-company',
+		},
+		{
+			title: 'Страница регистрации',
+			href: 'personal-area-registration',
+		},
+		{
+			title: 'Мои данные',
+			href: 'personal-area-data',
+		},
+		{
+			title: 'История заказов',
+			href: 'personal-area-history',
+		},
+		{
+			title: 'Открытый заказ',
+			href: 'personal-area-order',
+		},
+		{
+			title: 'Адреса',
+			href: 'personal-area-addresses',
+		},
+		{
+			title: 'Спасибо',
+			href: 'thanks',
+		},
+		{
+			title: 'Текстовая страница',
+			href: 'text-page',
+		},
+		{
+			title: '404',
+			href: '404-page',
+		},
+		{
+			title: 'Страница Заказа',
+			href: 'ordering',
+		}
+	];
+
+doctype html
+html(lang='ua')
+	include ../common_meta/head
+	body.front
+		main.page-container
+			.container
+				div(style="padding: 100px")
+					h1 Site Prototype
+					each item in sitemap
+						a(href=item.href +'.html' style="margin-bottom: 20px; display: block;")=item.title
+
+
+		include ../common_meta/footer_scripts

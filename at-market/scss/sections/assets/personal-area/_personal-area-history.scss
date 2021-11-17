@@ -1,0 +1,221 @@
+.personal-area-history {
+  .history-item {
+    border: 1px solid $c-green;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    flex-direction: column;
+
+    @include media-q(min, 768) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include media-q(min, 768) {
+        display: block;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+
+        @include media-q(min, 768) {
+          text-align: center;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: $f-medium;
+      margin-bottom: 20px;
+
+      @include media-q(min, 1441) {
+        font-size: 24px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    &__info {
+      color: $c-blue;
+      font-size: 18px;
+      font-weight: $f-medium;
+      padding-bottom: 20px;
+      margin-left: auto;
+
+      @include media-q(min, 1441) {
+        font-size: 24px;
+      }
+    }
+
+    .btn {
+      padding: 4px;
+      height: 35px;
+      margin: 0;
+
+      &:not(:last-child) {
+        margin: 12px 0;
+      }
+
+      @include media-q(min, 768) {
+        padding: 17px 22px;
+        height: 55px;
+        margin: 0;
+      }
+    }
+
+    &__order {
+      &-top {
+        justify-content: space-between;
+        align-items: center;
+
+        &-wrap {
+          display: flex;
+          flex-wrap: wrap;
+
+          @include media-q(min, 768) {
+            display: block;
+          }
+        }
+      }
+
+      &-top-item {
+        display: inline-block;
+        font-size: 18px;
+
+        @include media-q(min, 768) {
+          margin-right: 30px;
+        }
+
+        @include media-q(min, 1441) {
+          font-size: 24px;
+        }
+      }
+
+      &-number {
+        margin-bottom: 15px;
+        display: inline-block;
+        font-size: 18px;
+
+        @include media-q(min, 768) {
+          display: block;
+          margin-bottom: 30px;
+        }
+
+        @include media-q(min, 1441) {
+          font-size: 24px;
+        }
+      }
+
+      &-item {
+        font-size: 18px;
+        font-weight: $f_medium;
+        margin-bottom: 32px;
+
+        @include media-q(min, 768) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 0;
+        }
+
+        @include media-q(min, 1441) {
+          font-size: 24px;
+        }
+
+        @include media-q(min, 1920) {
+          padding: 0 50px 20px 120px;
+        }
+      }
+
+      &-img {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        margin-right: 20px;
+
+        @include media-q(min, 768) {
+          float: none;
+          height: 140px;
+          margin-right: 0;
+        }
+
+        img {
+          object-fit: contain;
+          height: 100%;
+        }
+      }
+
+      &-title {
+        max-width: 300px;
+        font-size: 16px;
+        font-weight: $f-normal;
+        margin-bottom: 10px;
+
+        @include media-q(min, 768) {
+          margin-bottom: 0;
+        }
+
+        @include media-q(min, 1441) {
+          font-size: 24px;
+        }
+      }
+
+      &-count {
+        color: $c-blue;
+        display: inline-block;
+
+        @include media-q(min, 768) {
+          display: block;
+        }
+      }
+
+      &-price {
+        display: inline-block;
+        margin-left: 75px;
+
+        @include media-q(min, 768) {
+          display: block;
+          margin-left: 0;
+        }
+
+        span {
+          color: $c-blue;
+          margin-top: 25px;
+          margin-left: 9px;
+
+          @include media-q(min, 768) {
+            display: block;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    &__btn-desktop {
+      display: none;
+
+      @include media-q(min, 768) {
+        display: block;
+      }
+    }
+
+    &__btn-mob {
+
+      @include media-q(min, 768) {
+        display: none;
+      }
+    }
+  }
+}

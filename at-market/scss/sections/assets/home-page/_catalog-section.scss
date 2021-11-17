@@ -1,0 +1,89 @@
+.decorate-wrap {
+	position: relative;
+	overflow: hidden;
+
+	&::after {
+		display: none;
+
+		@include media-q(min, 1280) {
+			display: block;
+			content: '';
+			position: absolute;
+			background-size: contain;
+			width: 250px;
+			height: 350px;
+			pointer-events: none;
+		}
+
+		@include media-q(min, 1441) {
+			width: 344px;
+			height: 530px;
+		}
+	}
+
+	&::after {
+		right: -35%;
+		top: 80%;
+		left: auto;
+		background: url("../img/decorate-item-02.png") no-repeat center;
+
+		@include media-q(min, 1024) {
+			display: none;
+		}
+
+		@include media-q(min, 1280) {
+			display: block;
+			right: -8%;
+			top: 40%;
+		}
+	}
+}
+
+.catalog-section {
+	padding-top: 100px;
+	position: relative;
+
+	//&-01 {
+	//
+	//	@include media-q(min, 768) {
+	//	}
+	//
+	//	@include media-q(min, 1280) {
+	//	}
+	//}
+
+	&::before,
+	&::after {
+		display: none;
+
+		@include media-q(min, 1280) {
+			display: block;
+			content: '';
+			position: absolute;
+			background-size: contain;
+			width: 250px;
+			height: 350px;
+			pointer-events: none;
+		}
+
+		@include media-q(min, 1441) {
+			width: 344px;
+			height: 530px;
+		}
+	}
+
+	&::before {
+		top: -5%;
+		left: -25%;
+		background: url("../img/decorate-item.png") no-repeat center;
+
+		@include media-q(min, 1024) {
+			left: -16%;
+		}
+
+		@include media-q(min, 1280) {
+			top: 0;
+			left: -6%;
+		}
+	}
+}

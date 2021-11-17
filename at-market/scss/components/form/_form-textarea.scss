@@ -1,0 +1,34 @@
+textarea {
+  background: $white;
+  font-family: inherit;
+  max-width: 100%;
+  width: 100%;
+  padding: 12px;
+  resize: vertical;
+  border-radius: 5px;
+  border: 1px solid $c-blue;
+  color: $c-blue;
+  font-size: 18px;
+  min-height: 150px;
+
+  @include media-q(min, 768) {
+    font-size: 24px;
+  }
+
+  // Safari and iOS fix of text field
+  -webkit-appearance: none;
+  transition: border-color .3s ease-out;
+
+  &::placeholder {
+    color: $c-blue;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.error {
+    border-color: $red;
+    background-color: rgba($red, .05);
+  }
+}

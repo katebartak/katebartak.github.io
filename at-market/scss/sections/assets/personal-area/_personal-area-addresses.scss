@@ -1,0 +1,156 @@
+.personal-area {
+
+  &__addresses {
+    position: relative;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      display: none;
+
+      @include media-q(min, 1280) {
+        display: block;
+        content: '';
+        position: absolute;
+        background-size: contain;
+        width: 344px;
+        height: 530px;
+        pointer-events: none;
+      }
+    }
+
+    &::before {
+      top: -5%;
+      left: -25%;
+      background: url("../img/decorate-item.png") no-repeat center;
+
+      @include media-q(min, 1024) {
+        left: -16%;
+      }
+
+      @include media-q(min, 1280) {
+        top: 45%;
+        left: -6%;
+      }
+    }
+
+    &::after {
+      right: -35%;
+      top: 80%;
+      left: auto;
+      background: url("../img/decorate-item-02.png") no-repeat center;
+
+      @include media-q(min, 1024) {
+        display: none;
+      }
+
+      @include media-q(min, 1280) {
+        display: block;
+        right: -8%;
+        top: 0;
+      }
+    }
+
+    .request-form {
+      max-width: none;
+    }
+
+    &-wrap {
+      margin-bottom: 30px;
+
+      @include media-q(min, 1920) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+      }
+
+      .input-text {
+
+        @include media-q(min, 1920) {
+          width: 560px;
+          margin-right: 22px;
+        }
+      }
+
+      .font-icon {
+        margin-right: 10px;
+      }
+    }
+
+    &-btn {
+      font-size: 18px;
+      margin-right: 30px;
+      margin-top: 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+
+      @include media-q(min, 1920) {
+        display: flex;
+        font-size: 24px;
+      }
+
+      &:hover {
+        color: $c-blue;
+
+        .font-icon {
+
+          &::before {
+            color: $c-blue;
+          }
+        }
+      }
+    }
+
+    &-add-new {
+      color: $c-blue;
+      font-size: 24px;
+      font-weight: $f-medium;
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      margin-bottom: 30px;
+
+      .font-icon-plus {
+        margin-right: 60px;
+
+        &::before {
+          font-size: 27px;
+          margin-top: 2px;
+        }
+      }
+    }
+
+    .input-text {
+
+      @include media-q(min, 768) {
+        min-width: 350px;
+      }
+
+      @include media-q(min, 1920) {
+        min-width: 360px;
+        max-width: 750px;
+      }
+    }
+
+    .request-form {
+
+      .btn {
+        margin: 30px 0 0;
+        width: 100%;
+
+        @include media-q(min, 1280) {
+          max-width: 750px;
+        }
+      }
+    }
+
+    &-group-input {
+      div {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}

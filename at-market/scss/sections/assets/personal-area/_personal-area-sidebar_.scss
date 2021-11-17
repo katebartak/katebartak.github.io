@@ -1,0 +1,114 @@
+.personal-area {
+  &__sidebar {
+    margin-bottom: 60px;
+
+    @include media-q(min, 768) {
+      margin-bottom: 30px;
+    }
+
+    @include media-q(min, 1280) {
+      float: left;
+      width: 30%;
+      margin-bottom: 0;
+    }
+
+    @include media-q(min, 1920) {
+      width: 21%;
+    }
+  }
+
+  &__info {
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: $c-green;
+    margin-right: 25px;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: $f-medium;
+    margin-bottom: 5px;
+
+    @include media-q(min, 1441) {
+      font-size: 24px;
+    }
+  }
+
+  &__email {
+    font-size: 16px;
+
+    @include media-q(min, 1441) {
+      font-size: 18px;
+    }
+  }
+
+  &__nav {
+    &-item {
+      transition: color .2s ease;
+      font-size: 18px;
+      border-bottom: 1px solid #BAD2E5;
+      padding-bottom: 12px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+
+      @include media-q(min, 1024) {
+        padding-left: 0;
+      }
+
+      @include media-q(min, 1441) {
+        font-size: 24px;
+      }
+
+      @include media-q(min, 1920) {
+        padding-left: 30px;
+      }
+
+      &:first-child {
+
+        @include media-q(min, 1920) {
+          padding-left: 32px;
+        }
+      }
+
+      &:hover,
+      &.active {
+        color: $c-blue;
+
+        .font-icon {
+          color: $c-blue;
+        }
+      }
+
+      .font-icon {
+        margin-right: 25px;
+        color: $c-dark;
+        transition: color .2s ease;
+
+        @include media-q(min, 1920) {
+          margin-right: 56px;
+        }
+
+        &::before {
+          font-size: 34px;
+
+          @include media-q(min, 1441) {
+            font-size: 44px;
+          }
+        }
+      }
+    }
+
+  }
+}

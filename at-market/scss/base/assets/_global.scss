@@ -1,0 +1,235 @@
+// ----------------------------------------------------------------------------
+// Set box sizing to border-box
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+// Remove custom browser elements
+*::-ms-clear {
+  display: none;
+}
+
+*::-ms-reveal {
+  display: none;
+}
+
+// Placeholders
+::-webkit-input-placeholder {
+  color: $black;
+}
+
+::-moz-placeholder {
+  color: $black;
+}
+
+// Firefox 19+
+:-moz-placeholder {
+  color: $black;
+}
+
+// Firefox 18-
+:-ms-input-placeholder {
+  color: $black;
+}
+
+::selection {
+  background: rgba($black, .2);
+}
+
+// ----------------------------------------------------------------------------
+// Global styles
+html,
+body {
+  font-size: $fs-base;
+}
+
+html {
+  font-family: $sans;
+  min-height: 100vh;
+}
+
+body {
+  color: $c_dark;
+  background: $white;
+  height: auto;
+  min-width: 320px;
+  font-weight: $f_normal;
+  line-height: $line-height-base;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.no-scroll {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.js-hide {
+  @extend %element-invisible;
+}
+
+// Mobile menu active need add overlay to the page
+.active-menu {
+  overflow: hidden;
+
+  &::before {
+    opacity: 1;
+    visibility: visible;
+    z-index: 30;
+  }
+
+  @include media-q(min, 1025) {
+    overflow-y: auto;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Set all images  max size
+img {
+  max-width: 100%;
+  height: auto;
+  display: inherit;
+}
+
+figure {
+  margin: 0 0 40px 0;
+  text-align: center;
+
+  @include media-q(min, 680) {
+    text-align: inherit;
+  }
+
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+figcaption {
+  @include font-size(11);
+  line-height: 2em;
+}
+
+// ----------------------------------------------------------------------------
+// Global links styles
+a {
+  @include links($c_dark, $c_dark);
+  font-size: $fs-base;
+  outline: none;
+  transition: color .3s ease;
+
+  //&:visited {
+  //  color: $secondary;
+  //}
+}
+
+.ext {
+  .ext {
+    display: none;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+// Video
+.responsive-video,
+.video-embed-field-responsive-video {
+  @extend %responsive-video;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+// ----------------------------------------------------------------------------
+// Global ul reset
+ul {
+  @extend %reset-list;
+}
+
+.flex {
+  display: flex;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show-from-tablet {
+  @include media-q(max, 1279) {
+    display: none;
+  }
+}
+
+.show-before-tablet {
+  @include media-q(min, 1280) {
+    display: none;
+  }
+}
+
+section {
+  padding-top: 100px;
+
+  @include media-q(min, 1441) {
+    padding-top: 180px;
+  }
+}
+
+.blue-title {
+  color: $c-blue;
+
+  @include media-q(min, 1280) {
+    text-align: left;
+  }
+}
+
+.text-page {
+  padding-top: 0;
+  padding-bottom: 100px;
+
+  @include media-q(min, 768) {
+    padding-bottom: 180px;
+  }
+
+  h1 {
+    color: $c-green;
+    text-align: center;
+    text-transform: none;
+    font-weight: $f-medium;
+    margin-bottom: 40px;
+    padding-top: 60px;
+
+    @include media-q(min, 768) {
+      margin-bottom: 75px;
+      padding-top: 0;
+    }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $c-blue;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    letter-spacing: 6px;
+
+    @include media-q(min, 1441) {
+      font-size: 36px;
+    }
+  }
+}

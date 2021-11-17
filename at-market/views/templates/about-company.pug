@@ -1,0 +1,16 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+doctype html
+html(lang='ua')
+  include ../common_meta/head
+  body.front
+    include ../components/_header
+    main.page-container
+      include ../sections/about-company/standart-hero
+      include ../sections/about-company/about-content
+      include ../sections/about-company/about-history
+      include ../sections/contacts/contacts
+
+    include ../components/_footer
+    include ../common_meta/footer_scripts

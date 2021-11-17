@@ -1,0 +1,149 @@
+.advantages {
+	padding-top: 135px;
+	position: relative;
+
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 5%;
+		left: -12%;
+		background: url("../img/decorate-item.png") no-repeat center;
+		background-size: contain;
+		width: 140px;
+		height: 200px;
+
+		@include media-q(min, 1280) {
+			left: -16%;
+			top: 0;
+			width: 344px;
+			height: 500px;
+		}
+
+		@include media-q(min, 1920) {
+			top: 30%;
+			left: -6%;
+		}
+	}
+
+	&__group {
+		flex-direction: column;
+		justify-content: center;
+
+		@include media-q(min, 1024) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		@include media-q(min, 1280) {
+			padding: 0 5%;
+		}
+	}
+
+	&__item {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 50px;
+		padding: 0 15%;
+
+		@include media-q(min, 768) {
+			padding: 0;
+		}
+
+		@include media-q(min, 1024) {
+			width: 22%;
+			margin-bottom: 0;
+		}
+
+		@include media-q(min, 1280) {
+			width: 33%;
+		}
+	}
+
+	&__img {
+		height: 70px;
+		max-width: 115px;
+		display: flex;
+		justify-content: center;
+		margin: 0 auto 35px;
+
+		@include media-q(min, 1441) {
+			height: 176px;
+			max-width: 347px;
+		}
+
+		img {
+			object-fit: contain;
+			width: 115px;
+
+			@include media-q(min, 1441) {
+				width: 260px;
+			}
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: $f_medium;
+		position: relative;
+		color: $c_green;
+		padding-bottom: 24px;
+		margin-bottom: 20px;
+
+		@include media-q(min, 1441) {
+			font-size: 24px;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: calc(50% - 122px);
+			bottom: 0;
+			width: 244px;
+			height: 1px;
+			background-color: $c_green;
+
+			@include media-q(min, 1441) {
+				width: 360px;
+				left: calc(50% - 180px);
+			}
+		}
+	}
+
+	&__content {
+		font-size: 18px;
+		font-weight: $f_medium;
+
+		@include media-q(min, 1441) {
+			font-size: 24px;
+			padding: 0 50px;
+		}
+
+		a {
+			font-size: 18px;
+			display: block;
+			margin-bottom: 6px;
+
+			@include media-q(min, 1441) {
+				font-size: 24px;
+			}
+
+			&:hover {
+				color: $c_blue;
+			}
+		}
+
+		p {
+			font-size: 18px;
+
+			@include media-q(min, 1441) {
+				font-size: 24px;
+			}
+		}
+	}
+}

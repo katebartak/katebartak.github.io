@@ -1,4 +1,4 @@
-.element-hidden, .js-hide, .form-checkboxes .form-checkbox,
+.element-hidden, .js-hide,
 .element-invisible {
   position: absolute !important;
   width: 1px !important;
@@ -729,7 +729,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -743,12 +743,12 @@ h1 span {
 }
 
 h2 {
-  font-size: 1.875rem;
+  font-size: 30px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 4px;
   font-weight: 500;
-  margin-bottom: 4.0625rem;
+  margin-bottom: 2.8125rem;
 }
 
 h3 {
@@ -975,8 +975,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-BlackItalic.eot");
-  src: local("TT Norms Black Italic"), local("TTNorms-BlackItalic"), url("fonts/TTNorms-BlackItalic.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-BlackItalic.woff2") format("woff2"), url("fonts/TTNorms-BlackItalic.woff") format("woff"), url("fonts/TTNorms-BlackItalic.ttf") format("truetype"), url("fonts/TTNorms-BlackItalic.svg#TTNorms-BlackItalic") format("svg");
+  src: url("/fonts/TTNorms-BlackItalic.eot");
+  src: local("TT Norms Black Italic"), local("TTNorms-BlackItalic"), url("/fonts/TTNorms-BlackItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-BlackItalic.woff2") format("woff2"), url("/fonts/TTNorms-BlackItalic.woff") format("woff"), url("/fonts/TTNorms-BlackItalic.ttf") format("truetype"), url("/fonts/TTNorms-BlackItalic.svg#TTNorms-BlackItalic") format("svg");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -984,8 +984,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Black.eot");
-  src: local("TT Norms Black"), local("TTNorms-Black"), url("fonts/TTNorms-Black.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-Black.woff2") format("woff2"), url("fonts/TTNorms-Black.woff") format("woff"), url("fonts/TTNorms-Black.ttf") format("truetype"), url("fonts/TTNorms-Black.svg#TTNorms-Black") format("svg");
+  src: url("/fonts/TTNorms-Black.eot");
+  src: local("TT Norms Black"), local("TTNorms-Black"), url("/fonts/TTNorms-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Black.woff2") format("woff2"), url("/fonts/TTNorms-Black.woff") format("woff"), url("/fonts/TTNorms-Black.ttf") format("truetype"), url("/fonts/TTNorms-Black.svg#TTNorms-Black") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -993,8 +993,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Bold.eot");
-  src: local("TT Norms Bold"), local("TTNorms-Bold"), url("fonts/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-Bold.woff2") format("woff2"), url("fonts/TTNorms-Bold.woff") format("woff"), url("fonts/TTNorms-Bold.ttf") format("truetype"), url("fonts/TTNorms-Bold.svg#TTNorms-Bold") format("svg");
+  src: url("/fonts/TTNorms-Bold.eot");
+  src: local("TT Norms Bold"), local("TTNorms-Bold"), url("/fonts/TTNorms-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Bold.woff2") format("woff2"), url("/fonts/TTNorms-Bold.woff") format("woff"), url("/fonts/TTNorms-Bold.ttf") format("truetype"), url("/fonts/TTNorms-Bold.svg#TTNorms-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -1002,8 +1002,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-ExtraLight.eot");
-  src: local("TT Norms ExtraLight"), local("TTNorms-ExtraLight"), url("fonts/TTNorms-ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-ExtraLight.woff2") format("woff2"), url("fonts/TTNorms-ExtraLight.woff") format("woff"), url("fonts/TTNorms-ExtraLight.ttf") format("truetype"), url("fonts/TTNorms-ExtraLight.svg#TTNorms-ExtraLight") format("svg");
+  src: url("/fonts/TTNorms-ExtraLight.eot");
+  src: local("TT Norms ExtraLight"), local("TTNorms-ExtraLight"), url("/fonts/TTNorms-ExtraLight.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-ExtraLight.woff2") format("woff2"), url("/fonts/TTNorms-ExtraLight.woff") format("woff"), url("/fonts/TTNorms-ExtraLight.ttf") format("truetype"), url("/fonts/TTNorms-ExtraLight.svg#TTNorms-ExtraLight") format("svg");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -1011,8 +1011,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-BoldItalic.eot");
-  src: local("TT Norms Bold Italic"), local("TTNorms-BoldItalic"), url("fonts/TTNorms-BoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-BoldItalic.woff2") format("woff2"), url("fonts/TTNorms-BoldItalic.woff") format("woff"), url("fonts/TTNorms-BoldItalic.ttf") format("truetype"), url("fonts/TTNorms-BoldItalic.svg#TTNorms-BoldItalic") format("svg");
+  src: url("/fonts/TTNorms-BoldItalic.eot");
+  src: local("TT Norms Bold Italic"), local("TTNorms-BoldItalic"), url("/fonts/TTNorms-BoldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-BoldItalic.woff2") format("woff2"), url("/fonts/TTNorms-BoldItalic.woff") format("woff"), url("/fonts/TTNorms-BoldItalic.ttf") format("truetype"), url("/fonts/TTNorms-BoldItalic.svg#TTNorms-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -1020,8 +1020,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-ExtraLightItalic.eot");
-  src: local("TT Norms ExtraLight Italic"), local("TTNorms-ExtraLightItalic"), url("fonts/TTNorms-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-ExtraLightItalic.woff2") format("woff2"), url("fonts/TTNorms-ExtraLightItalic.woff") format("woff"), url("fonts/TTNorms-ExtraLightItalic.ttf") format("truetype"), url("fonts/TTNorms-ExtraLightItalic.svg#TTNorms-ExtraLightItalic") format("svg");
+  src: url("/fonts/TTNorms-ExtraLightItalic.eot");
+  src: local("TT Norms ExtraLight Italic"), local("TTNorms-ExtraLightItalic"), url("/fonts/TTNorms-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-ExtraLightItalic.woff2") format("woff2"), url("/fonts/TTNorms-ExtraLightItalic.woff") format("woff"), url("/fonts/TTNorms-ExtraLightItalic.ttf") format("truetype"), url("/fonts/TTNorms-ExtraLightItalic.svg#TTNorms-ExtraLightItalic") format("svg");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
@@ -1029,8 +1029,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-ExtraBold.eot");
-  src: local("TT Norms ExtraBold"), local("TTNorms-ExtraBold"), url("fonts/TTNorms-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-ExtraBold.woff2") format("woff2"), url("fonts/TTNorms-ExtraBold.woff") format("woff"), url("fonts/TTNorms-ExtraBold.ttf") format("truetype"), url("fonts/TTNorms-ExtraBold.svg#TTNorms-ExtraBold") format("svg");
+  src: url("/fonts/TTNorms-ExtraBold.eot");
+  src: local("TT Norms ExtraBold"), local("TTNorms-ExtraBold"), url("/fonts/TTNorms-ExtraBold.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-ExtraBold.woff2") format("woff2"), url("/fonts/TTNorms-ExtraBold.woff") format("woff"), url("/fonts/TTNorms-ExtraBold.ttf") format("truetype"), url("/fonts/TTNorms-ExtraBold.svg#TTNorms-ExtraBold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -1038,8 +1038,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-ExtraBoldItalic.eot");
-  src: local("TT Norms ExtraBold Italic"), local("TTNorms-ExtraBoldItalic"), url("fonts/TTNorms-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-ExtraBoldItalic.woff2") format("woff2"), url("fonts/TTNorms-ExtraBoldItalic.woff") format("woff"), url("fonts/TTNorms-ExtraBoldItalic.ttf") format("truetype"), url("fonts/TTNorms-ExtraBoldItalic.svg#TTNorms-ExtraBoldItalic") format("svg");
+  src: url("/fonts/TTNorms-ExtraBoldItalic.eot");
+  src: local("TT Norms ExtraBold Italic"), local("TTNorms-ExtraBoldItalic"), url("/fonts/TTNorms-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-ExtraBoldItalic.woff2") format("woff2"), url("/fonts/TTNorms-ExtraBoldItalic.woff") format("woff"), url("/fonts/TTNorms-ExtraBoldItalic.ttf") format("truetype"), url("/fonts/TTNorms-ExtraBoldItalic.svg#TTNorms-ExtraBoldItalic") format("svg");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -1047,8 +1047,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Heavy.eot");
-  src: local("TT Norms Heavy"), local("TTNorms-Heavy"), url("fonts/TTNorms-Heavy.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-Heavy.woff2") format("woff2"), url("fonts/TTNorms-Heavy.woff") format("woff"), url("fonts/TTNorms-Heavy.ttf") format("truetype"), url("fonts/TTNorms-Heavy.svg#TTNorms-Heavy") format("svg");
+  src: url("/fonts/TTNorms-Heavy.eot");
+  src: local("TT Norms Heavy"), local("TTNorms-Heavy"), url("/fonts/TTNorms-Heavy.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Heavy.woff2") format("woff2"), url("/fonts/TTNorms-Heavy.woff") format("woff"), url("/fonts/TTNorms-Heavy.ttf") format("truetype"), url("/fonts/TTNorms-Heavy.svg#TTNorms-Heavy") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -1056,8 +1056,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Light.eot");
-  src: local("TT Norms Light"), local("TTNorms-Light"), url("fonts/TTNorms-Light.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-Light.woff2") format("woff2"), url("fonts/TTNorms-Light.woff") format("woff"), url("fonts/TTNorms-Light.ttf") format("truetype"), url("fonts/TTNorms-Light.svg#TTNorms-Light") format("svg");
+  src: url("/fonts/TTNorms-Light.eot");
+  src: local("TT Norms Light"), local("TTNorms-Light"), url("/fonts/TTNorms-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Light.woff2") format("woff2"), url("/fonts/TTNorms-Light.woff") format("woff"), url("/fonts/TTNorms-Light.ttf") format("truetype"), url("/fonts/TTNorms-Light.svg#TTNorms-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1065,8 +1065,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Italic.eot");
-  src: local("TT Norms Italic"), local("TTNorms-Italic"), url("fonts/TTNorms-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-Italic.woff2") format("woff2"), url("fonts/TTNorms-Italic.woff") format("woff"), url("fonts/TTNorms-Italic.ttf") format("truetype"), url("fonts/TTNorms-Italic.svg#TTNorms-Italic") format("svg");
+  src: url("/fonts/TTNorms-Italic.eot");
+  src: local("TT Norms Italic"), local("TTNorms-Italic"), url("/fonts/TTNorms-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Italic.woff2") format("woff2"), url("/fonts/TTNorms-Italic.woff") format("woff"), url("/fonts/TTNorms-Italic.ttf") format("truetype"), url("/fonts/TTNorms-Italic.svg#TTNorms-Italic") format("svg");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -1074,8 +1074,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Medium.eot");
-  src: local("TT Norms Medium"), local("TTNorms-Medium"), url("fonts/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-Medium.woff2") format("woff2"), url("fonts/TTNorms-Medium.woff") format("woff"), url("fonts/TTNorms-Medium.ttf") format("truetype"), url("fonts/TTNorms-Medium.svg#TTNorms-Medium") format("svg");
+  src: url("/fonts/TTNorms-Medium.eot");
+  src: local("TT Norms Medium"), local("TTNorms-Medium"), url("/fonts/TTNorms-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Medium.woff2") format("woff2"), url("/fonts/TTNorms-Medium.woff") format("woff"), url("/fonts/TTNorms-Medium.ttf") format("truetype"), url("/fonts/TTNorms-Medium.svg#TTNorms-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1083,8 +1083,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-HeavyItalic.eot");
-  src: local("TT Norms Heavy Italic"), local("TTNorms-HeavyItalic"), url("fonts/TTNorms-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-HeavyItalic.woff2") format("woff2"), url("fonts/TTNorms-HeavyItalic.woff") format("woff"), url("fonts/TTNorms-HeavyItalic.ttf") format("truetype"), url("fonts/TTNorms-HeavyItalic.svg#TTNorms-HeavyItalic") format("svg");
+  src: url("/fonts/TTNorms-HeavyItalic.eot");
+  src: local("TT Norms Heavy Italic"), local("TTNorms-HeavyItalic"), url("/fonts/TTNorms-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-HeavyItalic.woff2") format("woff2"), url("/fonts/TTNorms-HeavyItalic.woff") format("woff"), url("/fonts/TTNorms-HeavyItalic.ttf") format("truetype"), url("/fonts/TTNorms-HeavyItalic.svg#TTNorms-HeavyItalic") format("svg");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -1092,8 +1092,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-LightItalic.eot");
-  src: local("TT Norms Light Italic"), local("TTNorms-LightItalic"), url("fonts/TTNorms-LightItalic.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-LightItalic.woff2") format("woff2"), url("fonts/TTNorms-LightItalic.woff") format("woff"), url("fonts/TTNorms-LightItalic.ttf") format("truetype"), url("fonts/TTNorms-LightItalic.svg#TTNorms-LightItalic") format("svg");
+  src: url("/fonts/TTNorms-LightItalic.eot");
+  src: local("TT Norms Light Italic"), local("TTNorms-LightItalic"), url("/fonts/TTNorms-LightItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-LightItalic.woff2") format("woff2"), url("/fonts/TTNorms-LightItalic.woff") format("woff"), url("/fonts/TTNorms-LightItalic.ttf") format("truetype"), url("/fonts/TTNorms-LightItalic.svg#TTNorms-LightItalic") format("svg");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -1101,8 +1101,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-MediumItalic.eot");
-  src: local("TT Norms Medium Italic"), local("TTNorms-MediumItalic"), url("fonts/TTNorms-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-MediumItalic.woff2") format("woff2"), url("fonts/TTNorms-MediumItalic.woff") format("woff"), url("fonts/TTNorms-MediumItalic.ttf") format("truetype"), url("fonts/TTNorms-MediumItalic.svg#TTNorms-MediumItalic") format("svg");
+  src: url("/fonts/TTNorms-MediumItalic.eot");
+  src: local("TT Norms Medium Italic"), local("TTNorms-MediumItalic"), url("/fonts/TTNorms-MediumItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-MediumItalic.woff2") format("woff2"), url("/fonts/TTNorms-MediumItalic.woff") format("woff"), url("/fonts/TTNorms-MediumItalic.ttf") format("truetype"), url("/fonts/TTNorms-MediumItalic.svg#TTNorms-MediumItalic") format("svg");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -1110,8 +1110,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-ThinItalic.eot");
-  src: local("TT Norms Thin Italic"), local("TTNorms-ThinItalic"), url("fonts/TTNorms-ThinItalic.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-ThinItalic.woff2") format("woff2"), url("fonts/TTNorms-ThinItalic.woff") format("woff"), url("fonts/TTNorms-ThinItalic.ttf") format("truetype"), url("fonts/TTNorms-ThinItalic.svg#TTNorms-ThinItalic") format("svg");
+  src: url("/fonts/TTNorms-ThinItalic.eot");
+  src: local("TT Norms Thin Italic"), local("TTNorms-ThinItalic"), url("/fonts/TTNorms-ThinItalic.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-ThinItalic.woff2") format("woff2"), url("/fonts/TTNorms-ThinItalic.woff") format("woff"), url("/fonts/TTNorms-ThinItalic.ttf") format("truetype"), url("/fonts/TTNorms-ThinItalic.svg#TTNorms-ThinItalic") format("svg");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -1119,8 +1119,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Regular.eot");
-  src: local("TT Norms Regular"), local("TTNorms-Regular"), url("fonts/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-Regular.woff2") format("woff2"), url("fonts/TTNorms-Regular.woff") format("woff"), url("fonts/TTNorms-Regular.ttf") format("truetype"), url("fonts/TTNorms-Regular.svg#TTNorms-Regular") format("svg");
+  src: url("/fonts/TTNorms-Regular.eot");
+  src: local("TT Norms Regular"), local("TTNorms-Regular"), url("/fonts/TTNorms-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Regular.woff2") format("woff2"), url("/fonts/TTNorms-Regular.woff") format("woff"), url("/fonts/TTNorms-Regular.ttf") format("truetype"), url("/fonts/TTNorms-Regular.svg#TTNorms-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1128,8 +1128,8 @@ thead th:last-child {
 
 @font-face {
   font-family: 'TT Norms';
-  src: url("fonts/TTNorms-Thin.eot");
-  src: local("TT Norms Thin"), local("TTNorms-Thin"), url("fonts/TTNorms-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/TTNorms-Thin.woff2") format("woff2"), url("fonts/TTNorms-Thin.woff") format("woff"), url("fonts/TTNorms-Thin.ttf") format("truetype"), url("fonts/TTNorms-Thin.svg#TTNorms-Thin") format("svg");
+  src: url("/fonts/TTNorms-Thin.eot");
+  src: local("TT Norms Thin"), local("TTNorms-Thin"), url("/fonts/TTNorms-Thin.eot?#iefix") format("embedded-opentype"), url("/fonts/TTNorms-Thin.woff2") format("woff2"), url("/fonts/TTNorms-Thin.woff") format("woff"), url("/fonts/TTNorms-Thin.ttf") format("truetype"), url("/fonts/TTNorms-Thin.svg#TTNorms-Thin") format("svg");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -1234,7 +1234,7 @@ fieldset .form-item {
 }
 
 .form-type-search .font-icon-search::before {
-  font-size: 1.75rem;
+  font-size: 1.375rem;
 }
 
 .form-type-search .form-search {
@@ -1364,127 +1364,6 @@ textarea.error {
   background-color: rgba(218, 54, 64, 0.05);
 }
 
-.ie10 .form-checkboxes p {
-  max-width: 90%;
-}
-
-.desktop .form-checkboxes .form-checkbox:hover + label::before {
-  background: rgba(0, 0, 0, 0.6);
-  border-color: rgba(0, 0, 0, 0.6);
-}
-
-.desktop .form-checkboxes .form-checkbox:hover + label::after {
-  opacity: .8;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
-
-.desktop .form-checkboxes .form-checkbox:disabled + label {
-  cursor: not-allowed;
-  color: #000;
-}
-
-.desktop .form-checkboxes .form-checkbox:disabled + label::before {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.desktop .form-checkboxes .form-checkbox:disabled + label::after {
-  opacity: .8;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-}
-
-.desktop .form-checkboxes .form-checkbox:disabled:checked + label::before {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.desktop .form-checkboxes .form-checkbox:disabled:checked + label::after {
-  opacity: .8;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
-
-.form-checkboxes .form-checkbox:checked + label::before {
-  background: #000;
-  border-color: #000;
-}
-
-.form-checkboxes .form-checkbox:checked + label::after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
-
-.form-checkboxes .form-checkbox:disabled + label {
-  cursor: not-allowed;
-  color: #000;
-}
-
-.form-checkboxes .form-checkbox:disabled + label::before {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.form-checkboxes .form-checkbox:disabled + label::after {
-  opacity: .8;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-}
-
-.form-checkboxes .form-type-checkbox > label {
-  position: relative;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  font-weight: 400;
-  line-height: 1.45;
-  margin-bottom: 0;
-}
-
-.form-checkboxes .form-type-checkbox > label::before {
-  display: inline-block;
-  vertical-align: text-bottom;
-  content: ' ';
-  background: #000;
-  border: 1px solid #000;
-  height: 20px;
-  width: 20px;
-  min-width: 20px;
-  margin: 0 10px 0 0;
-  -webkit-transition: background .3s ease;
-  -o-transition: background .3s ease;
-  transition: background .3s ease;
-}
-
-.form-checkboxes .form-type-checkbox > label::after {
-  content: ' ';
-  background: url(../img/check.svg) no-repeat center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  -webkit-transition: opacity .3s ease, -webkit-transform .2s ease;
-  transition: opacity .3s ease, -webkit-transform .2s ease;
-  -o-transition: opacity .3s ease, transform .2s ease;
-  transition: opacity .3s ease, transform .2s ease;
-  transition: opacity .3s ease, transform .2s ease, -webkit-transform .2s ease;
-  color: #fff;
-  -webkit-transform: scale(0.4);
-      -ms-transform: scale(0.4);
-          transform: scale(0.4);
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-}
-
 .request-form__agree {
   max-width: 560px;
   margin: 0 auto;
@@ -1507,7 +1386,7 @@ textarea.error {
 
 .checkbox + label {
   position: relative;
-  padding: 0 0 0 45px;
+  padding: 0 0 0 35px;
   cursor: pointer;
   display: block;
 }
@@ -1520,8 +1399,8 @@ textarea.error {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 0;
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s;
@@ -1540,11 +1419,11 @@ textarea.error {
   -o-transition: .2s;
   transition: .2s;
   color: #6BD2B9;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .form_radio {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -1564,7 +1443,7 @@ textarea.error {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  padding-left: 55px;
+  padding-left: 58px;
   margin-right: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1630,7 +1509,7 @@ textarea.error {
 }
 
 .form_radio__open-delivery input:checked ~ .form_radio__secondary-wrap .ordering-page__form-text {
-  margin-bottom: 20px !important;
+  margin-bottom: 40px !important;
 }
 
 select {
@@ -1947,7 +1826,7 @@ select:focus {
   text-align: center;
   padding-bottom: 30px;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   overflow: hidden;
   position: relative;
   padding-top: 18px;
@@ -1994,10 +1873,14 @@ select:focus {
   display: block;
 }
 
-.footer__logo svg {
+.footer__logo img {
+  margin: 0 auto;
+  display: block;
   width: 97px;
   max-width: 100%;
   height: 64px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer__text {
@@ -2368,14 +2251,14 @@ select:focus {
 }
 
 .btn-secondary {
-  background: transparent;
+  background: #fff;
   border: 1px solid #002B4E;
   color: #002B4E;
 }
 
 .btn-secondary:hover {
   border: 1px solid #00B6CB;
-  background: transparent;
+  background: #fff;
   color: #00B6CB;
 }
 
@@ -2436,11 +2319,11 @@ select:focus {
           transform: translateY(-50%);
   z-index: 1;
   border: 1px solid #008B87;
-  padding: 17px 20px;
+  padding: 15px;
 }
 
 .slick-arrow::after {
-  font-size: 1.5625rem;
+  font-size: 1.125rem;
   color: #008B87;
 }
 
@@ -2471,6 +2354,7 @@ select:focus {
   text-align: center;
   padding: 0 10px;
   position: relative;
+  background-color: #fff;
 }
 
 .product-item .btn {
@@ -2581,6 +2465,7 @@ select:focus {
 .section-tabs-item.active {
   color: #00B6CB;
   text-decoration: underline;
+  text-underline-offset: .3rem;
 }
 
 .standart-hero {
@@ -3113,6 +2998,7 @@ select:focus {
 
 .hero-section-slider .slick-dots li button {
   font-size: 24px;
+  height: auto;
   color: #BAD2E5;
   background: transparent;
 }
@@ -3140,9 +3026,25 @@ select:focus {
   content: none;
 }
 
-.catalog-section {
+.decorate-wrap {
   position: relative;
+  overflow: hidden;
+}
+
+.decorate-wrap::after {
+  display: none;
+}
+
+.decorate-wrap::after {
+  right: -35%;
+  top: 80%;
+  left: auto;
+  background: url("../img/decorate-item-02.png") no-repeat center;
+}
+
+.catalog-section {
   padding-top: 100px;
+  position: relative;
 }
 
 .catalog-section::before, .catalog-section::after {
@@ -3153,13 +3055,6 @@ select:focus {
   top: -5%;
   left: -25%;
   background: url("../img/decorate-item.png") no-repeat center;
-}
-
-.catalog-section::after {
-  right: -35%;
-  top: 80%;
-  left: auto;
-  background: url("../img/decorate-item-02.png") no-repeat center;
 }
 
 .brands {
@@ -3285,7 +3180,7 @@ select:focus {
 
 .advantages__title {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   position: relative;
   color: #008B87;
@@ -3327,7 +3222,7 @@ select:focus {
 }
 
 .hits-section::before {
-  display: none;
+  display: none !important;
 }
 
 .hits-section::after {
@@ -3395,7 +3290,7 @@ select:focus {
 
 .sidebar-item__title {
   cursor: pointer;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3460,7 +3355,7 @@ select:focus {
 
 .sidebar-group__item .checkbox + label {
   padding: 0 0 0 25px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .sidebar-group__item .checkbox + label:before,
@@ -3544,7 +3439,6 @@ select:focus {
 }
 
 .filters__sorting {
-  max-width: 366px;
   position: relative;
   margin-bottom: 25px;
 }
@@ -3595,7 +3489,7 @@ select:focus {
 }
 
 .catalog-list__btn {
-  font-size: 24px;
+  font-size: 18px;
   font: 500;
   text-decoration: underline;
   color: #00B6CB;
@@ -4469,11 +4363,12 @@ select:focus {
 
 .personal-area-registration .section-tabs {
   padding-right: 0;
+  margin-bottom: 60px;
 }
 
 .personal-area-registration .section-tabs-item {
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 30px;
   letter-spacing: 4px;
   text-underline-offset: .3rem;
   margin: 0 auto 20px;
@@ -4564,7 +4459,7 @@ select:focus {
   -webkit-transition: color .2s ease;
   -o-transition: color .2s ease;
   transition: color .2s ease;
-  font-size: 24px;
+  font-size: 18px;
   border-bottom: 1px solid #BAD2E5;
   padding-bottom: 12px;
   margin-bottom: 15px;
@@ -5080,9 +4975,9 @@ select:focus {
   letter-spacing: 6px;
   text-transform: uppercase;
   font-weight: 500;
-  margin: 40px auto;
   display: block;
   position: relative;
+  margin: 20px 0;
 }
 
 .ordering-page__order-title:hover {
@@ -5287,7 +5182,7 @@ select:focus {
   font-size: 24px;
   text-transform: uppercase;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: none;
 }
 
@@ -5321,16 +5216,6 @@ select:focus {
     margin-bottom: 75px;
     padding-top: 0;
   }
-  .text-page h2,
-  .text-page h3,
-  .text-page h4,
-  .text-page h5 {
-    font-size: 36px;
-  }
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 80px;
-  }
   h1 span {
     font-size: 24px;
   }
@@ -5340,11 +5225,6 @@ select:focus {
   }
   .table-wrapper table {
     background: none;
-  }
-  .subtitle {
-    line-height: 2.2;
-    font-size: 30px;
-    margin-bottom: 60px;
   }
   .request-form__group {
     display: -webkit-box;
@@ -5359,49 +5239,17 @@ select:focus {
     width: 225px;
     margin: 0 10px 0;
     padding: 15px 17px;
-    font-size: 24px;
   }
   textarea {
     font-size: 24px;
-  }
-  .request-form__agree {
-    font-size: 18px;
-  }
-  .request-form__agree label a {
-    font-size: 18px;
-    display: inline-block;
   }
   .form_radio span {
     font-size: 24px;
     padding-left: 95px;
   }
   .form_radio label {
-    padding-left: 95px;
     font-size: 24px;
     line-height: 18px;
-  }
-  .form_radio label:before {
-    width: 49px;
-    height: 49px;
-  }
-  .form_radio label:after {
-    width: 24px;
-    height: 24px;
-    left: 13px;
-    top: -3px;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-  .font-icon-apple-pay {
-    right: -45%;
-  }
-  .form_radio__open-delivery input:checked ~ .form_radio__secondary-wrap {
-    padding-left: 100px;
-    margin-top: 40px;
-  }
-  .form_radio__open-delivery input:checked ~ .form_radio__secondary-wrap .ordering-page__form-text {
-    margin-bottom: 40px !important;
   }
   .select-wrap select {
     min-height: 60px;
@@ -5442,10 +5290,6 @@ select:focus {
   }
   .footer__logo {
     margin-bottom: 40px;
-  }
-  .footer__logo svg {
-    width: 100%;
-    height: 180px;
   }
   .footer__text {
     padding: 0 25.1%;
@@ -5493,12 +5337,9 @@ select:focus {
   .btn .font-icon-cart {
     margin-right: 30px;
   }
-  .btn .font-icon-cart::before {
-    font-size: 36px;
-  }
   .btn,
   .btn-secondary {
-    height: 60px;
+    height: 45px;
   }
   .slick-dots {
     margin-top: 40px;
@@ -5516,22 +5357,8 @@ select:focus {
   .product-item .btn .font-icon-cart {
     margin-right: 28px;
   }
-  .product-item .btn .font-icon-cart::before {
-    font-size: 33px;
-  }
-  .product-item__img img {
-    max-height: inherit;
-  }
   .product-item__title {
-    font-size: 24px;
-    margin-bottom: 25px;
-  }
-  .product-item__price {
-    font-size: 24px;
-    margin-bottom: 25px;
-  }
-  .product-item__price-group {
-    margin-bottom: 45px;
+    font-size: 18px;
   }
   .product-item__price-group span {
     font-size: 18px;
@@ -5541,14 +5368,9 @@ select:focus {
         -ms-flex-pack: center;
             justify-content: center;
     padding-right: 0;
-    margin-bottom: 50px;
   }
   .section-tabs-item {
     margin: 0 4%;
-    font-size: 36px;
-  }
-  .section-tabs-item.active {
-    text-underline-offset: 1rem;
   }
   .standart-hero {
     background: url("../img/standart-hero-bg.png") no-repeat;
@@ -5563,7 +5385,6 @@ select:focus {
   }
   .cart-popup .section-popup__content .popup-close-icon {
     position: static;
-    font-size: 24px;
   }
   .cart-popup .section-popup__content .popup-close-icon::before {
     font-size: 20px;
@@ -5578,24 +5399,16 @@ select:focus {
     padding: 60px;
   }
   .new-address-popup .section-popup__content h2 {
-    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 40px;
-  }
-  .new-address-popup .section-popup__content p {
-    font-size: 24px;
   }
   .quik-order-popup .section-popup__content {
     background: url("../img/quik-popup-bg.jpg") no-repeat center;
   }
   .quik-order-popup .section-popup__content h2 {
-    font-size: 48px;
     text-transform: uppercase;
     margin-bottom: 40px;
-  }
-  .section-popup__title {
-    font-size: 24px;
   }
   .section-popup__text {
     font-size: 22px;
@@ -5604,28 +5417,14 @@ select:focus {
     top: 40px;
     right: 40px;
   }
-  .popup-close-icon::before {
-    font-size: 44px;
-  }
   .thanks-popup .section-popup__title {
     font-size: 32px;
   }
-  .cart-popup__top {
-    margin-bottom: 120px;
-  }
   .cart-popup__title {
-    font-size: 48px;
     margin: 0;
   }
   .cart-popup__title .font-icon-cart::before {
-    font-size: 46px;
     margin-right: 30px;
-  }
-  .cart-popup__text {
-    font-size: 24px;
-  }
-  .cart-popup-empty .cart-popup__text {
-    font-size: 36px;
   }
   .cart-popup__product {
     display: -webkit-box;
@@ -5638,7 +5437,6 @@ select:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 7px 40px;
-    margin-bottom: 40px;
   }
   .cart-popup__img {
     float: none;
@@ -5669,10 +5467,8 @@ select:focus {
   .cart-popup__order-price {
     margin-bottom: 60px;
     margin-top: 60px;
-    font-size: 24px;
   }
   .cart-popup__order-price span {
-    font-size: 36px;
     margin-top: 20px;
   }
   .cart-popup-empty .section-popup__content {
@@ -5680,18 +5476,6 @@ select:focus {
   }
   .cart-popup-full .section-popup__content {
     padding: 70px 40px 230px;
-  }
-  .cookies-popup h2 {
-    font-size: 36px;
-  }
-  .cookies-popup p {
-    font-size: 24px;
-  }
-  .cookies-popup a {
-    font-size: 24px;
-  }
-  .cookies-popup .popup-close-icon::before {
-    font-size: 20px;
   }
   .hero-section .container {
     padding-top: 150px;
@@ -5710,16 +5494,6 @@ select:focus {
     max-width: 370px;
     padding: 20px 126px;
   }
-  .brands {
-    margin-bottom: 180px;
-  }
-  .brands-item__img {
-    height: 230px;
-    margin-bottom: 50px;
-  }
-  .brands-item__img img {
-    max-width: 200px;
-  }
   .quick-order {
     background: url("../img/quick-order-bg.jpg") no-repeat center;
     padding-bottom: 60px;
@@ -5734,13 +5508,6 @@ select:focus {
   .advantages__item {
     padding: 0;
   }
-  .advantages__img {
-    height: 176px;
-    max-width: 347px;
-  }
-  .advantages__img img {
-    width: 260px;
-  }
   .similar-products {
     padding-bottom: 180px;
     background: url(../img/similar-products-bg.png) no-repeat center bottom -15%;
@@ -5750,9 +5517,12 @@ select:focus {
   }
   .filters__group {
     margin-bottom: 25px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  .catalog-list__title {
-    font-size: 47px;
+  .filters__sorting {
+    max-width: 250px;
   }
   .product-hero::before, .product-hero::after {
     display: block;
@@ -5762,9 +5532,6 @@ select:focus {
     width: 254px;
     height: 390px;
     pointer-events: none;
-  }
-  .product-hero h2 {
-    font-size: 48px;
   }
   .product-hero__wrap {
     -webkit-box-orient: horizontal;
@@ -5787,7 +5554,6 @@ select:focus {
     width: 50%;
   }
   .product-hero__info p {
-    font-size: 24px;
     display: block;
   }
   .product-hero__availability {
@@ -5799,23 +5565,16 @@ select:focus {
     margin-right: 22px;
   }
   .product-hero__price {
-    font-size: 36px;
     text-align: left;
     margin-bottom: 30px;
   }
   .product-hero__price-for-one {
-    font-size: 24px;
     margin-bottom: 40px;
-  }
-  .product-hero__price-for-one span {
-    font-size: 24px;
   }
   .product-hero__price-for-one p {
     font-size: 18px;
   }
   .product-hero__count {
-    font-size: 36px;
-    padding: 7px 0;
     border-radius: 10px;
     margin-left: 0;
     margin-bottom: 45px;
@@ -5845,12 +5604,7 @@ select:focus {
     font-size: 24px;
     line-height: normal;
     white-space: normal;
-  }
-  .product-tabs__content-item.active {
-    font-size: 24px;
-  }
-  .product-tabs__content-item.active p {
-    font-size: 24px;
+    padding: 0 30px;
   }
   .product-tabs__characteristic-item {
     width: 20%;
@@ -5934,72 +5688,38 @@ select:focus {
   .contacts::before, .contacts::after {
     display: none;
   }
-  .contacts h2 {
-    font-size: 48px;
-  }
   .contacts__title {
-    font-size: 36px;
     text-align: left;
   }
   .contacts__sub-title {
-    font-size: 30px;
     text-align: left;
+    font-size: 20px;
   }
   .contacts__item {
-    font-size: 24px;
     padding-left: 0;
   }
   .contacts__socials {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-  .contacts__socials-item {
-    margin-right: 50px;
-  }
-  .contacts .font-icon {
-    margin-right: 25px;
-  }
-  .contacts .font-icon::before {
-    font-size: 40px;
-  }
-  .contacts .font-icon-email::before {
-    font-size: 30px;
   }
   .contacts::before, .contacts::after {
     display: none;
   }
-  .contacts h2 {
-    font-size: 48px;
-  }
   .contacts__title {
-    font-size: 36px;
     text-align: left;
   }
   .contacts__sub-title {
-    font-size: 30px;
     text-align: left;
+    font-size: 20px;
   }
   .contacts__item {
-    font-size: 24px;
     padding-left: 0;
   }
   .contacts__socials {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-  .contacts__socials-item {
-    margin-right: 50px;
-  }
-  .contacts .font-icon {
-    margin-right: 25px;
-  }
-  .contacts .font-icon::before {
-    font-size: 40px;
-  }
-  .contacts .font-icon-email::before {
-    font-size: 30px;
   }
   .about-content__group {
     padding: 60px 0;
@@ -6029,6 +5749,7 @@ select:focus {
   }
   .personal-area-registration {
     background: url("../img/register-page-bg.png") no-repeat center;
+    background-size: 100%;
   }
   .personal-area-registration .section-tabs-item {
     text-underline-offset: 1rem;
@@ -6040,30 +5761,12 @@ select:focus {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .personal-area-registration .section-tabs-item {
-    font-size: 48px;
-  }
-  .registration-subtitle {
-    font-size: 30px;
-  }
   .personal-area__sidebar {
     margin-bottom: 30px;
-  }
-  .personal-area__name {
-    font-size: 24px;
-  }
-  .personal-area__email {
-    font-size: 18px;
-  }
-  .personal-area__nav-item .font-icon::before {
-    font-size: 44px;
   }
   .personal-area__title {
     font-size: 36px;
     margin-bottom: 60px;
-  }
-  .personal-area .request-form p {
-    font-size: 24px;
   }
   .personal-area-data .input-text:not(:-moz-placeholder-shown) ~ .font-icon {
     display: block;
@@ -6092,12 +5795,6 @@ select:focus {
   .personal-area-history .history-item__content:nth-child(2), .personal-area-history .history-item__content:nth-child(3), .personal-area-history .history-item__content:nth-child(4) {
     text-align: center;
   }
-  .personal-area-history .history-item__title {
-    font-size: 24px;
-  }
-  .personal-area-history .history-item__info {
-    font-size: 24px;
-  }
   .personal-area-history .history-item .btn {
     padding: 17px 22px;
     height: 55px;
@@ -6107,12 +5804,10 @@ select:focus {
     display: block;
   }
   .personal-area-history .history-item__order-top-item {
-    font-size: 24px;
     margin-right: 30px;
   }
   .personal-area-history .history-item__order-number {
     display: block;
-    font-size: 24px;
     margin-bottom: 30px;
   }
   .personal-area-history .history-item__order-item {
@@ -6125,7 +5820,6 @@ select:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    font-size: 24px;
     margin-bottom: 0;
   }
   .personal-area-history .history-item__order-img {
@@ -6134,7 +5828,6 @@ select:focus {
     margin-right: 0;
   }
   .personal-area-history .history-item__order-title {
-    font-size: 24px;
     margin-bottom: 0;
   }
   .personal-area-history .history-item__order-count {
@@ -6158,17 +5851,16 @@ select:focus {
     min-width: 350px;
   }
   .section-thanks {
-    padding-bottom: 500px;
+    padding-top: 80px;
     background: url("../img/thanks-bg.png") no-repeat center bottom;
-    padding-top: 200px;
     background-size: cover;
   }
   .section-thanks__title {
     margin-bottom: 40px;
   }
   .section-thanks__sub-title {
-    font-size: 48px;
     margin-bottom: 40px;
+    font-size: 24px;
   }
   .section-thanks__btns {
     display: -webkit-box;
@@ -6218,21 +5910,16 @@ select:focus {
     margin-bottom: 60px;
   }
   .ordering-page .section-tabs-item {
-    font-size: 24px;
     margin-right: 40px !important;
     margin-bottom: 0;
   }
   .ordering-page__order-content {
     display: block;
   }
-  .ordering-page__order-title {
-    font-size: 36px;
-  }
   .ordering-page__order-title .font-icon-arrow-small {
     display: none;
   }
   .ordering-page__subtitle {
-    font-size: 20px;
     text-align: left;
     margin-bottom: 50px;
   }
@@ -6245,14 +5932,9 @@ select:focus {
   }
   .ordering-page .personal-area__addresses-add-new {
     font-size: 24px;
-    padding-left: 11px;
-    margin-top: -20px;
   }
   .ordering-page .personal-area__addresses-add-new .font-icon-plus {
     margin-right: 60px;
-  }
-  .ordering-page .form_radio {
-    margin-bottom: 60px;
   }
   .ordering-page .cart-popup__product {
     border: none;
@@ -6275,7 +5957,6 @@ select:focus {
     font-size: 0;
   }
   .ordering-page .cart-popup__price span {
-    font-size: 24px;
     color: #002B4E;
   }
   .ordering-page .product-hero__count {
@@ -6300,9 +5981,9 @@ select:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    font-size: 18px;
   }
   .ordering-page__order-cost {
-    font-size: 36px;
     margin-left: 0;
   }
 }
@@ -6311,8 +5992,8 @@ select:focus {
   .container {
     max-width: 1000px;
   }
-  h2 {
-    font-size: 2.25rem;
+  .subtitle {
+    font-size: 18px;
   }
   fieldset .form-item {
     width: calc(50% - 10px);
@@ -6334,6 +6015,9 @@ select:focus {
   .product-list {
     padding: 0 95px;
   }
+  .product-item__img img {
+    max-height: 180px;
+  }
   .product-item__label {
     top: 0;
   }
@@ -6346,37 +6030,23 @@ select:focus {
   .standart-hero {
     background: url("../img/standart-hero-bg.png") no-repeat;
     padding-bottom: 180px;
-    background-position: 50% 60px;
+    background-position: 50% 10px;
   }
   .contacts-page .standart-hero h1 {
     padding-top: 120px;
   }
   .standart-hero__item {
-    font-size: 48px;
+    font-size: 32px;
   }
   .quik-order-popup .section-popup__content {
     max-width: 900px;
     padding: 80px 20px;
   }
-  .section-popup__text {
-    font-size: 24px;
-  }
-  .thanks-popup .section-popup__title {
-    font-size: 36px;
-  }
   .cart-popup__product-title {
-    font-size: 24px;
     max-width: 230px;
   }
   .cart-popup__price, .cart-popup__to-pay {
-    font-size: 24px;
     width: auto;
-  }
-  .cart-popup .product-hero__count {
-    padding: 7px 0;
-  }
-  .cart-popup .product-hero__count button {
-    padding: 10px 20px;
   }
   .hero-section .container {
     -webkit-box-orient: horizontal;
@@ -6403,14 +6073,11 @@ select:focus {
   .hero-section__socials a:not(:last-child) {
     margin-bottom: 60px;
   }
-  .hero-section .font-icon::before {
-    font-size: 50px;
+  .decorate-wrap::after {
+    display: none;
   }
   .catalog-section::before {
     left: -16%;
-  }
-  .catalog-section::after {
-    display: none;
   }
   .advantages__group {
     -webkit-box-orient: horizontal;
@@ -6425,45 +6092,63 @@ select:focus {
     width: 22%;
     margin-bottom: 0;
   }
+  .sidebar-item__title.active .font-icon-arrow {
+    margin-bottom: -16px;
+  }
   .sidebar-item__title .font-icon-water,
   .sidebar-item__title .font-icon-tea {
     margin-right: 25px;
   }
-  .sidebar-item__title .font-icon-water::before,
-  .sidebar-item__title .font-icon-tea::before {
-    font-size: 56px;
+  .filters {
+    display: inline-block;
+    margin-bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30px;
   }
-  .sidebar-group__item {
-    margin-bottom: 30px;
+  .filters {
+    margin-top: -93px;
+  }
+  .filters__group {
+    max-width: 430px;
+  }
+  .filters__group-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 55px;
   }
   .filters__sorting select {
-    font-size: 24px;
     padding: 4px 15px;
+  }
+  .category-page__sidebar {
+    width: 27%;
+    float: left;
   }
   .catalog-list {
     padding-bottom: 150px;
+    padding-top: 150px;
   }
   .product-hero::before {
     left: -16%;
   }
   .product-hero h2 {
-    font-size: 48px;
     margin-bottom: 25px;
   }
   .product-hero__characteristic-item:not(:last-child) {
     margin-right: 60px;
   }
   .fixed > .product-tabs__nav {
-    left: 28px;
-  }
-  .product-tabs__nav-item {
-    padding: 0 30px;
+    padding-left: 13px;
   }
   .product-tabs__nav-item.active::before {
     width: calc(100% - 60px);
-  }
-  .product-tabs__characteristic-info {
-    font-size: 24px;
   }
   .chemical-composition::before {
     left: -16%;
@@ -6568,17 +6253,11 @@ select:focus {
   .show-before-tablet {
     display: none;
   }
-  section {
-    padding-top: 180px;
-  }
   .blue-title {
     text-align: left;
   }
   .container {
     max-width: 1240px;
-  }
-  .request-form__group {
-    margin-bottom: 60px;
   }
   .request-form .btn {
     max-width: 560px;
@@ -6627,23 +6306,12 @@ select:focus {
     bottom: -12%;
     right: -7%;
   }
-  .footer__text {
-    font-size: 24px;
+  .footer__logo img {
+    width: 100%;
+    height: 130px;
   }
   .footer__group {
     margin-bottom: 100px;
-  }
-  .footer__item p {
-    font-size: 24px;
-  }
-  .footer__item-title {
-    font-size: 24px;
-  }
-  .footer__item-title span {
-    font-size: 24px;
-  }
-  .footer__item a {
-    font-size: 24px;
   }
   .footer__item-ps {
     padding: 0 90px;
@@ -6663,27 +6331,15 @@ select:focus {
     display: -ms-flexbox;
     display: flex;
   }
-  .btn,
-  .btn-secondary {
-    height: 70px;
+  .btn .font-icon-cart::before {
+    font-size: 24px;
   }
-  .slick-dots {
-    margin-top: 60px;
-  }
-  .section-tabs {
-    margin-bottom: 100px;
-  }
-  .standart-hero {
-    padding-bottom: 300px;
-    background: url("../img/standart-hero-bg.png") no-repeat;
-    background-position: 50% 192px;
+  .product-item .btn .font-icon-cart::before {
+    font-size: 24px;
   }
   .standart-hero h1 {
-    font-size: 96px;
-    margin-bottom: 60px;
-  }
-  .standart-hero__subtitle {
     font-size: 48px;
+    margin-bottom: 60px;
   }
   .new-address-popup .section-popup__content .input-text {
     min-width: 350px;
@@ -6700,6 +6356,9 @@ select:focus {
     padding-left: 15%;
     padding-right: 0;
   }
+  .hero-section .font-icon::before {
+    font-size: 40px;
+  }
   .hero-section-slider .slick-dots {
     top: 60%;
     position: absolute;
@@ -6710,37 +6369,36 @@ select:focus {
             transform: translateY(-50%);
     margin-top: 0;
   }
+  .decorate-wrap::after {
+    display: block;
+    content: '';
+    position: absolute;
+    background-size: contain;
+    width: 250px;
+    height: 350px;
+    pointer-events: none;
+  }
+  .decorate-wrap::after {
+    display: block;
+    right: -8%;
+    top: 40%;
+  }
   .catalog-section::before, .catalog-section::after {
     display: block;
     content: '';
     position: absolute;
     background-size: contain;
-    width: 344px;
-    height: 530px;
+    width: 250px;
+    height: 350px;
     pointer-events: none;
   }
   .catalog-section::before {
     top: 0;
     left: -6%;
   }
-  .catalog-section::after {
-    display: block;
-    right: -8%;
-    top: 90%;
-  }
-  .brands-item__img {
-    height: 260px;
-  }
   .brands-item__img img {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
-  }
-  .brands-item__title {
-    font-size: 24px;
-  }
-  .quick-order__title {
-    font-size: 30px;
-    margin-bottom: 75px;
   }
   .advantages::before {
     left: -16%;
@@ -6754,78 +6412,34 @@ select:focus {
   .advantages__item {
     width: 33%;
   }
-  .advantages__title::after {
-    width: 360px;
-    left: calc(50% - 180px);
-  }
-  .advantages__content {
-    font-size: 24px;
-    padding: 0 50px;
-  }
-  .advantages__content a {
-    font-size: 24px;
-  }
-  .advantages__content p {
-    font-size: 24px;
-  }
   .similar-products {
-    background: url(../img/similar-products-bg.png) no-repeat center bottom -30%;
+    background: url(../img/similar-products-bg.png) no-repeat center bottom -60%;
   }
   .main-catalog .sidebar-title .font-icon-arrow {
     display: none;
   }
   .sidebar-title {
-    font-size: 48px;
     padding-right: 90px;
     margin-bottom: 70px;
   }
   .sidebar-title::before {
     bottom: -15px;
   }
-  .sidebar-item {
-    margin-bottom: 50px;
-  }
   .sidebar-item__title {
-    font-size: 36px;
     padding-left: 0;
-    margin-bottom: 45px;
-  }
-  .sidebar-item__title.active .font-icon-arrow {
-    margin-bottom: -28px;
-  }
-  .sidebar-item__title .font-icon-arrow::before {
-    font-size: 13px;
   }
   .sidebar-group__item .checkbox + label {
-    padding: 0 0 0 35px;
-  }
-  .sidebar-group__item .checkbox + label:before,
-  .sidebar-group__item .checkbox + label:after {
-    width: 20px;
-    height: 20px;
+    font-size: 16px;
   }
   .filters {
-    display: inline-block;
-    margin-top: -14px;
-    margin-bottom: 40px;
-    margin-left: -2%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin-left: -13%;
   }
   .filters__group {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-bottom: 0;
-  }
-  .filters__group-wrap {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-bottom: 25px;
+    max-width: 530px;
   }
   .filters__clear-btn {
     display: inline-block;
@@ -6835,10 +6449,6 @@ select:focus {
   }
   .category-page__sidebar {
     width: 36%;
-    float: left;
-  }
-  .catalog-list {
-    padding-top: 180px;
   }
   .catalog-list__wrap {
     width: 64%;
@@ -6855,9 +6465,6 @@ select:focus {
     right: -8%;
     display: block;
   }
-  .product-hero__price {
-    font-size: 48px;
-  }
   .product-hero__btns {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -6870,16 +6477,6 @@ select:focus {
   }
   .product-tabs__sticky {
     margin-bottom: 50px;
-  }
-  .fixed > .product-tabs__nav {
-    left: 30px;
-    padding-left: 5px;
-  }
-  .product-tabs__nav-item {
-    font-size: 36px;
-  }
-  .product-tabs__characteristic-group {
-    padding: 0 120px;
   }
   .product-tabs__characteristic-img img {
     max-width: 100%;
@@ -6895,18 +6492,12 @@ select:focus {
   }
   .product-tabs__reviews-item {
     padding: 7% 13%;
-    font-size: 24px;
   }
   .product-tabs__reviews-content-item {
     margin: 0 50px;
   }
   .product-tabs__reviews-title {
-    font-size: 36px;
     margin-bottom: 60px;
-  }
-  .product-tabs__reviews-img {
-    width: 250px;
-    height: 250px;
   }
   .product-tabs__reviews-slider .slick-slide {
     padding: 20px;
@@ -7015,18 +6606,478 @@ select:focus {
   }
 }
 
+@media only screen and (min-width: 1366px) {
+  .header__phone {
+    font-size: 16px;
+  }
+  .fixed > .product-tabs__nav {
+    padding-left: 63px;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
+  .fixed > .product-tabs__nav {
+    padding-left: 100px;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  section {
+    padding-top: 180px;
+  }
+  .text-page h2,
+  .text-page h3,
+  .text-page h4,
+  .text-page h5 {
+    font-size: 36px;
+  }
+  h1 {
+    font-size: 64px;
+    margin-bottom: 80px;
+  }
+  h2 {
+    font-size: 36px;
+    margin-bottom: 4.0625rem;
+  }
+  .subtitle {
+    line-height: 2.2;
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+  .form-type-search .font-icon-search::before {
+    font-size: 1.75rem;
+  }
+  .request-form__group {
+    margin-bottom: 60px;
+  }
+  .input-text {
+    font-size: 24px;
+  }
+  .request-form__agree {
+    font-size: 18px;
+  }
+  .request-form__agree label a {
+    font-size: 18px;
+    display: inline-block;
+  }
+  .checkbox + label {
+    padding: 0 0 0 45px;
+  }
+  .checkbox + label:before {
+    width: 28px;
+    height: 28px;
+  }
+  .checkbox:checked + label:after {
+    font-size: 14px;
+  }
+  .form_radio {
+    margin-bottom: 70px;
+  }
+  .form_radio label {
+    padding-left: 95px;
+  }
+  .form_radio label:before {
+    width: 49px;
+    height: 49px;
+  }
+  .form_radio label:after {
+    width: 24px;
+    height: 24px;
+    left: 13px;
+    top: -3px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .font-icon-apple-pay {
+    right: -45%;
+  }
+  .form_radio__open-delivery input:checked ~ .form_radio__secondary-wrap {
+    padding-left: 100px;
+    margin-top: 40px;
+  }
+  .footer {
+    font-size: 24px;
+  }
+  .footer__logo img {
+    height: 180px;
+  }
+  .footer__text {
+    font-size: 24px;
+  }
+  .footer__item p {
+    font-size: 24px;
+  }
+  .footer__item-title {
+    font-size: 24px;
+  }
+  .footer__item-title span {
+    font-size: 24px;
+  }
+  .footer__item a {
+    font-size: 24px;
+  }
   .header .catalog-item {
     font-size: 24px;
   }
+  .btn .font-icon-cart::before {
+    font-size: 36px;
+  }
+  .slick-dots {
+    margin-top: 60px;
+  }
+  .slick-arrow {
+    padding: 17px 20px;
+  }
+  .slick-arrow::after {
+    font-size: 1.5625rem;
+  }
+  .product-item .btn .font-icon-cart::before {
+    font-size: 33px;
+  }
+  .product-item__img img {
+    max-height: inherit;
+  }
+  .product-item__title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .product-item__price {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .product-item__price-group {
+    margin-bottom: 45px;
+  }
+  .section-tabs {
+    margin-bottom: 50px;
+  }
+  .section-tabs-item {
+    font-size: 36px;
+  }
+  .section-tabs-item.active {
+    text-underline-offset: 1rem;
+  }
+  .standart-hero {
+    padding-bottom: 300px;
+    background: url("../img/standart-hero-bg.png") no-repeat;
+    background-position: 50% 192px;
+  }
+  .standart-hero h1 {
+    font-size: 96px;
+  }
+  .standart-hero__item {
+    font-size: 48px;
+  }
+  .standart-hero__subtitle {
+    font-size: 48px;
+  }
+  .cart-popup .section-popup__content .popup-close-icon {
+    font-size: 24px;
+  }
+  .new-address-popup .section-popup__content h2 {
+    font-size: 24px;
+  }
+  .new-address-popup .section-popup__content p {
+    font-size: 24px;
+  }
+  .quik-order-popup .section-popup__content h2 {
+    font-size: 48px;
+  }
+  .section-popup__title {
+    font-size: 24px;
+  }
+  .section-popup__text {
+    font-size: 24px;
+  }
+  .popup-close-icon::before {
+    font-size: 44px;
+  }
+  .thanks-popup .section-popup__title {
+    font-size: 36px;
+  }
+  .cart-popup__top {
+    margin-bottom: 120px;
+  }
+  .cart-popup__title {
+    font-size: 48px;
+  }
+  .cart-popup__title .font-icon-cart::before {
+    font-size: 46px;
+  }
+  .cart-popup__text {
+    font-size: 24px;
+  }
+  .cart-popup-empty .cart-popup__text {
+    font-size: 36px;
+  }
+  .cart-popup__product {
+    margin-bottom: 40px;
+  }
+  .cart-popup__product-title {
+    font-size: 24px;
+  }
+  .cart-popup__price, .cart-popup__to-pay {
+    font-size: 24px;
+  }
+  .cart-popup .product-hero__count {
+    padding: 7px 0;
+  }
+  .cart-popup .product-hero__count button {
+    padding: 10px 20px;
+  }
+  .cart-popup__order-price {
+    font-size: 24px;
+  }
+  .cart-popup__order-price span {
+    font-size: 36px;
+  }
+  .cookies-popup h2 {
+    font-size: 36px;
+  }
+  .cookies-popup p {
+    font-size: 24px;
+  }
+  .cookies-popup a {
+    font-size: 24px;
+  }
+  .cookies-popup .popup-close-icon::before {
+    font-size: 20px;
+  }
   .hero-section__info {
     padding-left: 11%;
+  }
+  .hero-section .font-icon::before {
+    font-size: 50px;
   }
   .hero-section-slider .slick-dots li button {
     font-size: 36px;
   }
   .hero-section-slider .slick-dots li:hover button, .hero-section-slider .slick-dots li.slick-active button {
     font-size: 48px;
+  }
+  .decorate-wrap::after {
+    width: 344px;
+    height: 530px;
+  }
+  .catalog-section::before, .catalog-section::after {
+    width: 344px;
+    height: 530px;
+  }
+  .brands {
+    margin-bottom: 180px;
+  }
+  .brands-item__img {
+    height: 260px;
+    margin-bottom: 50px;
+  }
+  .brands-item__img img {
+    max-width: 200px;
+  }
+  .brands-item__title {
+    font-size: 24px;
+  }
+  .quick-order__title {
+    font-size: 30px;
+    margin-bottom: 75px;
+  }
+  .advantages__img {
+    height: 176px;
+    max-width: 347px;
+  }
+  .advantages__img img {
+    width: 260px;
+  }
+  .advantages__title {
+    font-size: 24px;
+  }
+  .advantages__title::after {
+    width: 360px;
+    left: calc(50% - 180px);
+  }
+  .advantages__content {
+    font-size: 24px;
+    padding: 0 50px;
+  }
+  .advantages__content a {
+    font-size: 24px;
+  }
+  .advantages__content p {
+    font-size: 24px;
+  }
+  .similar-products {
+    background: url(../img/similar-products-bg.png) no-repeat center bottom -30%;
+  }
+  .product-hero h2 {
+    font-size: 48px;
+  }
+  .product-hero__info p {
+    font-size: 24px;
+  }
+  .product-hero__price {
+    font-size: 48px;
+  }
+  .product-hero__price-for-one {
+    font-size: 24px;
+  }
+  .product-hero__price-for-one span {
+    font-size: 24px;
+  }
+  .product-hero__count {
+    font-size: 36px;
+    padding: 7px 0;
+  }
+  .product-tabs__nav-item {
+    font-size: 36px;
+  }
+  .product-tabs__content-item.active {
+    font-size: 24px;
+  }
+  .product-tabs__content-item.active p {
+    font-size: 24px;
+  }
+  .product-tabs__characteristic-group {
+    padding: 0 120px;
+  }
+  .product-tabs__characteristic-info {
+    font-size: 24px;
+  }
+  .product-tabs__reviews-item {
+    font-size: 24px;
+  }
+  .product-tabs__reviews-title {
+    font-size: 36px;
+  }
+  .product-tabs__reviews-img {
+    width: 250px;
+    height: 250px;
+  }
+  .contacts h2 {
+    font-size: 48px;
+  }
+  .contacts__title {
+    font-size: 36px;
+  }
+  .contacts__sub-title {
+    font-size: 30px;
+  }
+  .contacts__item {
+    font-size: 24px;
+  }
+  .contacts__socials-item {
+    margin-right: 50px;
+  }
+  .contacts .font-icon {
+    margin-right: 25px;
+  }
+  .contacts .font-icon::before {
+    font-size: 40px;
+  }
+  .contacts .font-icon-email::before {
+    font-size: 30px;
+  }
+  .contacts h2 {
+    font-size: 48px;
+  }
+  .contacts__title {
+    font-size: 36px;
+  }
+  .contacts__sub-title {
+    font-size: 30px;
+  }
+  .contacts__item {
+    font-size: 24px;
+  }
+  .contacts__socials-item {
+    margin-right: 50px;
+  }
+  .contacts .font-icon {
+    margin-right: 25px;
+  }
+  .contacts .font-icon::before {
+    font-size: 40px;
+  }
+  .contacts .font-icon-email::before {
+    font-size: 30px;
+  }
+  .personal-area-registration .section-tabs {
+    margin-bottom: 100px;
+  }
+  .personal-area-registration .section-tabs-item {
+    font-size: 48px;
+  }
+  .personal-area-registration .section-tabs-item {
+    font-size: 48px;
+  }
+  .registration-subtitle {
+    font-size: 30px;
+  }
+  .personal-area__name {
+    font-size: 24px;
+  }
+  .personal-area__email {
+    font-size: 18px;
+  }
+  .personal-area__nav-item {
+    font-size: 24px;
+  }
+  .personal-area__nav-item .font-icon::before {
+    font-size: 44px;
+  }
+  .personal-area .request-form p {
+    font-size: 24px;
+  }
+  .personal-area-history .history-item__title {
+    font-size: 24px;
+  }
+  .personal-area-history .history-item__info {
+    font-size: 24px;
+  }
+  .personal-area-history .history-item__order-top-item {
+    font-size: 24px;
+  }
+  .personal-area-history .history-item__order-number {
+    font-size: 24px;
+  }
+  .personal-area-history .history-item__order-item {
+    font-size: 24px;
+  }
+  .personal-area-history .history-item__order-title {
+    font-size: 24px;
+  }
+  .section-thanks {
+    padding-top: 200px;
+    padding-bottom: 500px;
+  }
+  .section-thanks__sub-title {
+    font-size: 48px;
+  }
+  .ordering-page .section-tabs-item {
+    font-size: 24px;
+  }
+  .ordering-page__order-title {
+    font-size: 36px;
+    margin: 40px auto;
+  }
+  .ordering-page__subtitle {
+    font-size: 20px;
+  }
+  .ordering-page .personal-area__addresses-add-new {
+    margin-top: -20px;
+    padding-left: 11px;
+  }
+  .ordering-page .form_radio {
+    margin-bottom: 60px;
+  }
+  .ordering-page .cart-popup__price span {
+    font-size: 24px;
+  }
+  .ordering-page__order-delivery {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .ordering-page__order-cost {
+    font-size: 36px;
   }
 }
 
@@ -7036,13 +7087,13 @@ select:focus {
     max-width: 1720px;
   }
   h1 {
-    font-size: 6rem;
+    font-size: 96px;
   }
   h1 span {
     font-size: 36px;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 48px;
   }
   h3 {
     font-size: 1.875rem;
@@ -7068,6 +7119,13 @@ select:focus {
   }
   .btn {
     font-size: 24px;
+  }
+  .btn,
+  .btn-secondary {
+    height: 70px;
+  }
+  .section-tabs {
+    margin-bottom: 100px;
   }
   .standart-hero {
     background-position: 50% 60px;
@@ -7101,8 +7159,58 @@ select:focus {
   .similar-products {
     background: url(../img/similar-products-bg.png) no-repeat center bottom -70%;
   }
-  .filters {
-    margin-left: -12%;
+  .sidebar-title {
+    font-size: 48px;
+  }
+  .sidebar-item {
+    margin-bottom: 50px;
+  }
+  .sidebar-item__title {
+    font-size: 36px;
+    margin-bottom: 45px;
+  }
+  .sidebar-item__title.active .font-icon-arrow {
+    margin-bottom: -28px;
+  }
+  .sidebar-item__title .font-icon-arrow::before {
+    font-size: 13px;
+  }
+  .sidebar-item__title .font-icon-water::before,
+  .sidebar-item__title .font-icon-tea::before {
+    font-size: 56px;
+  }
+  .sidebar-group__item {
+    margin-bottom: 30px;
+  }
+  .sidebar-group__item .checkbox + label {
+    font-size: 24px;
+    padding: 0 0 0 35px;
+  }
+  .sidebar-group__item .checkbox + label:before,
+  .sidebar-group__item .checkbox + label:after {
+    width: 20px;
+    height: 20px;
+  }
+  .filters__group {
+    max-width: 600px;
+  }
+  .filters__group-wrap {
+    margin-bottom: 85px;
+  }
+  .filters__sorting {
+    max-width: 366px;
+  }
+  .filters__sorting select {
+    font-size: 24px;
+  }
+  .catalog-list {
+    padding-top: 180px;
+  }
+  .catalog-list__title {
+    font-size: 47px;
+  }
+  .catalog-list__btn {
+    font-size: 24px;
   }
   .product-hero {
     overflow: inherit;

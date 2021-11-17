@@ -1,0 +1,121 @@
+.chemical-composition {
+	padding-top: 40px;
+	position: relative;
+	overflow: hidden;
+
+	&::before,
+	&::after {
+		display: block;
+		content: '';
+		position: absolute;
+		background-size: contain !important;
+		width: 115px;
+		height: 165px;
+		pointer-events: none;
+
+		@include media-q(min, 768) {
+			display: none !important;
+		}
+
+		@include media-q(min, 1280) {
+			display: block !important;
+			width: 344px;
+			height: 530px;
+		}
+	}
+
+	&::before {
+		top: 75%;
+		left: -5%;
+		background: url("../img/decorate-item.png") no-repeat center;
+
+		@include media-q(min, 768) {
+			top: -5%;
+			left: -25%;
+			transform: rotate(-115deg);
+		}
+
+		@include media-q(min, 1024) {
+			left: -16%;
+		}
+
+		@include media-q(min, 1280) {
+			top: 0;
+			left: -6%;
+		}
+	}
+
+	&::after {
+		right: -5%;
+		top: 50%;
+		left: auto;
+		background: url("../img/decorate-item-03.png") no-repeat center;
+		transform: rotate(-5deg);
+
+		@include media-q(min, 768) {
+			right: -35%;
+			top: 80%;
+		}
+
+		@include media-q(min, 1024) {
+			right: -19%;
+		}
+
+		@include media-q(min, 1280) {
+			right: -4%;
+			top: 20%;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 90px;
+		font-size: 36px;
+		font-weight: $f_medium;
+		color: $c_blue;
+	}
+
+	&__group {
+		flex-direction: column;
+
+		@include media-q(min, 768) {
+			flex-direction: row;
+		}
+
+		@include media-q(min, 1280) {
+			padding-left: 100px;
+		}
+	}
+
+	&__img {
+		margin-bottom: 30px;
+
+		@include media-q(min, 768) {
+			width: 50%;
+			margin-bottom: 0;
+			margin-right: 50px;
+		}
+
+		@include media-q(min, 1024) {
+			width: auto;
+		}
+
+		@include media-q(min, 1280) {
+			margin-right: 100px;
+		}
+	}
+
+	&__info {
+		p {
+			font-size: 16px;
+			color: $c_green;
+			margin-bottom: 5px;
+			text-align: center;
+
+			@include media-q(min, 768) {
+				text-align: left;
+				font-size: 24px;
+			}
+		}
+	}
+}

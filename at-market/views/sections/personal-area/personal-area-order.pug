@@ -1,0 +1,26 @@
+section.personal-area-history.personal-area
+    .container
+        include ../../components/breadcrumbs
+        include personal-area-siderbar
+        .personal-area__content
+            .personal-area__title Мои заказы
+            .history-item
+                .history-item__order-top.flex
+                    .history-item__order-top-wrap
+                        .history-item__title.history-item__order-number Заказ номер №123456
+                        .history-item__info.history-item__order-top-item 06.09.21
+                        .history-item__title.history-item__order-top-item Сумма заказа
+                        .history-item__info.history-item__order-top-item 550 грн.
+                    a(href="#").btn.btn-third.history-item__btn-desktop ВСЕ ЗАКАЗЫ
+                each item in [1,2,3]
+                    .history-item__order-item
+                        .history-item__order-img
+                            img(src="img/product-img-01.png" alt="бутылка")
+                        .history-item__order-title Smeraldina, 0,5 л, вода мінеральна газована, скло
+                        .history-item__order-count 1 шт.
+                        .history-item__order-price Сумма
+                            span 50 грн.
+                a(href="#").btn.btn-third.history-item__btn-mob ВСЕ ЗАКАЗЫ
+                a(href="#").btn Повторить заказ
+
+

@@ -1,0 +1,172 @@
+section.ordering-page.text-page.js-tabs.personal-area
+    .container
+        include ../../components/breadcrumbs
+        .ordering-page__wrap
+            .ordering-page__order-wrap
+                a(href="#").ordering-page__order-title Заказ
+                    i.font-icon-arrow-small
+                .ordering-page__order-content
+                    each item in [1,2,3]
+                        .cart-popup__product
+                            div
+                                .cart-popup__img
+                                    img(src="img/product-img-01.png" alt="бутылка воды")
+                                .cart-popup__product-title Smeraldina, 0,5 л, вода мінеральна газована, скло
+                                .cart-popup__price Цена за единицу
+                                    span 50 грн.
+                                .product-hero__count.flex
+                                    button
+                                        include ../../../img/count-minus.svg
+                                    span 1
+                                    button
+                                        include ../../../img/count-plus.svg
+                            .cart-popup__to-pay Сумма
+                                span 50 грн.
+                            button.cart-popup__product-delete
+                                i.font-icon-close
+                    a(href="#").ordering-page__form-text Использовать промокод
+                    input.input-text(type="text" placeholder="Введите свой промокод")
+                    .ordering-page__order-delivery Сумма доставки
+                        span 100 грн
+                    .ordering-page__order-cost Всего
+                        span 400 грн
+            .ordering-page__content
+                h2 Оформление заказа
+                .ordering-page__subtitle Ваши контактные данные
+                .section-tabs.js-tabs__nav
+                    button.section-tabs-item.js-tabs__nav-item Я новый покупатель
+                    button.section-tabs-item.js-tabs__nav-item.active Я постоянный покупатель
+                .section-tabs__content.js-tabs__content
+                    form.request-form
+                        .personal-area__input-wrap
+                            input.input-text(type="text" placeholder="Lorem ipsum")
+                            p Имя
+                            i.font-icon.font-icon-personal-area-check
+                        .personal-area__input-wrap
+                            input.input-text(type="text" placeholder="Lorem ipsum")
+                            p Фамилия
+                            i.font-icon.font-icon-personal-area-check
+                        .personal-area__input-wrap
+                            input.input-text(type="text" placeholder="+ 380 ")
+                            p Телефон
+                            i.font-icon.font-icon-personal-area-check
+                        .personal-area__input-wrap
+                            input.input-text(type="text" placeholder="Lorem ipsum")
+                            p E-mail
+                            i.font-icon.font-icon-personal-area-check
+                        p.ordering-page__form-text Для регистрации заполните поля
+                        .personal-area__input-wrap
+                            input.input-text(type="text" placeholder="+ 380 ")
+                            p Логин (ваш e-mail)
+                            i.font-icon.font-icon-personal-area-check
+                        .personal-area__input-wrap
+                            input.input-text(type="text" placeholder="Lorem ipsum")
+                            p Пароль
+                            i.font-icon.font-icon-personal-area-check
+                        .request-form__agree
+                            input.checkbox(type="checkbox" id="agree" name="agree" checked)
+                            label(for="agree") Сохранить данные для личного кабинета
+                        h2 Доставка
+                        .ordering-page__subtitle Будет передан в службу доставки на следующий день
+                        .form_radio
+                            input.input-radio(type="radio" id="radio1" name="radio" value="1" checked)
+                            label(for="radio1") Доставка по Киеву (от  1000 грн бесплатно)
+                        .form_radio
+                            input.input-radio(type="radio" id="radio2" name="radio" value="2")
+                            label(for="radio2") Новой почтой (по тарифам перевозчика)
+                            span (возможна доставка только чая)
+                        p Выберите ваш город
+                        .select-wrap
+                            select
+                                option
+                                option Киев
+                                option Харьков
+                            i.font-icon-arrow
+                        p Выберите отделение Новой почты
+                        .select-wrap
+                            select
+                                option
+                                option №1
+                                option №2
+                            i.font-icon-arrow
+                        p Комментарий к заказу
+                        textarea(id="comment" placeholder="Lorem ipsum")
+                        h2 Оплата
+                        .ordering-page__subtitle Оплата
+                        .form_radio
+                            input.input-radio(type="radio" id="radio3" name="radio" value="3")
+                            label(for="radio3") Оплата наличными (при получении)
+                        .form_radio
+                            input.input-radio(type="radio" id="radio4" name="radio" value="4" checked)
+                            label(for="radio4") Оплата картой онлайн (любого банка)
+                        .form_radio
+                            input.input-radio(type="radio" id="radio5" name="radio" value="5")
+                            label(for="radio5") Оплата
+                                i.font-icon-apple-pay
+                        .form_radio
+                            input.input-radio(type="radio" id="radio6" name="radio" value="6")
+                            label(for="radio6") Оплата <b>LiqPay</b>
+                        input(type="request" value="оплатить").btn
+                .section-tabs__content.js-tabs__content.active
+                    form.request-form
+                        .personal-area__input-wrap
+                            input.input-text(type="text" placeholder="Lorem ipsum")
+                            p Имя
+                            i.font-icon.font-icon-personal-area-check
+                        .personal-area__input-wrap
+                            input.input-text(type="text" placeholder="Lorem ipsum")
+                            p Фамилия
+                            i.font-icon.font-icon-personal-area-check
+                        .personal-area__input-wrap
+                            input.input-text(type="text" placeholder="+ 380 ")
+                            p Телефон
+                            i.font-icon.font-icon-personal-area-check
+                        .personal-area__input-wrap
+                            input.input-text(type="text" placeholder="Lorem ipsum")
+                            p E-mail
+                            i.font-icon.font-icon-personal-area-check
+                        .registration-socials
+                            .registration-socials-title Войти через соц. сети:
+                            a(href="#")
+                                i.font-icon.font-icon-google
+                            a(href="#")
+                                i.font-icon.font-icon-facebook-signin
+                        h2 Доставка
+                        .ordering-page__subtitle Будет передан в службу доставки на следующий день
+                        .ordering-page__delivery-radio
+                            .form_radio.form_radio__open-delivery
+                                input.input-radio(type="radio" id="radio9" name="delivery-global" value="7" checked)
+                                label(for="radio9") Доставка по Киеву (от  1000 грн бесплатно)
+                                .form_radio__secondary-wrap
+                                    .ordering-page__form-text Выберите адрес:
+                                    .form_radio
+                                        input.input-radio(type="radio" id="radio11" name="delivery-address" value="7")
+                                        label(for="radio11") Шота Руставели, 8
+                                    .form_radio
+                                        input.input-radio(type="radio" id="radio12" name="delivery-address" value="7")
+                                        label(for="radio12") Шота Руставели, 8
+                                    a(href="#" data-show-popup="new-address-popup").personal-area__addresses-add-new
+                                        i.font-icon-plus
+                                        | Добавить новый адрес
+                        .form_radio
+                            input.input-radio(type="radio" id="radio8" name="delivery-global" value="8")
+                            label(for="radio8") Новой почтой (по тарифам перевозчика)
+                            span (возможна доставка только чая)
+                        p Комментарий к заказу
+                        textarea(id="comment2" placeholder="Lorem ipsum")
+                        h2 Оплата
+                        .ordering-page__subtitle Оплата
+                        .form_radio
+                            input.input-radio(type="radio" id="radio15" name="radio" value="3")
+                            label(for="radio15") Оплата наличными (при получении)
+                        .form_radio
+                            input.input-radio(type="radio" id="radio16" name="radio" value="4" checked)
+                            label(for="radio16") Оплата картой онлайн (любого банка)
+                        .form_radio
+                            input.input-radio(type="radio" id="radio17" name="radio" value="5")
+                            label(for="radio17") Оплата
+                                i.font-icon-apple-pay
+                        .form_radio
+                            input.input-radio(type="radio" id="radio18" name="radio" value="6")
+                            label(for="radio18") Оплата <b>LiqPay</b>
+                        input(type="request" value="оплатить").btn

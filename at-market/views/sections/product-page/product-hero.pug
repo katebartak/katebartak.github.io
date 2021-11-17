@@ -1,0 +1,47 @@
+section.product-hero
+  .container
+    include ../../components/breadcrumbs
+    h2 Smeraldina, 0,5 л, вода мінеральна газована, скло
+    .product-hero__characteristic-group.flex.show-from-tablet
+      .product-hero__characteristic-item Производитель: &nbsp;
+        a(href="#") Smeraldina
+      .product-hero__characteristic-item Артикул: &nbsp;
+        span аVP050GS00EU
+      .product-hero__characteristic-item Категория: &nbsp;
+        a(href="#") Вода и напитки
+    .product-hero__wrap.flex
+      .product-hero__img
+        img(src="img/product-hero-img.png" alt="Smeraldina")
+      .product-hero__characteristic-group.flex.show-before-tablet
+        .product-hero__characteristic-item Производитель: &nbsp;
+          a(href="#") Smeraldina
+        .product-hero__characteristic-item Артикул: &nbsp;
+          span аVP050GS00EU
+        .product-hero__characteristic-item Категория: &nbsp;
+          a(href="#") Вода и напитки
+      .product-hero__info
+        .product-hero__availability.availability-in-stock.flex
+          include ../../../img/availability-check-icon.svg
+          | Есть в наличии
+        //.product-hero__availability.availability-out-of-stock.flex
+        //  include ../../../img/availability-out-of-stock.svg
+        //  | Нет в наличии
+        .product-hero__price 50. 00 грн/ шт
+        .product-hero__price-for-one Цена за упаковку (12 шт):
+          span 1 000 грн
+          p Минимальное количество для заказа: 12
+        p Количество упаковок
+        .product-hero__count.flex
+          button
+            include ../../../img/count-minus.svg
+          span 1
+          button
+            include ../../../img/count-plus.svg
+        .product-hero__btns.flex
+          button.btn
+            i.font-icon-cart
+            | в корзину
+          button.btn.btn-secondary(data-show-popup='quik-order-popup') Быстрый заказ
+
+
+

@@ -1,0 +1,17 @@
+section.hero-section-slider
+  each item in hero_section_slider
+    .hero-section
+      .hero-section__background.hero-section__background-mob(style='background-image: url(img/'+item.imgmob+'.png)')
+      .hero-section__background.hero-section__background-desktop(style='background-image: url(img/'+item.img+'.png)')
+      .container.flex
+        .hero-section__info
+          h1 VODA UA
+            span Карпатська джерельна високогірна
+          a(href="#").btn Каталог
+        .hero-section__socials
+          a(href="#").hero-section__socials-item
+            i.font-icon.font-icon-instagram
+          a(href="#").hero-section__socials-item
+            i.font-icon.font-icon-telegram
+          a(href="#").hero-section__socials-item
+            i.font-icon.font-icon-facebook

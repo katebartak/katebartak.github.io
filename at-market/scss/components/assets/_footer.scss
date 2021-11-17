@@ -1,0 +1,299 @@
+.footer {
+	background-color: $c_dark;
+	text-align: center;
+	padding-bottom: 30px;
+	color: $white;
+	font-size: 18px;
+	overflow: hidden;
+	position: relative;
+	padding-top: 18px;
+
+	@include media-q(min, 768) {
+		padding-top: 89px;
+	}
+
+	@include media-q(min, 1441) {
+		font-size: 24px;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		background-size: contain;
+		width: 83px;
+		height: 126px;
+		pointer-events: none;
+
+		@include media-q(min, 768) {
+			width: 245px;
+			height: 345px;
+		}
+	}
+
+	&::before {
+		top: -3%;
+		left: -2%;
+		background: url("../img/footer-decor.png") no-repeat center;
+		background-size: contain;
+
+		@include media-q(min, 768) {
+			top: -11%;
+		}
+	}
+
+	&::after {
+		background: url("../img/footer-decor-2.png") no-repeat center;
+		background-size: contain;
+		bottom: -2%;
+		right: -5%;
+
+		@include media-q(min, 768) {
+			width: 300px;
+			height: 415px;
+			bottom: -22%;
+			right: -12%;
+		}
+
+		@include media-q(min, 1280) {
+			bottom: -12%;
+			right: -7%;
+		}
+	}
+
+	.container {
+		position: relative;
+		z-index: 1;
+	}
+
+	a {
+		color: $white;
+
+		&:hover {
+			color: $c_blue;
+		}
+	}
+
+	&__logo {
+		margin-bottom: 20px;
+		display: block;
+
+		@include media-q(min, 768) {
+			margin-bottom: 40px;
+		}
+
+		svg {
+		}
+
+		img {
+			margin: 0 auto;
+			display: block;
+			width: 97px;
+			max-width: 100%;
+			height: 64px;
+			object-fit: contain;
+
+			@include media-q(min, 1280) {
+				width: 100%;
+				height: 130px;
+			}
+
+			@include media-q(min, 1441) {
+				height: 180px;
+			}
+		}
+	}
+
+	&__text {
+		margin-bottom: 40px;
+		padding: 0 5%;
+		font-size: 14px;
+
+		@include media-q(min, 768) {
+			padding: 0 25.1%;
+			font-size: 18px;
+		}
+
+		@include media-q(min, 1441) {
+			font-size: 24px;
+		}
+	}
+
+	&__group {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+
+		@include media-q(min, 1280) {
+			margin-bottom: 100px;
+		}
+	}
+
+	&__item {
+		width: 46%;
+		margin-bottom: 50px;
+
+		@include media-q(min, 1024) {
+			width: 25%;
+			margin-bottom: 0;
+		}
+
+		p {
+			font-size: 16px;
+
+			@include media-q(min, 1441) {
+				font-size: 24px;
+			}
+		}
+
+		&-title {
+			color: $c_blue;
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: $f_black;
+			line-height: 1.6;
+
+			@include media-q(min, 1441) {
+				font-size: 24px;
+			}
+
+			span {
+				color: $white;
+				font-size: 18px;
+				font-weight: $f_medium;
+
+				@include media-q(min, 1441) {
+					font-size: 24px;
+				}
+			}
+		}
+
+		p {
+			margin-bottom: 8px;
+		}
+
+		a {
+			font-size: 16px;
+			display: block;
+			line-height: 1.6;
+
+			@include media-q(min, 1441) {
+				font-size: 24px;
+			}
+		}
+	}
+
+	&__socials,
+	&__payment {
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__socials {
+		border-bottom: 1px solid $c_blue;
+		max-width: 200px;
+		margin: 0 auto 10px;
+
+		@include media-q(min, 768) {
+			padding: 20px 0;
+			margin: 0 auto 30px;
+		}
+
+		&-item {
+			padding: 0 10px;
+
+			@include media-q(min, 768) {
+				padding: 0 16px;
+			}
+
+			svg {
+				width: 19px;
+
+				@include media-q(min, 768) {
+					width: 33px;
+				}
+			}
+		}
+	}
+
+	&__payment {
+		&-item {
+			padding: 0 9px;
+
+			svg {
+				width: 40px;
+
+				@include media-q(min, 768) {
+					width: 56px;
+				}
+			}
+		}
+	}
+
+	&__item-ps {
+		font-size: 18px !important;
+		color: $c_blue;
+
+		@include media-q(min, 1280) {
+			padding: 0 90px;
+		}
+	}
+
+	&__links-group {
+		font-size: 18px;
+		flex-direction: column;
+		justify-content: flex-start;
+
+		@include media-q(min, 768) {
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		a {
+			font-size: 15px;
+			margin-bottom: 9px;
+
+			@include media-q(min, 768) {
+				margin-bottom: 0;
+				font-size: 18px;
+			}
+		}
+
+		p {
+			font-size: 15px;
+
+			@include media-q(min, 768) {
+				font-size: 18px;
+			}
+		}
+	}
+
+	&__links-item {
+		padding: 0 16px;
+
+		&:not(:last-child) {
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 21px;
+				width: 1px;
+				background-color: $white;
+			}
+		}
+	}
+
+	&__design-logo {
+		svg {
+			width: 160px;
+
+			@include media-q(min, 768) {
+				width: 215px;
+			}
+		}
+	}
+}

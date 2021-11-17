@@ -1,0 +1,80 @@
+header.header
+  .container.flex
+    .header__menu-icon
+      span
+      span
+      span
+    a(href="/").header__logo
+      include ../../img/logo.svg
+    a(href="#" data-show-popup="cart-popup-empty").header__cart.header__cart-mob
+      i.font-icon-cart
+      span 1
+    a(href="#").show-before-tablet.close-menu
+      i.font-icon-close
+    .header-content
+      nav.header__nav-catalog
+        a(href="#").header__nav-catalog-item
+          | Каталог
+          i.font-icon-arrow-small
+        .header__nav-catalog-wrap
+          .container
+            .header__nav-catalog-content
+              a(href="#").header__nav-catalog-title
+                i.font-icon.font-icon-water
+                | Вода & Напитки
+                i.font-icon-arrow.show-before-tablet
+              .header__nav-catalog-group
+                .header__nav-catalog-list
+                  ul
+                    each item in catalog_menu_drinks1
+                      li
+                        a(href=item.href).catalog-item=item.title
+                .header__nav-catalog-list
+                  ul.show-from-tablet
+                    each item in catalog_menu_drinks2
+                      li
+                        a(href=item.href).catalog-item=item.title
+                  a.header__nav-catalog-showmore(href="#") Показать все
+            .header__nav-catalog-content
+              a(href="#").header__nav-catalog-title
+                i.font-icon.font-icon-tea
+                | Чай
+                i.font-icon-arrow.show-before-tablet
+              .header__nav-catalog-group
+                .header__nav-catalog-list
+                  ul
+                    each item in catalog_menu_teas
+                      li
+                        a(href=item.href).catalog-item=item.title
+      include main-menu
+      a(href="#" data-show-popup="cart-popup").menu-item.show-before-tablet Корзина
+      .header__socials.show-before-tablet
+        a(href="#")
+          i.font-icon.font-icon-instagram
+        a(href="#")
+          i.font-icon.font-icon-telegram
+        a(href="#")
+          i.font-icon.font-icon-facebook
+      .header__land-switcher.form-type-select.show-before-tablet
+        a(href="#").active ENG
+        a(href="#") RU
+        a(href="#") UA
+      form.form-type-search
+        a(href="#")
+          i.font-icon-search
+        input.form-search(type="search")
+      a.header__phone(href="tel:+38 (067) 662 67 67") +38 (067) 662 67 67
+      .show-from-tablet
+        a(href="#" data-show-popup="cart-popup-full").header__cart.header__cart-desktop
+          p 0.00 грн
+          i.font-icon-cart
+          span 1
+      .header__land-switcher.form-type-select.show-from-tablet
+        select.form-select
+          option UA
+          option RU
+        i.font-icon-arrow-small
+      a.header__signin(href="#")
+        i.font-icon-user
+        span Личный кабинет
+

@@ -1,0 +1,47 @@
+section.personal-area-registration.js-tabs.personal-area
+    .container
+        include ../../components/breadcrumbs
+        .section-tabs.js-tabs__nav
+            button.section-tabs-item.js-tabs__nav-item.active Регистрация
+            button.section-tabs-item.js-tabs__nav-item Вход
+        .section-tabs__content.js-tabs__content.active
+            form.request-form
+                div
+                    p Логин (ваш e-mail)
+                    input.input-text(type="text")
+                div
+                    p Пароль
+                    input.input-text(type="password")
+                .registration-subtitle заполните форму для регистрации
+                div
+                    p Имя
+                    input.input-text(type="text")
+                div
+                    p Фамилия
+                    input.input-text(type="text")
+                div
+                    p Телефон
+                    input.input-text(type="text")
+                input.btn(type="submit" value="зарегистрироваться")
+                .request-form__agree
+                    input.checkbox(type="checkbox" id="agree-register" name="agree" checked)
+                    label(for="agree-register") Нажимая кнопку, вы даете согласие на обработку персональных данных. &nbsp;
+                        a(href="#") Политика конфиденциальности
+        .section-tabs__content.js-tabs__content
+            form.request-form
+                p Логин (ваш e-mail)
+                input.input-text(type="text")
+                p Пароль
+                input.input-text(type="password")
+                input.btn(type="submit" value="Войти")
+                .request-form__agree
+                    input.checkbox(type="checkbox" id="agree" name="agree" checked)
+                    label(for="agree") Нажимая кнопку, вы даете согласие на обработку персональных данных. &nbsp;
+                        a(href="#") Политика конфиденциальности
+            .registration-socials
+                .registration-socials-title Войти через соц. сети:
+                a(href="#")
+                    i.font-icon.font-icon-google
+                a(href="#")
+                    i.font-icon.font-icon-facebook-signin
+

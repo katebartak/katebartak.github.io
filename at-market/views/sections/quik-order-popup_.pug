@@ -1,0 +1,16 @@
+section.quik-order-popup.section-popup
+  .popup-overlay
+  .section-popup__content
+    button.popup-close-icon
+    h2  Быстрый заказ
+    .quick-order__title заполните форму и мы свяжемся с вами
+    form.request-form
+      .request-form__group
+        input.input-text(type="text" placeholder="Имя")
+        input.input-text(type="text" placeholder="Телефон")
+        input.input-text(type="text" placeholder="E-mail")
+      input.btn(type="submit" value="Заказать")
+      .request-form__agree
+        input.checkbox(type="checkbox" id="agree" name="agree" checked)
+        label(for="agree") Нажимая кнопку, вы даете согласие на обработку персональных данных. &nbsp;
+          a(href="#") Политика конфиденциальности
