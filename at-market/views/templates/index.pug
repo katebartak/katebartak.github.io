@@ -4,63 +4,63 @@ include ../common_help/mixins
 -
 	var sitemap = [
 		{
-			title: 'Главная',
+			title: 'Home page',
 			href: 'home',
 		},
 		{
-			title: 'Каталог',
+			title: 'Catalog Page',
 			href: 'catalog',
 		},
 		{
-			title: 'Каталог главная',
+			title: 'Caralog main',
 			href: 'catalog-main',
 		},
 		{
-			title: 'Товар',
+			title: 'Product',
 			href: 'product-page',
 		},
 		{
-			title: 'Контакты',
+			title: 'Contacts',
 			href: 'contacts',
 		},
 		{
-			title: 'О компании',
+			title: 'About company',
 			href: 'about-company',
 		},
 		{
-			title: 'Страница регистрации',
+			title: 'Sign in',
 			href: 'personal-area-registration',
 		},
 		{
-			title: 'Мои данные',
+			title: 'My data',
 			href: 'personal-area-data',
 		},
 		{
-			title: 'История заказов',
+			title: 'Orders history',
 			href: 'personal-area-history',
 		},
 		{
-			title: 'Открытый заказ',
+			title: 'Opened order',
 			href: 'personal-area-order',
 		},
 		{
-			title: 'Адреса',
+			title: 'Addresses',
 			href: 'personal-area-addresses',
 		},
 		{
-			title: 'Спасибо',
+			title: 'Thanks page',
 			href: 'thanks',
 		},
 		{
-			title: 'Текстовая страница',
+			title: 'Text page',
 			href: 'text-page',
 		},
 		{
-			title: '404',
+			title: '404 Page',
 			href: '404-page',
 		},
 		{
-			title: 'Страница Заказа',
+			title: 'Ordering Page',
 			href: 'ordering',
 		}
 	];
@@ -71,7 +71,7 @@ html(lang='ua')
 	body.front
 		main.page-container
 			.container
-				div(style="padding: 100px")
+				div(style="padding: 50px")
 					h1 Site Prototype
 					each item in sitemap
 						a(href=item.href +'.html' style="margin-bottom: 20px; display: block;")=item.title
