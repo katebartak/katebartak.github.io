@@ -1,0 +1,134 @@
+.hero-section {
+  padding-top: 25px;
+
+  &__text {
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: $sans-brand;
+    padding: 0 7%;
+
+    @extend %fs-light-36;
+
+    @include media-q(min, 768) {
+      padding: 0 24%;
+      font-family: $sans;
+    }
+
+    @include media-q(min, 1024) {
+      padding: 0 26%;
+    }
+  }
+
+  &__group {
+    flex-direction: column;
+
+    @include media-q(min, 768) {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    background-color: #eeeeee;
+    width: 100%;
+    position: relative;
+    color: $white;
+    transition: color .3s ease;
+
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 34%;
+
+      @include media-q(min, 768) {
+        padding-top: 155%;
+      }
+    }
+
+    &:hover {
+      color: $black;
+    }
+
+    &:first-child {
+      background-color: $c-red;
+    }
+
+    &:nth-child(2) {
+      background-color: $c-violet;
+    }
+
+    &:nth-child(3) {
+      background-color: $c-blue;
+    }
+
+    &:last-child {
+      background-color: $c-dark-blue;
+
+      .hero-section__content {
+
+        @include media-q(min, 768) {
+          padding-top: 22px;
+        }
+
+        @include media-q(min, 1280) {
+          padding-top: 42px;
+        }
+
+        @include media-q(min, 1920) {
+          padding-top: 72px;
+        }
+      }
+    }
+
+    .font-icon {
+      width: 120px;
+      display: flex;
+      justify-content: center;
+
+      @include media-q(min, 768) {
+        margin-bottom: 50px;
+        width: auto;
+      }
+
+      @include media-q(min, 1920) {
+        margin-bottom: 75px;
+      }
+
+      &::before {
+        font-size: 50px;
+
+        @include media-q(min, 1280) {
+          font-size: 90px;
+        }
+
+        @include media-q(min, 1920) {
+          font-size: 160px;
+        }
+      }
+    }
+
+    span {
+      display: block;
+
+      @extend %fs-medium-72;
+
+      @include media-q(min, 768) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+
+    @include media-q(min, 768) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
