@@ -1,0 +1,40 @@
+.breadcrumbs {
+  @include media-q(max, 1023) {
+    background-color: #EF3340;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.bs-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bs-item {
+  color: $white;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: $white;
+
+    @extend %fs-medium-28;
+
+    .font-icon {
+      margin-right: 25px;
+
+      &::before {
+        font-size: 32px;
+
+        @include media-q(min, 1920) {
+          font-size: 46px;
+        }
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

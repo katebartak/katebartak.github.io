@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// All icons font set
+@font-face {
+  font-family: 'font-icon';
+  src: url('../f-icons/f-icons.eot');
+  src: url('../f-icons/f-icons.eot?#iefix') format('embedded-opentype'),
+  url('../f-icons/f-icons.woff') format('woff'),
+  url('../f-icons/f-icons.ttf') format('truetype'),
+  url('../f-icons/f-icons#font-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*='font-icon']::before,
+[class*='font-icon']::after {
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
+}
+
+%font-icon {
+  @include font-size(30);
+  display: inline-block;
+  font-family: 'font-icon';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Icons set
+%icon-check,
+.icon-check:before {
+  content: "\e900";
+}
+
+%icon-close,
+.icon-close:before {
+  content: "\e901";
+}
+
+%icon-dev-by,
+.icon-dev-by:before {
+  content: "\e902";
+}
+
+%icon-facebook,
+.icon-facebook:before {
+  content: "\e903";
+}
+%icon-footer-logo-icon,
+.icon-footer-logo-icon:before {
+  content: "\e904";
+}
+%icon-footer-logo-text,
+.icon-footer-logo-text:before {
+  content: "\e905";
+}
+%icon-google,
+.icon-google:before {
+  content: "\e906";
+}
+%icon-logo,
+.icon-logo:before {
+  content: "\e907";
+}
+
+%icon-lungs,
+.icon-lungs:before {
+  content: "\e908";
+}
+%icon-monitor,
+.icon-monitor:before {
+  content: "\e909";
+}
+%icon-nda,
+.icon-nda:before {
+  content: "\e90a";
+}
+%icon-pdf,
+.icon-pdf:before {
+  content: "\e90b";
+}
+%icon-ultrason,
+.icon-ultrason:before {
+  content: "\e90c";
+}

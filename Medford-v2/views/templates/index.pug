@@ -1,0 +1,28 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+-
+  var sitemap = [
+    {
+      title: 'Home page',
+      href: 'home',
+    },
+    {
+      title: 'Category page',
+      href: 'category',
+    },
+  ];
+
+doctype html
+html(lang='ua')
+  include ../common_meta/head
+  body.front
+    main.page-container
+      .container
+        div(style="padding: 50px")
+          h1 Site Prototype
+          each item in sitemap
+            a(href=item.href + '.html' style="margin-bottom: 20px; display: block;")=item.title
+
+
+    include ../common_meta/footer_scripts

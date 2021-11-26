@@ -1,0 +1,45 @@
+.custom-tabs {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  margin-right: -20px;
+  padding-left: 152px;
+
+  @include media-q(min, 768) {
+    padding-left: 0;
+  }
+
+  &-item {
+    @extend %reset-button;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-family: $sans-brand;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    @include media-q(min, 1024) {
+      padding: 15px 20px;
+      font-size: 20px;
+    }
+
+    svg {
+      margin-left: 10px;
+    }
+
+    &.active {
+      background-color: $black;
+      border-radius: 10px;
+      color: $white;
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}

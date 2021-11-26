@@ -1,0 +1,15 @@
+include ../common_help/variables
+include ../common_help/mixins
+
+- var show_breadcrumbs = true
+
+doctype html
+html(lang='en')
+  include ../common_meta/head
+  body.front.color-header.ultrasound-page
+    include ../components/_header
+    main.page-container
+        include ../sections/category/hero-section
+
+    include ../components/_footer
+    include ../common_meta/footer_scripts

@@ -1,0 +1,233 @@
+.header {
+  font-family: $sans-brand;
+  position: relative;
+  padding: 15px 0;
+
+  .color-header & {
+
+    @include media-q(min, 1024) {
+      background-color: #EF3340;
+      color: $white;
+      padding: 0;
+    }
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    max-width: 320px;
+
+    @extend %fs-regular-18;
+
+    .color-header & {
+
+      @include media-q(min, 1024) {
+        background-color: $black;
+        color: $white;
+        padding: 15px 80px;
+        margin-left: -20px;
+        max-width: 480px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      @include media-q(min, 1600) {
+        max-width: 610px;
+        margin-left: -245px;
+        padding: 15px 200px;
+      }
+
+      &::after {
+
+        @include media-q(min, 1024) {
+          content: '';
+          position: absolute;
+          right: -4%;
+          top: 0;
+          bottom: 0;
+          height: 120px;
+          width: 60px;
+          transform: rotate(35deg);
+          background-color: #EF3340;
+        }
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .font-icon {
+      display: none;
+
+      .color-header & {
+
+        @include media-q(min, 1024) {
+          color: $white;
+          margin-left: 50px;
+        }
+      }
+
+      @include media-q(min, 1024) {
+        display: block;
+        color: $c-red-dark;
+      }
+    }
+  }
+
+  &__item {
+    padding: 0 35px;
+    color: $c-blue;
+
+    .color-header & {
+
+      @include media-q(min, 1024) {
+        color: $white;
+      }
+    }
+
+    @include media-q(max, 1023) {
+      color: $black;
+      font-size: 18px;
+      padding: 0;
+      display: block;
+    }
+  }
+
+  &__signin {
+    margin-top: auto;
+    margin-bottom: 15px;
+    display: block;
+
+    .color-header & {
+
+      @include media-q(min, 1024) {
+        color: $white;
+      }
+    }
+
+    @extend %fs-regular-24;
+
+    @include media-q(min, 1024) {
+      margin-top: 0;
+      margin-bottom: 0;
+      display: inline-block;
+    }
+
+    &:hover {
+
+      @include media-q(min, 1024) {
+        color: $c-blue;
+        text-decoration: none;
+      }
+
+      .color-header & {
+
+        @include media-q(min, 1024) {
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    .active-mobile-menu & {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      padding: 0 20px 30px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      background-color: $white;
+    }
+
+    @include media-q(min, 1024) {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      position: static;
+      height: auto;
+      width: auto;
+      padding: 0;
+    }
+
+    .close-menu {
+      text-align: right;
+      padding: 25px 0;
+
+      @include media-q(min, 1024) {
+        display: none;
+      }
+
+      .font-icon {
+        &::before {
+          font-size: 22px;
+        }
+      }
+    }
+
+    &-icon {
+      display: block;
+      cursor: pointer;
+      margin-left: auto;
+
+      @include media-q(min, 1024) {
+        display: none;
+      }
+
+      span {
+        width: 30px;
+        height: 4px;
+        background-color: $black;
+        display: block;
+
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    &-nav {
+      margin-bottom: 30px;
+
+      li {
+
+        &:first-child {
+          a {
+            padding-top: 0;
+          }
+        }
+
+        a {
+          font-size: 24px;
+          font-weight: $f-bold;
+          font-family: $sans-brand;
+          width: 100%;
+          display: block;
+          border-bottom: 1px solid #BDC8D3;
+          padding: 30px 0;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active-mobile-menu {
+
+}

@@ -1,0 +1,28 @@
+%btn,
+.btn {
+  background-color: $black;
+  border: 1px solid transparent;
+  color: $white;
+  text-transform: uppercase;
+  padding: 9px 24px 10px;
+  display: inline-block;
+  transition: background-color .2s ease;
+
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+.form-submit {
+  @extend %btn;
+  @include font-size(16);
+  padding: 11px 24px 12px;
+  min-width: 150px;
+}
+
+%reset-button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
