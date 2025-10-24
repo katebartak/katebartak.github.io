@@ -1,1 +1,0 @@
-Please use this site - https://icomoon.io/ to create a font icons set.

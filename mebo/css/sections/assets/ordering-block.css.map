@@ -1,1 +1,0 @@
-{"version":3,"sources":["sections/assets/ordering-block.scss","sections/assets/ordering-block.css"],"names":[],"mappings":"AAAA;EAEE,UAAU;ACAZ","file":"ordering-block.css","sourcesContent":[".section-ordering {\n\t.request-section__wrap {\n\t\tpadding: 0;\n\t}\n}",".section-ordering .request-section__wrap {\n  padding: 0;\n}\n"]}
